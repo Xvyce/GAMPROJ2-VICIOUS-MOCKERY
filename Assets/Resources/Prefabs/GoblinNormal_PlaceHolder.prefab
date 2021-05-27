@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 8494672389905561318}
   - component: {fileID: 8494672389905561319}
   - component: {fileID: 3656216482006528668}
+  - component: {fileID: 7469688178108616339}
   m_Layer: 0
   m_Name: GoblinNormal_PlaceHolder
   m_TagString: Untagged
@@ -197,6 +198,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 8494672390995520810}
+--- !u!114 &7469688178108616339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494672389905561320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ea18351091ad74b85e0b42733313fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 03b1a3bc9adbb694fbe86a61b5b193e4, type: 2}
 --- !u!1 &8494672390995520813
 GameObject:

@@ -6,23 +6,7 @@ using TMPro;
 public class WordDisplay : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
-    [SerializeField] private EnemyData enemyData;
-    private float speed;
-
     private string wordContainer;
-
-    private void Start()
-    {
-        if(enemyData != null)
-            speed = enemyData.Speed;
-        
-    }
-
-    private void Update()
-    {
-        if(enemyData != null)
-            transform.Translate(-speed * Time.deltaTime, 0f, 0f);
-    }
 
     public void SetWord(string word)
     {

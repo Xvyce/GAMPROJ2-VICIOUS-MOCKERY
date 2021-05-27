@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 8482547367431476248}
   - component: {fileID: 8482547367431476249}
   - component: {fileID: 8552712787518015914}
+  - component: {fileID: 7319551600464099596}
   m_Layer: 0
   m_Name: GoblinFast_PlaceHolder
   m_TagString: Untagged
@@ -331,4 +332,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 8482547365865941272}
+--- !u!114 &7319551600464099596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482547367431476250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ea18351091ad74b85e0b42733313fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 50b28c6d5297650439b0913b7bc6bf64, type: 2}
