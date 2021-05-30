@@ -6,7 +6,6 @@ using UnityEngine;
 public class EnemyData : ScriptableObject
 {
     [SerializeField] private float speed;
-    [SerializeField] private float health;
     [SerializeField] private GameObject enemyPrefab;
     //[SerializeField] private int attack;
 
@@ -14,7 +13,6 @@ public class EnemyData : ScriptableObject
     public EnemyType Type => type;
 
     public float Speed => speed;
-    public float Health => health;
     public GameObject EnemyPrefab => enemyPrefab;
 }
 

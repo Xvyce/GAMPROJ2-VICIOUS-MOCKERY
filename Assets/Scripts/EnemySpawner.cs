@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public EnemyData enemyData;
 
     private GameObject enemyPrefab;
-    //[SerializeField] private Transform wordCanvas;
+    [SerializeField] private Transform parent;
     [SerializeField] private Transform[] spawnPoints;
 
     private void Start()
@@ -20,7 +20,7 @@ public class EnemySpawner : MonoBehaviour
         int randomSpawnPoint;
         randomSpawnPoint = Random.Range(0, spawnPoints.Length);
 
-        GameObject wordObj = Instantiate(enemyPrefab, spawnPoints[randomSpawnPoint].position, Quaternion.Euler(45,0,0));
+        GameObject wordObj = Instantiate(enemyPrefab, spawnPoints[randomSpawnPoint].position, Quaternion.Euler(45,0,0), parent);
         WordDisplay wordDisplay = wordObj.GetComponent<WordDisplay>();
 
         return wordDisplay;

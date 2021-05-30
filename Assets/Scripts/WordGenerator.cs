@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class WordGenerator : MonoBehaviour
 {
-    private EnemySpawner enemySpawner;
-    
-
     // 3-6 letter words
     private static string[] wordListEasy = { "fuel", "trap", "cars", "answer", "boil", "cactus", "icy",  "suck", "songs",
                                         "spotty", "invent", "cake", "employ", "linen", "copy", "fasten", "fix", "goofy",
