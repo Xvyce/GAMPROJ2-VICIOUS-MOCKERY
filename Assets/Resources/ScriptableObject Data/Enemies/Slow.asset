@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: Slow
   m_EditorClassIdentifier: 
   speed: 0.5
-  health: 0
-  enemyPrefab: {fileID: 7458024566252815324, guid: e512b21e75a3f4a43b2dbdf9a7c57437, type: 3}
   type: 2

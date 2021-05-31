@@ -376,7 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: First Wave
-    enemyPrefab: {fileID: 3313210433340723051, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+    enemyPrefab: {fileID: 683528931995429975, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
     count: 2
     spawnRate: 1
   - name: Second Wave

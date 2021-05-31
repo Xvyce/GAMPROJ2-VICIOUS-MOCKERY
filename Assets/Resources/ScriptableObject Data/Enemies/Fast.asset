@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Fast
   m_EditorClassIdentifier: 
   speed: 1
-  health: 0
-  enemyPrefab: {fileID: 8482547367431476250, guid: 1bf165aeeaf93a44683b01ecef93e076, type: 3}
   type: 0
+  reviveCount: 0

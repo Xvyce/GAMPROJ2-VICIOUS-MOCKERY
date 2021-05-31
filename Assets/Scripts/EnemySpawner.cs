@@ -12,7 +12,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        enemyPrefab = enemyData.EnemyPrefab;
+        //enemyPrefab = enemyData.EnemyPrefab;
     }
 
     public WordDisplay SpawnWord()

@@ -21,6 +21,8 @@ public class WordGenerator : MonoBehaviour
                                         "notorious", "allowance", "tournament", "helicopter", "convulsion", "established", "responsible",
                                         "performance", "calculation", "cooperative", "democratic", "motorcycle", "substitute"   };
 
+    private static string[] wordListBoss = { "chiaroscurist", "baccalaureate", "this is a sentence" };
+
     private static string[] playerWordList = { "absolute", "ninja", "justice", "guitar", "inject", "grace", "famine", "mouse", "core",
                                         "locket", "coin" };
 
@@ -42,6 +44,13 @@ public class WordGenerator : MonoBehaviour
     {
         int randomIndex = Random.Range(0, wordListHard.Length);
         string randomWord = wordListHard[randomIndex];
+        return randomWord;
+    }
+    
+    public static string GetBossWord()
+    {
+        int randomIndex = Random.Range(0, wordListBoss.Length);
+        string randomWord = wordListBoss[randomIndex];
         return randomWord;
     }
 

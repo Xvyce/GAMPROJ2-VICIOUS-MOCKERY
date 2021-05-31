@@ -6,14 +6,12 @@ using UnityEngine;
 public class EnemyData : ScriptableObject
 {
     [SerializeField] private float speed;
-    [SerializeField] private GameObject enemyPrefab;
-    //[SerializeField] private int attack;
-
     [SerializeField] private EnemyType type;
-    public EnemyType Type => type;
+    [SerializeField] private int reviveCount;
 
+    public EnemyType Type => type;
     public float Speed => speed;
-    public GameObject EnemyPrefab => enemyPrefab;
+    public int ReviveCount => reviveCount;
 }
 
 public enum EnemyType
