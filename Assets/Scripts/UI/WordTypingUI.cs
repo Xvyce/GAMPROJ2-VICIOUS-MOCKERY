@@ -7,6 +7,7 @@ public class WordTypingUI : MonoBehaviour
 {
     //[SerializeField] private PageFlipScriptName _pageFlip;
     [SerializeField] private TextMeshProUGUI word;
+    [SerializeField] private OpenBook Flip;
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
@@ -15,7 +16,7 @@ public class WordTypingUI : MonoBehaviour
 
     private void Start()
     {
-        wordToType = word.text;
+        wordToType = word.text.ToLower();
         wordContainer = wordToType;
         typeIndex = 0;
     }
@@ -45,6 +46,7 @@ public class WordTypingUI : MonoBehaviour
             //tapos lagay mo dito
             //_pageFlip.TurnToNextPage();
             //kung ano yung pangalan ng method na naglilipat ng page
+            Flip.openBtn_Click();
         }
     }
 }
