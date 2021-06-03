@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5989038839617779164
+--- !u!114 &-1072883257499034952
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tree2Trunk
+  m_Name: Tree3Leaves
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
   m_LightmapFlags: 4
@@ -34,11 +34,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: b76b5ae8e81064345a43ad505711b7a4, type: 3}
+        m_Texture: {fileID: 2800000, guid: d2e5fceaeca98564a87466ae43cfcbe6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 763479362c6067040bb74d017435781a, type: 3}
+        m_Texture: {fileID: 2800000, guid: f4c1b8bf960c6a849bd059e241886a5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -58,15 +58,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b76b5ae8e81064345a43ad505711b7a4, type: 3}
+        m_Texture: {fileID: 2800000, guid: d2e5fceaeca98564a87466ae43cfcbe6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: cfc6d34f9322aa44d83910ddf9225da6, type: 3}
+        m_Texture: {fileID: 2800000, guid: a6de34856b925d54c84dd41caf1cc3a6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 103d5aaf01e8b9b4491e0e5465336d0a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 36e6914339f916d4197a221bb8d40395, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
