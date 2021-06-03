@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class WordTypingUI : MonoBehaviour
+public class TypingUIBack : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI word;
-    [SerializeField] private OpenBook Flip;
+
+    [SerializeField] private TextMeshProUGUI wordBack;
+    [SerializeField] private FlipPage pageFlip;
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
@@ -15,7 +16,7 @@ public class WordTypingUI : MonoBehaviour
 
     private void Start()
     {
-        wordToType = word.text.ToLower();
+        wordToType = wordBack.text.ToLower();
         wordContainer = wordToType;
         typeIndex = 0;
     }
@@ -26,21 +27,21 @@ public class WordTypingUI : MonoBehaviour
         {
             typeIndex++;
 
-           word.text = word.text.Remove(0, 1); 
-           word.color = Color.red;
+            wordBack.text = wordBack.text.Remove(0, 1);
+            wordBack.color = Color.red;
         }
         else
         {
             typeIndex = 0;
 
-            word.text = wordContainer;
-            word.color = Color.green;
+            wordBack.text = wordContainer;
+            wordBack.color = Color.green;
         }
 
-        if(typeIndex >= wordToType.Length)
+        if (typeIndex >= wordToType.Length)
         {
-            Debug.Log("Open Book");
-            Flip.openBtn_Click();
+            Debug.Log("BACK PAGE");
+            pageFlip.turnOnePageBtn_Click(FlipPage.ButtonType.BackButton);
         }
     }
 }

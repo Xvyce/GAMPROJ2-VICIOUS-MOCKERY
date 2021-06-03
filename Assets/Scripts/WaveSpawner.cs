@@ -6,7 +6,9 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private Wave[] waves;
 
-    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private Transform[] spawnPointsTop;
+    [SerializeField] private Transform[] spawnPointsMid;
+    [SerializeField] private Transform[] spawnPointsBot;
     [SerializeField] private float timeBetweenWaves;
     private float waveCountdown;
     private int nextWave = 0;
@@ -57,7 +59,6 @@ public class WaveSpawner : MonoBehaviour
 
         if(nextWave + 1 > waves.Length - 1)
         {
-            // for now it returns back to first wave
             nextWave = 0;
             Debug.Log("All waves complete, loop back to first wave");
             // Go to Next Level
@@ -91,7 +92,7 @@ public class WaveSpawner : MonoBehaviour
         for(int i =0; i < _wave.count; i++)
         {
             SpawnEnemy(_wave.enemyPrefab);
-            yield return new WaitForSeconds(1f/_wave.spawnRate);
+            yield return new WaitForSeconds(_wave.spawnRate);
         }
 
         state = SpawnState.Waiting;
@@ -99,12 +100,36 @@ public class WaveSpawner : MonoBehaviour
         yield break;
     }
 
-    void SpawnEnemy(Transform _enemy)
+    void SpawnEnemy(GameObject _enemy)
     {
         int randomSpawnPoint;
-        randomSpawnPoint = Random.Range(0, spawnPoints.Length);
+        EnemyData type;
 
-        Instantiate(_enemy, spawnPoints[randomSpawnPoint].position, Quaternion.Euler(45, 0, 0));
+        type = _enemy.GetComponent<Enemy>().enemyData;
+
+        //Sets which spawn point the enemy will spawn depending on their type
+        switch (type.Type)
+        {
+            case EnemyType.Fast:
+                randomSpawnPoint = Random.Range(0, spawnPointsMid.Length);
+                Instantiate(_enemy, spawnPointsMid[randomSpawnPoint].position, Quaternion.Euler(45, 0, 0));
+                break;
+
+            case EnemyType.Normal:
+                randomSpawnPoint = Random.Range(0, spawnPointsBot.Length);
+                Instantiate(_enemy, spawnPointsBot[randomSpawnPoint].position, Quaternion.Euler(45, 0, 0));
+                break;
+
+            case EnemyType.Slow:
+                randomSpawnPoint = Random.Range(0, spawnPointsTop.Length);
+                Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(45, 0, 0));
+                break;
+
+            case EnemyType.Boss:
+                randomSpawnPoint = Random.Range(0, spawnPointsTop.Length);
+                Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(45, 0, 0));
+                break;
+        }
     }
 }
 
@@ -112,7 +137,7 @@ public class WaveSpawner : MonoBehaviour
 public class Wave
 {
     [SerializeField] private string name;
-    public Transform enemyPrefab;
+    public GameObject enemyPrefab;
     public int count;
     public float spawnRate;
 }

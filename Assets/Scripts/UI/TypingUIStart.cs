@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
-public class WordTypingUI : MonoBehaviour
+public class TypingUIStart : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI word;
-    [SerializeField] private OpenBook Flip;
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
@@ -26,8 +26,8 @@ public class WordTypingUI : MonoBehaviour
         {
             typeIndex++;
 
-           word.text = word.text.Remove(0, 1); 
-           word.color = Color.red;
+            word.text = word.text.Remove(0, 1);
+            word.color = Color.red;
         }
         else
         {
@@ -37,10 +37,10 @@ public class WordTypingUI : MonoBehaviour
             word.color = Color.green;
         }
 
-        if(typeIndex >= wordToType.Length)
+        if (typeIndex >= wordToType.Length)
         {
             Debug.Log("Open Book");
-            Flip.openBtn_Click();
+            SceneManager.LoadScene("Game");
         }
     }
 }

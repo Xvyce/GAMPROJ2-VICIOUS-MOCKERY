@@ -5,7 +5,7 @@ using TMPro;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private EnemyData enemyData;
+    public EnemyData enemyData;
     [SerializeField] private TextMeshProUGUI text;
 
     private float speed;

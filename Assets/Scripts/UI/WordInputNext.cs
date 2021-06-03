@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WordInputUI : MonoBehaviour
+public class WordInputNext : MonoBehaviour
 {
-    public WordTypingUI wordTypingUI;
+    public TypingUINext typingUInext;
 
     private void Update()
     {
         foreach (char letter in Input.inputString)
         {
-            wordTypingUI.TypeLetter(letter);
+            typingUInext.TypeLetter(letter);
         }
     }
 }
