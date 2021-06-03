@@ -5,7 +5,6 @@ using TMPro;
 
 public class WordTypingUI : MonoBehaviour
 {
-    //[SerializeField] private PageFlipScriptName _pageFlip;
     [SerializeField] private TextMeshProUGUI word;
     [SerializeField] private OpenBook Flip;
     private string wordToType;
@@ -41,11 +40,6 @@ public class WordTypingUI : MonoBehaviour
         if(typeIndex >= wordToType.Length)
         {
             Debug.Log("NEXT PAGE");
-            //Kung may page flipping mechanic ka na dapat naka public
-            //dapat meron ding variable yon sa script parang "SerializeField] PageFlip _pageFlip" yung PageFlip yung pangalan pageflip script mo kaya pwedeng maiba
-            //tapos lagay mo dito
-            //_pageFlip.TurnToNextPage();
-            //kung ano yung pangalan ng method na naglilipat ng page
             Flip.openBtn_Click();
         }
     }
