@@ -1,21 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private GameObject playerWordPrefab;
-    [SerializeField] private Transform playerWordCanvas;
+    [SerializeField] private TextMeshProUGUI text;
 
-    [SerializeField] private float maxHealth;
+    [SerializeField] private float maxHealth = 100;
     private float currentHealth;
 
-    public WordDisplay SpawnPlayerWord()
-    {
-        GameObject wordObj = Instantiate(playerWordPrefab, playerWordCanvas.transform.position, Quaternion.Euler(45, 0, 0), playerWordCanvas);
-        WordDisplay wordDisplay = wordObj.GetComponent<WordDisplay>();
+    private string wordToType;
+    private string wordContainer;
+    private int typeIndex;
 
-        return wordDisplay;
+    private void Start()
+    {
+        currentHealth = maxHealth;
+
+        typeIndex = 0;
+        wordToType = WordGenerator.GetPlayerWord();
+
+        if(text != null)
+        {
+            text.text = wordToType;
+        }    
     }
 
+    public void TypeLetter(char letter)
+    {
+        if (wordToType[typeIndex] == letter)
+        {
+            typeIndex++;
+
+            text.text = text.text.Remove(0, 1);
+            text.color = Color.red;
+        }
+        else
+        {
+            typeIndex = 0;
+
+            text.text = wordContainer;
+            text.color = Color.green;
+        }
+
+        // If word have been typed correctly
+        if (typeIndex >= wordToType.Length)
+        {
+            //Do something
+        }
+    }
 }

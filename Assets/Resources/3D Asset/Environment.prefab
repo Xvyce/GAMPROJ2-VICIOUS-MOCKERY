@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &699533707899399843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601312485299026876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1839178, y: 0.076840535, z: 0.044034902}
+  m_Center: {x: -2.646408e-15, y: 0.03, z: -0.01}
 --- !u!1 &1943418590973757101
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b02cd485674a52d4bb02c64cce880f11, type: 3}
+      propertyPath: m_TagString
+      value: Castle
+      objectReference: {fileID: 0}
     - target: {fileID: 1189650101159825992, guid: b02cd485674a52d4bb02c64cce880f11, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -836,6 +853,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d226e021f3af43544a585644149f2582, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02cd485674a52d4bb02c64cce880f11, type: 3}
+--- !u!1 &1601312485299026876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b02cd485674a52d4bb02c64cce880f11, type: 3}
+  m_PrefabInstance: {fileID: 1943418590231807725}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2121988809071862022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b02cd485674a52d4bb02c64cce880f11, type: 3}

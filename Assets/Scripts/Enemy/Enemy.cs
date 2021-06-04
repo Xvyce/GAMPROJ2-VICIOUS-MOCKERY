@@ -88,5 +88,16 @@ public class Enemy : MonoBehaviour
         GenerateWord();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Castle")
+        {
+            //Decrease player health
+
+            Debug.Log("Enemy have entered the castle");
+            Destroy(this.gameObject);
+        }
+    }
+
     //TO DO: Should only have 1 active word at all times
 }
