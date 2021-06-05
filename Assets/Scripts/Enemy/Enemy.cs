@@ -93,7 +93,7 @@ public class Enemy : MonoBehaviour
         if(collision.gameObject.tag == "Castle")
         {
             //Decrease player health
-
+            DataManager.Instance.Health -= 5f;
             Debug.Log("Enemy have entered the castle");
             Destroy(this.gameObject);
         }

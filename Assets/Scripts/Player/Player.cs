@@ -7,17 +7,12 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
 
-    [SerializeField] private float maxHealth = 100;
-    private float currentHealth;
-
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
 
     private void Start()
     {
-        currentHealth = maxHealth;
-
         typeIndex = 0;
         wordToType = WordGenerator.GetPlayerWord();
 
