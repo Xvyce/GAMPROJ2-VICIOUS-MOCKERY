@@ -1,12 +1,78 @@
 fileFormatVersion: 2
 guid: 8e9577027160f334e883063457a99827
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2872466308280281693
+    second: Defeat_BardSpriteSheet_0
+  - first:
+      213: -7850433958578802061
+    second: Defeat_BardSpriteSheet_1
+  - first:
+      213: -4883725823251249081
+    second: Defeat_BardSpriteSheet_2
+  - first:
+      213: -1282650567733157499
+    second: Defeat_BardSpriteSheet_3
+  - first:
+      213: -3864320824261428949
+    second: Defeat_BardSpriteSheet_4
+  - first:
+      213: -2371983608407825937
+    second: Defeat_BardSpriteSheet_5
+  - first:
+      213: 2292638716257608173
+    second: Defeat_BardSpriteSheet_6
+  - first:
+      213: -6016950170871071098
+    second: Defeat_BardSpriteSheet_7
+  - first:
+      213: -2169646467027938972
+    second: Defeat_BardSpriteSheet_8
+  - first:
+      213: 375463326173219614
+    second: Defeat_BardSpriteSheet_9
+  - first:
+      213: 2058047492432907087
+    second: Defeat_BardSpriteSheet_10
+  - first:
+      213: -2714983806585928969
+    second: Defeat_BardSpriteSheet_11
+  - first:
+      213: 4141882097070032229
+    second: Defeat_BardSpriteSheet_12
+  - first:
+      213: -2802265997656989408
+    second: Defeat_BardSpriteSheet_13
+  - first:
+      213: -7097008985021219935
+    second: Defeat_BardSpriteSheet_14
+  - first:
+      213: -2986689453348958043
+    second: Defeat_BardSpriteSheet_15
+  - first:
+      213: 771294729844563205
+    second: Defeat_BardSpriteSheet_16
+  - first:
+      213: 6864743143093180285
+    second: Defeat_BardSpriteSheet_17
+  - first:
+      213: -580871688191341453
+    second: Defeat_BardSpriteSheet_18
+  - first:
+      213: -5914849747799580040
+    second: Defeat_BardSpriteSheet_19
+  - first:
+      213: -6643371729435708176
+    second: Defeat_BardSpriteSheet_20
+  - first:
+      213: 2443389356513348445
+    second: Defeat_BardSpriteSheet_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -32,27 +98,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -125,11 +191,473 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 15
+        width: 57
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ae25e63ec0dd720800000000000000
+      internalID: 2872466308280281693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 83
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3723f3678e7ad0390800000000000000
+      internalID: -7850433958578802061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 15
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74805b42d35893cb0800000000000000
+      internalID: -4883725823251249081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 15
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581ef4bba1c133ee0800000000000000
+      internalID: -1282650567733157499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 15
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29b0c33fac2f5ac0800000000000000
+      internalID: -3864320824261428949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 15
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe16dc7b975051fd0800000000000000
+      internalID: -2371983608407825937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 15
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1a7d8f3c611df10800000000000000
+      internalID: 2292638716257608173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 15
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ef002e2bf7f7ca0800000000000000
+      internalID: -6016950170871071098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 15
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4615e94980ed3e1e0800000000000000
+      internalID: -2169646467027938972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 15
+        width: 56
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bcdb6e7e9e53500800000000000000
+      internalID: 375463326173219614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 48
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bc8555a47af8c10800000000000000
+      internalID: 2058047492432907087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 12
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2028dcc90725ad0800000000000000
+      internalID: -2714983806585928969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 11
+        width: 59
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565c86992dbea7930800000000000000
+      internalID: 4141882097070032229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021ef731ce95c19d0800000000000000
+      internalID: -2802265997656989408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abfd000eeb528d90800000000000000
+      internalID: -7097008985021219935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0dabe24c52d86d0800000000000000
+      internalID: -2986689453348958043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d1485687034ba00800000000000000
+      internalID: 771294729844563205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d771e568487744f50800000000000000
+      internalID: 6864743143093180285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c0645f64450f7f0800000000000000
+      internalID: -580871688191341453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872e89a1e7b3aeda0800000000000000
+      internalID: -5914849747799580040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4bc143c900ec3a0800000000000000
+      internalID: -6643371729435708176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defeat_BardSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bc2f29ca9a8e120800000000000000
+      internalID: 2443389356513348445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a7a0ca9864d9fb04c8109c3bc3823d1d
     internalID: 0
     vertices: []
     indices: 

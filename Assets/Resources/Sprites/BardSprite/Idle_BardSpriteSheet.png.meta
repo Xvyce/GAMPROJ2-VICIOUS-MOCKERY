@@ -1,12 +1,63 @@
 fileFormatVersion: 2
 guid: fcc09a2679aafdf439bf0816e4990c1c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6537743271931711510
+    second: Idle_BardSpriteSheet_0
+  - first:
+      213: 6817798002178795711
+    second: Idle_BardSpriteSheet_1
+  - first:
+      213: 4534691928569219987
+    second: Idle_BardSpriteSheet_2
+  - first:
+      213: 6225036906854351757
+    second: Idle_BardSpriteSheet_3
+  - first:
+      213: 6953461638626278531
+    second: Idle_BardSpriteSheet_4
+  - first:
+      213: 3368514725705690285
+    second: Idle_BardSpriteSheet_5
+  - first:
+      213: 36177699024908429
+    second: Idle_BardSpriteSheet_6
+  - first:
+      213: -5848930425714429608
+    second: Idle_BardSpriteSheet_7
+  - first:
+      213: -2211958236889759390
+    second: Idle_BardSpriteSheet_8
+  - first:
+      213: -9151733428503011508
+    second: Idle_BardSpriteSheet_9
+  - first:
+      213: 8931294610231487462
+    second: Idle_BardSpriteSheet_10
+  - first:
+      213: 8610275455096341525
+    second: Idle_BardSpriteSheet_11
+  - first:
+      213: -9042876323091989484
+    second: Idle_BardSpriteSheet_12
+  - first:
+      213: 4071490241606545323
+    second: Idle_BardSpriteSheet_13
+  - first:
+      213: -4202241386288804947
+    second: Idle_BardSpriteSheet_14
+  - first:
+      213: 6870251170417214134
+    second: Idle_BardSpriteSheet_15
+  - first:
+      213: 4798855217754986713
+    second: Idle_BardSpriteSheet_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -32,27 +83,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -125,11 +176,368 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 14
+        width: 51
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef6fc3f1254545a0800000000000000
+      internalID: -6537743271931711510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 14
+        width: 51
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb82c36292fad9e50800000000000000
+      internalID: 6817798002178795711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 14
+        width: 52
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b033088467eee30800000000000000
+      internalID: 4534691928569219987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 14
+        width: 52
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8300cac516c36650800000000000000
+      internalID: 6225036906854351757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 14
+        width: 52
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cff91f488af7060800000000000000
+      internalID: 6953461638626278531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 14
+        width: 54
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac2c5ebb4e5fbe20800000000000000
+      internalID: 3368514725705690285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 14
+        width: 54
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80bb23fc67808000800000000000000
+      internalID: 36177699024908429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 14
+        width: 54
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851315b44cc64dea0800000000000000
+      internalID: -5848930425714429608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 14
+        width: 52
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261cf28f3bb8d41e0800000000000000
+      internalID: -2211958236889759390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 14
+        width: 52
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f920b4fe28ef080800000000000000
+      internalID: -9151733428503011508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 14
+        width: 52
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb6533c02552fb70800000000000000
+      internalID: 8931294610231487462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 14
+        width: 52
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514484f38e7dd7770800000000000000
+      internalID: 8610275455096341525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 14
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cbf4635ef318280800000000000000
+      internalID: -9042876323091989484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 14
+        width: 51
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf6d659dc6d08830800000000000000
+      internalID: 4071490241606545323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 14
+        width: 51
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab8fcd39b3aea5c0800000000000000
+      internalID: -4202241386288804947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 14
+        width: 51
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b20e621a09085f50800000000000000
+      internalID: 6870251170417214134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_BardSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 14
+        width: 51
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8d0d62565f89240800000000000000
+      internalID: 4798855217754986713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e59c19a5c1c77094dab94a37d096ef89
     internalID: 0
     vertices: []
     indices: 

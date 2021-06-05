@@ -1,12 +1,84 @@
 fileFormatVersion: 2
 guid: e5d8fed392083bd49bc56085009b5c10
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6946088980307427870
+    second: Win_BardSpriteSheet_0
+  - first:
+      213: -56461064123939158
+    second: Win_BardSpriteSheet_1
+  - first:
+      213: 5700364831434379362
+    second: Win_BardSpriteSheet_2
+  - first:
+      213: -7796139210009856284
+    second: Win_BardSpriteSheet_3
+  - first:
+      213: -5448534148282249806
+    second: Win_BardSpriteSheet_4
+  - first:
+      213: -7381063266236230257
+    second: Win_BardSpriteSheet_5
+  - first:
+      213: -1767662458047402855
+    second: Win_BardSpriteSheet_6
+  - first:
+      213: 2329113241074968252
+    second: Win_BardSpriteSheet_7
+  - first:
+      213: -3759573704138323085
+    second: Win_BardSpriteSheet_8
+  - first:
+      213: -8569362969138916300
+    second: Win_BardSpriteSheet_9
+  - first:
+      213: 3037414955884071701
+    second: Win_BardSpriteSheet_10
+  - first:
+      213: 6025342029534189241
+    second: Win_BardSpriteSheet_11
+  - first:
+      213: -1680234962804809479
+    second: Win_BardSpriteSheet_12
+  - first:
+      213: -6724492730438188291
+    second: Win_BardSpriteSheet_13
+  - first:
+      213: -7222168866539387157
+    second: Win_BardSpriteSheet_14
+  - first:
+      213: -2570127582511020689
+    second: Win_BardSpriteSheet_15
+  - first:
+      213: 2687515948278974490
+    second: Win_BardSpriteSheet_16
+  - first:
+      213: -4713225890286563917
+    second: Win_BardSpriteSheet_17
+  - first:
+      213: -7325739731752192945
+    second: Win_BardSpriteSheet_18
+  - first:
+      213: -7831526576993610881
+    second: Win_BardSpriteSheet_19
+  - first:
+      213: 3056639950514510073
+    second: Win_BardSpriteSheet_20
+  - first:
+      213: 9106749642413188243
+    second: Win_BardSpriteSheet_21
+  - first:
+      213: -5274423860155712823
+    second: Win_BardSpriteSheet_22
+  - first:
+      213: -5914062485669554042
+    second: Win_BardSpriteSheet_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -32,27 +104,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -125,11 +197,515 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 14
+        width: 38
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed3586dfd88a9f90800000000000000
+      internalID: -6946088980307427870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 12
+        width: 41
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6804916f8673ff0800000000000000
+      internalID: -56461064123939158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 12
+        width: 48
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26096c3cc93cb1f40800000000000000
+      internalID: 5700364831434379362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 14
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e63ed7b1bc8ec390800000000000000
+      internalID: -7796139210009856284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 15
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd0d094f0be264b0800000000000000
+      internalID: -5448534148282249806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 15
+        width: 44
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f851e4fd012319990800000000000000
+      internalID: -7381063266236230257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 15
+        width: 44
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c6a412c500877e0800000000000000
+      internalID: -1767662458047402855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 13
+        width: 47
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6aeef072ca25020800000000000000
+      internalID: 2329113241074968252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 14
+        width: 38
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b8fe992af43dbc0800000000000000
+      internalID: -3759573704138323085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 12
+        width: 41
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434961138c1831980800000000000000
+      internalID: -8569362969138916300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 12
+        width: 48
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bcde83fc0172a20800000000000000
+      internalID: 3037414955884071701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 14
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6dd98f6a05e9350800000000000000
+      internalID: 6025342029534189241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 15
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0e3de143b9ea8e0800000000000000
+      internalID: -1680234962804809479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 15
+        width: 44
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df209835d7dcda2a0800000000000000
+      internalID: -6724492730438188291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 15
+        width: 44
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6c80a3ea3b5cb90800000000000000
+      internalID: -7222168866539387157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 13
+        width: 47
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f654ff0b492155cd0800000000000000
+      internalID: -2570127582511020689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 13
+        width: 47
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a188d511489fb4520800000000000000
+      internalID: 2687515948278974490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 13
+        width: 47
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd8b474602479eb0800000000000000
+      internalID: -4713225890286563917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 13
+        width: 56
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44f1f3078eb55a90800000000000000
+      internalID: -7325739731752192945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 13
+        width: 59
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73d3494214d05390800000000000000
+      internalID: -7831526576993610881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 13
+        width: 59
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f85fa817dd5b6a20800000000000000
+      internalID: 3056639950514510073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 13
+        width: 48
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3942476dc8ca16e70800000000000000
+      internalID: 9106749642413188243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2857
+        y: 13
+        width: 47
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caf29cb17b7dc6b0800000000000000
+      internalID: -5274423860155712823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_BardSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 13
+        width: 47
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688d33ad0870deda0800000000000000
+      internalID: -5914062485669554042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 905eb32febf5bed4a8c2459a25ad1c39
     internalID: 0
     vertices: []
     indices: 
