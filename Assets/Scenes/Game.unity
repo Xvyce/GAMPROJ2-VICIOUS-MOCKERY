@@ -407,19 +407,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: First Wave
-    enemyPrefab: {fileID: 3313210433340723055, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+    enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
     count: 3
     spawnRate: 1
   - name: Second Wave
-    enemyPrefab: {fileID: 759575103114744685, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+    enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
     count: 4
     spawnRate: 1.5
   - name: Third Wave
-    enemyPrefab: {fileID: 6269995051987027546, guid: 1233b1b97a4120544bbcb4279eff7c8c, type: 3}
+    enemyPrefab: {fileID: 8863203276413296374, guid: 1233b1b97a4120544bbcb4279eff7c8c, type: 3}
     count: 5
     spawnRate: 2
   - name: Boss
-    enemyPrefab: {fileID: 683528931995429971, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
+    enemyPrefab: {fileID: 6587408742269680060, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
     count: 2
     spawnRate: 3
   spawnPointsTop:
@@ -596,8 +596,8 @@ GameObject:
   - component: {fileID: 612996372}
   - component: {fileID: 612996373}
   m_Layer: 0
-  m_Name: Player_PlaceHolder
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -662,7 +662,7 @@ Transform:
   m_GameObject: {fileID: 612996369}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: -6.18, y: 2.612, z: -0.058}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2.1549, y: 2.1549, z: 2.1549}
   m_Children:
   - {fileID: 202724703}
   m_Father: {fileID: 0}
@@ -681,6 +681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 442197517}
+  animator: {fileID: 612996373}
 --- !u!95 &612996373
 Animator:
   serializedVersion: 3

@@ -6,6 +6,7 @@ using TMPro;
 public class Player : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
+    public Animator animator;
 
     private string wordToType;
     private string wordContainer;
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     {
         if (wordToType[typeIndex] == letter)
         {
+            animator.SetBool("isTypingCorrect", true);
             typeIndex++;
 
             text.text = text.text.Remove(0, 1);
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
         }
         else
         {
+            animator.SetBool("isTypingCorrect", false);
             typeIndex = 0;
 
             text.text = wordContainer;

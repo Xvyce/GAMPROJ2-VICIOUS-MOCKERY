@@ -5,6 +5,7 @@ using TMPro;
 
 public class Enemy : MonoBehaviour
 {
+    public Player _player;
     public EnemyData enemyData;
     [SerializeField] private TextMeshProUGUI text;
 
@@ -13,6 +14,11 @@ public class Enemy : MonoBehaviour
     private string wordContainer;
     private int typeIndex;
     private int revivalCount =0;
+
+    private void Awake()
+    {
+        _player = GameObject.FindWithTag("Player").GetComponent<Player>();
+    }
 
     void Start()
     {
@@ -55,6 +61,7 @@ public class Enemy : MonoBehaviour
     {
         if (wordToType[typeIndex] == letter)
         {
+            _player.animator.SetBool("isTypingCorrect", true);
             typeIndex++;
 
             text.text = text.text.Remove(0, 1);
@@ -62,6 +69,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
+            _player.animator.SetBool("isTypingCorrect", false);
             typeIndex = 0;
 
             text.text = wordContainer;
