@@ -17,7 +17,6 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         speed = enemyData.Speed;
-        typeIndex = 0;
 
         GenerateWord();
     }
@@ -27,8 +26,10 @@ public class Enemy : MonoBehaviour
         transform.Translate(-speed * Time.deltaTime, 0f, 0f);
     }
 
-    public void GenerateWord()
+    private void GenerateWord()
     {
+        typeIndex = 0;
+
         switch (enemyData.Type)
         {
             case EnemyType.Slow:
@@ -82,18 +83,35 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void GetNewWord()
+    private void GetNewWord()
     {
-        typeIndex = 0;
         GenerateWord();
     }
 
-    void OnCollisionEnter(Collision collision)
+    //void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Castle")
+    //    {
+    //        DataManager.Instance.Health -= 5f;
+    //        Debug.Log("Enemy have entered the castle");
+    //        Destroy(this.gameObject);
+    //    }
+
+
+    //    // Ignore the collider of other enemies
+    //    if(collision.gameObject.tag == "Enemy")
+    //    {
+    //        Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
+    //    }
+    //}
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag == "Castle")
+        if(other.gameObject.tag == "Castle")
         {
-            //Decrease player health
             DataManager.Instance.Health -= 5f;
+
             Debug.Log("Enemy have entered the castle");
             Destroy(this.gameObject);
         }

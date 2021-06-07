@@ -13,13 +13,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        typeIndex = 0;
-        wordToType = WordGenerator.GetPlayerWord();
-
-        if(text != null)
-        {
-            text.text = wordToType;
-        }    
+        GenerateWord();
     }
 
     public void TypeLetter(char letter)
@@ -42,7 +36,19 @@ public class Player : MonoBehaviour
         // If word have been typed correctly
         if (typeIndex >= wordToType.Length)
         {
-            //Do something
+            GenerateWord();
+        }
+    }
+
+    void GenerateWord()
+    {
+        typeIndex = 0;
+
+        wordToType = WordGenerator.GetPlayerWord();
+
+        if (text != null)
+        {
+            text.text = wordToType;
         }
     }
 }
