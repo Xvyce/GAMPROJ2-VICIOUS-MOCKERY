@@ -23,9 +23,6 @@ public class WordGenerator : MonoBehaviour
 
     private static string[] wordListBoss = { "chiaroscurist", "baccalaureate", "this is a sentence" };
 
-    private static string[] playerWordList = { "absolute", "ninja", "justice", "guitar", "inject", "grace", "famine", "mouse", "core",
-                                        "locket", "coin" };
-
     public static string GetEasyWord()
     {
         int randomIndex = Random.Range(0, wordListEasy.Length);
@@ -51,13 +48,6 @@ public class WordGenerator : MonoBehaviour
     {
         int randomIndex = Random.Range(0, wordListBoss.Length);
         string randomWord = wordListBoss[randomIndex];
-        return randomWord;
-    }
-
-    public static string GetPlayerWord()
-    {
-        int randomIndex = Random.Range(0, playerWordList.Length);
-        string randomWord = playerWordList[randomIndex];
         return randomWord;
     }
 }

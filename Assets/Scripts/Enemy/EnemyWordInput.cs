@@ -22,10 +22,12 @@ public class EnemyWordInput : MonoBehaviour
         if(!Input.anyKey)
         {
             //No inputs being pressed
+            _player.StopGibberish();
             _player.animator.SetBool("notTyping", true);
         }
         else
         {
+            _player.StartGibberish();
             _player.animator.SetBool("notTyping", false);
         }
     }

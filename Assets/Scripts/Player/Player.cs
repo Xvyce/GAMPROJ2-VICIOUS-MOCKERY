@@ -8,50 +8,21 @@ public class Player : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
     public Animator animator;
 
-    private string wordToType;
-    private string wordContainer;
-    private int typeIndex;
-
     private void Start()
     {
-        GenerateWord();
+        text.text = "!@#$%^&*";
+
+        text.enabled = false;
     }
 
-    public void TypeLetter(char letter)
+
+    public void StartGibberish()
     {
-        if (wordToType[typeIndex] == letter)
-        {
-            animator.SetBool("isTypingCorrect", true);
-            typeIndex++;
-
-            text.text = text.text.Remove(0, 1);
-            text.color = Color.red;
-        }
-        else
-        {
-            animator.SetBool("isTypingCorrect", false);
-            typeIndex = 0;
-
-            text.text = wordContainer;
-            text.color = Color.green;
-        }
-
-        // If word have been typed correctly
-        if (typeIndex >= wordToType.Length)
-        {
-            GenerateWord();
-        }
+        text.enabled = true;
     }
 
-    void GenerateWord()
+    public void StopGibberish()
     {
-        typeIndex = 0;
-
-        wordToType = WordGenerator.GetPlayerWord();
-
-        if (text != null)
-        {
-            text.text = wordToType;
-        }
+        text.enabled = false;
     }
 }
