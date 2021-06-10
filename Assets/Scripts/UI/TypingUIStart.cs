@@ -10,6 +10,7 @@ public class TypingUIStart : MonoBehaviour
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
+    public LevelChanger levelChanger;
 
     bool hasActiveWord;
 
@@ -41,6 +42,8 @@ public class TypingUIStart : MonoBehaviour
         {
             Debug.Log("Open Book");
             SceneManager.LoadScene("Game");
+            //levelChanger.FadeToLevel(2);
+            levelChanger.FadeToNextLevel();
         }
     }
 }
