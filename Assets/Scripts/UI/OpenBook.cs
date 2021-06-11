@@ -64,6 +64,7 @@ public class OpenBook : MonoBehaviour
 
         rotationVector = new Vector3(0, 180, 0);
 
+        //temp
         sfxAudio.Play();
     }
 
@@ -77,5 +78,8 @@ public class OpenBook : MonoBehaviour
         startTime = DateTime.Now;
 
         rotationVector = new Vector3(0, -180, 0);
+
+        //temp
+        sfxAudio.Play();
     }
 }
