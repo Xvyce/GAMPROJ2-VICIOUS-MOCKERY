@@ -18,6 +18,7 @@ public class OpenBook : MonoBehaviour
 
     private DateTime startTime;
     private DateTime endTime;
+    public AudioSource sfxAudio;
 
     void Start()
     {
@@ -62,6 +63,8 @@ public class OpenBook : MonoBehaviour
         startTime = DateTime.Now;
 
         rotationVector = new Vector3(0, 180, 0);
+
+        sfxAudio.Play();
     }
 
     public void closeBook_Click(object sender, EventArgs e)
