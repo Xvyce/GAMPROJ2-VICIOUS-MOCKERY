@@ -18,7 +18,6 @@ public class OpenBook : MonoBehaviour
 
     private DateTime startTime;
     private DateTime endTime;
-    public AudioSource sfxAudio;
 
     void Start()
     {
@@ -64,8 +63,7 @@ public class OpenBook : MonoBehaviour
 
         rotationVector = new Vector3(0, 180, 0);
 
-        //temp
-        sfxAudio.Play();
+        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
     }
 
     public void closeBook_Click(object sender, EventArgs e)
@@ -79,7 +77,6 @@ public class OpenBook : MonoBehaviour
 
         rotationVector = new Vector3(0, -180, 0);
 
-        //temp
-        sfxAudio.Play();
+        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
     }
 }

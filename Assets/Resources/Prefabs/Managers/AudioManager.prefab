@@ -43,4 +43,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aae7dbeeda80fc4e9456b4f5ae4ce3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Level_1_BGM
+    clip: {fileID: 8300000, guid: dcb500e52f224d541825793c6c110bbe, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Main_Menu_BGM
+    clip: {fileID: 8300000, guid: 809bcca1595e98d48ae6d34475aecc80, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: PageFlip_SFX
+    clip: {fileID: 8300000, guid: b7c9c3f200c73504fa2782089fcd3726, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

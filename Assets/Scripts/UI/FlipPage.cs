@@ -6,7 +6,6 @@ using System;
 
 public class FlipPage : MonoBehaviour
 {
-    public AudioSource sfxAudio;
     public enum ButtonType
     {
         NextButton,
@@ -76,7 +75,7 @@ public class FlipPage : MonoBehaviour
             rotationVector = new Vector3(0, -180, 0);
         }
 
-        sfxAudio.Play();
+        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
     }
 
     public void closeBookBtn_Click()
