@@ -6,6 +6,7 @@ using TMPro;
 public class Enemy : MonoBehaviour
 {
     public EnemyData enemyData;
+    [SerializeField] private Animator _animator;
     [SerializeField] private EnemyManager _enemyManager;
     [SerializeField] private TextMeshProUGUI text;
 
@@ -15,6 +16,9 @@ public class Enemy : MonoBehaviour
     private int typeIndex;
     private int revivalCount =0;
     private bool wordTyped;
+    private int typoCounter;
+
+    private bool isWalking;
 
     private void Awake()
     {
@@ -24,6 +28,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         _enemyManager.enemyList.Add(this);
+        typoCounter = 0;
+        isWalking = true;
         speed = enemyData.Speed;
 
         GenerateWord();
@@ -31,7 +37,10 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(-speed * Time.deltaTime, 0f, 0f);
+        if(isWalking)
+        {
+            transform.Translate(-speed * Time.deltaTime, 0f, 0f);
+        }
     }
 
     private void GenerateWord()
@@ -68,6 +77,8 @@ public class Enemy : MonoBehaviour
     public void TypedWrongLetter()
     {
         typeIndex = 0;
+        typoCounter++;
+        DataManager.Instance.playerTypo += 1;
         text.text = wordContainer;
         text.color = Color.green;
     }
@@ -88,6 +99,7 @@ public class Enemy : MonoBehaviour
             {
                 wordTyped = false;
                 revivalCount++;
+                StartCoroutine(BossStagger());
                 GetNewWord();
             }
             else
@@ -97,9 +109,31 @@ public class Enemy : MonoBehaviour
         }
 
         if (wordTyped)
+        {
+            // If word is properly typed without error the score is double
+            if (typoCounter == 0)
+            {
+                DataManager.Instance.playerScore += 2;
+            }
+            else
+            {
+                DataManager.Instance.playerScore += 1;
+            }
+
             Destroy(gameObject);
+        }
 
         return wordTyped;
+    }
+
+    IEnumerator BossStagger()
+    {
+        isWalking = false;
+
+        //wait for seconds = boss stagger animation
+        yield return new WaitForSeconds(2.0f);
+
+        isWalking = true;
     }
 
     public void GetNewWord()
