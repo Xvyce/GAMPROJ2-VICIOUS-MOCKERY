@@ -5,8 +5,8 @@ using TMPro;
 
 public class Enemy : MonoBehaviour
 {
-    public Player _player;
     public EnemyData enemyData;
+    [SerializeField] private EnemyManager _enemyManager;
     [SerializeField] private TextMeshProUGUI text;
 
     private float speed;
@@ -14,14 +14,16 @@ public class Enemy : MonoBehaviour
     private string wordContainer;
     private int typeIndex;
     private int revivalCount =0;
+    private bool wordTyped;
 
     private void Awake()
     {
-        _player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        _enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
     }
 
     void Start()
     {
+        _enemyManager.enemyList.Add(this);
         speed = enemyData.Speed;
 
         GenerateWord();
@@ -51,47 +53,56 @@ public class Enemy : MonoBehaviour
                 wordToType = WordGenerator.GetBossWord();
                 break;
         }
+
         if (text != null)
             text.text = wordToType;
 
         wordContainer = wordToType;
     }
 
-    public void TypeLetter(char letter)
+    public char GetNextLetter()
     {
-        if (wordToType[typeIndex] == letter)
-        {
-            _player.animator.SetBool("isTypingCorrect", true);
-            typeIndex++;
+        return wordToType[typeIndex];
+    }
 
-            text.text = text.text.Remove(0, 1);
-            text.color = Color.red;
-        }
-        else
-        {
-            _player.animator.SetBool("isTypingCorrect", false);
-            typeIndex = 0;
+    public void TypedWrongLetter()
+    {
+        typeIndex = 0;
+        text.text = wordContainer;
+        text.color = Color.green;
+    }
 
-            text.text = wordContainer;
-            text.color = Color.green;
-        }
+    public void TypeLetter()
+    {
+        typeIndex++;
+        text.text = text.text.Remove(0, 1);
+        text.color = Color.red;
+    }
 
-        // If word have been typed correctly
-        if (typeIndex >= wordToType.Length)
+    public bool WordTyped()
+    {
+
+        if(typeIndex >= wordToType.Length)
         {
             if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ReviveCount)
             {
+                wordTyped = false;
                 revivalCount++;
                 GetNewWord();
             }
             else
             {
-                Destroy(gameObject);
+                wordTyped = true;
             }
         }
+
+        if (wordTyped)
+            Destroy(gameObject);
+
+        return wordTyped;
     }
 
-    private void GetNewWord()
+    public void GetNewWord()
     {
         GenerateWord();
     }
@@ -103,9 +114,8 @@ public class Enemy : MonoBehaviour
             DataManager.Instance.Health -= 5f;
 
             Debug.Log("Enemy have entered the castle");
+            _enemyManager.enemyList.Remove(this);
             Destroy(this.gameObject);
         }
     }
-
-    //TO DO: Should only have 1 active word at all times
 }

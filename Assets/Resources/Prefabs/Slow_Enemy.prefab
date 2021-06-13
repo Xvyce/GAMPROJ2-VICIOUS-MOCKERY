@@ -110,10 +110,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8863203276413296370}
   - component: {fileID: 8863203276413296369}
-  - component: {fileID: 8863203276413296368}
-  - component: {fileID: 8863203276413296375}
   - component: {fileID: 2268835735562578861}
   - component: {fileID: 6081786356206300579}
+  - component: {fileID: 947941962233591002}
   m_Layer: 0
   m_Name: Slow_Enemy
   m_TagString: Enemy
@@ -187,35 +186,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8863203276413296368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8863203276413296374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5ea18351091ad74b85e0b42733313fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  enemyData: {fileID: 11400000, guid: 907238898860a824d9717c82ac7fe4ec, type: 2}
-  text: {fileID: 8863203277548510195}
---- !u!114 &8863203276413296375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8863203276413296374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecd0cd3f6ca500d4da39e0b85ba228a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _enemy: {fileID: 8863203276413296368}
 --- !u!136 &2268835735562578861
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -246,6 +216,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 0
+--- !u!114 &947941962233591002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863203276413296374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ea18351091ad74b85e0b42733313fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 907238898860a824d9717c82ac7fe4ec, type: 2}
+  _enemyManager: {fileID: 0}
+  text: {fileID: 8863203277548510195}
 --- !u!1 &8863203277548510194
 GameObject:
   m_ObjectHideFlags: 0

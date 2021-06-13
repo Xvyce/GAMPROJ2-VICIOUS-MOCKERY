@@ -244,10 +244,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9205211024943220430}
   - component: {fileID: 9205211024943220429}
-  - component: {fileID: 9205211024943220428}
-  - component: {fileID: 9205211024943220427}
   - component: {fileID: 6939092059671370073}
   - component: {fileID: 5824831032751831654}
+  - component: {fileID: 6653115385135422219}
   m_Layer: 0
   m_Name: Fast_Enemy
   m_TagString: Enemy
@@ -321,35 +320,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9205211024943220428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211024943220426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5ea18351091ad74b85e0b42733313fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  enemyData: {fileID: 11400000, guid: 50b28c6d5297650439b0913b7bc6bf64, type: 2}
-  text: {fileID: 9205211024412848202}
---- !u!114 &9205211024943220427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211024943220426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecd0cd3f6ca500d4da39e0b85ba228a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _enemy: {fileID: 9205211024943220428}
 --- !u!136 &6939092059671370073
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -380,3 +350,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 0
+--- !u!114 &6653115385135422219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205211024943220426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ea18351091ad74b85e0b42733313fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 50b28c6d5297650439b0913b7bc6bf64, type: 2}
+  _enemyManager: {fileID: 0}
+  text: {fileID: 9205211024412848202}

@@ -4,31 +4,52 @@ using UnityEngine;
 
 public class EnemyWordInput : MonoBehaviour
 {
-    [SerializeField] private Enemy _enemy;
-    private Player _player;
-
-    private void Awake()
-    {
-        _player = GameObject.FindWithTag("Player").GetComponent<Player>();
-    }
+    [SerializeField] private Player _player;
+    public EnemyManager enemyManager;
 
     private void Update()
     {
-        foreach (char letter in Input.inputString)
+        //Only checks input if there are enemies
+        if(enemyManager.enemyList.Count >0)
         {
-            _enemy.TypeLetter(letter);
+            foreach (char letter in Input.inputString)
+            {
+                enemyManager.TypeLetter(letter);
+            }
+
+            if (!Input.anyKey)
+            {
+                _player.animator.SetBool("isTyping", false);
+                _player.StopGibberish();
+            }
+            else
+            {
+                _player.animator.SetBool("isTyping", true);
+                _player.StartGibberish();
+            }
         }
 
-        if(!Input.anyKey)
+        //If there's no enemy the player returns to idle
+        if (enemyManager.enemyList.Count == 0)
         {
-            //No inputs being pressed
+            _player.animator.SetBool("isTyping", false);
             _player.StopGibberish();
-            _player.animator.SetBool("notTyping", true);
         }
-        else
-        {
-            _player.StartGibberish();
-            _player.animator.SetBool("notTyping", false);
-        }
+
+        //foreach (char letter in Input.inputString)
+        //{
+        //    enemyManager.TypeLetter(letter);
+        //}
+
+        //if (!Input.anyKey)
+        //{
+        //    _player.animator.SetBool("isTyping", false);
+        //    _player.StopGibberish();
+        //}
+        //else
+        //{
+        //    _player.animator.SetBool("isTyping", true);
+        //    _player.StartGibberish();
+        //}
     }
 }
