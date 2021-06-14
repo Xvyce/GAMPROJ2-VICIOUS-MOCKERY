@@ -1208,8 +1208,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b4e1b1448874ff94c9fd2093c0c69c0d, type: 3}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Typing_SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: dc1d1515ee8368c46a786fece11819a0, type: 3}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: Mistake_SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[0].pitch
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[4].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6130445300513291896, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_Name
@@ -1397,6 +1433,8 @@ MonoBehaviour:
   playerCurrentHealth: 0
   score: {fileID: 44575553}
   typoCount: {fileID: 1556640319}
+  playerScore: 0
+  playerTypo: 0
 --- !u!4 &1520156172
 Transform:
   m_ObjectHideFlags: 0

@@ -18,11 +18,13 @@ public class EnemyManager : MonoBehaviour
             {
                 _player.animator.SetBool("isTypingCorrect", true);
                 activeEnemy.TypeLetter();
+                FindObjectOfType<AudioManager>().Play("Typing_SFX");
             }
             else
             {
                 _player.animator.SetBool("isTypingCorrect", false);
                 activeEnemy.TypedWrongLetter();
+                FindObjectOfType<AudioManager>().Play("Mistake_SFX");
             }
         }
         else
@@ -35,6 +37,7 @@ public class EnemyManager : MonoBehaviour
                     hasActiveEnemy = true;
                     _player.animator.SetBool("isTypingCorrect", true);
                     enemy.TypeLetter();
+                    FindObjectOfType<AudioManager>().Play("Typing_SFX");
                     break;
                 }
             }
