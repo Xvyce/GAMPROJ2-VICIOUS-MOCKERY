@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 907238898860a824d9717c82ac7fe4ec, type: 2}
+  _animator: {fileID: 0}
   _enemyManager: {fileID: 0}
   text: {fileID: 8863203277548510195}
 --- !u!1 &8863203277548510194

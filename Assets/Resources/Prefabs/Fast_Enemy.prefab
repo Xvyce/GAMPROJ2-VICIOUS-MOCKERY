@@ -363,5 +363,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 50b28c6d5297650439b0913b7bc6bf64, type: 2}
+  _animator: {fileID: 0}
   _enemyManager: {fileID: 0}
   text: {fileID: 9205211024412848202}

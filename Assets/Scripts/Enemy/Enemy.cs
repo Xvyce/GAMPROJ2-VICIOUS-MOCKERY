@@ -100,7 +100,6 @@ public class Enemy : MonoBehaviour
                 wordTyped = false;
                 revivalCount++;
                 StartCoroutine(BossStagger());
-                GetNewWord();
             }
             else
             {
@@ -134,6 +133,7 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
 
         isWalking = true;
+        GetNewWord();
     }
 
     public void GetNewWord()
@@ -148,7 +148,10 @@ public class Enemy : MonoBehaviour
             DataManager.Instance.Health -= 5f;
 
             Debug.Log("Enemy have entered the castle");
+
+            EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);
+
             Destroy(this.gameObject);
         }
     }

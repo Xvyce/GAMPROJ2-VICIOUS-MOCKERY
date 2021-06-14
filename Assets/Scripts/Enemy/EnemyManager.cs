@@ -7,7 +7,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private Player _player;
     public List<Enemy> enemyList;
 
-    private bool hasActiveEnemy;
+    public static bool hasActiveEnemy;
     private Enemy activeEnemy;
 
     public void TypeLetter(char letter)
