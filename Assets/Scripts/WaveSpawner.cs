@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private Wave[] waves;
 
+    [SerializeField] private TextMeshProUGUI waveIndicatorText;
     [SerializeField] private Transform[] spawnPointsTop;
     [SerializeField] private Transform[] spawnPointsMid;
     [SerializeField] private Transform[] spawnPointsBot;
@@ -20,7 +22,7 @@ public class WaveSpawner : MonoBehaviour
     private void Start()
     {
         waveCountdown = timeBetweenWaves;
-
+        waveIndicatorText.enabled = false;
     }
 
     private void Update()
@@ -43,6 +45,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if(state != SpawnState.Spawning)
             {
+                StartCoroutine(WaveIndicator());
                 StartCoroutine(SpawnWave(waves[nextWave]));
             }
         }
@@ -61,7 +64,6 @@ public class WaveSpawner : MonoBehaviour
         {
             nextWave = 0;
             Debug.Log("All waves complete, loop back to first wave");
-            // Go to Next Level
         }
         else
         {
@@ -83,6 +85,16 @@ public class WaveSpawner : MonoBehaviour
             }
         }
         return true;
+    }
+
+    IEnumerator WaveIndicator()
+    {
+        waveIndicatorText.text = waves[nextWave].name;
+        waveIndicatorText.enabled = true;
+
+        yield return new WaitForSeconds(1.0f);
+
+        waveIndicatorText.enabled = false;
     }
 
     IEnumerator SpawnWave(Wave _wave)
@@ -136,7 +148,7 @@ public class WaveSpawner : MonoBehaviour
 [System.Serializable]
 public class Wave
 {
-    [SerializeField] private string name;
+    public string name;
     public GameObject enemyPrefab;
     public int count;
     public float spawnRate;

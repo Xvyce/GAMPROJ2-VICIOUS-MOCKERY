@@ -1,26 +1,31 @@
 using System;
 using UnityEngine.Audio;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
-    public static AudioManager instance;
+    //public static AudioManager instance;
+    string currentScene;
+
 
     protected virtual void Awake()
     {
         //GameObject doesn't persist (even when IsPersist = true) when script is inheriting singleton script
         //so script has its own singleton
-        if (instance == null)
-            instance = this;
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-        DontDestroyOnLoad(gameObject);
 
+        //if (instance == null)
+        //    instance = this;
+        //else
+        //{
+        //    Destroy(gameObject);
+        //    return;
+        //}
+        //DontDestroyOnLoad(gameObject);
+
+        currentScene = SceneManager.GetActiveScene().name;
 
         foreach (Sound s in sounds)
         {
@@ -31,6 +36,15 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
+    }
+
+    public void Start()
+    {
+        if (currentScene == "MainMenu")
+            Play("Main_Menu_BGM");
+
+        if (currentScene == "Game")
+            Play("Level_1_BGM");
     }
 
 

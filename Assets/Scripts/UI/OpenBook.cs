@@ -62,6 +62,8 @@ public class OpenBook : MonoBehaviour
         startTime = DateTime.Now;
 
         rotationVector = new Vector3(0, 180, 0);
+
+        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
     }
 
     public void closeBook_Click(object sender, EventArgs e)
@@ -74,5 +76,7 @@ public class OpenBook : MonoBehaviour
         startTime = DateTime.Now;
 
         rotationVector = new Vector3(0, -180, 0);
+
+        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
     }
 }
