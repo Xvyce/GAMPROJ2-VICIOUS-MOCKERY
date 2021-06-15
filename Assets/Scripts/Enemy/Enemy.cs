@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
-    private int revivalCount =0;
+    [SerializeField] private int revivalCount;
     private bool wordTyped;
     private int typoCounter;
 
@@ -28,6 +28,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         _enemyManager.enemyList.Add(this);
+        revivalCount = 0;
         typoCounter = 0;
         isWalking = true;
         speed = enemyData.Speed;
@@ -98,8 +99,16 @@ public class Enemy : MonoBehaviour
             if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ReviveCount)
             {
                 wordTyped = false;
+
+                if(revivalCount==0)
+                {
+                    StartCoroutine(BossStaggerOne(2.0f));
+                }
+                else if(revivalCount ==1)
+                {
+                    StartCoroutine(BossStaggerTwo(2.0f));
+                }
                 revivalCount++;
-                StartCoroutine(BossStagger());
             }
             else
             {
@@ -125,14 +134,33 @@ public class Enemy : MonoBehaviour
         return wordTyped;
     }
 
-    IEnumerator BossStagger()
+    IEnumerator BossStaggerOne(float timer)
     {
         isWalking = false;
+        _animator.SetBool("Stagger_One", true);
+
+        yield return new WaitForSeconds(timer);
+
+        _animator.SetBool("Stagger_One", false);
+        isWalking = true;
+
+        _animator.SetBool("Helmet_Walking", true);
+        GetNewWord();
+    }
+
+    IEnumerator BossStaggerTwo(float timer)
+    {
+        isWalking = false;
+        _animator.SetBool("Helmet_Walking", false);
+        _animator.SetBool("Stagger_Two", true);
 
         //wait for seconds = boss stagger animation
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(timer);
 
+        _animator.SetBool("Stagger_Two", false);
         isWalking = true;
+
+        _animator.SetBool("Naked_Walking", true);
         GetNewWord();
     }
 
