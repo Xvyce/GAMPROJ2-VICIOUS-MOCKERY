@@ -122,19 +122,14 @@ public class WaveSpawner : MonoBehaviour
         //Sets which spawn point the enemy will spawn depending on their type
         switch (type.Type)
         {
-            case EnemyType.Fast:
+            case EnemyType.Goblin:
                 randomSpawnPoint = Random.Range(0, spawnPointsMid.Length);
                 Instantiate(_enemy, spawnPointsMid[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
 
-            case EnemyType.Normal:
+            case EnemyType.Orc:
                 randomSpawnPoint = Random.Range(0, spawnPointsBot.Length);
                 Instantiate(_enemy, spawnPointsBot[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
-                break;
-
-            case EnemyType.Slow:
-                randomSpawnPoint = Random.Range(0, spawnPointsTop.Length);
-                Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
 
             case EnemyType.Boss:

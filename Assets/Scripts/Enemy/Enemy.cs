@@ -7,18 +7,18 @@ public class Enemy : MonoBehaviour
 {
     public EnemyData enemyData;
     [SerializeField] private Animator _animator;
-    [SerializeField] private EnemyManager _enemyManager;
     [SerializeField] private TextMeshProUGUI text;
+    private EnemyManager _enemyManager;
 
-    private float speed;
+    public float speed;
+    public int armorCount;
+    public bool isWalking;
+
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
-    [SerializeField] private int revivalCount;
     private bool wordTyped;
     private int typoCounter;
-
-    private bool isWalking;
 
     private void Awake()
     {
@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         _enemyManager.enemyList.Add(this);
-        revivalCount = 0;
+        armorCount = 0;
         typoCounter = 0;
         isWalking = true;
         speed = enemyData.Speed;
@@ -50,13 +50,10 @@ public class Enemy : MonoBehaviour
 
         switch (enemyData.Type)
         {
-            case EnemyType.Slow:
-                wordToType = WordGenerator.GetHardWord();
-                break;
-            case EnemyType.Fast:
+            case EnemyType.Goblin:
                 wordToType = WordGenerator.GetEasyWord();
                 break;
-            case EnemyType.Normal:
+            case EnemyType.Orc:
                 wordToType = WordGenerator.GetNormalWord();
                 break;
             case EnemyType.Boss:
@@ -96,19 +93,19 @@ public class Enemy : MonoBehaviour
 
         if(typeIndex >= wordToType.Length)
         {
-            if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ReviveCount)
+            if (enemyData.Type == EnemyType.Boss && armorCount < enemyData.ArmorCount)
             {
                 wordTyped = false;
 
-                if(revivalCount==0)
+                if(armorCount==0)
                 {
                     StartCoroutine(BossStaggerOne(2.0f));
                 }
-                else if(revivalCount ==1)
+                else if(armorCount ==1)
                 {
                     StartCoroutine(BossStaggerTwo(2.0f));
                 }
-                revivalCount++;
+                armorCount++;
             }
             else
             {

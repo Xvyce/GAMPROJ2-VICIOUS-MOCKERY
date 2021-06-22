@@ -7,17 +7,18 @@ public class EnemyData : ScriptableObject
 {
     [SerializeField] private float speed;
     [SerializeField] private EnemyType type;
-    [SerializeField] private int reviveCount;
+    [SerializeField] private int armorCount;
 
     public EnemyType Type => type;
     public float Speed => speed;
-    public int ReviveCount => reviveCount;
+    public int ArmorCount => armorCount;
 }
 
 public enum EnemyType
 {
-    Fast,
-    Normal,
-    Slow,
+    Goblin,
+    Orc,
+    Support,
+    Caster,
     Boss
 }
