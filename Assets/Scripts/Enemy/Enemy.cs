@@ -119,10 +119,12 @@ public class Enemy : MonoBehaviour
             if (typoCounter == 0)
             {
                 DataManager.Instance.playerScore += 2;
+                DataManager.Instance.skillPoints += 10;
             }
             else
             {
                 DataManager.Instance.playerScore += 1;
+                DataManager.Instance.skillPoints += 5;
             }
 
             Destroy(gameObject);
@@ -170,7 +172,7 @@ public class Enemy : MonoBehaviour
     {
         if(other.gameObject.tag == "Castle")
         {
-            DataManager.Instance.Health -= 5f;
+            DataManager.Instance.Health -= enemyData.AttackDamage;
 
             Debug.Log("Enemy have entered the castle");
 

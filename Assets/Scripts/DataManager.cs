@@ -19,6 +19,9 @@ public class DataManager : Singleton<DataManager>
     public float playerScore;
     public int playerTypo;
 
+    // Skill points
+    public float skillPoints;
+
     // Game State
     private bool isGameOver;
 
@@ -65,6 +68,7 @@ public class DataManager : Singleton<DataManager>
         Health = playerMaxHealth;
         playerScore = 0;
         playerTypo = 0;
+        skillPoints = 0;
     }
 
     private void GameOver()

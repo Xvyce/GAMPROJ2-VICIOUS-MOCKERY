@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Goblin
   m_EditorClassIdentifier: 
   speed: 1
+  attackDamage: 10
   type: 0
   armorCount: 0

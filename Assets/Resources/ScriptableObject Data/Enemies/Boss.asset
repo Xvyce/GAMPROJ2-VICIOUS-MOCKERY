@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Boss
   m_EditorClassIdentifier: 
   speed: 0.3
+  attackDamage: 25
   type: 4
   armorCount: 2

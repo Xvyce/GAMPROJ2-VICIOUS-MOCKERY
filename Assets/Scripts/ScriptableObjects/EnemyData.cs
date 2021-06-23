@@ -6,11 +6,13 @@ using UnityEngine;
 public class EnemyData : ScriptableObject
 {
     [SerializeField] private float speed;
+    [SerializeField] private float attackDamage;
     [SerializeField] private EnemyType type;
     [SerializeField] private int armorCount;
 
     public EnemyType Type => type;
     public float Speed => speed;
+    public float AttackDamage => attackDamage;
     public int ArmorCount => armorCount;
 }
 

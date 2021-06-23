@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Orc
   m_EditorClassIdentifier: 
   speed: 0.7
+  attackDamage: 15
   type: 1
   armorCount: 0
