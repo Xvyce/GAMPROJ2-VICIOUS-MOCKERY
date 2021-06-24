@@ -9,10 +9,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private TextMeshProUGUI text;
     private EnemyManager _enemyManager;
+    private SpriteRenderer thisSprite;
 
     public float speed;
     public int revivalCount;
     public bool isWalking;
+    public bool isWalkingRight;
 
     private string wordToType;
     private string wordContainer;
@@ -23,6 +25,7 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         _enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
+        thisSprite = GetComponent<SpriteRenderer>();
     }
 
     void Start()
@@ -31,6 +34,7 @@ public class Enemy : MonoBehaviour
         revivalCount = 0;
         typoCounter = 0;
         isWalking = true;
+        isWalkingRight = false;
         speed = enemyData.Speed;
 
         GenerateWord();
@@ -42,6 +46,12 @@ public class Enemy : MonoBehaviour
         {
             transform.Translate(-speed * Time.deltaTime, 0f, 0f);
         }
+        if(isWalkingRight)
+        {
+            transform.Translate(speed * Time.deltaTime, 0f, 0f);
+        }
+        StartCoroutine(Stop());
+        StartCoroutine(support());
     }
 
     private void GenerateWord()
@@ -58,6 +68,12 @@ public class Enemy : MonoBehaviour
                 break;
             case EnemyType.Boss:
                 wordToType = WordGenerator.GetBossWord();
+                break;
+            case EnemyType.Support:
+                wordToType = WordGenerator.GetNormalWord(); //added this
+                break;
+            case EnemyType.Caster:
+                wordToType = WordGenerator.GetBossWord(); //added this
                 break;
         }
 
@@ -112,8 +128,29 @@ public class Enemy : MonoBehaviour
                 wordTyped = true;
             }
         }
+        //if (typeIndex >= wordToType.Length) //added this for supp
+        //{
+        //    if (enemyData.Type == EnemyType.Caster && revivalCount < enemyData.ArmorCount)
+        //    {
+        //        wordTyped = false;
 
-        if (wordTyped)
+        //        if (revivalCount == 0)
+        //        {
+        //            //StartCoroutine(BossStaggerOne(2.0f));
+        //            Debug.Log("Hit caster once");
+        //        }
+        //        else if (revivalCount == 1)
+        //        {
+        //            //StartCoroutine(BossStaggerTwo(2.0f));
+        //            Debug.Log("Hit caster twice");
+        //        }
+        //        revivalCount++;
+        //    }
+        //    else
+        //        wordTyped = true;
+        //}
+
+         if (wordTyped)
         {
             // If word is properly typed without error the score is double
             if (typoCounter == 0)
@@ -132,6 +169,38 @@ public class Enemy : MonoBehaviour
 
         return wordTyped;
     }
+
+    private IEnumerator Stop() // stops the movement of casters
+    {
+        switch (enemyData.Type)
+        {
+            case EnemyType.Caster:
+                yield return new WaitForSeconds(1f);
+                isWalking = false;
+                StartCoroutine(cast());
+                break;
+        }
+    }
+    private IEnumerator cast()
+    {
+        //add animation for casting spell
+        yield return new WaitForSeconds(5f);
+        //add censor
+    }
+
+    private IEnumerator support()
+    {
+        switch (enemyData.Type)
+        {
+            case EnemyType.Caster:
+                yield return new WaitForSeconds(5f); // after this
+                // either instantiate poop or upgrade allies
+                break;
+
+        }
+        
+    }
+
 
     private IEnumerator BossStaggerOne(float timer)
     {
@@ -173,6 +242,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
     public void GetNewWord()
     {
         GenerateWord();
@@ -193,16 +263,26 @@ public class Enemy : MonoBehaviour
     // If enemy collides with the castle, decrease player health
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Castle")
-        {
+
+       if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support)
+       {
             DataManager.Instance.Health -= enemyData.AttackDamage;
-
             Debug.Log("Enemy have entered the castle");
-
             EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);
-
             Destroy(this.gameObject);
+       }
+       if (other.gameObject.tag == "Castle" && enemyData.Type == EnemyType.Support) // going left so flip when 
+       {
+            thisSprite.flipX = true;
+            isWalking = false;
+            isWalkingRight = true;
+       }
+       if(other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support)
+        {
+            thisSprite.flipX = false;
+            isWalking = true;
+            isWalkingRight = false;
         }
     }
 }

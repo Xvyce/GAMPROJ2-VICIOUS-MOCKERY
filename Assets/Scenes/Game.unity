@@ -1003,6 +1003,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - name: Caster Test
+    enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+    count: 1
+    spawnRate: 3
   - name: First Wave
     enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
     count: 6
@@ -1028,6 +1032,8 @@ MonoBehaviour:
   - {fileID: 1982232589}
   - {fileID: 845442284}
   - {fileID: 1826521364}
+  spawnPointsAir:
+  - {fileID: 2086370198}
   timeBetweenWaves: 5
 --- !u!4 &411227908
 Transform:
@@ -2262,6 +2268,7 @@ Transform:
   - {fileID: 1982232589}
   - {fileID: 845442284}
   - {fileID: 1826521364}
+  - {fileID: 2086370198}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3062,6 +3069,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1522944958}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2086370197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086370198}
+  m_Layer: 0
+  m_Name: SpawnPointAir
+  m_TagString: Untagged
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2086370198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086370197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.86, y: 4.71, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1522944958}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2135591692
 GameObject:

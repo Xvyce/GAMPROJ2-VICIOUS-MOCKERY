@@ -11,6 +11,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private Transform[] spawnPointsTop;
     [SerializeField] private Transform[] spawnPointsMid;
     [SerializeField] private Transform[] spawnPointsBot;
+    [SerializeField] private Transform[] spawnPointsAir;
     [SerializeField] private float timeBetweenWaves;
     private float waveCountdown;
     private int nextWave = 0;
@@ -134,6 +135,14 @@ public class WaveSpawner : MonoBehaviour
 
             case EnemyType.Boss:
                 randomSpawnPoint = Random.Range(0, spawnPointsTop.Length);
+                Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
+            case EnemyType.Caster:
+                randomSpawnPoint = Random.Range(0, spawnPointsTop.Length);
+                Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
+            case EnemyType.Support:
+                randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
                 Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
         }
