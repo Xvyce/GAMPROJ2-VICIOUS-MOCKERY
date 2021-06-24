@@ -943,6 +943,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285152992}
   m_CullTransparentMesh: 1
+--- !u!1 &367147989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 367147991}
+  - component: {fileID: 367147990}
+  m_Layer: 0
+  m_Name: InvisRightWall
+  m_TagString: RightWall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &367147990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367147989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 9.108746, z: 7.7130527}
+  m_Center: {x: 0, y: -2.455968, z: -2.1411586}
+--- !u!4 &367147991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367147989}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.38, y: 4.5904093, z: 1.3971543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &372209948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,9 +1047,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - name: Support Test
+    enemyPrefab: {fileID: 9205211024943220426, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
+    count: 1
+    spawnRate: 3
   - name: Caster Test
     enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
-    count: 1
+    count: 2
     spawnRate: 3
   - name: First Wave
     enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}

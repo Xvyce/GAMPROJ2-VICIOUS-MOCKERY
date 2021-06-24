@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
     private EnemyManager _enemyManager;
     private SpriteRenderer thisSprite;
+    public GameObject screenSplatter;
 
     public float speed;
     public int revivalCount;
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
     private int typeIndex;
     private bool wordTyped;
     private int typoCounter;
+
 
     private void Awake()
     {
@@ -38,7 +40,10 @@ public class Enemy : MonoBehaviour
         speed = enemyData.Speed;
 
         GenerateWord();
+        StartCoroutine(Stop());
+        StartCoroutine(support());
     }
+
 
     void Update()
     {
@@ -50,8 +55,7 @@ public class Enemy : MonoBehaviour
         {
             transform.Translate(speed * Time.deltaTime, 0f, 0f);
         }
-        StartCoroutine(Stop());
-        StartCoroutine(support());
+        
     }
 
     private void GenerateWord()
@@ -190,15 +194,17 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator support()
     {
-        switch (enemyData.Type)
-        {
-            case EnemyType.Caster:
-                yield return new WaitForSeconds(5f); // after this
-                // either instantiate poop or upgrade allies
-                break;
 
-        }
-        
+            switch (enemyData.Type)
+            {
+                case EnemyType.Support:
+                    yield return new WaitForSeconds(5f); // after this
+                                                         // either instantiate poop or upgrade allies
+                    Destroy(Instantiate(screenSplatter),5);
+                    break;
+
+            }
+ 
     }
 
 

@@ -366,9 +366,11 @@ MonoBehaviour:
   enemyData: {fileID: 11400000, guid: 9ffe4ffcb68bf6f40a3cb43912c33bbe, type: 2}
   _animator: {fileID: 4007885886757511281}
   text: {fileID: 9205211024412848202}
+  screenSplatter: {fileID: 5525420212978535687, guid: efdab08ddbc53334496f1f426e939ba4, type: 3}
   speed: 0
   revivalCount: 0
   isWalking: 0
+  isWalkingRight: 0
 --- !u!95 &4007885886757511281
 Animator:
   serializedVersion: 3
