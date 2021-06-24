@@ -46,14 +46,26 @@ public class PlayerSkills : MonoBehaviour
 
     private void BreakEnemyArmor()
     {
-        // If enemy has armor, reduce it by one
+        // If enemy has armor, reduce it by one (add 1 death == reduce 1 armor)
         // If no armor, do nothing
         foreach (Enemy enemy in enemyManager.enemyList)
         {
-            if (enemy.armorCount <= 0)
+            if (enemy.revivalCount >= enemy.enemyData.ArmorCount)
                 return;
             else
-                enemy.armorCount -= 1;
+            {
+                // Armor Break animations
+
+                if (enemy.revivalCount == 0)
+                {
+                    enemy.FirstArmorBreakAnimation();
+                }
+                else if (enemy.revivalCount == 1)
+                {
+                    enemy.SecondArmorBreakAnimation();
+                }
+                enemy.revivalCount += 1;
+            }
         }
     }
 

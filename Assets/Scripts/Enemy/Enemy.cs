@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     private EnemyManager _enemyManager;
 
     public float speed;
-    public int armorCount;
+    public int revivalCount;
     public bool isWalking;
 
     private string wordToType;
@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         _enemyManager.enemyList.Add(this);
-        armorCount = 0;
+        revivalCount = 0;
         typoCounter = 0;
         isWalking = true;
         speed = enemyData.Speed;
@@ -93,19 +93,19 @@ public class Enemy : MonoBehaviour
 
         if(typeIndex >= wordToType.Length)
         {
-            if (enemyData.Type == EnemyType.Boss && armorCount < enemyData.ArmorCount)
+            if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ArmorCount)
             {
                 wordTyped = false;
 
-                if(armorCount==0)
+                if(revivalCount==0)
                 {
                     StartCoroutine(BossStaggerOne(2.0f));
                 }
-                else if(armorCount ==1)
+                else if(revivalCount ==1)
                 {
                     StartCoroutine(BossStaggerTwo(2.0f));
                 }
-                armorCount++;
+                revivalCount++;
             }
             else
             {
@@ -133,34 +133,44 @@ public class Enemy : MonoBehaviour
         return wordTyped;
     }
 
-    IEnumerator BossStaggerOne(float timer)
+    private IEnumerator BossStaggerOne(float timer)
     {
-        isWalking = false;
-        _animator.SetBool("Stagger_One", true);
+        switch (enemyData.Type)
+        {
+            case EnemyType.Boss:
+                isWalking = false;
+                _animator.SetBool("Stagger_One", true);
 
-        yield return new WaitForSeconds(timer);
+                yield return new WaitForSeconds(timer);
 
-        _animator.SetBool("Stagger_One", false);
-        isWalking = true;
+                _animator.SetBool("Stagger_One", false);
+                isWalking = true;
 
-        _animator.SetBool("Helmet_Walking", true);
-        GetNewWord();
+                _animator.SetBool("Helmet_Walking", true);
+                GetNewWord();
+                break;
+        }
     }
 
-    IEnumerator BossStaggerTwo(float timer)
+    private IEnumerator BossStaggerTwo(float timer)
     {
-        isWalking = false;
-        _animator.SetBool("Helmet_Walking", false);
-        _animator.SetBool("Stagger_Two", true);
+        switch (enemyData.Type)
+        {
+            case EnemyType.Boss:
+                isWalking = false;
+                _animator.SetBool("Helmet_Walking", false);
+                _animator.SetBool("Stagger_Two", true);
 
-        //wait for seconds = boss stagger animation
-        yield return new WaitForSeconds(timer);
+                //wait for seconds = boss stagger animation
+                yield return new WaitForSeconds(timer);
 
-        _animator.SetBool("Stagger_Two", false);
-        isWalking = true;
+                _animator.SetBool("Stagger_Two", false);
+                isWalking = true;
 
-        _animator.SetBool("Naked_Walking", true);
-        GetNewWord();
+                _animator.SetBool("Naked_Walking", true);
+                GetNewWord();
+                break;
+        }
     }
 
     public void GetNewWord()
@@ -168,6 +178,19 @@ public class Enemy : MonoBehaviour
         GenerateWord();
     }
 
+
+    // To access animation in PlayerSkills script
+    public void FirstArmorBreakAnimation()
+    {
+        StartCoroutine(BossStaggerOne(2.0f));
+    }
+
+    public void SecondArmorBreakAnimation()
+    {
+        StartCoroutine(BossStaggerTwo(2.0f));
+    }
+
+    // If enemy collides with the castle, decrease player health
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Castle")
