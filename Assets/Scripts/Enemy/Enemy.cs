@@ -124,20 +124,6 @@ public class Enemy : MonoBehaviour
                 }
                 revivalCount++;
             }
-            else if(enemyData.Type == EnemyType.Caster && revivalCount < enemyData.ArmorCount) // Caster
-            {
-                wordTyped = false;
-
-                if (revivalCount == 0)
-                {
-                    FirstArmorBreakAnimation();
-                }
-                else if (revivalCount == 1)
-                {
-                    SecondArmorBreakAnimation();
-                }
-                revivalCount++;
-            }
             else // Enemies w/o Armor
             {
                 wordTyped = true;
@@ -181,10 +167,6 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Helmet_Walking", true);
                 GetNewWord();
                 break;
-
-            case EnemyType.Caster:
-                // Caster armor break animations
-                break;
         }
     }
 
@@ -205,10 +187,6 @@ public class Enemy : MonoBehaviour
 
                 _animator.SetBool("Naked_Walking", true);
                 GetNewWord();
-                break;
-
-            case EnemyType.Caster:
-                // Caster armor break animations
                 break;
         }
     }

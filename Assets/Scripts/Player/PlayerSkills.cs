@@ -71,7 +71,7 @@ public class PlayerSkills : MonoBehaviour
 
     public void ActivateSlow()
     {
-        if (DataManager.Instance.skillPoints == 100)
+        if (DataManager.Instance.skillPoints >= 100)
         {
             SlowEnemy();
             DataManager.Instance.skillPoints -= 100;
@@ -80,7 +80,7 @@ public class PlayerSkills : MonoBehaviour
 
     public void ActivateFreeze()
     {
-        if (DataManager.Instance.skillPoints == 100)
+        if (DataManager.Instance.skillPoints >= 100)
         {
             StartCoroutine(FreezeEnemy());
             DataManager.Instance.skillPoints -= 100;
@@ -89,7 +89,7 @@ public class PlayerSkills : MonoBehaviour
 
     public void ActivateEnemyBreakArmor()
     {
-        if (DataManager.Instance.skillPoints == 100)
+        if (DataManager.Instance.skillPoints >= 100)
         {
             BreakEnemyArmor();
             DataManager.Instance.skillPoints -= 100;
