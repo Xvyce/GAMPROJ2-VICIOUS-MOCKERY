@@ -247,9 +247,10 @@ GameObject:
   - component: {fileID: 4822984757981330414}
   - component: {fileID: 3162045273596584876}
   - component: {fileID: 7144448019685755121}
+  - component: {fileID: 871958539817256677}
   - component: {fileID: 5985660737558293361}
   m_Layer: 0
-  m_Name: Support Test
+  m_Name: Caster_Test
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -366,9 +367,23 @@ MonoBehaviour:
   enemyData: {fileID: 11400000, guid: 0a1476b2db7104949b484ccf45f443db, type: 2}
   _animator: {fileID: 5985660737558293361}
   text: {fileID: 6587408740876320858}
+  screenSplatter: {fileID: 0}
   speed: 0
   revivalCount: 0
   isWalking: 0
+  isWalkingRight: 0
+--- !u!114 &871958539817256677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587408742269680060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f2cf77eff09434a911da6838239348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &5985660737558293361
 Animator:
   serializedVersion: 3

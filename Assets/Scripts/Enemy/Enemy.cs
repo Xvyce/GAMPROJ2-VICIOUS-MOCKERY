@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
     private EnemyManager _enemyManager;
     private SpriteRenderer thisSprite;
-    public GameObject screenSplatter;
 
     public float speed;
     public int revivalCount;
@@ -40,8 +39,6 @@ public class Enemy : MonoBehaviour
         speed = enemyData.Speed;
 
         GenerateWord();
-        StartCoroutine(Stop());
-        StartCoroutine(support());
     }
 
 
@@ -113,48 +110,41 @@ public class Enemy : MonoBehaviour
 
         if(typeIndex >= wordToType.Length)
         {
-            if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ArmorCount)
+            if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ArmorCount) // Orc Boss
             {
                 wordTyped = false;
 
                 if(revivalCount==0)
                 {
-                    StartCoroutine(BossStaggerOne(2.0f));
+                    FirstArmorBreakAnimation();
                 }
                 else if(revivalCount ==1)
                 {
-                    StartCoroutine(BossStaggerTwo(2.0f));
+                    SecondArmorBreakAnimation();
                 }
                 revivalCount++;
             }
-            else
+            else if(enemyData.Type == EnemyType.Caster && revivalCount < enemyData.ArmorCount) // Caster
+            {
+                wordTyped = false;
+
+                if (revivalCount == 0)
+                {
+                    FirstArmorBreakAnimation();
+                }
+                else if (revivalCount == 1)
+                {
+                    SecondArmorBreakAnimation();
+                }
+                revivalCount++;
+            }
+            else // Enemies w/o Armor
             {
                 wordTyped = true;
             }
         }
-        //if (typeIndex >= wordToType.Length) //added this for supp
-        //{
-        //    if (enemyData.Type == EnemyType.Caster && revivalCount < enemyData.ArmorCount)
-        //    {
-        //        wordTyped = false;
 
-        //        if (revivalCount == 0)
-        //        {
-        //            //StartCoroutine(BossStaggerOne(2.0f));
-        //            Debug.Log("Hit caster once");
-        //        }
-        //        else if (revivalCount == 1)
-        //        {
-        //            //StartCoroutine(BossStaggerTwo(2.0f));
-        //            Debug.Log("Hit caster twice");
-        //        }
-        //        revivalCount++;
-        //    }
-        //    else
-        //        wordTyped = true;
-        //}
-
-         if (wordTyped)
+        if (wordTyped)
         {
             // If word is properly typed without error the score is double
             if (typoCounter == 0)
@@ -174,40 +164,7 @@ public class Enemy : MonoBehaviour
         return wordTyped;
     }
 
-    private IEnumerator Stop() // stops the movement of casters
-    {
-        switch (enemyData.Type)
-        {
-            case EnemyType.Caster:
-                yield return new WaitForSeconds(1f);
-                isWalking = false;
-                StartCoroutine(cast());
-                break;
-        }
-    }
-    private IEnumerator cast()
-    {
-        //add animation for casting spell
-        yield return new WaitForSeconds(5f);
-        //add censor
-    }
-
-    private IEnumerator support()
-    {
-
-            switch (enemyData.Type)
-            {
-                case EnemyType.Support:
-                    yield return new WaitForSeconds(5f); // after this
-                                                         // either instantiate poop or upgrade allies
-                    Destroy(Instantiate(screenSplatter),5);
-                    break;
-
-            }
- 
-    }
-
-
+    // Armor Break Animations
     private IEnumerator BossStaggerOne(float timer)
     {
         switch (enemyData.Type)
@@ -223,6 +180,10 @@ public class Enemy : MonoBehaviour
 
                 _animator.SetBool("Helmet_Walking", true);
                 GetNewWord();
+                break;
+
+            case EnemyType.Caster:
+                // Caster armor break animations
                 break;
         }
     }
@@ -245,15 +206,32 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Naked_Walking", true);
                 GetNewWord();
                 break;
+
+            case EnemyType.Caster:
+                // Caster armor break animations
+                break;
         }
     }
-
 
     public void GetNewWord()
     {
         GenerateWord();
     }
 
+    // Caster skill to censor word
+    IEnumerator CensorWord(float timer)
+    {
+        text.text = "!@#$%^&*";
+
+        yield return new WaitForSeconds(timer);
+
+        text.text = wordContainer;
+    }
+
+    public void StartCensor()
+    {
+        StartCoroutine(CensorWord(3.0f));
+    }
 
     // To access animation in PlayerSkills script
     public void FirstArmorBreakAnimation()
@@ -285,10 +263,10 @@ public class Enemy : MonoBehaviour
             isWalkingRight = true;
        }
        if(other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support)
-        {
+       {
             thisSprite.flipX = false;
             isWalking = true;
             isWalkingRight = false;
-        }
+       }
     }
 }

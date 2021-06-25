@@ -137,13 +137,15 @@ public class WaveSpawner : MonoBehaviour
                 randomSpawnPoint = Random.Range(0, spawnPointsTop.Length);
                 Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
+
             case EnemyType.Caster:
                 randomSpawnPoint = Random.Range(0, spawnPointsTop.Length);
                 Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
+
             case EnemyType.Support:
                 randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
-                Instantiate(_enemy, spawnPointsTop[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
         }
     }
