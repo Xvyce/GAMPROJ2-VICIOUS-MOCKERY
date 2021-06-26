@@ -1116,22 +1116,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - name: Support Test
+    spawnRate: 1
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 4
+    - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
+      count: 1
   - name: Caster Test
-    enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
-    count: 2
-    spawnRate: 1
-  - name: First Wave
-    enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-    count: 6
-    spawnRate: 1
-  - name: Second Wave
-    enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
-    count: 4
     spawnRate: 1.5
-  - name: Boss
-    enemyPrefab: {fileID: 6587408742269680060, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
-    count: 1
-    spawnRate: 3
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 3
+    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+      count: 1
+  - name: Boss Wave
+    spawnRate: 2
+    waveContent:
+    - enemyPrefab: {fileID: 6587408742269680060, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
+      count: 1
   waveIndicatorText: {fileID: 2135591694}
   spawnPointsTop:
   - {fileID: 1830043745}
@@ -2533,8 +2536,8 @@ MonoBehaviour:
   isPersist: 1
   playerMaxHealth: 100
   playerCurrentHealth: 0
-  score: {fileID: 44575553}
-  typoCount: {fileID: 1556640319}
+  scoreText: {fileID: 44575553}
+  typoCountText: {fileID: 1556640319}
   playerScore: 0
   playerTypo: 0
   skillPoints: 0

@@ -13,8 +13,8 @@ public class DataManager : Singleton<DataManager>
     public static event HealthUpdate OnHealthChanged;
 
     // Player Score
-    [SerializeField] private TextMeshProUGUI score;
-    [SerializeField] private TextMeshProUGUI typoCount;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI typoCountText;
 
     public float playerScore;
     public int playerTypo;
@@ -59,8 +59,8 @@ public class DataManager : Singleton<DataManager>
 
     private void Update()
     {
-        score.text = ("Score: " + playerScore);
-        typoCount.text = ("Typo: " + playerTypo);
+        scoreText.text = ("Score: " + playerScore);
+        typoCountText.text = ("Typo: " + playerTypo);
     }
 
     void Instantiate()
