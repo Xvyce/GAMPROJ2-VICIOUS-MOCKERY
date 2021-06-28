@@ -1385,20 +1385,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - name: Support Test
-    spawnRate: 1
-    waveContent:
-    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-      count: 4
-    - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
-      count: 1
-  - name: Caster Test
+  - name: 
     spawnRate: 1.5
     waveContent:
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 2
+  - name: 
+    spawnRate: 1.5
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 2
+  - name: 
+    spawnRate: 1.5
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 2
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 2
+  - name: 
+    spawnRate: 1
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
       count: 3
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
-      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 3
   - name: Boss Wave
     spawnRate: 2
     waveContent:
@@ -1419,7 +1429,7 @@ MonoBehaviour:
   - {fileID: 1826521364}
   spawnPointsAir:
   - {fileID: 2086370198}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 2.5
 --- !u!4 &411227908
 Transform:
   m_ObjectHideFlags: 0
