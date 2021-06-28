@@ -27,14 +27,15 @@ public class PauseMenu : MonoBehaviour
 
     public void Continue()
     {
-      
-            pauseMenuUI.SetActive(false);
+        FindObjectOfType<AudioManager>().UnPause("Level_1_BGM");
+        pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
             GameIsPaused = false;
     }
 
     void Pause()
     {
+        FindObjectOfType<AudioManager>().Pause("Level_1_BGM");
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
