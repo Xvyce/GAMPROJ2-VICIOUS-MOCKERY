@@ -9,32 +9,36 @@ public class EnemyWordInput : MonoBehaviour
 
     private void Update()
     {
-        //Only checks input if there are enemies
-        if(enemyManager.enemyList.Count >0)
+        if (!PauseMenu.GameIsPaused)
         {
-            foreach (char letter in Input.inputString)
+            //Only checks input if there are enemies
+            if (enemyManager.enemyList.Count > 0)
             {
-                enemyManager.TypeLetter(letter);
+                foreach (char letter in Input.inputString)
+                {
+                    enemyManager.TypeLetter(letter);
+                }
+
+                if (!Input.anyKey)
+                {
+                    _player.animator.SetBool("isTyping", false);
+                    _player.StopGibberish();
+                }
+                else
+                {
+                    _player.animator.SetBool("isTyping", true);
+                    _player.StartGibberish();
+                }
             }
 
-            if (!Input.anyKey)
+            //If there's no enemy the player returns to idle
+            if (enemyManager.enemyList.Count == 0)
             {
                 _player.animator.SetBool("isTyping", false);
                 _player.StopGibberish();
             }
-            else
-            {
-                _player.animator.SetBool("isTyping", true);
-                _player.StartGibberish();
-            }
         }
-
-        //If there's no enemy the player returns to idle
-        if (enemyManager.enemyList.Count == 0)
-        {
-            _player.animator.SetBool("isTyping", false);
-            _player.StopGibberish();
-        }
+    }
 
         //foreach (char letter in Input.inputString)
         //{
@@ -52,4 +56,5 @@ public class EnemyWordInput : MonoBehaviour
         //    _player.StartGibberish();
         //}
     }
-}
+
+

@@ -5,30 +5,65 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    public static bool GameIsPaused;
     public GameObject pauseMenuUI;
+
+
+    private void Start()
+    {
+        GameIsPaused = false;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if (GameIsPaused)
             {
                 Continue();
             }
-            else
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!GameIsPaused)
             {
-               
                 Pause();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (GameIsPaused)
+            {
+                Restart();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (GameIsPaused)
+            {
+                LoadMenu();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (GameIsPaused)
+            {
+                QuitGame();
+            }
+        }
+
     }
 
     public void Continue()
     {
         FindObjectOfType<AudioManager>().UnPause("Level_1_BGM");
-        pauseMenuUI.SetActive(false);
+      
+            pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
             GameIsPaused = false;
     }
@@ -43,19 +78,22 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-
+        GameIsPaused = false;
+        Scene scene = SceneManager.GetActiveScene();
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(scene.name);
     }
 
     public void LoadMenu()
     {
+        GameIsPaused = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
     {
+        GameIsPaused = false;
         Debug.Log("Quitting Game....");
         Application.Quit();
     }
