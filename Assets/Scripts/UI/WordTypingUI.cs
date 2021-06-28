@@ -10,12 +10,16 @@ public class WordTypingUI : MonoBehaviour
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
+    public TMP_Text TextComponent;
 
     bool hasActiveWord;
 
     private void Start()
     {
+        TextComponent.fontStyle = FontStyles.Underline;
         wordToType = word.text.ToLower();
+       // word.text = wordToType.Remove(0, typeIndex);
+       // word.text = wordToType.Insert(0, "_");
         wordContainer = wordToType;
         typeIndex = 0;
     }

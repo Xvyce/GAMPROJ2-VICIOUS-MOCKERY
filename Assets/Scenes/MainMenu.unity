@@ -1088,6 +1088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: {fileID: 724523766}
   Flip: {fileID: 2028553532}
+  TextComponent: {fileID: 724523766}
 --- !u!114 &724523765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1971,6 +1972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: {fileID: 1049231355}
   levelChanger: {fileID: 1229430249}
+  TextComponent: {fileID: 1049231355}
 --- !u!114 &1049231358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2199,7 +2201,7 @@ GameObject:
   - component: {fileID: 1110383414}
   - component: {fileID: 1110383413}
   m_Layer: 5
-  m_Name: Button
+  m_Name: OpenButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3975,6 +3977,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7669836718177425045, guid: 1a8ab6b17e5347641969bd9b5c85c57b, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7669836718752942481, guid: 1a8ab6b17e5347641969bd9b5c85c57b, type: 3}
       propertyPath: m_Name
       value: LevelChanger
