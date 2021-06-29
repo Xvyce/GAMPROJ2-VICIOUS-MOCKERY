@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private TextMeshProUGUI text;
     private EnemyManager _enemyManager;
+    private LevelDataManager lvlDataManager;
     private SpriteRenderer thisSprite;
 
     public float speed;
@@ -26,6 +27,7 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         _enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
+        lvlDataManager = GameObject.FindWithTag("LevelDataManager").GetComponent<LevelDataManager>();
         thisSprite = GetComponent<SpriteRenderer>();
     }
 
@@ -93,7 +95,7 @@ public class Enemy : MonoBehaviour
     {
         typeIndex = 0;
         typoCounter++;
-        DataManager.Instance.playerTypo += 1;
+        lvlDataManager.playerTypo += 1;
         text.text = wordContainer;
         text.color = Color.green;
     }
@@ -135,13 +137,13 @@ public class Enemy : MonoBehaviour
             // If word is properly typed without error the score is double
             if (typoCounter == 0)
             {
-                DataManager.Instance.playerScore += 2;
-                DataManager.Instance.skillPoints += 10;
+                lvlDataManager.playerScore += 2;
+                lvlDataManager.skillPoints += 10;
             }
             else
             {
-                DataManager.Instance.playerScore += 1;
-                DataManager.Instance.skillPoints += 5;
+                lvlDataManager.playerScore += 1;
+                lvlDataManager.skillPoints += 5;
             }
 
             Destroy(gameObject);
@@ -228,12 +230,14 @@ public class Enemy : MonoBehaviour
 
        if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support)
        {
-            DataManager.Instance.Health -= enemyData.AttackDamage;
+            lvlDataManager.Health -= enemyData.AttackDamage;
             Debug.Log("Enemy have entered the castle");
             EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);
             Destroy(this.gameObject);
        }
+
+       // For the support enemy to move back and forth
        if (other.gameObject.tag == "Castle" && enemyData.Type == EnemyType.Support) // going left so flip when 
        {
             thisSprite.flipX = true;

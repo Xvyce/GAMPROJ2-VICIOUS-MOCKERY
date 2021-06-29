@@ -9,6 +9,7 @@ TagManager:
   - EnemyManager
   - Caster
   - RightWall
+  - LevelDataManager
   layers:
   - Default
   - TransparentFX

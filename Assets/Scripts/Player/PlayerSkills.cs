@@ -7,6 +7,7 @@ public class PlayerSkills : MonoBehaviour
 {
     public EnemyManager enemyManager;
     [SerializeField] private Image fillImage;
+    [SerializeField] private LevelDataManager lvlDataManager;
 
     private void Update()
     {
@@ -15,7 +16,7 @@ public class PlayerSkills : MonoBehaviour
 
     void SkillPointIndicator()
     {
-        fillImage.fillAmount = DataManager.Instance.skillPoints/100;
+        fillImage.fillAmount = lvlDataManager.skillPoints/100;
     }
 
     private void SlowEnemy()
@@ -71,28 +72,28 @@ public class PlayerSkills : MonoBehaviour
 
     public void ActivateSlow()
     {
-        if (DataManager.Instance.skillPoints >= 100)
+        if (lvlDataManager.skillPoints >= 100)
         {
             SlowEnemy();
-            DataManager.Instance.skillPoints -= 100;
+            lvlDataManager.skillPoints -= 100;
         }
     }
 
     public void ActivateFreeze()
     {
-        if (DataManager.Instance.skillPoints >= 100)
+        if (lvlDataManager.skillPoints >= 100)
         {
             StartCoroutine(FreezeEnemy());
-            DataManager.Instance.skillPoints -= 100;
+            lvlDataManager.skillPoints -= 100;
         }
     }
 
     public void ActivateEnemyBreakArmor()
     {
-        if (DataManager.Instance.skillPoints >= 100)
+        if (lvlDataManager.skillPoints >= 100)
         {
             BreakEnemyArmor();
-            DataManager.Instance.skillPoints -= 100;
+            lvlDataManager.skillPoints -= 100;
         }
     }
 }

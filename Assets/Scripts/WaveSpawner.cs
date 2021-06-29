@@ -102,17 +102,12 @@ public class WaveSpawner : MonoBehaviour
     {
         state = SpawnState.Spawning;
 
-        //for(int i =0; i < _wave.count; i++)
-        //{
-        //    SpawnEnemy(_wave.enemyPrefab);
-        //    yield return new WaitForSeconds(_wave.spawnRate);
-        //}
         foreach(WaveContent WC in _wave.waveContent)
         {
             for(int i =0; i < WC.count; i++)
             {
                 SpawnEnemy(WC.enemyPrefab);
-                yield return new WaitForSeconds(_wave.spawnRate);
+                yield return new WaitForSeconds(_wave.timeBetweenSpawn);
             }
         }
 
@@ -163,7 +158,7 @@ public class WaveSpawner : MonoBehaviour
 public class Wave
 {
     public string name;
-    public float spawnRate;
+    public float timeBetweenSpawn;
     public List<WaveContent> waveContent;
 }
 

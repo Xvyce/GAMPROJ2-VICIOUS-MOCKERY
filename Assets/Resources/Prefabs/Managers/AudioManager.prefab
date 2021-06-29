@@ -62,3 +62,15 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Typing_SFX
+    clip: {fileID: 8300000, guid: b4e1b1448874ff94c9fd2093c0c69c0d, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Mistake_SFX
+    clip: {fileID: 8300000, guid: dc1d1515ee8368c46a786fece11819a0, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
