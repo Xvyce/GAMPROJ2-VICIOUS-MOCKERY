@@ -95,9 +95,10 @@ public class Enemy : MonoBehaviour
 
     public void TypedWrongLetter()
     {
-        typeIndex = 0;
         typoCounter++;
         lvlDataManager.playerTypo += 1;
+
+        typeIndex = 0;
         text.text = wordContainer;
         text.color = Color.green;
     }
@@ -121,10 +122,12 @@ public class Enemy : MonoBehaviour
                 if(revivalCount==0)
                 {
                     FirstArmorBreakAnimation();
+                    lvlDataManager.wordsTyped += 1;
                 }
                 else if(revivalCount ==1)
                 {
                     SecondArmorBreakAnimation();
+                    lvlDataManager.wordsTyped += 1;
                 }
                 revivalCount++;
             }
@@ -151,6 +154,9 @@ public class Enemy : MonoBehaviour
                 if (lvlDataManager.skillPoints < 100)
                     lvlDataManager.skillPoints += 5;
             }
+
+            lvlDataManager.wordsTyped += 1;
+            lvlDataManager.enemiesKilled += 1;
 
             Destroy(gameObject);
         }

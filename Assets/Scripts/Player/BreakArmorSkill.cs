@@ -61,6 +61,8 @@ public class BreakArmorSkill : MonoBehaviour
             BreakEnemyArmor();
             lvlDataManager.skillPoints -= 100;
         }
+
+        lvlDataManager.skillUseCount += 1;
     }
 
 }

@@ -16,8 +16,11 @@ public class LevelDataManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI typoCountText;
 
-    public float playerScore;
+    public int playerScore;
     public int playerTypo;
+    public int wordsTyped;
+    public int enemiesKilled;
+    public int skillUseCount;
 
     // Skill points
     public float skillPoints;

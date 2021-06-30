@@ -53,6 +53,8 @@ public class FreezeSkill : MonoBehaviour
             StartCoroutine(FreezeEnemy());
             lvlDataManager.skillPoints -= 100;
         }
+
+        lvlDataManager.skillUseCount += 1;
     }
 
 }

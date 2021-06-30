@@ -52,5 +52,7 @@ public class SlowSkill : MonoBehaviour
             StartCoroutine(SlowEnemy());
             lvlDataManager.skillPoints -= 100;
         }
+
+        lvlDataManager.skillUseCount += 1;
     }
 }
