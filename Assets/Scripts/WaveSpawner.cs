@@ -63,8 +63,9 @@ public class WaveSpawner : MonoBehaviour
 
         if(nextWave + 1 > waves.Length - 1)
         {
-            nextWave = 0;
+            //nextWave = 0;
             Debug.Log("All waves complete, loop back to first wave");
+            UIManager.Instance.isWin = true;
         }
         else
         {

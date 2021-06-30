@@ -15,6 +15,10 @@ public class LevelDataManager : MonoBehaviour
     // Player Score
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI typoCountText;
+    [SerializeField] private TextMeshProUGUI wordsTypedCountText;
+    [SerializeField] private TextMeshProUGUI enemiesKilledCountText;
+    [SerializeField] private TextMeshProUGUI skillsUseCountText;
+    
 
     public int playerScore;
     public int playerTypo;
@@ -64,6 +68,10 @@ public class LevelDataManager : MonoBehaviour
     {
         scoreText.text = ("Score: " + playerScore);
         typoCountText.text = ("Typo: " + playerTypo);
+        wordsTypedCountText.text = ("WordsTyped: " + wordsTyped);
+        enemiesKilledCountText.text = ("Monster Slained: " + enemiesKilled);
+        skillsUseCountText.text = ("Skills Used: " + skillUseCount);
+
     }
 
     void Instantiate()
