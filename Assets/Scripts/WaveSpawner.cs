@@ -32,8 +32,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if(!EnemyIsAlive())
             {
-                // If all the enemies in the current wave is dead
-                // start the next wave
+                // If all enemies from last wave is dead, start next wave
                 StartNextWave();
             }
             else
@@ -63,9 +62,9 @@ public class WaveSpawner : MonoBehaviour
 
         if(nextWave + 1 > waves.Length - 1)
         {
-            //nextWave = 0;
-            Debug.Log("All waves complete, loop back to first wave");
+            state = SpawnState.Spawning;
             UIManager.Instance.isWin = true;
+            Debug.Log("All waves complete");
         }
         else
         {
