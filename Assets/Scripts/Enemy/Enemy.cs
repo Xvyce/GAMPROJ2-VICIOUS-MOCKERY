@@ -31,6 +31,7 @@ public class Enemy : MonoBehaviour
         _enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
         lvlDataManager = GameObject.FindWithTag("LevelDataManager").GetComponent<LevelDataManager>();
         thisSprite = GetComponent<SpriteRenderer>();
+
     }
 
     void Start()
@@ -66,9 +67,11 @@ public class Enemy : MonoBehaviour
         switch (enemyData.Type)
         {
             case EnemyType.Goblin:
+                FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
                 wordToType = WordGenerator.GetEasyWord();
                 break;
             case EnemyType.Orc:
+                FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
                 wordToType = WordGenerator.GetNormalWord();
                 break;
             case EnemyType.Boss:
@@ -230,11 +233,13 @@ public class Enemy : MonoBehaviour
     // To access animation in PlayerSkills script
     public void FirstArmorBreakAnimation()
     {
+        FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
         StartCoroutine(BossStaggerOne(2.0f));
     }
 
     public void SecondArmorBreakAnimation()
     {
+        FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
         StartCoroutine(BossStaggerTwo(2.0f));
     }
 
@@ -245,7 +250,7 @@ public class Enemy : MonoBehaviour
        if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support)
        {
             lvlDataManager.Health -= enemyData.AttackDamage;
-            Debug.Log("Enemy have entered the castle");
+            Debug.Log("Enemy has entered the castle");
             EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);
             Destroy(this.gameObject);

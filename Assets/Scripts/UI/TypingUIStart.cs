@@ -42,6 +42,7 @@ public class TypingUIStart : MonoBehaviour
 
         if (typeIndex >= wordToType.Length)
         {
+            FindObjectOfType<AudioManager>().Play("Start_Stage_SFX");
             Debug.Log("Open Book");
             SceneManager.LoadScene("Game");
             //levelChanger.FadeToLevel(2);

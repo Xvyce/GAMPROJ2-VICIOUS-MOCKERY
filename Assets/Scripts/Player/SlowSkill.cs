@@ -49,6 +49,7 @@ public class SlowSkill : MonoBehaviour
     {
         if (lvlDataManager.skillPoints >= 100)
         {
+            FindObjectOfType<AudioManager>().Play("Slow_Skill_SFX");
             StartCoroutine(SlowEnemy());
             lvlDataManager.skillPoints -= 100;
         }

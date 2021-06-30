@@ -90,6 +90,7 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator WaveIndicator()
     {
+        FindObjectOfType<AudioManager>().Play("Wave_Indicator_SFX");
         waveIndicatorText.text = waves[nextWave].name;
         waveIndicatorText.enabled = true;
 

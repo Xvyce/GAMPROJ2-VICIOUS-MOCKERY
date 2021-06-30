@@ -58,6 +58,7 @@ public class BreakArmorSkill : MonoBehaviour
     {
         if (lvlDataManager.skillPoints >= 100)
         {
+            FindObjectOfType<AudioManager>().Play("Break_Armor_SFX");
             BreakEnemyArmor();
             lvlDataManager.skillPoints -= 100;
         }

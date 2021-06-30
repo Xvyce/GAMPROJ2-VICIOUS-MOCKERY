@@ -63,14 +63,38 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Typing_SFX
-    clip: {fileID: 8300000, guid: b4e1b1448874ff94c9fd2093c0c69c0d, type: 3}
-    volume: 0.5
+    clip: {fileID: 8300000, guid: 9fc4866626c97664f9ddba5cb932bb5d, type: 3}
+    volume: 0.8
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Mistake_SFX
-    clip: {fileID: 8300000, guid: dc1d1515ee8368c46a786fece11819a0, type: 3}
-    volume: 0.5
+    clip: {fileID: 8300000, guid: f2e4fb6148d5b1f409ff9c5919880bec, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Wave_Indicator_SFX
+    clip: {fileID: 8300000, guid: 6786d58ab0e0fe643a12db3bc53bc14a, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Slow_Skill_SFX
+    clip: {fileID: 8300000, guid: 61190f217f66ce84790ef096ff54531c, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Freeze_Skill_SFX
+    clip: {fileID: 8300000, guid: 8e8214b94a7c02e42921e16bbf13bfe9, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Break_Armor_SFX
+    clip: {fileID: 8300000, guid: 842c78b7de1d15b46bb5c0ad5ecf2018, type: 3}
+    volume: 0.8
     pitch: 1
     loop: 0
     source: {fileID: 0}
