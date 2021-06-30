@@ -12,11 +12,13 @@ public class Enemy : MonoBehaviour
     private LevelDataManager lvlDataManager;
     private SpriteRenderer thisSprite;
 
+    // Related to enemy status
     public float speed;
     public int revivalCount;
     public bool isWalking;
     public bool isWalkingRight;
 
+    // Related to enemy word
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
@@ -112,7 +114,7 @@ public class Enemy : MonoBehaviour
 
         if(typeIndex >= wordToType.Length)
         {
-            if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ArmorCount) // Orc Boss
+            if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ArmorCount) // Armored Enemies get a new word
             {
                 wordTyped = false;
 
@@ -126,7 +128,7 @@ public class Enemy : MonoBehaviour
                 }
                 revivalCount++;
             }
-            else // Enemies w/o Armor
+            else // Enemies without armor gets destroyed
             {
                 wordTyped = true;
             }
@@ -134,16 +136,20 @@ public class Enemy : MonoBehaviour
 
         if (wordTyped)
         {
-            // If word is properly typed without error the score is double
-            if (typoCounter == 0)
+            // Add some score
+            if (typoCounter == 0)// No typo == more score || Typo == less score
             {
                 lvlDataManager.playerScore += 2;
-                lvlDataManager.skillPoints += 10;
+
+                if(lvlDataManager.skillPoints < 100)
+                    lvlDataManager.skillPoints += 10;
             }
             else
             {
                 lvlDataManager.playerScore += 1;
-                lvlDataManager.skillPoints += 5;
+
+                if (lvlDataManager.skillPoints < 100)
+                    lvlDataManager.skillPoints += 5;
             }
 
             Destroy(gameObject);
@@ -164,6 +170,7 @@ public class Enemy : MonoBehaviour
                 yield return new WaitForSeconds(timer);
 
                 _animator.SetBool("Stagger_One", false);
+                speed += enemyData.Speed;
                 isWalking = true;
 
                 _animator.SetBool("Helmet_Walking", true);
@@ -185,6 +192,7 @@ public class Enemy : MonoBehaviour
                 yield return new WaitForSeconds(timer);
 
                 _animator.SetBool("Stagger_Two", false);
+                speed += enemyData.Speed;
                 isWalking = true;
 
                 _animator.SetBool("Naked_Walking", true);
