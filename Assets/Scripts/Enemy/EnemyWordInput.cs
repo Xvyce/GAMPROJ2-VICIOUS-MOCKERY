@@ -39,22 +39,6 @@ public class EnemyWordInput : MonoBehaviour
             }
         }
     }
-
-        //foreach (char letter in Input.inputString)
-        //{
-        //    enemyManager.TypeLetter(letter);
-        //}
-
-        //if (!Input.anyKey)
-        //{
-        //    _player.animator.SetBool("isTyping", false);
-        //    _player.StopGibberish();
-        //}
-        //else
-        //{
-        //    _player.animator.SetBool("isTyping", true);
-        //    _player.StartGibberish();
-        //}
-    }
+}
 
 

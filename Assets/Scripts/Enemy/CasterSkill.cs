@@ -33,8 +33,8 @@ public class CasterSkill : MonoBehaviour
         // After finished casting, censors words then resumes walking
         foreach(Enemy enemy in _enemyManager.enemyList)
         {
-            enemy.StartCensor();
             //censor text of  current enemies that are spawned in the scene
+            enemy.StartCensor();
         }
     }
 }

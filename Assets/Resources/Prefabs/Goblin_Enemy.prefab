@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9205211023798411237
+--- !u!1 &5086490554930495498
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9205211023798411238}
-  - component: {fileID: 9205211023798410265}
-  - component: {fileID: 9205211023798410264}
-  - component: {fileID: 9205211023798411239}
+  - component: {fileID: 7535747118070242690}
+  - component: {fileID: 1866504548234061721}
+  - component: {fileID: 1417202784392960406}
+  - component: {fileID: 6491888266536910223}
   m_Layer: 5
-  m_Name: EnemyWordCanvas
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &9205211023798411238
+--- !u!224 &7535747118070242690
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211023798411237}
+  m_GameObject: {fileID: 5086490554930495498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.35359702, y: 0.35359702, z: 0.35359702}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57050467, y: 0.57050467, z: 0.57050467}
   m_Children:
-  - {fileID: 9205211024412848204}
+  - {fileID: 293650960146882038}
   m_Father: {fileID: 9205211024943220430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.666}
+  m_AnchoredPosition: {x: 0, y: 0.723}
   m_SizeDelta: {x: 2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!223 &9205211023798410265
+--- !u!223 &1866504548234061721
 Canvas:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211023798411237}
+  m_GameObject: {fileID: 5086490554930495498}
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
@@ -60,13 +60,13 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &9205211023798410264
+--- !u!114 &1417202784392960406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211023798411237}
+  m_GameObject: {fileID: 5086490554930495498}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
@@ -83,13 +83,13 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
---- !u!114 &9205211023798411239
+--- !u!114 &6491888266536910223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211023798411237}
+  m_GameObject: {fileID: 5086490554930495498}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1 &9205211024412848201
+--- !u!1 &7226054633426246673
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,28 +108,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9205211024412848204}
-  - component: {fileID: 9205211024412848203}
-  - component: {fileID: 9205211024412848202}
+  - component: {fileID: 293650960146882038}
+  - component: {fileID: 3116039331516463969}
+  - component: {fileID: 3147330644141573733}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &9205211024412848204
+--- !u!224 &293650960146882038
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211024412848201}
+  m_GameObject: {fileID: 7226054633426246673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 9205211023798411238}
+  m_Father: {fileID: 7535747118070242690}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -137,21 +137,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &9205211024412848203
+--- !u!222 &3116039331516463969
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211024412848201}
+  m_GameObject: {fileID: 7226054633426246673}
   m_CullTransparentMesh: 1
---- !u!114 &9205211024412848202
+--- !u!114 &3147330644141573733
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205211024412848201}
+  m_GameObject: {fileID: 7226054633426246673}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -266,7 +266,7 @@ Transform:
   m_LocalPosition: {x: -0.19, y: -0.09, z: -2.81}
   m_LocalScale: {x: 2.0990186, y: 2.0990186, z: 2.0990186}
   m_Children:
-  - {fileID: 9205211023798411238}
+  - {fileID: 7535747118070242690}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
@@ -365,8 +365,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 50b28c6d5297650439b0913b7bc6bf64, type: 2}
   _animator: {fileID: 4007885886757511281}
-  _enemyManager: {fileID: 0}
-  text: {fileID: 9205211024412848202}
+  text: {fileID: 3147330644141573733}
+  speed: 0
+  revivalCount: 0
+  isWalking: 0
+  isWalkingRight: 0
 --- !u!95 &4007885886757511281
 Animator:
   serializedVersion: 3
