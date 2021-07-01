@@ -7,6 +7,7 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private Wave[] waves;
 
+    [SerializeField] private LevelDataManager lvlDataManager;
     [SerializeField] private TextMeshProUGUI waveIndicatorText;
     [SerializeField] private Transform[] spawnPointsTop;
     [SerializeField] private Transform[] spawnPointsMid;
@@ -30,10 +31,17 @@ public class WaveSpawner : MonoBehaviour
     {
         if(state == SpawnState.Waiting)
         {
-            if(!EnemyIsAlive())
+            if(!lvlDataManager.IsGameOver)
             {
-                // If all enemies from last wave is dead, start next wave
-                StartNextWave();
+                if (!EnemyIsAlive())
+                {
+                    // If all enemies from last wave is dead, start next wave
+                    StartNextWave();
+                }
+                else
+                {
+                    return;
+                }
             }
             else
             {
@@ -63,7 +71,8 @@ public class WaveSpawner : MonoBehaviour
         if(nextWave + 1 > waves.Length - 1)
         {
             state = SpawnState.Spawning;
-            UIManager.Instance.isWin = true;
+            lvlDataManager.GameOverWin();
+
             Debug.Log("All waves complete");
         }
         else

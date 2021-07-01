@@ -249,7 +249,7 @@ public class Enemy : MonoBehaviour
 
        if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support)
        {
-            lvlDataManager.Health -= enemyData.AttackDamage;
+            lvlDataManager.playerCurrentHealth -= enemyData.AttackDamage;
             Debug.Log("Enemy has entered the castle");
             EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);

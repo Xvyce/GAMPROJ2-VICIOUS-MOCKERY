@@ -6,57 +6,40 @@ using TMPro;
 public class LevelDataManager : MonoBehaviour
 {
 
-    // Health
+    [Header("Health Variables")]
     [SerializeField] private float playerMaxHealth = 100;
-    [SerializeField] private float playerCurrentHealth;
-    public delegate void HealthUpdate(float current, float max);
-    public static event HealthUpdate OnHealthChanged;
+    public float playerCurrentHealth;
 
-    // Player Score
-    [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private TextMeshProUGUI typoCountText;
-    [SerializeField] private TextMeshProUGUI wordsTypedCountText;
-    [SerializeField] private TextMeshProUGUI enemiesKilledCountText;
-    [SerializeField] private TextMeshProUGUI skillsUseCountText;
-    
-
+    [Header("Player Score Variables")]
     public int playerScore;
     public int playerTypo;
     public int wordsTyped;
     public int enemiesKilled;
     public int skillUseCount;
 
-    // Skill points
+    [Header("Player Skill Points")]
     public float skillPoints;
 
-    // Game State
+    [Header("Win Screen Text")]
+    [SerializeField] private TextMeshProUGUI winScoreText;
+    [SerializeField] private TextMeshProUGUI winTypoCountText;
+    [SerializeField] private TextMeshProUGUI winWordsTypedCountText;
+    [SerializeField] private TextMeshProUGUI winEnemiesKilledCountText;
+    [SerializeField] private TextMeshProUGUI winSkillsUseCountText;
+
+    [Header("Lose Screen Text")]
+    [SerializeField] private TextMeshProUGUI loseScoreText;
+    [SerializeField] private TextMeshProUGUI loseTypoCountText;
+    [SerializeField] private TextMeshProUGUI loseWordsTypedCountText;
+    [SerializeField] private TextMeshProUGUI loseEnemiesKilledCountText;
+    [SerializeField] private TextMeshProUGUI loseSkillsUseCountText;
+
     private bool isGameOver;
 
     public bool IsGameOver
     {
         get { return isGameOver; }
         set { isGameOver = value; }
-    }
-
-    public float Health
-    {
-        get
-        {
-            if(playerCurrentHealth <=0)
-            {
-                playerCurrentHealth = 0;
-                GameOver();
-            }
-            return playerCurrentHealth;
-        }
-        set
-        {
-            playerCurrentHealth = value;
-            OnHealthChanged?.Invoke(playerCurrentHealth, playerMaxHealth);
-
-            if (playerCurrentHealth <= 0)
-                playerCurrentHealth = 0;
-        }
     }
 
     private void Start()
@@ -66,25 +49,45 @@ public class LevelDataManager : MonoBehaviour
 
     private void Update()
     {
-        scoreText.text = ("Score: " + playerScore);
-        typoCountText.text = ("Typo: " + playerTypo);
-        wordsTypedCountText.text = ("WordsTyped: " + wordsTyped);
-        enemiesKilledCountText.text = ("Monster Slained: " + enemiesKilled);
-        skillsUseCountText.text = ("Skills Used: " + skillUseCount);
-
+        if (playerCurrentHealth <= 0  && !isGameOver)
+            GameOverLose();
     }
 
     void Instantiate()
     {
-        Health = playerMaxHealth;
+        isGameOver = false;
+        playerCurrentHealth = playerMaxHealth;
         playerScore = 0;
         playerTypo = 0;
         skillPoints = 0;
+        wordsTyped = 0;
+        enemiesKilled = 0;
+        skillUseCount = 0;
     }
 
-    private void GameOver()
+    public void GameOverWin()
     {
-        IsGameOver = true;
-        //Load summary screen or something
+        isGameOver = true;
+
+        winScoreText.text = ("Score: " + playerScore);
+        winTypoCountText.text = ("Typo: " + playerTypo);
+        winWordsTypedCountText.text = ("WordsTyped: " + wordsTyped);
+        winEnemiesKilledCountText.text = ("Monster Slained: " + enemiesKilled);
+        winSkillsUseCountText.text = ("Skills Used: " + skillUseCount);
+
+        UIManager.Instance.isWin = true;
+    }
+
+    public void GameOverLose()
+    {
+        isGameOver = true;
+
+        loseScoreText.text = ("Score: " + playerScore);
+        loseTypoCountText.text = ("Typo: " + playerTypo);
+        loseWordsTypedCountText.text = ("WordsTyped: " + wordsTyped);
+        loseEnemiesKilledCountText.text = ("Monster Slained: " + enemiesKilled);
+        loseSkillsUseCountText.text = ("Skills Used: " + skillUseCount);
+
+        UIManager.Instance.isLose = true;
     }
 }
