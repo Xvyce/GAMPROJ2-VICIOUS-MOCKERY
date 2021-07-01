@@ -46,13 +46,13 @@ MonoBehaviour:
   sounds:
   - name: Level_1_BGM
     clip: {fileID: 8300000, guid: dcb500e52f224d541825793c6c110bbe, type: 3}
-    volume: 0.5
+    volume: 0.1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Main_Menu_BGM
     clip: {fileID: 8300000, guid: 809bcca1595e98d48ae6d34475aecc80, type: 3}
-    volume: 0.5
+    volume: 0.1
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Wave_Indicator_SFX
     clip: {fileID: 8300000, guid: 6786d58ab0e0fe643a12db3bc53bc14a, type: 3}
-    volume: 0.8
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -94,6 +94,24 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Break_Armor_SFX
     clip: {fileID: 8300000, guid: 842c78b7de1d15b46bb5c0ad5ecf2018, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblin_Noise_SFX
+    clip: {fileID: 8300000, guid: d1c91fb1177691f4a879bbf46d8d9a51, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Orc_Noise_SFX
+    clip: {fileID: 8300000, guid: 8be0500069bc63e4fbed4845a02d0449, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Ogre_Noise_SFX
+    clip: {fileID: 8300000, guid: 2fe4884e4746c7a438730713b7280ac0, type: 3}
     volume: 0.8
     pitch: 1
     loop: 0

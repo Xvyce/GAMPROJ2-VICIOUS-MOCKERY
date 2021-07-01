@@ -62,10 +62,9 @@ public class PauseMenu : MonoBehaviour
     public void Continue()
     {
         FindObjectOfType<AudioManager>().UnPause("Level_1_BGM");
-      
-            pauseMenuUI.SetActive(false);
-            Time.timeScale = 1f;
-            GameIsPaused = false;
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
     }
 
     void Pause()
