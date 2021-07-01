@@ -23,6 +23,11 @@ public class Lose : MonoBehaviour
 
     public void Continue()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
