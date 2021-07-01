@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Enemy : MonoBehaviour
@@ -60,36 +61,6 @@ public class Enemy : MonoBehaviour
         
     }
 
-    private void GenerateWord()
-    {
-        typeIndex = 0;
-
-        switch (enemyData.Type)
-        {
-            case EnemyType.Goblin:
-                FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
-                wordToType = WordGenerator.GetEasyWord();
-                break;
-            case EnemyType.Orc:
-                FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
-                wordToType = WordGenerator.GetNormalWord();
-                break;
-            case EnemyType.Boss:
-                wordToType = WordGenerator.GetBossWord();
-                break;
-            case EnemyType.Support:
-                wordToType = WordGenerator.GetNormalWord(); //added this
-                break;
-            case EnemyType.Caster:
-                wordToType = WordGenerator.GetBossWord(); //added this
-                break;
-        }
-
-        if (text != null)
-            text.text = wordToType;
-
-        wordContainer = wordToType;
-    }
 
     public char GetNextLetter()
     {
@@ -269,5 +240,116 @@ public class Enemy : MonoBehaviour
             isWalking = true;
             isWalkingRight = false;
        }
+    }
+
+    private void GenerateWord()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+        typeIndex = 0;
+
+        if(currentScene == "TutorialTest")
+        {
+            switch (enemyData.Type)
+            {
+                case EnemyType.Goblin:
+                    FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
+                    wordToType = WordGenerator.GetEasyWordTutorial();
+                    break;
+
+                case EnemyType.Orc:
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetNormalWordTutorial();
+                    break;
+            }
+        }
+
+        if(currentScene == "Level1")
+        {
+            switch (enemyData.Type)
+            {
+                case EnemyType.Goblin:
+                    FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
+                    wordToType = WordGenerator.GetEasyWordLevelOne();
+                    break;
+
+                case EnemyType.Orc:
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetNormalWordLevelOne();
+                    break;
+
+                case EnemyType.Boss:
+                    wordToType = WordGenerator.GetBossWordLevelOne();
+                    break;
+
+                case EnemyType.Support:
+                    wordToType = WordGenerator.GetNormalWordLevelOne();
+                    break;
+
+                case EnemyType.Caster:
+                    wordToType = WordGenerator.GetBossWordLevelOne();
+                    break;
+            }
+        }
+
+        if (currentScene == "Level2")
+        {
+            switch (enemyData.Type)
+            {
+                case EnemyType.Goblin:
+                    FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
+                    wordToType = WordGenerator.GetEasyWordLevelTwo();
+                    break;
+
+                case EnemyType.Orc:
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetNormalWordLevelTwo();
+                    break;
+
+                case EnemyType.Boss:
+                    wordToType = WordGenerator.GetBossWordLevelTwo();
+                    break;
+
+                case EnemyType.Support:
+                    wordToType = WordGenerator.GetNormalWordLevelTwo();
+                    break;
+
+                case EnemyType.Caster:
+                    wordToType = WordGenerator.GetBossWordLevelTwo();
+                    break;
+            }
+        }
+
+        if (currentScene == "Level3")
+        {
+            switch (enemyData.Type)
+            {
+                case EnemyType.Goblin:
+                    FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
+                    wordToType = WordGenerator.GetEasyWordLevelThree();
+                    break;
+
+                case EnemyType.Orc:
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetNormalWordLevelThree();
+                    break;
+
+                case EnemyType.Boss:
+                    wordToType = WordGenerator.GetBossWordLevelThree();
+                    break;
+
+                case EnemyType.Support:
+                    wordToType = WordGenerator.GetNormalWordLevelThree();
+                    break;
+
+                case EnemyType.Caster:
+                    wordToType = WordGenerator.GetBossWordLevelThree();
+                    break;
+            }
+        }
+
+        if (text != null)
+            text.text = wordToType;
+
+        wordContainer = wordToType;
     }
 }

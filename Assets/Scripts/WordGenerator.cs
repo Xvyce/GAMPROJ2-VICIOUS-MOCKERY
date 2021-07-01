@@ -4,50 +4,130 @@ using UnityEngine;
 
 public class WordGenerator : MonoBehaviour
 {
-    // 3-6 letter words
-    private static string[] wordListEasy = { "fuel", "trap", "cars", "answer", "boil", "cactus", "icy",  "suck", "songs",
-                                        "spotty", "invent", "cake", "employ", "linen", "copy", "fasten", "fix", "goofy",
-                                        "title", "rabid", "ritzy", "locket", "plot", "erect", "soft", "cuddly", "nerve",
-                                        "ball", "fly", "gratis", "solid", "cable", "wrench", "known", "feeble", "animal"    };
+    // Tutorial Word Pool
+    private static string[] tutorialEasy = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
+                                            "t", "u", "v", "w", "x", "y", "z"   };
 
-    //// 7-8 letter words
-    private static string[] wordListNormal = { "elephant", "parallel", "hanging", "partner", "shelter", "cushion", "undress",
-                                        "purring", "thought", "pharaoh", "nauseous", "jacuzzi", "strange", "session", "promise",
-                                        "morning", "popular", "minister", "property", "engineer", "division", "reckless"    };
+    private static string[] tutorialNormal = {"one", "day", "you", "man"   };
 
-    // 9+ letter words
-    private static string[] wordListHard = { "heartbreaking", "schizophrenia", "unwritten", "rainstorm", "boundless", "volleyball", "basketball",
-                                        "handkerchief", "accommodate", "orangutan", "mischievous", "government", "interface", "challenge",
-                                        "notorious", "allowance", "tournament", "helicopter", "convulsion", "established", "responsible",
-                                        "performance", "calculation", "cooperative", "democratic", "motorcycle", "substitute"   };
 
-    private static string[] wordListBoss = { "chiaroscurist", "baccalaureate", "this is a sentence" };
 
-    public static string GetEasyWord()
+    // Level 1 Word Pool
+    private static string[] lvlOneEasy = { "life", "ring", "wolf", "fish", "king", "time", "rain",  "care"     };
+
+    private static string[] lvlOneNormal = { "average", "twelve", "medieval", "strength", "donate", "mountain", "treasure",
+                                            "champion"      };
+
+    private static string[] lvlOneBoss = { "extraordinarily", "intelligent", "professional", "friendship", "everything", "basketball",
+                                            "exterminate", "responsible"    };
+
+
+
+    // Level 2 Word Pool
+    private static string[] lvlTwoEasy = { "life", "ring", "wolf", "fish", "king", "time", "rain", "care", "bean", "evil", "peace", "heart" };
+
+    private static string[] lvlTwoNormal = { "average", "twelve", "medieval", "strength", "donate", "mountain", "treasure",
+                                            "champion", "dragon", "exquisite", "welcome", "presence"      };
+
+    private static string[] lvlTwoBoss = { "extraordinarily", "intelligent", "professional", "friendship", "everything", "basketball",
+                                            "exterminate", "responsible", "wretchedness", "calisthenics", "astronomical", "handkerchief"    };
+
+
+
+    // Level 3 Word Pool
+    private static string[] lvlThreeEasy = { "life", "ring", "wolf", "fish", "king", "time", "rain", "care", "bean", "evil", "peace", "heart",
+                                            "quest", "quire", "dough", "aztec"      };
+
+    private static string[] lvlThreeNormal = { "average", "twelve", "medieval", "strength", "donate", "mountain", "treasure",
+                                            "champion", "dragon", "exquisite", "welcome", "presence", "fabulous", "halloween", "etiquette",
+                                            "tennessee"     };
+
+    private static string[] lvlThreeBoss = { "extraordinarily", "intelligent", "professional", "friendship", "everything", "basketball",
+                                            "exterminate", "responsible", "wretchedness", "calisthenics", "astronomical", "handkerchief",
+                                            "xenotransplantation", "myrmecophilous", "yarborough", "akorrhaphiophobia"      };
+
+
+    // Get Random Level One Word
+    public static string GetEasyWordTutorial()
     {
-        int randomIndex = Random.Range(0, wordListEasy.Length);
-        string randomWord = wordListEasy[randomIndex];
+        int randomIndex = Random.Range(0, tutorialEasy.Length);
+        string randomWord = tutorialEasy[randomIndex];
         return randomWord;
     }
 
-    public static string GetNormalWord()
+    public static string GetNormalWordTutorial()
     {
-        int randomIndex = Random.Range(0, wordListNormal.Length);
-        string randomWord = wordListNormal[randomIndex];
+        int randomIndex = Random.Range(0, tutorialNormal.Length);
+        string randomWord = tutorialNormal[randomIndex];
         return randomWord;
     }
 
-    public static string GetHardWord()
+
+    // Get Random Level One Word
+    public static string GetEasyWordLevelOne()
     {
-        int randomIndex = Random.Range(0, wordListHard.Length);
-        string randomWord = wordListHard[randomIndex];
+        int randomIndex = Random.Range(0, lvlOneEasy.Length);
+        string randomWord = lvlOneEasy[randomIndex];
+        return randomWord;
+    }
+
+    public static string GetNormalWordLevelOne()
+    {
+        int randomIndex = Random.Range(0, lvlOneNormal.Length);
+        string randomWord = lvlOneNormal[randomIndex];
         return randomWord;
     }
     
-    public static string GetBossWord()
+    public static string GetBossWordLevelOne()
     {
-        int randomIndex = Random.Range(0, wordListBoss.Length);
-        string randomWord = wordListBoss[randomIndex];
+        int randomIndex = Random.Range(0, lvlOneBoss.Length);
+        string randomWord = lvlOneBoss[randomIndex];
+        return randomWord;
+    }
+
+
+    // Get Random Level Two Word
+    public static string GetEasyWordLevelTwo()
+    {
+        int randomIndex = Random.Range(0, lvlTwoEasy.Length);
+        string randomWord = lvlTwoEasy[randomIndex];
+        return randomWord;
+    }
+
+    public static string GetNormalWordLevelTwo()
+    {
+        int randomIndex = Random.Range(0, lvlTwoNormal.Length);
+        string randomWord = lvlTwoNormal[randomIndex];
+        return randomWord;
+    }
+
+    public static string GetBossWordLevelTwo()
+    {
+        int randomIndex = Random.Range(0, lvlTwoBoss.Length);
+        string randomWord = lvlTwoBoss[randomIndex];
+        return randomWord;
+    }
+
+
+    // Get Random Level Three Word
+    public static string GetEasyWordLevelThree()
+    {
+        int randomIndex = Random.Range(0, lvlThreeEasy.Length);
+        string randomWord = lvlThreeEasy[randomIndex];
+        return randomWord;
+    }
+
+    public static string GetNormalWordLevelThree()
+    {
+        int randomIndex = Random.Range(0, lvlThreeNormal.Length);
+        string randomWord = lvlThreeNormal[randomIndex];
+        return randomWord;
+    }
+
+    public static string GetBossWordLevelThree()
+    {
+        int randomIndex = Random.Range(0, lvlThreeBoss.Length);
+        string randomWord = lvlThreeBoss[randomIndex];
         return randomWord;
     }
 }

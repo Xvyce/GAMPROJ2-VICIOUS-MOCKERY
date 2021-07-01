@@ -43,7 +43,7 @@ public class AudioManager : MonoBehaviour
         if (currentScene == "MainMenu")
             Play("Main_Menu_BGM");
 
-        if (currentScene == "Game")
+        if (currentScene == "Level1")
             Play("Level_1_BGM");
         /*if (currentScene == "Level2")
             Play("");
