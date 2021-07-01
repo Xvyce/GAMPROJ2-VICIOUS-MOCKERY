@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -8,13 +9,30 @@ public class Player : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
     public Animator animator;
 
+    string currentScene;
+    bool isLose = false;
+
     private void Start()
     {
-        text.text = "!@#$%^&*";
+        currentScene = SceneManager.GetActiveScene().name;
 
-        text.enabled = false;
+        if (text != null)
+        {
+            text.text = "!@#$%^&*";
+
+            text.enabled = false;
+        }
     }
 
+    private void Update()
+    {
+        if (currentScene == "LoseScene" && !isLose)
+        {
+            Debug.Log("Lose Scene");
+            animator.SetBool("isLose", true);
+            isLose = true;
+        }
+    }
 
     public void StartGibberish()
     {
