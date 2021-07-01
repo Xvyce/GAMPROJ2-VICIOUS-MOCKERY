@@ -19,10 +19,18 @@ public class Player : MonoBehaviour
     public void StartGibberish()
     {
         text.enabled = true;
+        //StartCoroutine(SpeakingGibberish());
     }
 
     public void StopGibberish()
     {
         text.enabled = false;
+        //StopCoroutine(SpeakingGibberish());
     }
+
+    /*IEnumerator SpeakingGibberish()
+    {
+        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
+        yield return new WaitForSeconds(0.1f);
+    }*/
 }
