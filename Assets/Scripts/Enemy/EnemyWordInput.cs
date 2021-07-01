@@ -28,6 +28,7 @@ public class EnemyWordInput : MonoBehaviour
                 {
                     _player.animator.SetBool("isTyping", true);
                     _player.StartGibberish();
+                    //_player.StartSpeakingGibberish(true);
                 }
             }
 

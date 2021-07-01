@@ -6265,6 +6265,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f8747e56929e1394b90cd85d6c16a133, type: 3}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bef0a78534f876e4da7b34580f0bb1bb, type: 3}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[11].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3153d3574edd6394bbc959fb290b520f, type: 3}
     - target: {fileID: 6130445300513291896, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -9527,7 +9539,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
   m_PrefabInstance: {fileID: 3677038165113675377}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 3677038165113675378}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65368d3ae353ab24da33650e4f89aae1, type: 3}
@@ -47281,6 +47293,118 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 3677038165113675379}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.size
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c37f4939b259714b858d090ab328896, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c592d517376d6c49a277eb5adaa7be0, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: bb74a65884d5afa4abcfb2a93e914313, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c645452e84b17b4aa7bb5a7dc2c4f78, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 788f6e44720f9f9408de1eeac3f11dda, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 42047a4fca7e58843b1f97adc13d9212, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b9e65ca97ddabf4e9d1b10ceed1b81a, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ef54aed600760c44a6e915796b73b50, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: d3f36718b5c5f51438a7086034eb98c5, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: efdb18c6abad25446aaca4113584ed65, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: e04698e9232f5584b982c8cd820ed8ed, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b1737b5e4a6f73478eb6f3d61f56df2, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f00037f8cf0f5442b98a3251ad62cbe, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: 187c181351fb2df4ca9495264ac63a8e, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[14]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2dc6b6ab9d2163147b506bb582eb3720, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[15]
+      value: 
+      objectReference: {fileID: 8300000, guid: 80cea27d3b05c5a449c3be1504c3c9b4, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[16]
+      value: 
+      objectReference: {fileID: 8300000, guid: d78c45f163db4964e9f0b76d9a4a3dcd, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[17]
+      value: 
+      objectReference: {fileID: 8300000, guid: 13436ef966accda469fef7fd50f8b6cc, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[18]
+      value: 
+      objectReference: {fileID: 8300000, guid: ab35828ee1ad0db4d980c193872668f6, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[19]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b591120ec988e34e8426b4b1a625e1b, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[20]
+      value: 
+      objectReference: {fileID: 8300000, guid: a1915e927573bf148ac72183dfa7bc61, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[21]
+      value: 
+      objectReference: {fileID: 8300000, guid: 148a52d25780efc4bb6b8212992ae538, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[22]
+      value: 
+      objectReference: {fileID: 8300000, guid: cb65362f732fbfd46bf16991e9eb333f, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[23]
+      value: 
+      objectReference: {fileID: 8300000, guid: 316d02a015985fa43b6b81a102c01555, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[24]
+      value: 
+      objectReference: {fileID: 8300000, guid: fddfa02656a0d374bab6119697ff0992, type: 3}
+    - target: {fileID: 3677038164652723045, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[25]
+      value: 
+      objectReference: {fileID: 8300000, guid: cbb5bd54eefd3694f99e97b2975283f8, type: 3}
     - target: {fileID: 3677038165047298835, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
       propertyPath: m_Camera
       value: 
@@ -47295,6 +47419,107 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+--- !u!1 &3677038165113675378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3677038164652723040, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+  m_PrefabInstance: {fileID: 3677038165113675377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3677038165113675379
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3677038165113675378}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3692506811472465222
 GameObject:
   m_ObjectHideFlags: 0

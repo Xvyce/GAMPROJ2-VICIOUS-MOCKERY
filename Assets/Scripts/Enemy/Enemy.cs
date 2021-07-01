@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     private EnemyManager _enemyManager;
     private LevelDataManager lvlDataManager;
     private SpriteRenderer thisSprite;
+    private Player player;
 
     // Related to enemy status
     public float speed;
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
     {
         _enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
         lvlDataManager = GameObject.FindWithTag("LevelDataManager").GetComponent<LevelDataManager>();
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
         thisSprite = GetComponent<SpriteRenderer>();
 
     }

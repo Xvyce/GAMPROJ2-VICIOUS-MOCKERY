@@ -8,9 +8,12 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
     public Animator animator;
+    public AudioSource audioSource;
+    public AudioClip[] gibClips;
 
     string currentScene;
     bool isLose = false;
+    bool gibberishActivated = false;
 
     private void Start()
     {
@@ -37,18 +40,42 @@ public class Player : MonoBehaviour
     public void StartGibberish()
     {
         text.enabled = true;
-        //StartCoroutine(SpeakingGibberish());
     }
 
     public void StopGibberish()
     {
         text.enabled = false;
-        //StopCoroutine(SpeakingGibberish());
     }
 
-    /*IEnumerator SpeakingGibberish()
+    /*public void StartSpeakingGibberish(bool isSpeaking)
     {
-        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
-        yield return new WaitForSeconds(0.1f);
+        gibberishActivated = isSpeaking;
+        Debug.Log(gibberishActivated);
+        if (gibberishActivated == true)
+        {
+            StartCoroutine(SpeakingGibberish());
+            gibberishActivated = false;
+        }
+    }
+
+    public void StopSpeakingGibberish()
+    {
+        StopCoroutine(SpeakingGibberish());
+    }
+
+    IEnumerator SpeakingGibberish()
+    {
+        yield return null;
+        
+        for (int i = 0; i < gibClips.Length; i++)
+        {
+            audioSource.clip = gibClips[i];
+            audioSource.Play();
+
+            while (audioSource.isPlaying)
+            {
+                yield return null;
+            }
+        }
     }*/
 }
