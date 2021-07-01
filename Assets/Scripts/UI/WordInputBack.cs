@@ -10,6 +10,7 @@ public class WordInputBack : MonoBehaviour
     {
         foreach (char letter in Input.inputString)
         {
+            FindObjectOfType<AudioManager>().Play("Typing_SFX");
             typingUIback.TypeLetter(letter);
         }
     }

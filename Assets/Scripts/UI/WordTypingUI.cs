@@ -28,10 +28,11 @@ public class WordTypingUI : MonoBehaviour
     {
         if (wordToType[typeIndex] == letter)
         {
+            FindObjectOfType<AudioManager>().Play("Typing_SFX");
             typeIndex++;
 
-           word.text = word.text.Remove(0, 1); 
-           word.color = Color.red;
+            word.text = word.text.Remove(0, 1); 
+            word.color = Color.red;
         }
         else
         {
