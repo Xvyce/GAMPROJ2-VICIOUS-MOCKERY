@@ -6707,7 +6707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: First Wave
-    timeBetweenSpawn: 0.5
+    timeBetweenSpawn: 1
     waveContent:
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
       count: 2
@@ -6730,6 +6730,17 @@ MonoBehaviour:
       count: 3
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
       count: 3
+  - name: Fifth Wave
+    timeBetweenSpawn: 1.5
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 2
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 3
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 2
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 2
   - name: Boss Wave
     timeBetweenSpawn: 1.5
     waveContent:

@@ -5104,7 +5104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807277829}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.38, y: 4.5904093, z: 1.3971543}
+  m_LocalPosition: {x: 10.56, y: 4.5904093, z: 1.3971543}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5365,16 +5365,40 @@ MonoBehaviour:
   - name: First Wave
     timeBetweenSpawn: 1
     waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
     - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-      count: 5
+      count: 2
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
       count: 2
   - name: Second Wave
     timeBetweenSpawn: 1.5
     waveContent:
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
-      count: 4
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+      count: 2
+    - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 2
+  - name: Third Wave
+    timeBetweenSpawn: 2
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 3
+    - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 3
+  - name: Fourth Wave
+    timeBetweenSpawn: 2
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 3
+    - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 3
+    - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
       count: 1
   - name: Boss Wave
     timeBetweenSpawn: 2
@@ -5602,7 +5626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000466407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 3, z: 0}
+  m_LocalPosition: {x: 5.1800003, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1934919924}
