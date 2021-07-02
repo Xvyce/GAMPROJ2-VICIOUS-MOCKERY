@@ -52,15 +52,15 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if(isWalking)
+        if (isWalking)
         {
             transform.Translate(-speed * Time.deltaTime, 0f, 0f);
         }
-        if(isWalkingRight)
+        if (isWalkingRight)
         {
             transform.Translate(speed * Time.deltaTime, 0f, 0f);
         }
-        
+
     }
 
 
@@ -89,18 +89,18 @@ public class Enemy : MonoBehaviour
     public bool WordTyped()
     {
 
-        if(typeIndex >= wordToType.Length)
+        if (typeIndex >= wordToType.Length)
         {
             if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ArmorCount) // Armored Enemies get a new word
             {
                 wordTyped = false;
 
-                if(revivalCount==0)
+                if (revivalCount == 0)
                 {
                     FirstArmorBreakAnimation();
                     lvlDataManager.wordsTyped += 1;
                 }
-                else if(revivalCount ==1)
+                else if (revivalCount == 1)
                 {
                     SecondArmorBreakAnimation();
                     lvlDataManager.wordsTyped += 1;
@@ -120,7 +120,7 @@ public class Enemy : MonoBehaviour
             {
                 lvlDataManager.playerScore += 2;
 
-                if(lvlDataManager.skillPoints < 100)
+                if (lvlDataManager.skillPoints < 100)
                     lvlDataManager.skillPoints += 10;
             }
             else
@@ -220,7 +220,7 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-       if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support)
+        if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support || other.gameObject.tag == "Player" && enemyData.Type != EnemyType.Support)
        {
             lvlDataManager.playerCurrentHealth -= enemyData.AttackDamage;
             Debug.Log("Enemy has entered the castle");

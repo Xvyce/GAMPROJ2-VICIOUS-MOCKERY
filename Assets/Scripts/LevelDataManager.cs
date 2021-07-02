@@ -36,6 +36,7 @@ public class LevelDataManager : MonoBehaviour
     //[SerializeField] private TextMeshProUGUI loseSkillsUseCountText;
 
     private bool isGameOver;
+    string currentScene;
 
     public bool IsGameOver
     {
@@ -45,6 +46,7 @@ public class LevelDataManager : MonoBehaviour
 
     private void Start()
     {
+        currentScene = SceneManager.GetActiveScene().name;
         Instantiate();
     }
 
@@ -57,10 +59,20 @@ public class LevelDataManager : MonoBehaviour
     void Instantiate()
     {
         isGameOver = false;
+
+        if(currentScene == "TutorialTest")
+        {
+            playerMaxHealth = 20;
+            skillPoints = 100;
+        }
+        else
+        {
+            skillPoints = 0;
+        }
+
         playerCurrentHealth = playerMaxHealth;
         playerScore = 0;
         playerTypo = 0;
-        skillPoints = 0;
         wordsTyped = 0;
         enemiesKilled = 0;
         skillUseCount = 0;
