@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class LevelDataManager : MonoBehaviour
@@ -27,12 +28,12 @@ public class LevelDataManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI winEnemiesKilledCountText;
     [SerializeField] private TextMeshProUGUI winSkillsUseCountText;
 
-    [Header("Lose Screen Text")]
-    [SerializeField] private TextMeshProUGUI loseScoreText;
-    [SerializeField] private TextMeshProUGUI loseTypoCountText;
-    [SerializeField] private TextMeshProUGUI loseWordsTypedCountText;
-    [SerializeField] private TextMeshProUGUI loseEnemiesKilledCountText;
-    [SerializeField] private TextMeshProUGUI loseSkillsUseCountText;
+    //[Header("Lose Screen Text")]
+    //[SerializeField] private TextMeshProUGUI loseScoreText;
+    //[SerializeField] private TextMeshProUGUI loseTypoCountText;
+    //[SerializeField] private TextMeshProUGUI loseWordsTypedCountText;
+    //[SerializeField] private TextMeshProUGUI loseEnemiesKilledCountText;
+    //[SerializeField] private TextMeshProUGUI loseSkillsUseCountText;
 
     private bool isGameOver;
 
@@ -80,14 +81,16 @@ public class LevelDataManager : MonoBehaviour
 
     public void GameOverLose()
     {
-        isGameOver = true;
+        SceneHistory.Instance.LoadScene("LoseScene");
 
-        loseScoreText.text = ("Score: " + playerScore);
-        loseTypoCountText.text = ("Typo: " + playerTypo);
-        loseWordsTypedCountText.text = ("WordsTyped: " + wordsTyped);
-        loseEnemiesKilledCountText.text = ("Monster Slained: " + enemiesKilled);
-        loseSkillsUseCountText.text = ("Skills Used: " + skillUseCount);
+        //isGameOver = true;
 
-        UIManager.Instance.isLose = true;
+        //loseScoreText.text = ("Score: " + playerScore);
+        //loseTypoCountText.text = ("Typo: " + playerTypo);
+        //loseWordsTypedCountText.text = ("WordsTyped: " + wordsTyped);
+        //loseEnemiesKilledCountText.text = ("Monster Slained: " + enemiesKilled);
+        //loseSkillsUseCountText.text = ("Skills Used: " + skillUseCount);
+
+        //UIManager.Instance.isLose = true;
     }
 }

@@ -45,7 +45,10 @@ public class TypingUIStart : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Start_Stage_SFX");
             Debug.Log("Open Book");
-            SceneManager.LoadScene("Game");
+
+            //SceneManager.LoadScene("Game");
+            SceneHistory.Instance.LoadScene("Level1");
+
             //levelChanger.FadeToLevel(2);
             levelChanger.FadeToNextLevel();
         }
