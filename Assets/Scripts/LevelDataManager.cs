@@ -28,13 +28,6 @@ public class LevelDataManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI winEnemiesKilledCountText;
     [SerializeField] private TextMeshProUGUI winSkillsUseCountText;
 
-    //[Header("Lose Screen Text")]
-    //[SerializeField] private TextMeshProUGUI loseScoreText;
-    //[SerializeField] private TextMeshProUGUI loseTypoCountText;
-    //[SerializeField] private TextMeshProUGUI loseWordsTypedCountText;
-    //[SerializeField] private TextMeshProUGUI loseEnemiesKilledCountText;
-    //[SerializeField] private TextMeshProUGUI loseSkillsUseCountText;
-
     private bool isGameOver;
     string currentScene;
 
@@ -94,15 +87,5 @@ public class LevelDataManager : MonoBehaviour
     public void GameOverLose()
     {
         SceneHistory.Instance.LoadScene("LoseScene");
-
-        //isGameOver = true;
-
-        //loseScoreText.text = ("Score: " + playerScore);
-        //loseTypoCountText.text = ("Typo: " + playerTypo);
-        //loseWordsTypedCountText.text = ("WordsTyped: " + wordsTyped);
-        //loseEnemiesKilledCountText.text = ("Monster Slained: " + enemiesKilled);
-        //loseSkillsUseCountText.text = ("Skills Used: " + skillUseCount);
-
-        //UIManager.Instance.isLose = true;
     }
 }
