@@ -32,7 +32,10 @@ public class FreezeSkill : MonoBehaviour
         foreach (Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
+            {
                 enemy.isWalking = false;
+                enemy._animator.speed = 0;
+            }
         }
 
         yield return new WaitForSeconds(freezeDuration);
@@ -40,7 +43,10 @@ public class FreezeSkill : MonoBehaviour
         foreach (Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
+            {
                 enemy.isWalking = true;
+                enemy._animator.speed = 1.0f;
+            }
         }
 
         // After Freeze Duration enemy will move again

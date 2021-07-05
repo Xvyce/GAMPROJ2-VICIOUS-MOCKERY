@@ -7,7 +7,7 @@ using TMPro;
 public class Enemy : MonoBehaviour
 {
     public EnemyData enemyData;
-    [SerializeField] private Animator _animator;
+    public Animator _animator;
     [SerializeField] private TextMeshProUGUI text;
     private EnemyManager _enemyManager;
     private LevelDataManager lvlDataManager;
@@ -191,7 +191,7 @@ public class Enemy : MonoBehaviour
     // Caster skill to censor word
     IEnumerator CensorWord(float timer)
     {
-        text.text = "!@#$%^&*";
+        text.text = "**********";
 
         yield return new WaitForSeconds(timer);
 

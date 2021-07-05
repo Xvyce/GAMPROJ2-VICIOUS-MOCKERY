@@ -31,7 +31,10 @@ public class SlowSkill : MonoBehaviour
         foreach(Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
+            {
                 enemy.speed = enemy.speed / 2;
+                enemy._animator.speed = .5f;
+            }
         }
 
         yield return new WaitForSeconds(slowDuration);
@@ -39,7 +42,10 @@ public class SlowSkill : MonoBehaviour
         foreach (Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
+            {
                 enemy.speed = enemy.enemyData.Speed;
+                enemy._animator.speed = 1.0f;
+            }
         }
 
         // After Slow Duration enemy returns to its original speed
