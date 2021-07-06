@@ -111,18 +111,6 @@ public class Enemy : MonoBehaviour
             {
                 wordTyped = true;
             }
-            if(enemyData.Type == EnemyType.Armored_Orc || enemyData.Type == EnemyType.Armored_Goblin && revivalCount < enemyData.ArmorCount) // added dis
-            {
-                wordTyped = false;
-                if (revivalCount == 0)
-                {    
-                    lvlDataManager.wordsTyped += 1;
-                    GetNewWordStagger();
-                }
-                else
-                    wordTyped = true;
-                revivalCount++;
-            }
 
         }
         
@@ -175,7 +163,7 @@ public class Enemy : MonoBehaviour
                 GetNewWord();
                 break;
 
-            case EnemyType.Goblin:
+            case EnemyType.Armored_Goblin:
                 isWalking = false;
                 _animator.SetBool("Stagger_One", true);
                 //Play goblin armor break audio
@@ -191,7 +179,7 @@ public class Enemy : MonoBehaviour
                 GetNewWord();
                 break;
 
-            case EnemyType.Orc:
+            case EnemyType.Armored_Orc:
                 isWalking = false;
                 _animator.SetBool("Stagger_One", true);
                 //Play orc armor break audio
@@ -236,10 +224,6 @@ public class Enemy : MonoBehaviour
     {
         GenerateWord();
     }
-    public void GetNewWordStagger() //added dis
-    {
-        generateWordStagger();
-    }
 
     // Caster skill to censor word
     IEnumerator CensorWord(float timer)
@@ -256,6 +240,7 @@ public class Enemy : MonoBehaviour
         StartCoroutine(CensorWord(3.0f));
     }
 
+
     // To access animation in PlayerSkills script
     public void FirstArmorBreakAnimation()
     {
@@ -266,6 +251,7 @@ public class Enemy : MonoBehaviour
     {
         StartCoroutine(StaggerTwo());
     }
+
 
     // If enemy collides with the castle, decrease player health
     private void OnTriggerEnter(Collider other)
@@ -329,11 +315,13 @@ public class Enemy : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
                     wordToType = WordGenerator.GetNormalWordLevelOne();
                     break;
-                case EnemyType.Armored_Goblin: // added dis
+
+                case EnemyType.Armored_Goblin:
                     FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
                     wordToType = WordGenerator.GetEasyWordLevelOne();
                     break;
-                case EnemyType.Armored_Orc: // added dis
+
+                case EnemyType.Armored_Orc:
                     FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
                     wordToType = WordGenerator.GetNormalWordLevelOne();
                     break;
@@ -366,6 +354,16 @@ public class Enemy : MonoBehaviour
                     wordToType = WordGenerator.GetNormalWordLevelTwo();
                     break;
 
+                case EnemyType.Armored_Goblin:
+                    FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
+                    wordToType = WordGenerator.GetEasyWordLevelTwo();
+                    break;
+
+                case EnemyType.Armored_Orc:
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetNormalWordLevelTwo();
+                    break;
+
                 case EnemyType.Boss:
                     wordToType = WordGenerator.GetBossWordLevelTwo();
                     break;
@@ -390,6 +388,16 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Orc:
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetNormalWordLevelThree();
+                    break;
+
+                case EnemyType.Armored_Goblin:
+                    FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
+                    wordToType = WordGenerator.GetEasyWordLevelThree();
+                    break;
+
+                case EnemyType.Armored_Orc:
                     FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
                     wordToType = WordGenerator.GetNormalWordLevelThree();
                     break;
