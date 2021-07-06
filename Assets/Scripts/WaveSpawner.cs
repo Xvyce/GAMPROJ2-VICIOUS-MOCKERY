@@ -164,6 +164,14 @@ public class WaveSpawner : MonoBehaviour
                     randomSpawnPoint = Random.Range(0, spawnPointsBot.Length);
                     Instantiate(_enemy, spawnPointsBot[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                     break;
+                case EnemyType.Armored_Goblin: //added dis
+                    randomSpawnPoint = Random.Range(0, spawnPointsMid.Length);
+                    Instantiate(_enemy, spawnPointsMid[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                    break;
+                case EnemyType.Armored_Orc: //added dis
+                    randomSpawnPoint = Random.Range(0, spawnPointsBot.Length);
+                    Instantiate(_enemy, spawnPointsBot[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                    break;
 
                 case EnemyType.Boss:
                     Instantiate(_enemy, spawnPointsMid[1].position, Quaternion.Euler(30, 0, 0));

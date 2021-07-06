@@ -111,7 +111,21 @@ public class Enemy : MonoBehaviour
             {
                 wordTyped = true;
             }
+            if(enemyData.Type == EnemyType.Armored_Orc || enemyData.Type == EnemyType.Armored_Goblin && revivalCount < enemyData.ArmorCount) // added dis
+            {
+                wordTyped = false;
+                if (revivalCount == 0)
+                {    
+                    lvlDataManager.wordsTyped += 1;
+                    GetNewWordStagger();
+                }
+                else
+                    wordTyped = true;
+                revivalCount++;
+            }
+
         }
+        
 
         if (wordTyped)
         {
@@ -189,6 +203,10 @@ public class Enemy : MonoBehaviour
     public void GetNewWord()
     {
         GenerateWord();
+    }
+    public void GetNewWordStagger() //added dis
+    {
+        generateWordStagger();
     }
 
     // Caster skill to censor word
@@ -279,6 +297,14 @@ public class Enemy : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
                     wordToType = WordGenerator.GetNormalWordLevelOne();
                     break;
+                case EnemyType.Armored_Goblin: // added dis
+                    FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX");
+                    wordToType = WordGenerator.GetEasyWordLevelOne();
+                    break;
+                case EnemyType.Armored_Orc: // added dis
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetNormalWordLevelOne();
+                    break;
 
                 case EnemyType.Boss:
                     wordToType = WordGenerator.GetBossWordLevelOne();
@@ -346,6 +372,58 @@ public class Enemy : MonoBehaviour
 
                 case EnemyType.Caster:
                     wordToType = WordGenerator.GetBossWordLevelThree();
+                    break;
+            }
+        }
+
+        if (text != null)
+            text.text = wordToType;
+
+        wordContainer = wordToType;
+    }
+
+    private void generateWordStagger() //added dis cuz using generateword() will use the spawn sound again
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+        typeIndex = 0;
+
+        if (currentScene == "Level1")
+        {
+            switch (enemyData.Type)
+            {
+                case EnemyType.Armored_Goblin: // added dis
+                    //FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX"); add stagger sound here
+                    wordToType = WordGenerator.GetEasyWordLevelOne();
+                    break;
+                case EnemyType.Armored_Orc: // added dis
+                    //FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX"); add stagger sound here
+                    wordToType = WordGenerator.GetNormalWordLevelOne();
+                    break;
+            }
+        }
+
+        if (currentScene == "Level2")
+        {
+            switch (enemyData.Type)
+            {
+                case EnemyType.Armored_Goblin: // added dis
+                    wordToType = WordGenerator.GetEasyWordLevelOne();
+                    break;
+                case EnemyType.Armored_Orc: // added dis
+                    wordToType = WordGenerator.GetNormalWordLevelOne();
+                    break;
+            }
+        }
+
+        if (currentScene == "Level3")
+        {
+            switch (enemyData.Type)
+            {
+                case EnemyType.Armored_Goblin: // added dis
+                    wordToType = WordGenerator.GetEasyWordLevelOne();
+                    break;
+                case EnemyType.Armored_Orc: // added dis
+                    wordToType = WordGenerator.GetNormalWordLevelOne();
                     break;
             }
         }

@@ -8,43 +8,38 @@ public class WordGenerator : MonoBehaviour
     private static string[] tutorialEasy = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
                                             "t", "u", "v", "w", "x", "y", "z"   };
 
-    private static string[] tutorialNormal = {"one", "day", "you", "man"   };
+    private static string[] tutorialNormal = {"one", "day", "you",  };
 
 
 
     // Level 1 Word Pool
-    private static string[] lvlOneEasy = { "life", "ring", "wolf", "fish", "king", "time", "rain",  "care"     };
+    private static string[] lvlOneEasy = { "life", "ring", "wolf", "fish", "king"  };
 
-    private static string[] lvlOneNormal = { "average", "twelve", "medieval", "strength", "donate", "mountain", "treasure",
-                                            "champion"      };
+    private static string[] lvlOneNormal = { "world", "heart", "apple", "stone", "smart",  };
 
-    private static string[] lvlOneBoss = { "extraordinarily", "intelligent", "professional", "friendship", "everything", "basketball",
-                                            "exterminate", "responsible"    };
+    private static string[] lvlOneBoss = { "intelligent", "professional", "friendship", "everything",
+                                            "exterminate" };
 
 
 
     // Level 2 Word Pool
-    private static string[] lvlTwoEasy = { "life", "ring", "wolf", "fish", "king", "time", "rain", "care", "bean", "evil", "peace", "heart" };
+    private static string[] lvlTwoEasy = { "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace" };
 
-    private static string[] lvlTwoNormal = { "average", "twelve", "medieval", "strength", "donate", "mountain", "treasure",
-                                            "champion", "dragon", "exquisite", "welcome", "presence"      };
+    private static string[] lvlTwoNormal = { "world", "heart", "apple", "stone", "smart","average", "twelve", "medieval"    };
 
-    private static string[] lvlTwoBoss = { "extraordinarily", "intelligent", "professional", "friendship", "everything", "basketball",
-                                            "exterminate", "responsible", "wretchedness", "calisthenics", "astronomical", "handkerchief"    };
+    private static string[] lvlTwoBoss = { "intelligent", "professional", "friendship", "everything", "basketball",
+                                            "exterminate", "responsible", "astronomical"   };
 
 
 
     // Level 3 Word Pool
-    private static string[] lvlThreeEasy = { "life", "ring", "wolf", "fish", "king", "time", "rain", "care", "bean", "evil", "peace", "heart",
-                                            "quest", "quire", "dough", "aztec"      };
+    private static string[] lvlThreeEasy = { "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace", "heart",
+                                            "south", "stone", "thing"   };
 
-    private static string[] lvlThreeNormal = { "average", "twelve", "medieval", "strength", "donate", "mountain", "treasure",
-                                            "champion", "dragon", "exquisite", "welcome", "presence", "fabulous", "halloween", "etiquette",
-                                            "tennessee"     };
+    private static string[] lvlThreeNormal = { "world", "heart", "apple", "stone", "smart", "average", "twelve", "medieval" ,"strength", "donate", "mountain", "treasure"};
 
-    private static string[] lvlThreeBoss = { "extraordinarily", "intelligent", "professional", "friendship", "everything", "basketball",
-                                            "exterminate", "responsible", "wretchedness", "calisthenics", "astronomical", "handkerchief",
-                                            "xenotransplantation", "myrmecophilous", "yarborough", "akorrhaphiophobia"      };
+    private static string[] lvlThreeBoss = { "intelligent", "professional", "friendship", "everything", "basketball",
+                                            "exterminate", "responsible", "astronomical","everything","characters","technology","handkerchief"   };
 
 
     // Get Random Level One Word

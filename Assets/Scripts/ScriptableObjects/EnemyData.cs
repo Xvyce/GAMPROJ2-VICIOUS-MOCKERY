@@ -20,6 +20,8 @@ public enum EnemyType
 {
     Goblin,
     Orc,
+    Armored_Goblin, // added dis
+    Armored_Orc,// added dis
     Support,
     Caster,
     Boss
