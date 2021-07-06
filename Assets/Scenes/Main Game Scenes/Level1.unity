@@ -6763,34 +6763,38 @@ MonoBehaviour:
   - name: Wave 9
     timeBetweenSpawn: 1.5
     waveContent:
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
-      count: 3
+    - enemyPrefab: {fileID: 2761450339370431376, guid: e076e3f9c3b03484dbdd2b73a8cd481a, type: 3}
+      count: 1
   - name: Wave 10
     timeBetweenSpawn: 1.5
     waveContent:
-    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-      count: 3
+    - enemyPrefab: {fileID: 9205211024943220426, guid: db03faf8d9266cb4784f025f52727a5b, type: 3}
+      count: 1
   - name: Wave 11
     timeBetweenSpawn: 1.5
     waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: e076e3f9c3b03484dbdd2b73a8cd481a, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: db03faf8d9266cb4784f025f52727a5b, type: 3}
+      count: 1
     - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-      count: 3
+      count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
-      count: 3
-  - name: Wave 11
+      count: 1
+  - name: Wave 12
     timeBetweenSpawn: 1.5
     waveContent:
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
-      count: 2
-    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-      count: 2
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+    - enemyPrefab: {fileID: 2761450339370431376, guid: e076e3f9c3b03484dbdd2b73a8cd481a, type: 3}
       count: 1
-    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+    - enemyPrefab: {fileID: 9205211024943220426, guid: db03faf8d9266cb4784f025f52727a5b, type: 3}
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
       count: 1
     - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: e076e3f9c3b03484dbdd2b73a8cd481a, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: db03faf8d9266cb4784f025f52727a5b, type: 3}
       count: 1
   - name: Boss Wave
     timeBetweenSpawn: 1.5
