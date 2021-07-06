@@ -282,7 +282,7 @@ public class Enemy : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene().name;
         typeIndex = 0;
 
-        if(currentScene == "TutorialTest")
+        if(currentScene == "Tutorial")
         {
             switch (enemyData.Type)
             {

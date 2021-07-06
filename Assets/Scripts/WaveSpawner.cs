@@ -147,7 +147,7 @@ public class WaveSpawner : MonoBehaviour
 
         type = _enemy.GetComponent<Enemy>().enemyData;
 
-        if(currentScene == "TutorialTest")
+        if(currentScene == "Tutorial")
         {
             Instantiate(_enemy, tutorialSpawnPoint.position, Quaternion.Euler(30, 0, 0));
         }
