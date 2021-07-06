@@ -6,7 +6,6 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI text;
     public Animator animator;
     public AudioSource audioSource;
     public AudioClip[] gibClips;
@@ -18,13 +17,6 @@ public class Player : MonoBehaviour
     private void Start()
     {
         currentScene = SceneManager.GetActiveScene().name;
-
-        if (text != null)
-        {
-            text.text = "!@#$%^&*";
-
-            text.enabled = false;
-        }
     }
 
     private void Update()
@@ -37,15 +29,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void StartGibberish()
-    {
-        text.enabled = true;
-    }
-
-    public void StopGibberish()
-    {
-        text.enabled = false;
-    }
 
     /*public void StartSpeakingGibberish(bool isSpeaking)
     {

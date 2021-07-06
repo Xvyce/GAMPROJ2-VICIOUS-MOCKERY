@@ -141,18 +141,20 @@ public class Enemy : MonoBehaviour
     }
 
     // Armor Break Animations
-    private IEnumerator BossStaggerOne(float timer)
+    private IEnumerator StaggerOne()
     {
         switch (enemyData.Type)
         {
             case EnemyType.Boss:
                 isWalking = false;
                 _animator.SetBool("Stagger_One", true);
+                FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
 
-                yield return new WaitForSeconds(timer);
+                //wait for animation to finish
+                yield return new WaitForSeconds(2.1f);
 
                 _animator.SetBool("Stagger_One", false);
-                speed += enemyData.Speed;
+                speed = enemyData.Speed * 1.5f;
                 isWalking = true;
 
                 _animator.SetBool("Helmet_Walking", true);
@@ -161,7 +163,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private IEnumerator BossStaggerTwo(float timer)
+    private IEnumerator StaggerTwo()
     {
         switch (enemyData.Type)
         {
@@ -169,12 +171,13 @@ public class Enemy : MonoBehaviour
                 isWalking = false;
                 _animator.SetBool("Helmet_Walking", false);
                 _animator.SetBool("Stagger_Two", true);
+                FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
 
-                //wait for seconds = boss stagger animation
-                yield return new WaitForSeconds(timer);
+                //wait for animation to finish
+                yield return new WaitForSeconds(2.1f);
 
                 _animator.SetBool("Stagger_Two", false);
-                speed += enemyData.Speed;
+                speed = enemyData.Speed * 2.0f;
                 isWalking = true;
 
                 _animator.SetBool("Naked_Walking", true);
@@ -206,14 +209,12 @@ public class Enemy : MonoBehaviour
     // To access animation in PlayerSkills script
     public void FirstArmorBreakAnimation()
     {
-        FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
-        StartCoroutine(BossStaggerOne(2.0f));
+        StartCoroutine(StaggerOne());
     }
 
     public void SecondArmorBreakAnimation()
     {
-        FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
-        StartCoroutine(BossStaggerTwo(2.0f));
+        StartCoroutine(StaggerTwo());
     }
 
     // If enemy collides with the castle, decrease player health

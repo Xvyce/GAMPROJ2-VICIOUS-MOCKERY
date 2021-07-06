@@ -22,12 +22,10 @@ public class EnemyWordInput : MonoBehaviour
                 if (!Input.anyKey)
                 {
                     _player.animator.SetBool("isTyping", false);
-                    _player.StopGibberish();
                 }
                 else
                 {
                     _player.animator.SetBool("isTyping", true);
-                    _player.StartGibberish();
                     //_player.StartSpeakingGibberish(true);
                 }
             }
@@ -36,7 +34,6 @@ public class EnemyWordInput : MonoBehaviour
             if (enemyManager.enemyList.Count == 0)
             {
                 _player.animator.SetBool("isTyping", false);
-                _player.StopGibberish();
             }
         }
     }
