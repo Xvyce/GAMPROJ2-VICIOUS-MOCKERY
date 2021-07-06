@@ -9,13 +9,20 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private Wave[] waves;
 
     [SerializeField] private LevelDataManager lvlDataManager;
+
+    [Header("Wave Indicator")]
     [SerializeField] private GameObject waveIndicatorBanner;
     [SerializeField] private TextMeshProUGUI waveIndicatorText;
+    [SerializeField] private float waveIndicatorTimer = 1.0f;
+
+    [Header("SpawnPoints")]
     [SerializeField] private Transform[] spawnPointsTop;
     [SerializeField] private Transform[] spawnPointsMid;
     [SerializeField] private Transform[] spawnPointsBot;
     [SerializeField] private Transform[] spawnPointsAir;
     [SerializeField] private Transform tutorialSpawnPoint;
+
+    [Header("Time Between Wave")]
     [SerializeField] private float timeBetweenWaves;
     private float waveCountdown;
     private int nextWave = 0;
@@ -57,7 +64,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if(state != SpawnState.Spawning)
             {
-                StartCoroutine(WaveIndicator());
+                StartCoroutine(WaveIndicator(waveIndicatorTimer));
                 StartCoroutine(SpawnWave(waves[nextWave]));
             }
         }
@@ -101,14 +108,14 @@ public class WaveSpawner : MonoBehaviour
         return true;
     }
 
-    IEnumerator WaveIndicator()
+    IEnumerator WaveIndicator(float timer)
     {
         FindObjectOfType<AudioManager>().Play("Wave_Indicator_SFX");
         waveIndicatorText.text = waves[nextWave].name;
         waveIndicatorBanner.SetActive(true);
         waveIndicatorText.enabled = true;
 
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(timer);
 
         waveIndicatorBanner.SetActive(false);
         waveIndicatorText.enabled = false;
