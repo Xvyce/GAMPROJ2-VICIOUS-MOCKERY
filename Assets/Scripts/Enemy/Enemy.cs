@@ -91,7 +91,7 @@ public class Enemy : MonoBehaviour
 
         if (typeIndex >= wordToType.Length)
         {
-            if (enemyData.Type == EnemyType.Boss && revivalCount < enemyData.ArmorCount) // Armored Enemies get a new word
+            if (revivalCount < enemyData.ArmorCount) // Armored Enemies get a new word
             {
                 wordTyped = false;
 
@@ -169,6 +169,38 @@ public class Enemy : MonoBehaviour
 
                 _animator.SetBool("Stagger_One", false);
                 speed = enemyData.Speed * 1.5f;
+                isWalking = true;
+
+                _animator.SetBool("Helmet_Walking", true);
+                GetNewWord();
+                break;
+
+            case EnemyType.Goblin:
+                isWalking = false;
+                _animator.SetBool("Stagger_One", true);
+                //Play goblin armor break audio
+
+                //wait for animation to finish
+                yield return new WaitForSeconds(2.1f);
+
+                _animator.SetBool("Stagger_One", false);
+                //speed = enemyData.Speed * 1.5f;
+                isWalking = true;
+
+                _animator.SetBool("Helmet_Walking", true);
+                GetNewWord();
+                break;
+
+            case EnemyType.Orc:
+                isWalking = false;
+                _animator.SetBool("Stagger_One", true);
+                //Play orc armor break audio
+
+                //wait for animation to finish
+                yield return new WaitForSeconds(2.1f);
+
+                _animator.SetBool("Stagger_One", false);
+                //speed = enemyData.Speed * 1.5f;
                 isWalking = true;
 
                 _animator.SetBool("Helmet_Walking", true);
@@ -268,7 +300,7 @@ public class Enemy : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene().name;
         typeIndex = 0;
 
-        if(currentScene == "TutorialTest")
+        if(currentScene == "Tutorial")
         {
             switch (enemyData.Type)
             {
