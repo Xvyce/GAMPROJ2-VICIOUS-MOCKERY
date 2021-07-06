@@ -5552,6 +5552,7 @@ MonoBehaviour:
   lvlDataManager: {fileID: 695943769}
   waveIndicatorBanner: {fileID: 1539289267}
   waveIndicatorText: {fileID: 1539289266}
+  waveIndicatorTimer: 1
   spawnPointsTop:
   - {fileID: 1694181282}
   - {fileID: 175964801}

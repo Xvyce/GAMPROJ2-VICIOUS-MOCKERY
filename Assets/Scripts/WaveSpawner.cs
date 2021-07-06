@@ -166,11 +166,11 @@ public class WaveSpawner : MonoBehaviour
                     break;
 
                 case EnemyType.Boss:
-                    Instantiate(_enemy, spawnPointsMid[1].position, Quaternion.Euler(30, 0, 0));
+                    Instantiate(_enemy, spawnPointsMid[0].position, Quaternion.Euler(30, 0, 0));
                     break;
 
                 case EnemyType.Caster:
-                    Instantiate(_enemy, spawnPointsMid[1].position, Quaternion.Euler(30, 0, 0));
+                    Instantiate(_enemy, spawnPointsMid[0].position, Quaternion.Euler(30, 0, 0));
                     break;
 
                 case EnemyType.Support:
