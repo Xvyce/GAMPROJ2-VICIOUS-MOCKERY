@@ -9,6 +9,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private Wave[] waves;
 
     [SerializeField] private LevelDataManager lvlDataManager;
+    [SerializeField] private GameObject waveIndicatorBanner;
     [SerializeField] private TextMeshProUGUI waveIndicatorText;
     [SerializeField] private Transform[] spawnPointsTop;
     [SerializeField] private Transform[] spawnPointsMid;
@@ -27,6 +28,7 @@ public class WaveSpawner : MonoBehaviour
     {
         waveCountdown = timeBetweenWaves;
         waveIndicatorText.enabled = false;
+        waveIndicatorBanner.SetActive(false);
     }
 
     private void Update()
@@ -103,10 +105,12 @@ public class WaveSpawner : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("Wave_Indicator_SFX");
         waveIndicatorText.text = waves[nextWave].name;
+        waveIndicatorBanner.SetActive(true);
         waveIndicatorText.enabled = true;
 
         yield return new WaitForSeconds(1.0f);
 
+        waveIndicatorBanner.SetActive(false);
         waveIndicatorText.enabled = false;
     }
 
