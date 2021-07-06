@@ -61,7 +61,7 @@ public class LevelDataManager : MonoBehaviour
     {
         isGameOver = false;
 
-        if(currentScene == "TutorialTest")
+        if(currentScene == "Tutorial")
         {
             playerMaxHealth = 20;
             skillPoints = 100;
