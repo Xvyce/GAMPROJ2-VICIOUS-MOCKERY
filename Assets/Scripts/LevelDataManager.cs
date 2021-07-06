@@ -21,6 +21,11 @@ public class LevelDataManager : MonoBehaviour
     [Header("Player Skill Points")]
     public float skillPoints;
 
+    [Header("Updating Score Text")]
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI typoText;
+
+
     [Header("Win Screen Text")]
     [SerializeField] private TextMeshProUGUI winScoreText;
     [SerializeField] private TextMeshProUGUI winTypoCountText;
@@ -47,6 +52,9 @@ public class LevelDataManager : MonoBehaviour
     {
         if (playerCurrentHealth <= 0  && !isGameOver)
             GameOverLose();
+
+        scoreText.text = ("Score: " + playerScore);
+        typoText.text = ("Typo: " + playerTypo);
     }
 
     void Instantiate()
