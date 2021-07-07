@@ -1,40 +1,34 @@
 fileFormatVersion: 2
-guid: 8a134298456e9bb448972e0e64e29f24
+guid: 113a058eebe680848a801261b88e006c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1190030642494772880
-    second: Walk_OrcSprite_0
+      213: 4515900434511404261
+    second: TutorialDefeat_GoblinSprite_0
   - first:
-      213: 741888747069660832
-    second: Walk_OrcSprite_1
+      213: 6455326669214370698
+    second: TutorialDefeat_GoblinSprite_1
   - first:
-      213: -1756580318811322548
-    second: Walk_OrcSprite_2
+      213: 2557821182157247424
+    second: TutorialDefeat_GoblinSprite_2
   - first:
-      213: -6954231813938395897
-    second: Walk_OrcSprite_3
+      213: 4789916006931259938
+    second: TutorialDefeat_GoblinSprite_3
   - first:
-      213: 1718546616973205620
-    second: Walk_OrcSprite_4
+      213: 768403549431652770
+    second: TutorialDefeat_GoblinSprite_4
   - first:
-      213: 27957612262480433
-    second: Walk_OrcSprite_5
+      213: 8814895235795270472
+    second: TutorialDefeat_GoblinSprite_5
   - first:
-      213: 3038394421874770943
-    second: Walk_OrcSprite_6
+      213: -6267896594636876526
+    second: TutorialDefeat_GoblinSprite_6
   - first:
-      213: 5092929925772023175
-    second: Walk_OrcSprite_7
+      213: 6127002916376518588
+    second: TutorialDefeat_GoblinSprite_7
   - first:
-      213: 3148453643855477349
-    second: Walk_OrcSprite_8
-  - first:
-      213: 1152768435608230240
-    second: Walk_OrcSprite_9
-  - first:
-      213: 4758296488732401864
-    second: Walk_OrcSprite_10
+      213: -4447085378965491728
+    second: TutorialDefeat_GoblinSprite_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,7 +154,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_OrcSprite_0
+      name: TutorialDefeat_GoblinSprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 079e44a8f692c7fe0800000000000000
-      internalID: -1190030642494772880
+      spriteID: 5ec9518d483bbae30800000000000000
+      internalID: 4515900434511404261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_1
+      name: TutorialDefeat_GoblinSprite_1
       rect:
         serializedVersion: 2
         x: 128
@@ -195,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ae52ff72e7bb4a00800000000000000
-      internalID: 741888747069660832
+      spriteID: a8bc0a3676de59950800000000000000
+      internalID: 6455326669214370698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_2
+      name: TutorialDefeat_GoblinSprite_2
       rect:
         serializedVersion: 2
         x: 256
@@ -216,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c470fcdb18f5f97e0800000000000000
-      internalID: -1756580318811322548
+      spriteID: 0c3d37130d43f7320800000000000000
+      internalID: 2557821182157247424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_3
+      name: TutorialDefeat_GoblinSprite_3
       rect:
         serializedVersion: 2
         x: 384
@@ -237,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7054b74a20b9d7f90800000000000000
-      internalID: -6954231813938395897
+      spriteID: 2226811fa33397240800000000000000
+      internalID: 4789916006931259938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_4
+      name: TutorialDefeat_GoblinSprite_4
       rect:
         serializedVersion: 2
         x: 512
@@ -258,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47023aafa0189d710800000000000000
-      internalID: 1718546616973205620
+      spriteID: 2a1e50005fae9aa00800000000000000
+      internalID: 768403549431652770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_5
+      name: TutorialDefeat_GoblinSprite_5
       rect:
         serializedVersion: 2
         x: 640
@@ -279,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13a5cabdc43536000800000000000000
-      internalID: 27957612262480433
+      spriteID: 84b3cdd738cc45a70800000000000000
+      internalID: 8814895235795270472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_6
+      name: TutorialDefeat_GoblinSprite_6
       rect:
         serializedVersion: 2
         x: 768
@@ -300,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3cf5be0ab8a2a20800000000000000
-      internalID: 3038394421874770943
+      spriteID: 215d9c38145f309a0800000000000000
+      internalID: -6267896594636876526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_7
+      name: TutorialDefeat_GoblinSprite_7
       rect:
         serializedVersion: 2
         x: 896
@@ -321,14 +315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7851993b8c8bda640800000000000000
-      internalID: 5092929925772023175
+      spriteID: cbf9760b0bc770550800000000000000
+      internalID: 6127002916376518588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_8
+      name: TutorialDefeat_GoblinSprite_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -342,50 +336,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56a3ac968ed81bb20800000000000000
-      internalID: 3148453643855477349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_OrcSprite_9
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06916b8d8c47fff00800000000000000
-      internalID: 1152768435608230240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_OrcSprite_10
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c022ea227dd80240800000000000000
-      internalID: 4758296488732401864
+      spriteID: 0ffade4d867c842c0800000000000000
+      internalID: -4447085378965491728
       vertices: []
       indices: 
       edges: []
@@ -393,7 +345,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8f6cbf360c980e349a12b83c3eb27fa4
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

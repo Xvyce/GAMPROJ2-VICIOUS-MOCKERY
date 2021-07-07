@@ -1,40 +1,34 @@
 fileFormatVersion: 2
-guid: 8a134298456e9bb448972e0e64e29f24
+guid: 1df83ad0e0f98c040883fa9b63b65d75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1190030642494772880
-    second: Walk_OrcSprite_0
+      213: 7206623445299012656
+    second: Idle_Barbarian_0
   - first:
-      213: 741888747069660832
-    second: Walk_OrcSprite_1
+      213: -7986113642054409364
+    second: Idle_Barbarian_1
   - first:
-      213: -1756580318811322548
-    second: Walk_OrcSprite_2
+      213: -5348135485082373604
+    second: Idle_Barbarian_2
   - first:
-      213: -6954231813938395897
-    second: Walk_OrcSprite_3
+      213: 6943458600644940135
+    second: Idle_Barbarian_3
   - first:
-      213: 1718546616973205620
-    second: Walk_OrcSprite_4
+      213: 6588098618945509307
+    second: Idle_Barbarian_4
   - first:
-      213: 27957612262480433
-    second: Walk_OrcSprite_5
+      213: -6310031578697760868
+    second: Idle_Barbarian_5
   - first:
-      213: 3038394421874770943
-    second: Walk_OrcSprite_6
+      213: -6436296502242659662
+    second: Idle_Barbarian_6
   - first:
-      213: 5092929925772023175
-    second: Walk_OrcSprite_7
+      213: -223200453850902309
+    second: Idle_Barbarian_7
   - first:
-      213: 3148453643855477349
-    second: Walk_OrcSprite_8
-  - first:
-      213: 1152768435608230240
-    second: Walk_OrcSprite_9
-  - first:
-      213: 4758296488732401864
-    second: Walk_OrcSprite_10
+      213: -5698076954753974160
+    second: Idle_Barbarian_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,7 +154,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_OrcSprite_0
+      name: Idle_Barbarian_0
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 079e44a8f692c7fe0800000000000000
-      internalID: -1190030642494772880
+      spriteID: 034ac0757d1130460800000000000000
+      internalID: 7206623445299012656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_1
+      name: Idle_Barbarian_1
       rect:
         serializedVersion: 2
         x: 128
@@ -195,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ae52ff72e7bb4a00800000000000000
-      internalID: 741888747069660832
+      spriteID: c63227d64ff9b2190800000000000000
+      internalID: -7986113642054409364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_2
+      name: Idle_Barbarian_2
       rect:
         serializedVersion: 2
         x: 256
@@ -216,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c470fcdb18f5f97e0800000000000000
-      internalID: -1756580318811322548
+      spriteID: c12f009ac1b97c5b0800000000000000
+      internalID: -5348135485082373604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_3
+      name: Idle_Barbarian_3
       rect:
         serializedVersion: 2
         x: 384
@@ -237,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7054b74a20b9d7f90800000000000000
-      internalID: -6954231813938395897
+      spriteID: 761921c2fce1c5060800000000000000
+      internalID: 6943458600644940135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_4
+      name: Idle_Barbarian_4
       rect:
         serializedVersion: 2
         x: 512
@@ -258,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47023aafa0189d710800000000000000
-      internalID: 1718546616973205620
+      spriteID: bb71d77e9c0ad6b50800000000000000
+      internalID: 6588098618945509307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_5
+      name: Idle_Barbarian_5
       rect:
         serializedVersion: 2
         x: 640
@@ -279,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13a5cabdc43536000800000000000000
-      internalID: 27957612262480433
+      spriteID: c9ff83e06b34e68a0800000000000000
+      internalID: -6310031578697760868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_6
+      name: Idle_Barbarian_6
       rect:
         serializedVersion: 2
         x: 768
@@ -300,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3cf5be0ab8a2a20800000000000000
-      internalID: 3038394421874770943
+      spriteID: 2b2bcb2ae6eada6a0800000000000000
+      internalID: -6436296502242659662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_7
+      name: Idle_Barbarian_7
       rect:
         serializedVersion: 2
         x: 896
@@ -321,14 +315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7851993b8c8bda640800000000000000
-      internalID: 5092929925772023175
+      spriteID: bd0d28aae5807ecf0800000000000000
+      internalID: -223200453850902309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_8
+      name: Idle_Barbarian_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -342,50 +336,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56a3ac968ed81bb20800000000000000
-      internalID: 3148453643855477349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_OrcSprite_9
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06916b8d8c47fff00800000000000000
-      internalID: 1152768435608230240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_OrcSprite_10
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c022ea227dd80240800000000000000
-      internalID: 4758296488732401864
+      spriteID: 070cc09033d5ce0b0800000000000000
+      internalID: -5698076954753974160
       vertices: []
       indices: 
       edges: []
@@ -393,7 +345,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8f6cbf360c980e349a12b83c3eb27fa4
+    spriteID: f190e414786497c4dad313125a6f0751
     internalID: 0
     vertices: []
     indices: 

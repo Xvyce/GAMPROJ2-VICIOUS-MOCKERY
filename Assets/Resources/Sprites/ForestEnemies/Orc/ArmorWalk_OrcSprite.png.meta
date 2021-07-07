@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: 8a134298456e9bb448972e0e64e29f24
+guid: 50098997e955ced4d90071587fcba292
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1190030642494772880
-    second: Walk_OrcSprite_0
+      213: -7819042199007794088
+    second: ArmorWalk_OrcSprite_0
   - first:
-      213: 741888747069660832
-    second: Walk_OrcSprite_1
+      213: -628000956943122064
+    second: ArmorWalk_OrcSprite_1
   - first:
-      213: -1756580318811322548
-    second: Walk_OrcSprite_2
+      213: -8888077732372067518
+    second: ArmorWalk_OrcSprite_2
   - first:
-      213: -6954231813938395897
-    second: Walk_OrcSprite_3
+      213: -2662871341771725815
+    second: ArmorWalk_OrcSprite_3
   - first:
-      213: 1718546616973205620
-    second: Walk_OrcSprite_4
+      213: 3928337437273868363
+    second: ArmorWalk_OrcSprite_4
   - first:
-      213: 27957612262480433
-    second: Walk_OrcSprite_5
+      213: 879184348387698261
+    second: ArmorWalk_OrcSprite_5
   - first:
-      213: 3038394421874770943
-    second: Walk_OrcSprite_6
+      213: -1471831681781453054
+    second: ArmorWalk_OrcSprite_6
   - first:
-      213: 5092929925772023175
-    second: Walk_OrcSprite_7
+      213: 4219932324158098798
+    second: ArmorWalk_OrcSprite_7
   - first:
-      213: 3148453643855477349
-    second: Walk_OrcSprite_8
+      213: 1442179337157489234
+    second: ArmorWalk_OrcSprite_8
   - first:
-      213: 1152768435608230240
-    second: Walk_OrcSprite_9
+      213: 5371557737477018741
+    second: ArmorWalk_OrcSprite_9
   - first:
-      213: 4758296488732401864
-    second: Walk_OrcSprite_10
+      213: -2999992994648558216
+    second: ArmorWalk_OrcSprite_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,7 +160,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_OrcSprite_0
+      name: ArmorWalk_OrcSprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 079e44a8f692c7fe0800000000000000
-      internalID: -1190030642494772880
+      spriteID: 85ce95c0c8e2d7390800000000000000
+      internalID: -7819042199007794088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_1
+      name: ArmorWalk_OrcSprite_1
       rect:
         serializedVersion: 2
         x: 128
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ae52ff72e7bb4a00800000000000000
-      internalID: 741888747069660832
+      spriteID: 071cccaf474e847f0800000000000000
+      internalID: -628000956943122064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_2
+      name: ArmorWalk_OrcSprite_2
       rect:
         serializedVersion: 2
         x: 256
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c470fcdb18f5f97e0800000000000000
-      internalID: -1756580318811322548
+      spriteID: 24b47e9b46437a480800000000000000
+      internalID: -8888077732372067518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_3
+      name: ArmorWalk_OrcSprite_3
       rect:
         serializedVersion: 2
         x: 384
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7054b74a20b9d7f90800000000000000
-      internalID: -6954231813938395897
+      spriteID: 904e0278f949b0bd0800000000000000
+      internalID: -2662871341771725815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_4
+      name: ArmorWalk_OrcSprite_4
       rect:
         serializedVersion: 2
         x: 512
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47023aafa0189d710800000000000000
-      internalID: 1718546616973205620
+      spriteID: b48c3920612448630800000000000000
+      internalID: 3928337437273868363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_5
+      name: ArmorWalk_OrcSprite_5
       rect:
         serializedVersion: 2
         x: 640
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13a5cabdc43536000800000000000000
-      internalID: 27957612262480433
+      spriteID: 5566bb9b18d733c00800000000000000
+      internalID: 879184348387698261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_6
+      name: ArmorWalk_OrcSprite_6
       rect:
         serializedVersion: 2
         x: 768
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3cf5be0ab8a2a20800000000000000
-      internalID: 3038394421874770943
+      spriteID: 20f204e22e0039be0800000000000000
+      internalID: -1471831681781453054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_7
+      name: ArmorWalk_OrcSprite_7
       rect:
         serializedVersion: 2
         x: 896
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7851993b8c8bda640800000000000000
-      internalID: 5092929925772023175
+      spriteID: e6dc1a53716309a30800000000000000
+      internalID: 4219932324158098798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_8
+      name: ArmorWalk_OrcSprite_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56a3ac968ed81bb20800000000000000
-      internalID: 3148453643855477349
+      spriteID: 2523ea55776a30410800000000000000
+      internalID: 1442179337157489234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_9
+      name: ArmorWalk_OrcSprite_9
       rect:
         serializedVersion: 2
         x: 1152
@@ -363,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06916b8d8c47fff00800000000000000
-      internalID: 1152768435608230240
+      spriteID: 57491d07d4b9b8a40800000000000000
+      internalID: 5371557737477018741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_OrcSprite_10
+      name: ArmorWalk_OrcSprite_10
       rect:
         serializedVersion: 2
         x: 1280
@@ -384,8 +384,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c022ea227dd80240800000000000000
-      internalID: 4758296488732401864
+      spriteID: 875ff491442ed56d0800000000000000
+      internalID: -2999992994648558216
       vertices: []
       indices: 
       edges: []
@@ -393,7 +393,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8f6cbf360c980e349a12b83c3eb27fa4
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

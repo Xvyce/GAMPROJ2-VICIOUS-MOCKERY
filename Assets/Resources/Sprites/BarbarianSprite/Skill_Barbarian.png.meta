@@ -1,34 +1,16 @@
 fileFormatVersion: 2
-guid: a2017308682570c45b7f3aa535df3da6
+guid: 258cdcdacd92a0f49bbf65c83f908eda
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 655647988024399423
-    second: Walk_GoblinSprite_0
+      213: 3937719279767245788
+    second: Skill_Barbarian_0
   - first:
-      213: 4009066755089000288
-    second: Walk_GoblinSprite_1
+      213: 3927128738853738621
+    second: Skill_Barbarian_1
   - first:
-      213: -2471922078703131585
-    second: Walk_GoblinSprite_2
-  - first:
-      213: 6828850985804558992
-    second: Walk_GoblinSprite_3
-  - first:
-      213: -8616685672510934373
-    second: Walk_GoblinSprite_4
-  - first:
-      213: -6183012724540469879
-    second: Walk_GoblinSprite_5
-  - first:
-      213: -3125002106032748644
-    second: Walk_GoblinSprite_6
-  - first:
-      213: -227018152017819421
-    second: Walk_GoblinSprite_7
-  - first:
-      213: 1112384299560640132
-    second: Walk_GoblinSprite_8
+      213: 4716128194248738880
+    second: Skill_Barbarian_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +46,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -154,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_GoblinSprite_0
+      name: Skill_Barbarian_0
       rect:
         serializedVersion: 2
         x: 0
@@ -168,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f36d4ef0f54591900800000000000000
-      internalID: 655647988024399423
+      spriteID: cd3dbbf62d695a630800000000000000
+      internalID: 3937719279767245788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_GoblinSprite_1
+      name: Skill_Barbarian_1
       rect:
         serializedVersion: 2
         x: 128
@@ -189,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06768e909f013a730800000000000000
-      internalID: 4009066755089000288
+      spriteID: d78da9af7c6ff7630800000000000000
+      internalID: 3927128738853738621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_GoblinSprite_2
+      name: Skill_Barbarian_2
       rect:
         serializedVersion: 2
         x: 256
@@ -210,134 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f34647a57f7f1bdd0800000000000000
-      internalID: -2471922078703131585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_GoblinSprite_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 092f4f07ac3f4ce50800000000000000
-      internalID: 6828850985804558992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_GoblinSprite_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b92b9c4b8026b6880800000000000000
-      internalID: -8616685672510934373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_GoblinSprite_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98d8b00afa6813aa0800000000000000
-      internalID: -6183012724540469879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_GoblinSprite_6
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c97029b3423c1a4d0800000000000000
-      internalID: -3125002106032748644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_GoblinSprite_7
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e8896b813879dcf0800000000000000
-      internalID: -227018152017819421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_GoblinSprite_8
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48e980570abff6f00800000000000000
-      internalID: 1112384299560640132
+      spriteID: 04886650b9d037140800000000000000
+      internalID: 4716128194248738880
       vertices: []
       indices: 
       edges: []
@@ -345,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a8325ac3eb7bcb34f817dc30539df7f0
     internalID: 0
     vertices: []
     indices: 
