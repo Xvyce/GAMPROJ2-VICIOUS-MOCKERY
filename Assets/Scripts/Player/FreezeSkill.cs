@@ -7,6 +7,7 @@ public class FreezeSkill : MonoBehaviour
 {
     [SerializeField] private EnemyManager enemyManager;
     [SerializeField] private LevelDataManager lvlDataManager;
+    [SerializeField] private Animator allyAnimator;
     [SerializeField] private Image fillImage;
     [SerializeField] private float freezeDuration = 3.0f;
 
@@ -28,6 +29,7 @@ public class FreezeSkill : MonoBehaviour
 
     private IEnumerator FreezeEnemy()
     {
+        allyAnimator.SetBool("doingSkill", true);
         // Stops the enemies from walking
         foreach (Enemy enemy in enemyManager.enemyList)
         {
@@ -40,6 +42,7 @@ public class FreezeSkill : MonoBehaviour
 
         yield return new WaitForSeconds(freezeDuration);
 
+        allyAnimator.SetBool("doingSkill", false);
         foreach (Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
