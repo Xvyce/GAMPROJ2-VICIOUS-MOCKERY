@@ -43,9 +43,10 @@ public class TypingUIStart : MonoBehaviour
 
         if (typeIndex >= wordToType.Length)
         {
+            typeIndex = 0;
             FindObjectOfType<AudioManager>().Play("Start_Stage_SFX");
             Debug.Log("Open Book");
-
+            word.text = wordContainer;
             //SceneManager.LoadScene("Game");
             SceneHistory.Instance.LoadScene("Level1");
 

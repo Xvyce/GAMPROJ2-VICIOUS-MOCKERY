@@ -40,6 +40,8 @@ public class TypingUINext : MonoBehaviour
 
         if (typeIndex >= wordToType.Length)
         {
+            typeIndex = 0;
+            wordNext.text = wordContainer;
             Debug.Log("NEXT PAGE");
             pageFlip.turnOnePageBtn_Click(FlipPage.ButtonType.NextButton);
         }
