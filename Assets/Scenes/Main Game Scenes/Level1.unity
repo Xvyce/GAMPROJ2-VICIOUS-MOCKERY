@@ -6821,7 +6821,7 @@ MonoBehaviour:
   spawnPointsAir:
   - {fileID: 2086370198}
   tutorialSpawnPoint: {fileID: 0}
-  timeBetweenWaves: 0.5
+  timeBetweenWaves: 2.5
 --- !u!4 &411227908
 Transform:
   m_ObjectHideFlags: 0
