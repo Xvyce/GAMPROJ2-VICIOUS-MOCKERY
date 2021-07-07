@@ -205,7 +205,7 @@ TextureImporter:
       name: Walk_OrcSprite_2
       rect:
         serializedVersion: 2
-        x: 282
+        x: 281
         y: 6
         width: 57
         height: 101
@@ -393,7 +393,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9e3677530f6a46a48a23df54a99e0b8b
+    spriteID: 8f6cbf360c980e349a12b83c3eb27fa4
     internalID: 0
     vertices: []
     indices: 

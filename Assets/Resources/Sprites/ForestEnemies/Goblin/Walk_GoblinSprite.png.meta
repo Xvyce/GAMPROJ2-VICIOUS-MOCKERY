@@ -20,6 +20,15 @@ TextureImporter:
   - first:
       213: -6183012724540469879
     second: Walk_GoblinSprite_5
+  - first:
+      213: -3125002106032748644
+    second: Walk_GoblinSprite_6
+  - first:
+      213: -227018152017819421
+    second: Walk_GoblinSprite_7
+  - first:
+      213: 1112384299560640132
+    second: Walk_GoblinSprite_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +64,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -253,9 +262,9 @@ TextureImporter:
       name: Walk_GoblinSprite_5
       rect:
         serializedVersion: 2
-        x: 658
-        y: 15
-        width: 65
+        x: 667
+        y: 14
+        width: 53
         height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -266,6 +275,69 @@ TextureImporter:
       bones: []
       spriteID: 98d8b00afa6813aa0800000000000000
       internalID: -6183012724540469879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_GoblinSprite_6
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 15
+        width: 42
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97029b3423c1a4d0800000000000000
+      internalID: -3125002106032748644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_GoblinSprite_7
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 15
+        width: 49
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8896b813879dcf0800000000000000
+      internalID: -227018152017819421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_GoblinSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 15
+        width: 47
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e980570abff6f00800000000000000
+      internalID: 1112384299560640132
       vertices: []
       indices: 
       edges: []

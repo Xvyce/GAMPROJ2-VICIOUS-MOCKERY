@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
     public int revivalCount;
     public bool isWalking;
     public bool isWalkingRight;
+    private bool isDefeat;
 
     // Related to enemy word
     private string wordToType;
@@ -136,10 +137,31 @@ public class Enemy : MonoBehaviour
             lvlDataManager.wordsTyped += 1;
             lvlDataManager.enemiesKilled += 1;
 
-            Destroy(gameObject);
+            //Only Goblin, Orc and Support currently have defeat animations
+            if(enemyData.Type != EnemyType.Boss && enemyData.Type != EnemyType.Caster)
+            {
+                StartCoroutine(Defeat());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
 
         return wordTyped;
+    }
+
+    //Defeat Animation
+    private IEnumerator Defeat()
+    {
+        isDefeat = true;
+        isWalking = false;
+        isWalkingRight = true;
+        _animator.SetBool("Is_Defeat", true);
+
+        yield return new WaitForSeconds(3f);
+
+        Destroy(gameObject);
     }
 
     // Armor Break Animations
@@ -147,13 +169,12 @@ public class Enemy : MonoBehaviour
     {
         switch (enemyData.Type)
         {
-            case EnemyType.Boss:
+            case EnemyType.Boss: //Armored Ogre
                 isWalking = false;
                 _animator.SetBool("Stagger_One", true);
                 FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
 
-                //wait for animation to finish
-                yield return new WaitForSeconds(2.1f);
+                yield return new WaitForSeconds(2.1f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
                 speed = enemyData.Speed * 1.5f;
@@ -163,36 +184,30 @@ public class Enemy : MonoBehaviour
                 GetNewWord();
                 break;
 
-            case EnemyType.Armored_Goblin:
-                isWalking = false;
+            case EnemyType.Armored_Goblin: //Armored Goblin
                 _animator.SetBool("Stagger_One", true);
                 //Play goblin armor break audio
-
-                //wait for animation to finish
-                yield return new WaitForSeconds(2.1f);
+                
+                yield return new WaitForSeconds(0.9f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
-                //speed = enemyData.Speed * 1.5f;
-                isWalking = true;
 
-                _animator.SetBool("Helmet_Walking", true);
-                GetNewWord();
+                _animator.SetBool("Naked_Walking", true);
+                generateWordStagger();
+
                 break;
 
-            case EnemyType.Armored_Orc:
-                isWalking = false;
+            case EnemyType.Armored_Orc: //Armored Orc
                 _animator.SetBool("Stagger_One", true);
                 //Play orc armor break audio
 
-                //wait for animation to finish
-                yield return new WaitForSeconds(2.1f);
+                yield return new WaitForSeconds(.92f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
-                //speed = enemyData.Speed * 1.5f;
-                isWalking = true;
 
-                _animator.SetBool("Helmet_Walking", true);
-                GetNewWord();
+                _animator.SetBool("Naked_Walking", true);
+                generateWordStagger();
+
                 break;
         }
     }
@@ -207,8 +222,7 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Stagger_Two", true);
                 FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
 
-                //wait for animation to finish
-                yield return new WaitForSeconds(2.1f);
+                yield return new WaitForSeconds(2.1f);//wait for animation to end
 
                 _animator.SetBool("Stagger_Two", false);
                 speed = enemyData.Speed * 2.0f;
@@ -281,6 +295,7 @@ public class Enemy : MonoBehaviour
        }
     }
 
+    #region GetRandomWord
     private void GenerateWord()
     {
         string currentScene = SceneManager.GetActiveScene().name;
@@ -421,7 +436,9 @@ public class Enemy : MonoBehaviour
 
         wordContainer = wordToType;
     }
+    #endregion
 
+    #region GetRandomWordStagger
     private void generateWordStagger() //added dis cuz using generateword() will use the spawn sound again
     {
         string currentScene = SceneManager.GetActiveScene().name;
@@ -447,10 +464,10 @@ public class Enemy : MonoBehaviour
             switch (enemyData.Type)
             {
                 case EnemyType.Armored_Goblin: // added dis
-                    wordToType = WordGenerator.GetEasyWordLevelOne();
+                    wordToType = WordGenerator.GetEasyWordLevelTwo();
                     break;
                 case EnemyType.Armored_Orc: // added dis
-                    wordToType = WordGenerator.GetNormalWordLevelOne();
+                    wordToType = WordGenerator.GetNormalWordLevelTwo();
                     break;
             }
         }
@@ -460,10 +477,10 @@ public class Enemy : MonoBehaviour
             switch (enemyData.Type)
             {
                 case EnemyType.Armored_Goblin: // added dis
-                    wordToType = WordGenerator.GetEasyWordLevelOne();
+                    wordToType = WordGenerator.GetEasyWordLevelThree();
                     break;
                 case EnemyType.Armored_Orc: // added dis
-                    wordToType = WordGenerator.GetNormalWordLevelOne();
+                    wordToType = WordGenerator.GetNormalWordLevelThree();
                     break;
             }
         }
@@ -473,4 +490,5 @@ public class Enemy : MonoBehaviour
 
         wordContainer = wordToType;
     }
+    #endregion
 }
