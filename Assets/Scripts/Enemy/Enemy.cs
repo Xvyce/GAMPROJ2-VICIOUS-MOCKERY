@@ -140,7 +140,7 @@ public class Enemy : MonoBehaviour
             //Only Goblin, Orc and Support currently have defeat animations
             if(enemyData.Type != EnemyType.Boss && enemyData.Type != EnemyType.Caster)
             {
-                StartCoroutine(Defeat());
+                Defeat();
             }
             else
             {
@@ -152,16 +152,14 @@ public class Enemy : MonoBehaviour
     }
 
     //Defeat Animation
-    private IEnumerator Defeat()
+    private void Defeat()
     {
         isDefeat = true;
         isWalking = false;
+        speed = speed * 2;
+
         isWalkingRight = true;
         _animator.SetBool("Is_Defeat", true);
-
-        yield return new WaitForSeconds(3f);
-
-        Destroy(gameObject);
     }
 
     // Armor Break Animations
@@ -249,6 +247,7 @@ public class Enemy : MonoBehaviour
         text.text = wordContainer;
     }
 
+
     public void StartCensor()
     {
         StartCoroutine(CensorWord(3.0f));
@@ -272,27 +271,33 @@ public class Enemy : MonoBehaviour
     {
 
         if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support || other.gameObject.tag == "Player" && enemyData.Type != EnemyType.Support)
-       {
+        {
             lvlDataManager.playerCurrentHealth -= enemyData.AttackDamage;
             Debug.Log("Enemy has entered the castle");
             EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);
             Destroy(this.gameObject);
-       }
+        }
 
-       // For the support enemy to move back and forth
-       if (other.gameObject.tag == "Castle" && enemyData.Type == EnemyType.Support) // going left so flip when 
-       {
+        //For the support enemy to move back and forth
+        if (other.gameObject.tag == "Castle" && enemyData.Type == EnemyType.Support) // going left so flip when 
+        {
             thisSprite.flipX = true;
             isWalking = false;
             isWalkingRight = true;
-       }
-       if(other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support && !isDefeat)
-       {
+        }
+        if(other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support && !isDefeat)
+        {
             thisSprite.flipX = false;
             isWalking = true;
             isWalkingRight = false;
-       }
+        }
+
+        // Despawn enemy if isDefeat is true
+        if(other.gameObject.tag == "RightWall" && isDefeat)
+        {
+            Destroy(gameObject);
+        }
     }
 
     #region GetRandomWord

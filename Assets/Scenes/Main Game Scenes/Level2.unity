@@ -4953,7 +4953,7 @@ GameObject:
   - component: {fileID: 1807277830}
   - component: {fileID: 1807277831}
   m_Layer: 0
-  m_Name: InvisWall
+  m_Name: InvisRightWall
   m_TagString: RightWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4967,7 +4967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807277829}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.15, y: 4.5904093, z: 3.05}
+  m_LocalPosition: {x: 17.1, y: 4.5904093, z: 3.05}
   m_LocalScale: {x: 1, y: 1, z: 1.7112882}
   m_Children: []
   m_Father: {fileID: 0}
