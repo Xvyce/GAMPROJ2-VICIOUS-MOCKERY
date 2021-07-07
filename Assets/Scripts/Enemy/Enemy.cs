@@ -187,26 +187,26 @@ public class Enemy : MonoBehaviour
             case EnemyType.Armored_Goblin: //Armored Goblin
                 _animator.SetBool("Stagger_One", true);
                 //Play goblin armor break audio
-                
+                generateWordStagger();
+
                 yield return new WaitForSeconds(0.9f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
 
                 _animator.SetBool("Naked_Walking", true);
-                generateWordStagger();
 
                 break;
 
             case EnemyType.Armored_Orc: //Armored Orc
                 _animator.SetBool("Stagger_One", true);
                 //Play orc armor break audio
+                generateWordStagger();
 
                 yield return new WaitForSeconds(.92f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
 
                 _animator.SetBool("Naked_Walking", true);
-                generateWordStagger();
 
                 break;
         }
@@ -287,7 +287,7 @@ public class Enemy : MonoBehaviour
             isWalking = false;
             isWalkingRight = true;
        }
-       if(other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support)
+       if(other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support && !isDefeat)
        {
             thisSprite.flipX = false;
             isWalking = true;
