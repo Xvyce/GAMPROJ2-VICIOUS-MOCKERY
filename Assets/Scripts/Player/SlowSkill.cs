@@ -7,6 +7,7 @@ public class SlowSkill : MonoBehaviour
 {
     [SerializeField] private EnemyManager enemyManager;
     [SerializeField] private LevelDataManager lvlDataManager;
+    [SerializeField] private Animator allyAnimator;
     [SerializeField] private Image fillImage;
     [SerializeField] private float slowDuration = 3.0f;
 
@@ -28,6 +29,7 @@ public class SlowSkill : MonoBehaviour
 
     private IEnumerator SlowEnemy()
     {
+        allyAnimator.SetBool("doingSkill", true);
         foreach(Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
@@ -39,6 +41,7 @@ public class SlowSkill : MonoBehaviour
 
         yield return new WaitForSeconds(slowDuration);
 
+        allyAnimator.SetBool("doingSkill", false);
         foreach (Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)

@@ -8,7 +8,9 @@ public class BreakArmorSkill : MonoBehaviour
 
     [SerializeField] private EnemyManager enemyManager;
     [SerializeField] private LevelDataManager lvlDataManager;
+    [SerializeField] private Animator allyAnimator;
     [SerializeField] private Image fillImage;
+    [SerializeField] private float animationDuration = 3.0f;
 
 
     void Update()
@@ -26,15 +28,18 @@ public class BreakArmorSkill : MonoBehaviour
         fillImage.fillAmount = lvlDataManager.skillPoints / 100;
     }
 
-    void BreakEnemyArmor()
+
+    IEnumerator BreakEnemyArmor()
     {
+        allyAnimator.SetBool("doingSkill", true);
+
         foreach (Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
             {
                 if (enemy.revivalCount >= enemy.enemyData.ArmorCount)
                 {
-                    return;
+                    yield return null;
                 }
                 else
                 {
@@ -52,6 +57,10 @@ public class BreakArmorSkill : MonoBehaviour
                 }
             }
         }
+
+        yield return new WaitForSeconds(animationDuration);
+
+        allyAnimator.SetBool("doingSkill", false);
     }
 
     public void ActivateEnemyBreakArmor()
@@ -59,7 +68,7 @@ public class BreakArmorSkill : MonoBehaviour
         if (lvlDataManager.skillPoints >= 100)
         {
             FindObjectOfType<AudioManager>().Play("Break_Armor_SFX");
-            BreakEnemyArmor();
+            StartCoroutine(BreakEnemyArmor());
             lvlDataManager.skillPoints -= 100;
         }
 
