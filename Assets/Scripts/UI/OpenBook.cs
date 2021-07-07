@@ -44,6 +44,7 @@ public class OpenBook : MonoBehaviour
                     insideBackCover.SetActive(false);
                     openedBook.SetActive(true);
 
+                    AppEvents.OpenBookFunction();
                 }
             }
             if (isCloseClicked)

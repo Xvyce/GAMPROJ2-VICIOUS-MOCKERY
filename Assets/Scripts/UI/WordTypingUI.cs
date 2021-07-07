@@ -42,10 +42,14 @@ public class WordTypingUI : MonoBehaviour
             word.color = Color.green;
         }
 
-        if(typeIndex >= wordToType.Length)
-        {
+        if (typeIndex >= wordToType.Length)
+        { 
+            typeIndex = 0;
+
             Debug.Log("Open Book");
             Flip.openBtn_Click();
+            word.text = wordContainer;
         }
     }
 }
+

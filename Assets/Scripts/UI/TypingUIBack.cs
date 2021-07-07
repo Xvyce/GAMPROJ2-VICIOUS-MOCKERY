@@ -40,6 +40,8 @@ public class TypingUIBack : MonoBehaviour
 
         if (typeIndex >= wordToType.Length)
         {
+            typeIndex = 0;
+            wordBack.text = wordContainer;
             Debug.Log("BACK PAGE");
             pageFlip.turnOnePageBtn_Click(FlipPage.ButtonType.BackButton);
         }
