@@ -13424,7 +13424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.size
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[1].clip
@@ -13437,7 +13437,7 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: f2e4fb6148d5b1f409ff9c5919880bec, type: 3}
+      objectReference: {fileID: 8300000, guid: bb1ec80d5eae47147b771f47a83cbcbd, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[2].name
       value: Mistake_SFX
@@ -13499,12 +13499,52 @@ PrefabInstance:
       value: Ogre_Noise_SFX
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[10].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2fdc66890d93a824881ee3736cafe089, type: 3}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[10].name
+      value: Boss_Level_1_SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[2].volume
-      value: 0.45
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[3].volume
-      value: 0.45
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[5].volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[6].volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[7].volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[8].volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[9].volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[10].volume
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6130445300513291896, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_Name
@@ -64086,6 +64126,114 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.size
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c86a5af0ae045db469da2afbdeb15536, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: f3829cecd98b05c49b28b3dcaa28b633, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: d8ceb3aaa2929f64bb0f8a8724339c8b, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 486616ee90643f647a34011e0ef5ba18, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 02ac0dc4bde05794f8ad8b89d52df8bb, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c8acfc9da1ffa54680c42da4984a98b, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0cf8a83fecbe1214590cc9515e1d3e82, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e20c5ec815c7b44b8eeeb827f321e06, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: b10fd0fc304316d47b4d1949744d99d6, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c11c69a9e998ba439226f487df9983b, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: b4f3da6204c7fac4da9025ac4ad3c372, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: 94c41ff99d75e184f81f22024fc8a158, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8fa2c84aab1f5ff4090a37b1e8411a23, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5534501a0ffcd3748aa849af436af617, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[14]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8553346167c53884ebfa36d4aac726ce, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[15]
+      value: 
+      objectReference: {fileID: 8300000, guid: 972bf2f22f6bbd6418a60a1f06653b39, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[16]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a10a47b7062b4a48a4b676165f54e45, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[17]
+      value: 
+      objectReference: {fileID: 8300000, guid: 49a278938ed6272449efd958f05e899d, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[18]
+      value: 
+      objectReference: {fileID: 8300000, guid: d3deb536799fa1542b1491ce42899f26, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[19]
+      value: 
+      objectReference: {fileID: 8300000, guid: ec48c637fd409a74ebe23c1c12713dd8, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[20]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a78b5db41db28d4f8fff97225bfe1eb, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[21]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bc364e626ced354aa1c1218ef4d435c, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[22]
+      value: 
+      objectReference: {fileID: 8300000, guid: 368350029a1742a49ac30bbeaf5c5296, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[23]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3794790b5fd68b04084a983f86953f52, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[24]
+      value: 
+      objectReference: {fileID: 8300000, guid: af226b276b26f8f439de8f0d07e655b0, type: 3}
+    - target: {fileID: 725658405108499298, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
+      propertyPath: gibClips.Array.data[25]
+      value: 
+      objectReference: {fileID: 8300000, guid: 02fdcb106b53de9468181724fd8b218e, type: 3}
     - target: {fileID: 725658405108499301, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
       propertyPath: m_RootOrder
       value: 11
