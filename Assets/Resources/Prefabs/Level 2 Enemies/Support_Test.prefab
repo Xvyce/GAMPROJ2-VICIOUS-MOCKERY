@@ -243,15 +243,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e8ba9e653cdec8c4c8cfa2e9980acd04, type: 2}
+  m_sharedMaterial: {fileID: -5499226446829552673, guid: e8ba9e653cdec8c4c8cfa2e9980acd04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278667378
+  m_fontColor: {r: 0.44705883, g: 0.28235295, b: 0.02745098, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -461,6 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenSplatter: {fileID: 5525420212978535687, guid: efdab08ddbc53334496f1f426e939ba4, type: 3}
+  timebtSplatter: 5
 --- !u!95 &3984877267321361116
 Animator:
   serializedVersion: 3
