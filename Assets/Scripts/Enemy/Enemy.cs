@@ -278,6 +278,7 @@ public class Enemy : MonoBehaviour
         {
             lvlDataManager.playerCurrentHealth -= enemyData.AttackDamage;
             Debug.Log("Enemy has entered the castle");
+            player.StopSpeakingGibberish();
             EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);
             Destroy(this.gameObject);
