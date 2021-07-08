@@ -211,6 +211,7 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Naked_Walking", true);
 
                 break;
+
             case EnemyType.Support_Boss: //Armored Orc
                 //_animator.SetBool("Stagger_One", true);
                 //Play Support Boss break audio
@@ -245,6 +246,7 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Naked_Walking", true);
                 GetNewWord();
                 break;
+
             case EnemyType.Support_Boss:
                 //isWalking = false;
                 //_animator.SetBool("Stagger_Two", true);
@@ -342,8 +344,8 @@ public class Enemy : MonoBehaviour
             isWalkingRight = false;
         }
 
-            // Despawn enemy if isDefeat is true
-            if (other.gameObject.tag == "RightWall" && isDefeat)
+        // Despawn enemy if isDefeat is true
+        if (other.gameObject.tag == "RightWall" && isDefeat)
         {
             Destroy(gameObject);
         }
