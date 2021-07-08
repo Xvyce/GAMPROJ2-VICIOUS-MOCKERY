@@ -23,6 +23,7 @@ public enum EnemyType
     Armored_Goblin, // added dis
     Armored_Orc,// added dis
     Support,
+    Support_Boss,//added dis
     Caster,
     Boss
 }

@@ -211,6 +211,18 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Naked_Walking", true);
 
                 break;
+            case EnemyType.Support_Boss: //Armored Orc
+                //_animator.SetBool("Stagger_One", true);
+                //Play Support Boss break audio
+                generateWordStagger();
+
+                yield return new WaitForSeconds(.92f);//wait for animation to end
+
+                //_animator.SetBool("Stagger_One", false);
+
+                //_animator.SetBool("Naked_Walking", true);
+
+                break;
         }
     }
 
@@ -231,6 +243,21 @@ public class Enemy : MonoBehaviour
                 isWalking = true;
 
                 _animator.SetBool("Naked_Walking", true);
+                GetNewWord();
+                break;
+            case EnemyType.Support_Boss:
+                //isWalking = false;
+                //_animator.SetBool("Stagger_Two", true);
+                //Play Support Boss break audio
+                
+
+                //yield return new WaitForSeconds(.92f);//wait for animation to end
+
+                //_animator.SetBool("Stagger_Two", false);
+                //speed = enemyData.Speed * 2.0f;
+                //isWalking = true;
+
+                //_animator.SetBool("Naked_Walking", true);
                 GetNewWord();
                 break;
         }
@@ -274,7 +301,8 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support || other.gameObject.tag == "Player" && enemyData.Type != EnemyType.Support)
+        if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support && enemyData.Type != EnemyType.Support_Boss
+            || other.gameObject.tag == "Player" && enemyData.Type != EnemyType.Support && enemyData.Type != EnemyType.Support_Boss)
         {
             lvlDataManager.playerCurrentHealth -= enemyData.AttackDamage;
             Debug.Log("Enemy has entered the castle");
@@ -294,15 +322,28 @@ public class Enemy : MonoBehaviour
             isWalking = false;
             isWalkingRight = true;
         }
-        if(other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support && !isDefeat)
+        if (other.gameObject.tag == "Castle" && enemyData.Type == EnemyType.Support_Boss)
+        {
+            thisSprite.flipX = true;
+            isWalking = false;
+            isWalkingRight = true;
+        }
+
+        if (other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support && !isDefeat)
+        {
+            thisSprite.flipX = false;
+            isWalking = true;
+            isWalkingRight = false;
+        }
+        if (other.gameObject.tag == "RightWall" && enemyData.Type == EnemyType.Support_Boss && !isDefeat)
         {
             thisSprite.flipX = false;
             isWalking = true;
             isWalkingRight = false;
         }
 
-        // Despawn enemy if isDefeat is true
-        if(other.gameObject.tag == "RightWall" && isDefeat)
+            // Despawn enemy if isDefeat is true
+            if (other.gameObject.tag == "RightWall" && isDefeat)
         {
             Destroy(gameObject);
         }
@@ -361,6 +402,9 @@ public class Enemy : MonoBehaviour
                 case EnemyType.Support:
                     wordToType = WordGenerator.GetNormalWordLevelOne();
                     break;
+                case EnemyType.Support_Boss:
+                    wordToType = WordGenerator.GetBossWordLevelOne();
+                    break;
 
                 case EnemyType.Caster:
                     wordToType = WordGenerator.GetBossWordLevelOne();
@@ -399,6 +443,9 @@ public class Enemy : MonoBehaviour
                 case EnemyType.Support:
                     wordToType = WordGenerator.GetNormalWordLevelTwo();
                     break;
+                case EnemyType.Support_Boss:
+                    wordToType = WordGenerator.GetBossWordLevelTwo();
+                    break;
 
                 case EnemyType.Caster:
                     wordToType = WordGenerator.GetBossWordLevelTwo();
@@ -436,6 +483,9 @@ public class Enemy : MonoBehaviour
 
                 case EnemyType.Support:
                     wordToType = WordGenerator.GetNormalWordLevelThree();
+                    break;
+                case EnemyType.Support_Boss:
+                    wordToType = WordGenerator.GetBossWordLevelThree();
                     break;
 
                 case EnemyType.Caster:

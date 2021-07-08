@@ -6,6 +6,7 @@ public class SupportSkill : MonoBehaviour
 {
     private Enemy _enemy;
     public GameObject screenSplatter;
+    public float timebtSplatter = 5f;
 
     private void Awake()
     {
@@ -20,7 +21,7 @@ public class SupportSkill : MonoBehaviour
 
     private IEnumerator ScreenSplatter()
     {
-        yield return new WaitForSeconds(5f); // after this
+        yield return new WaitForSeconds(timebtSplatter); // after this
                                              // either instantiate poop or upgrade allies
         Destroy(Instantiate(screenSplatter), 5);
     }

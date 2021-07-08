@@ -190,6 +190,10 @@ public class WaveSpawner : MonoBehaviour
                     randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
                     Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                     break;
+                case EnemyType.Support_Boss:
+                    randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
+                    Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                    break;
             }
         }
     }
