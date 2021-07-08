@@ -1,40 +1,34 @@
 fileFormatVersion: 2
-guid: 5302b2f9fb9f6d04f9f68aa2e8eb087d
+guid: 227ac02c8207d7c48a74036ddb16d05b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2493663683270348876
-    second: ArmorWalk_Mountain_OrcSprite_0
+      213: -1130288940066289801
+    second: ArmorBreak_Mountain_GoblinSprite 1_0
   - first:
-      213: -7564319189861245304
-    second: ArmorWalk_Mountain_OrcSprite_1
+      213: 6173722980512607318
+    second: ArmorBreak_Mountain_GoblinSprite 1_1
   - first:
-      213: -154843322054950753
-    second: ArmorWalk_Mountain_OrcSprite_2
+      213: -193836759234919908
+    second: ArmorBreak_Mountain_GoblinSprite 1_2
   - first:
-      213: 251889848598174655
-    second: ArmorWalk_Mountain_OrcSprite_3
+      213: 6567746454686243799
+    second: ArmorBreak_Mountain_GoblinSprite 1_3
   - first:
-      213: -6643882594300705197
-    second: ArmorWalk_Mountain_OrcSprite_4
+      213: -2894180020573701104
+    second: ArmorBreak_Mountain_GoblinSprite 1_4
   - first:
-      213: -7998912634198919931
-    second: ArmorWalk_Mountain_OrcSprite_5
+      213: 7391589463361866522
+    second: ArmorBreak_Mountain_GoblinSprite 1_5
   - first:
-      213: 2368724687423755716
-    second: ArmorWalk_Mountain_OrcSprite_6
+      213: -2703497919637927948
+    second: ArmorBreak_Mountain_GoblinSprite 1_6
   - first:
-      213: -4270815707890027143
-    second: ArmorWalk_Mountain_OrcSprite_7
+      213: 5731601309644893944
+    second: ArmorBreak_Mountain_GoblinSprite 1_7
   - first:
-      213: 1524292615952606525
-    second: ArmorWalk_Mountain_OrcSprite_8
-  - first:
-      213: 4323409532229186658
-    second: ArmorWalk_Mountain_OrcSprite_9
-  - first:
-      213: 6989196259012126868
-    second: ArmorWalk_Mountain_OrcSprite_10
+      213: -4862283183499390155
+    second: ArmorBreak_Mountain_GoblinSprite 1_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,232 +154,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_0
+      name: ArmorBreak_Mountain_GoblinSprite 1_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 6
-        width: 102
-        height: 98
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c401f9e68e54b9220800000000000000
-      internalID: 2493663683270348876
+      spriteID: 777cbc192386050f0800000000000000
+      internalID: -1130288940066289801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_1
+      name: ArmorBreak_Mountain_GoblinSprite 1_1
       rect:
         serializedVersion: 2
-        x: 143
-        y: 6
-        width: 77
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88e56a836c3260790800000000000000
-      internalID: -7564319189861245304
+      spriteID: 65cae1b47587da550800000000000000
+      internalID: 6173722980512607318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_2
+      name: ArmorBreak_Mountain_GoblinSprite 1_2
       rect:
         serializedVersion: 2
-        x: 282
-        y: 6
-        width: 66
-        height: 101
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f90c219a1d2e9ddf0800000000000000
-      internalID: -154843322054950753
+      spriteID: c12c3659e7a5f4df0800000000000000
+      internalID: -193836759234919908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_3
+      name: ArmorBreak_Mountain_GoblinSprite 1_3
       rect:
         serializedVersion: 2
-        x: 416
-        y: 6
-        width: 52
-        height: 102
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbb98349b74ee7300800000000000000
-      internalID: 251889848598174655
+      spriteID: 7db97666a92552b50800000000000000
+      internalID: 6567746454686243799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_4
+      name: ArmorBreak_Mountain_GoblinSprite 1_4
       rect:
         serializedVersion: 2
-        x: 542
-        y: 6
-        width: 54
-        height: 102
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3564e453bff2cc3a0800000000000000
-      internalID: -6643882594300705197
+      spriteID: 01cfba5fa9ec5d7d0800000000000000
+      internalID: -2894180020573701104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_5
+      name: ArmorBreak_Mountain_GoblinSprite 1_5
       rect:
         serializedVersion: 2
-        x: 677
-        y: 6
-        width: 49
-        height: 99
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5057039d6572ef090800000000000000
-      internalID: -7998912634198919931
+      spriteID: a1b44316473349660800000000000000
+      internalID: 7391589463361866522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_6
+      name: ArmorBreak_Mountain_GoblinSprite 1_6
       rect:
         serializedVersion: 2
-        x: 801
-        y: 6
-        width: 52
-        height: 98
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c5579c9d866fd020800000000000000
-      internalID: 2368724687423755716
+      spriteID: 4f749f047fe3b7ad0800000000000000
+      internalID: -2703497919637927948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_7
+      name: ArmorBreak_Mountain_GoblinSprite 1_7
       rect:
         serializedVersion: 2
-        x: 922
-        y: 6
-        width: 58
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9757e0ecdb30bb4c0800000000000000
-      internalID: -4270815707890027143
+      spriteID: 8fe2c87160dba8f40800000000000000
+      internalID: 5731601309644893944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_8
+      name: ArmorBreak_Mountain_GoblinSprite 1_8
       rect:
         serializedVersion: 2
-        x: 1039
-        y: 6
-        width: 77
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d352b93ee00672510800000000000000
-      internalID: 1524292615952606525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_9
-      rect:
-        serializedVersion: 2
-        x: 1165
-        y: 6
-        width: 74
-        height: 99
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 264fe0b2016dffb30800000000000000
-      internalID: 4323409532229186658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmorWalk_Mountain_OrcSprite_10
-      rect:
-        serializedVersion: 2
-        x: 1292
-        y: 6
-        width: 86
-        height: 98
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49828eb97fc9ef060800000000000000
-      internalID: 6989196259012126868
+      spriteID: 533d922c433b58cb0800000000000000
+      internalID: -4862283183499390155
       vertices: []
       indices: 
       edges: []
@@ -393,7 +345,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ec9661836591b744d92e5b7c9d12e959
+    spriteID: d12e5f0aa2b29b8458021bc5a800dcea
     internalID: 0
     vertices: []
     indices: 
