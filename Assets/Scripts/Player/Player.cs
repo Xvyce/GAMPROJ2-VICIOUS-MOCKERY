@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
 
     IEnumerator SpeakingGibberish()
     {
-        yield return null;
+        /*yield return null;
 
         for (int i = 0; i < gibClips.Length; i++)
         {
@@ -57,6 +57,12 @@ public class Player : MonoBehaviour
             {
                 yield return null;
             }
-        }
+        }*/
+        
+        audioSource.clip = gibClips[Random.Range(0, gibClips.Length)];
+        audioSource.Play();
+
+        yield return new WaitForSeconds(audioSource.clip.length);
+        gibberishCoroutine = StartCoroutine(SpeakingGibberish());
     }
 }

@@ -24,13 +24,13 @@ public class EnemyManager : MonoBehaviour
                 {
                     _player.StartSpeakingGibberish();
                 }
-
             }
             else
             {
                 _player.animator.SetBool("isTypingCorrect", false);
                 activeEnemy.TypedWrongLetter();
                 FindObjectOfType<AudioManager>().Play("Mistake_SFX");
+                _player.StopSpeakingGibberish();
             }
         }
         else
@@ -44,6 +44,12 @@ public class EnemyManager : MonoBehaviour
                     _player.animator.SetBool("isTypingCorrect", true);
                     enemy.TypeLetter();
                     FindObjectOfType<AudioManager>().Play("Typing_SFX");
+                    
+                    if(_player.keyPressedOnce == false)//added this
+                    {
+                        _player.StartSpeakingGibberish();
+                    }
+
                     break;
                 }
             }
