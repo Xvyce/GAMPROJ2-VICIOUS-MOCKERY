@@ -7306,6 +7306,66 @@ MonoBehaviour:
     waveContent:
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
       count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 1
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
   lvlDataManager: {fileID: 1520156171}
   waveIndicatorBanner: {fileID: 2098154387}
   waveIndicatorText: {fileID: 2098154386}
