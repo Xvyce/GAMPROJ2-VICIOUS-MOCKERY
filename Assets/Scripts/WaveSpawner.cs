@@ -25,7 +25,7 @@ public class WaveSpawner : MonoBehaviour
     [Header("Time Between Wave")]
     [SerializeField] private float timeBetweenWaves;
     private float waveCountdown;
-    private int nextWave = 0;
+    public int nextWave = 0;
 
     private float enemySearchCountdown = 1f;
 
