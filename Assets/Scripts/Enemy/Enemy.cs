@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using TMPro;
 
 public class Enemy : MonoBehaviour
@@ -9,6 +10,7 @@ public class Enemy : MonoBehaviour
     public EnemyData enemyData;
     public Animator _animator;
     [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private Image typeBox;
     private EnemyManager _enemyManager;
     private LevelDataManager lvlDataManager;
     private SpriteRenderer thisSprite;
@@ -156,6 +158,7 @@ public class Enemy : MonoBehaviour
     {
         isDefeat = true;
         isWalking = false;
+        typeBox.enabled = false;
         speed = speed * 2;
 
         isWalkingRight = true;
