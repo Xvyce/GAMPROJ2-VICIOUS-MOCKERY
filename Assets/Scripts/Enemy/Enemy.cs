@@ -156,6 +156,7 @@ public class Enemy : MonoBehaviour
     //Defeat Animation
     private void Defeat()
     {
+        player.StopSpeakingGibberish();
         isDefeat = true;
         isWalking = false;
         typeBox.enabled = false;
