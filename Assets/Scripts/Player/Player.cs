@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     string currentScene;
     bool isLose = false;
-    public bool keyPressedOnce = false;//added this
+    public bool speakingGib = false;//added this
 
     private void Start()
     {
@@ -33,14 +33,14 @@ public class Player : MonoBehaviour
     public void StartSpeakingGibberish()
     {
         gibberishCoroutine = StartCoroutine(SpeakingGibberish());
-        keyPressedOnce = true; //added this
+        speakingGib = true; //added this
         Debug.Log("Speaking Gibberish: True");
     }
 
     public void StopSpeakingGibberish()
     {
         StopCoroutine(gibberishCoroutine);
-        keyPressedOnce = false; //added this
+        speakingGib = false; //added this
         Debug.Log("Speaking Gibberish: False");
     }
 

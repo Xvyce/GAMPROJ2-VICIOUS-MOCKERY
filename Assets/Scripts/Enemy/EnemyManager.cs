@@ -20,7 +20,7 @@ public class EnemyManager : MonoBehaviour
                 activeEnemy.TypeLetter();
                 FindObjectOfType<AudioManager>().Play("Typing_SFX");
 
-                if(_player.keyPressedOnce == false)//added this
+                if(_player.speakingGib == false)//added this
                 {
                     _player.StartSpeakingGibberish();
                 }
@@ -45,7 +45,7 @@ public class EnemyManager : MonoBehaviour
                     enemy.TypeLetter();
                     FindObjectOfType<AudioManager>().Play("Typing_SFX");
                     
-                    if(_player.keyPressedOnce == false)//added this
+                    if(_player.speakingGib == false)//added this
                     {
                         _player.StartSpeakingGibberish();
                     }
