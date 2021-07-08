@@ -139,8 +139,8 @@ public class Enemy : MonoBehaviour
             lvlDataManager.wordsTyped += 1;
             lvlDataManager.enemiesKilled += 1;
 
-            //Only Goblin, Orc and Support currently have defeat animations
-            if(enemyData.Type != EnemyType.Boss && enemyData.Type != EnemyType.Caster)
+            //Caster doesnt have run animation
+            if(enemyData.Type != EnemyType.Caster)
             {
                 Defeat();
             }

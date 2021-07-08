@@ -29,6 +29,33 @@ TextureImporter:
   - first:
       213: 8037312978707092592
     second: ArmoredMountain_Main_GoblinSprite 1_8
+  - first:
+      213: 5261742824978083706
+    second: ArmorWalk_Mountain_Main_GoblinSprite_0
+  - first:
+      213: -2100266912183147994
+    second: ArmorWalk_Mountain_Main_GoblinSprite_1
+  - first:
+      213: 3144368821038549712
+    second: ArmorWalk_Mountain_Main_GoblinSprite_2
+  - first:
+      213: 4434091654406937567
+    second: ArmorWalk_Mountain_Main_GoblinSprite_3
+  - first:
+      213: 447810669465350567
+    second: ArmorWalk_Mountain_Main_GoblinSprite_4
+  - first:
+      213: -1596391954212470223
+    second: ArmorWalk_Mountain_Main_GoblinSprite_5
+  - first:
+      213: 5673486235568003818
+    second: ArmorWalk_Mountain_Main_GoblinSprite_6
+  - first:
+      213: 1055159594892271912
+    second: ArmorWalk_Mountain_Main_GoblinSprite_7
+  - first:
+      213: 3766592016247833364
+    second: ArmorWalk_Mountain_Main_GoblinSprite_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -154,190 +181,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_0
+      name: ArmorWalk_Mountain_Main_GoblinSprite_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 20
+        y: 15
+        width: 60
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef08a8146b06af3b0800000000000000
-      internalID: -5477959660842876674
+      spriteID: a7f674ea837750940800000000000000
+      internalID: 5261742824978083706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_1
+      name: ArmorWalk_Mountain_Main_GoblinSprite_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 152
+        y: 15
+        width: 52
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a42ab8a429c1d7590800000000000000
-      internalID: -7674946775327989174
+      spriteID: 62221ddfe5a5ad2e0800000000000000
+      internalID: -2100266912183147994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_2
+      name: ArmorWalk_Mountain_Main_GoblinSprite_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 289
+        y: 15
+        width: 43
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 913837a25d1f9c1a0800000000000000
-      internalID: -6788629065441770727
+      spriteID: 0da01dc78ca03ab20800000000000000
+      internalID: 3144368821038549712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_3
+      name: ArmorWalk_Mountain_Main_GoblinSprite_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 421
+        y: 15
+        width: 50
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccf8b56a30f819900800000000000000
-      internalID: 689489463803088844
+      spriteID: fdb137aedde098d30800000000000000
+      internalID: 4434091654406937567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_4
+      name: ArmorWalk_Mountain_Main_GoblinSprite_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 545
+        y: 15
+        width: 47
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 274da10219089d6e0800000000000000
-      internalID: -1812276014242671502
+      spriteID: 7a1bc186e61f63600800000000000000
+      internalID: 447810669465350567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_5
+      name: ArmorWalk_Mountain_Main_GoblinSprite_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 667
+        y: 14
+        width: 53
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 172464224fd699a00800000000000000
-      internalID: 763762507130487409
+      spriteID: 132cfd6c9f978d9e0800000000000000
+      internalID: -1596391954212470223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_6
+      name: ArmorWalk_Mountain_Main_GoblinSprite_6
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 801
+        y: 15
+        width: 44
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8090ec53246743780800000000000000
-      internalID: -8704202153057711864
+      spriteID: aea591dfba54cbe40800000000000000
+      internalID: 5673486235568003818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_7
+      name: ArmorWalk_Mountain_Main_GoblinSprite_7
       rect:
         serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 933
+        y: 15
+        width: 50
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6edd1b2fbb76db70800000000000000
-      internalID: 8923455772673564269
+      spriteID: 82126e2af0ea4ae00800000000000000
+      internalID: 1055159594892271912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmoredMountain_Main_GoblinSprite 1_8
+      name: ArmorWalk_Mountain_Main_GoblinSprite_8
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1057
+        y: 15
+        width: 47
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 074197412954a8f60800000000000000
-      internalID: 8037312978707092592
+      spriteID: 41346468b7f954430800000000000000
+      internalID: 3766592016247833364
       vertices: []
       indices: 
       edges: []
