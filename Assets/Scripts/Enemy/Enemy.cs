@@ -279,7 +279,10 @@ public class Enemy : MonoBehaviour
             player.StopSpeakingGibberish();
             lvlDataManager.playerCurrentHealth -= enemyData.AttackDamage;
             Debug.Log("Enemy has entered the castle");
-            player.StopSpeakingGibberish();
+
+            if (player.speakingGib)
+                player.StopSpeakingGibberish();
+
             EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);
             Destroy(this.gameObject);
