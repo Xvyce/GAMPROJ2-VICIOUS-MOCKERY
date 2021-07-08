@@ -9,10 +9,10 @@ public class Player : MonoBehaviour
     public Animator animator;
     public AudioSource audioSource;
     public AudioClip[] gibClips;
+    public Coroutine gibberishCoroutine;
 
     string currentScene;
     bool isLose = false;
-    bool gibberishActivated = false;
     public bool keyPressedOnce = false;//added this
 
     private void Start()
@@ -30,22 +30,18 @@ public class Player : MonoBehaviour
         }
     }
 
-
-    public void StartSpeakingGibberish(bool isSpeaking)
+    public void StartSpeakingGibberish()
     {
-        keyPressedOnce = true;//added this
-        gibberishActivated = isSpeaking;
+        gibberishCoroutine = StartCoroutine(SpeakingGibberish());
+        keyPressedOnce = true; //added this
         Debug.Log("Speaking Gibberish: True");
-        if (gibberishActivated == true)
-        {
-            StartCoroutine(SpeakingGibberish());
-            gibberishActivated = false;
-        }
     }
 
     public void StopSpeakingGibberish()
     {
-        StopCoroutine(SpeakingGibberish());
+        StopCoroutine(gibberishCoroutine);
+        keyPressedOnce = false; //added this
+        Debug.Log("Speaking Gibberish: False");
     }
 
     IEnumerator SpeakingGibberish()
@@ -62,8 +58,5 @@ public class Player : MonoBehaviour
                 yield return null;
             }
         }
-
-        keyPressedOnce = false;//added this
-        Debug.Log("Speaking Gibberish: False");
     }
 }

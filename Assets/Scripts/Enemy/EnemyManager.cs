@@ -19,6 +19,12 @@ public class EnemyManager : MonoBehaviour
                 _player.animator.SetBool("isTypingCorrect", true);
                 activeEnemy.TypeLetter();
                 FindObjectOfType<AudioManager>().Play("Typing_SFX");
+
+                if(_player.keyPressedOnce == false)//added this
+                {
+                    _player.StartSpeakingGibberish();
+                }
+
             }
             else
             {
