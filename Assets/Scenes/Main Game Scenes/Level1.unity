@@ -33017,6 +33017,98 @@ MonoBehaviour:
     waveContent:
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
       count: 1
+  - name: Wave 2
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 3
+    timeBetweenSpawn: 2
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 2
+  - name: Wave 4
+    timeBetweenSpawn: 2
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 1
+  - name: Wave 5
+    timeBetweenSpawn: 2
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 2
+  - name: Wave 6
+    timeBetweenSpawn: 2
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 7
+    timeBetweenSpawn: 2
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 2
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 2
+  - name: Wave 8
+    timeBetweenSpawn: 2
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 9
+    timeBetweenSpawn: 1.5
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
+      count: 1
+  - name: Wave 10
+    timeBetweenSpawn: 1.5
+    waveContent:
+    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
+      count: 1
+  - name: Wave 11
+    timeBetweenSpawn: 1.5
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 12
+    timeBetweenSpawn: 1.5
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
+      count: 1
+    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
+      count: 1
+  - name: Boss Wave
+    timeBetweenSpawn: 1.5
+    waveContent:
+    - enemyPrefab: {fileID: 6587408742269680060, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
+      count: 1
   lvlDataManager: {fileID: 1520156171}
   waveIndicatorBanner: {fileID: 2098154387}
   waveIndicatorText: {fileID: 2098154386}
@@ -70424,7 +70516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1563481470180787012, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1441
+      value: 34.000652
       objectReference: {fileID: 0}
     - target: {fileID: 1563481470180787012, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
       propertyPath: m_LocalPosition.z

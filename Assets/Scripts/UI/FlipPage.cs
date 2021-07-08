@@ -198,7 +198,7 @@ public class FlipPage : MonoBehaviour
         string footer1 = "";
         string footer2 = "";
         string body1 = "";
-        //string body2 = "";
+        string body2 = "";
         string header1 = "";
         string summary = "";
         //string header2 = "";
@@ -212,7 +212,7 @@ public class FlipPage : MonoBehaviour
         footerText2_1.text = footer2;
 
         bodyText1_1.text = body1;
-      //  bodyText1_2.text = body2;
+        bodyText1_2.text = body2;
 
     }
 
@@ -240,8 +240,6 @@ public class FlipPage : MonoBehaviour
             level2Text_3.gameObject.SetActive(true);
             level2Start.gameObject.SetActive(true);
             imglevel2.gameObject.SetActive(true);
-            headerText1_2.gameObject.SetActive(false);
-
 
             //SetVisibleText();
 
@@ -271,7 +269,6 @@ public class FlipPage : MonoBehaviour
             level2Text_3.gameObject.SetActive(false);
             level2Start.gameObject.SetActive(false);
             imglevel2.gameObject.SetActive(false);
-            headerText1_2.gameObject.SetActive(true);
 
             //SetVisibleText();
 
