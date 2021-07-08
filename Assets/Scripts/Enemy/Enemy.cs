@@ -121,23 +121,7 @@ public class Enemy : MonoBehaviour
         if (wordTyped)
         {
             // Add some score
-            if (typoCounter == 0)// No typo == more score || Typo == less score
-            {
-                lvlDataManager.playerScore += 2;
-
-                if (lvlDataManager.skillPoints < 100)
-                    lvlDataManager.skillPoints += 10;
-            }
-            else
-            {
-                lvlDataManager.playerScore += 1;
-
-                if (lvlDataManager.skillPoints < 100)
-                    lvlDataManager.skillPoints += 5;
-            }
-
-            lvlDataManager.wordsTyped += 1;
-            lvlDataManager.enemiesKilled += 1;
+            AddScore();
 
             //Caster doesnt have run animation
             if(enemyData.Type != EnemyType.Caster)
@@ -151,6 +135,27 @@ public class Enemy : MonoBehaviour
         }
 
         return wordTyped;
+    }
+
+    private void AddScore()
+    {
+        if (typoCounter == 0)// No typo == more score || Typo == less score
+        {
+            lvlDataManager.playerScore += 2;
+
+            if (lvlDataManager.skillPoints < 100)
+                lvlDataManager.skillPoints += 10;
+        }
+        else
+        {
+            lvlDataManager.playerScore += 1;
+
+            if (lvlDataManager.skillPoints < 100)
+                lvlDataManager.skillPoints += 5;
+        }
+
+        lvlDataManager.wordsTyped += 1;
+        lvlDataManager.enemiesKilled += 1;
     }
 
     //Defeat Animation
