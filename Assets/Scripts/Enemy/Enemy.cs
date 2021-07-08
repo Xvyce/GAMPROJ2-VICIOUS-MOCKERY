@@ -403,6 +403,7 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Boss:
+                    FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
                     wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
 

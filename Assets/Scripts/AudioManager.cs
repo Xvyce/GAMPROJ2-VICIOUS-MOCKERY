@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
-    public AudioMixerGroup audioMixerGroup;
 
     //public static AudioManager instance;
     string currentScene;
+    bool isPlayingBossMusic;
 
 
     protected virtual void Awake()
@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
         //}
         //DontDestroyOnLoad(gameObject);
 
-        currentScene = SceneManager.GetActiveScene().name;
+        currentScene = SceneManager.GetActiveScene().name; 
 
         foreach (Sound s in sounds)
         {
@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
-            s.source.outputAudioMixerGroup = audioMixerGroup;
+            //s.source.outputAudioMixerGroup = audioMixerGroup;
         }
     }
 
@@ -44,8 +44,8 @@ public class AudioManager : MonoBehaviour
     {
         if (currentScene == "MainMenu")
         {
-                Play("Main_Menu_BGM");
-                Play("Tavern_Ambience_SFX");
+            Play("Main_Menu_BGM");
+            Play("Tavern_Ambience_SFX");
         }
         if (currentScene == "Tutorial")
         {
@@ -72,9 +72,6 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
-
-       
-
         s.source.Play();
     }
 
@@ -126,6 +123,7 @@ public class Sound
     public string name;
 
     public AudioClip clip;
+    public AudioMixerGroup audioMixerGroup;
 
     [Range(0f, 1f)] public float volume;
     [Range(.1f, 3f)] public float pitch;

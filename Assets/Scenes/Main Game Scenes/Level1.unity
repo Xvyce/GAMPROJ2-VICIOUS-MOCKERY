@@ -13579,6 +13579,14 @@ PrefabInstance:
       propertyPath: sounds.Array.data[10].volume
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[0].audioMixerGroup
+      value: 
+      objectReference: {fileID: -6242220650804832145, guid: 32904f7dd73306446abf19a9f12744c5, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[10].audioMixerGroup
+      value: 
+      objectReference: {fileID: -6242220650804832145, guid: 32904f7dd73306446abf19a9f12744c5, type: 2}
     - target: {fileID: 6130445300513291896, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_Name
       value: AudioManager
