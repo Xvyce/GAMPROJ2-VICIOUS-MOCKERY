@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public AudioMixerGroup audioMixerGroup;
 
     //public static AudioManager instance;
     string currentScene;
@@ -35,21 +36,30 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = audioMixerGroup;
         }
     }
 
     public void Start()
     {
         if (currentScene == "MainMenu")
-            Play("Main_Menu_BGM");
+        {
+                Play("Main_Menu_BGM");
+                Play("Tavern_Ambience_SFX");
+        }
         if (currentScene == "Tutorial")
+        {
             Play("Tutorial_BGM");
+            Play("Tavern_Ambience_SFX");
+        }
         if (currentScene == "Level1")
             Play("Level_1_BGM");
         if (currentScene == "Level2")
             Play("Level_2_BGM");
         if (currentScene == "Level3")
             Play("");
+        if (currentScene == "LoseScene")
+            Play("Lose_BGM");
     }
 
 
