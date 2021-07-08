@@ -22,7 +22,7 @@ public class UIManager : Singleton<UIManager>
         if (isWin == true)
         {
             WinScreen.SetActive(true);
-            LeanTween.moveY(WinScreen, 5, -3);
+            LeanTween.moveY(WinScreen, 350, 1);
         }
 
         if (isWin == false)
