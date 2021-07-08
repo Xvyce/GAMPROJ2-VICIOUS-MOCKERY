@@ -42,13 +42,14 @@ public class AudioManager : MonoBehaviour
     {
         if (currentScene == "MainMenu")
             Play("Main_Menu_BGM");
-
+        if (currentScene == "Tutorial")
+            Play("Tutorial_BGM");
         if (currentScene == "Level1")
             Play("Level_1_BGM");
-        /*if (currentScene == "Level2")
-            Play("");
+        if (currentScene == "Level2")
+            Play("Level_2_BGM");
         if (currentScene == "Level3")
-            Play("");*/
+            Play("");
     }
 
 
