@@ -2694,6 +2694,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8509250886991206152, guid: b780424b689ce294a8cf4423b9b8e8d8, type: 3}
   m_PrefabInstance: {fileID: 728589468}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &728589471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8509250888066299826, guid: b780424b689ce294a8cf4423b9b8e8d8, type: 3}
+  m_PrefabInstance: {fileID: 728589468}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &728589472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8509250888736484563, guid: b780424b689ce294a8cf4423b9b8e8d8, type: 3}
+  m_PrefabInstance: {fileID: 728589468}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &728589473 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8509250888702821797, guid: b780424b689ce294a8cf4423b9b8e8d8, type: 3}
+  m_PrefabInstance: {fileID: 728589468}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &728589474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8509250887637433029, guid: b780424b689ce294a8cf4423b9b8e8d8, type: 3}
+  m_PrefabInstance: {fileID: 728589468}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &800922175
 GameObject:
   m_ObjectHideFlags: 0
@@ -6408,6 +6452,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 728589470}
+  wordfield: {fileID: 728589474}
+  RestartText: {fileID: 728589473}
+  MenuText: {fileID: 728589472}
+  QuitText: {fileID: 728589471}
 --- !u!1 &1723559739
 GameObject:
   m_ObjectHideFlags: 0

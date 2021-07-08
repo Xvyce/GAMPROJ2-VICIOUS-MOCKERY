@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Text;
+using UnityEngine.UI;
 
 public class TypingUIStart : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI word;
     private string wordToType;
+    [SerializeField] private TextMeshProUGUI wordfield;
     private string wordContainer;
     private int typeIndex;
     public LevelChanger levelChanger;
@@ -17,6 +20,7 @@ public class TypingUIStart : MonoBehaviour
 
     private void Start()
     {
+        highlightalphabet('b');
         TextComponent.fontStyle = FontStyles.Underline;
         wordToType = word.text.ToLower();
         wordContainer = wordToType;
@@ -29,7 +33,7 @@ public class TypingUIStart : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Typing_SFX");
             typeIndex++;
-
+            
             word.text = word.text.Remove(0, 1);
             word.color = Color.red;
         }
@@ -53,5 +57,12 @@ public class TypingUIStart : MonoBehaviour
             //levelChanger.FadeToLevel(2);
             levelChanger.FadeToNextLevel();
         }
+    }
+
+    public void highlightalphabet(char colalpha)
+    {
+        StringBuilder strBuilder = new StringBuilder(wordfield.text);
+        strBuilder.Replace(colalpha.ToString(), "<color=#FFF000>" + colalpha + "</color>");
+        wordfield.text = strBuilder.ToString();
     }
 }
