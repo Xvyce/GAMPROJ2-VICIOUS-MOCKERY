@@ -17,16 +17,17 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
+        highlightalphabet('C');
+        highlightalphabet2('R');
+        highlightalphabet3('M');
+        highlightalphabet4('Q');
         GameIsPaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        highlightalphabet('C');
-        highlightalphabet2('R');
-        highlightalphabet3('M');
-        highlightalphabet4('Q');
+       
         if (Input.GetKeyDown(KeyCode.C))
         {
             if (GameIsPaused)
