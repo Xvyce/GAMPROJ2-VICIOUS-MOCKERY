@@ -34,7 +34,7 @@ public class Page
        foreach (string word in words)
         {
             wordCnt++;
-            if(wordCnt > 11)
+            if(wordCnt > 100)
             {
                 pge.Pages.Add(page);
                 page = "";

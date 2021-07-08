@@ -11,11 +11,13 @@ public class TypingUIBack : MonoBehaviour
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
+    public TMP_Text TextComponent;
 
     bool hasActiveWord;
 
     private void Start()
     {
+        TextComponent.fontStyle = FontStyles.Underline;
         wordToType = wordBack.text.ToLower();
         wordContainer = wordToType;
         typeIndex = 0;

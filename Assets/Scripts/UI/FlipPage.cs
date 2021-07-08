@@ -23,6 +23,12 @@ public class FlipPage : MonoBehaviour
     [SerializeField] Text headerText2_1;
     [SerializeField] Text headerText2_2;
 
+    [SerializeField] Text level2Text_1;
+    [SerializeField] Text level2Text_2;
+    [SerializeField] Text level2Text_3;
+    [SerializeField] Image imglevel2;
+    [SerializeField] TextMeshProUGUI level2Start;
+
     [SerializeField] Text bodyText1_1;
     [SerializeField] Text bodyText1_2;
     [SerializeField] TextMeshProUGUI bodyText1_3;
@@ -47,8 +53,10 @@ public class FlipPage : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        nextBtn.gameObject.SetActive(true);
         startRotation = transform.rotation;
         startPosition = transform.position;
+        
 
         if (nextBtn != null)
             nextBtn.onClick.AddListener(() => turnOnePageBtn_Click(ButtonType.NextButton));
@@ -92,12 +100,14 @@ public class FlipPage : MonoBehaviour
         Page.CurrentPage1 = 0;
         Page.CurrentPage2 = 1;
 
+        
         backBtn.gameObject.SetActive(false);
         nextBtn.gameObject.SetActive(false);
 
        if (pge.Pages.Count > 2)
         {
             nextBtn.gameObject.SetActive(true);
+            
         }
 
         SetVisibleText();
@@ -192,6 +202,7 @@ public class FlipPage : MonoBehaviour
         string header1 = "";
         string summary = "";
         //string header2 = "";
+        
 
        
         headerText1_1.text = header1;
@@ -202,7 +213,6 @@ public class FlipPage : MonoBehaviour
 
         bodyText1_1.text = body1;
         bodyText1_2.text = body2;
-
 
     }
 
@@ -223,6 +233,13 @@ public class FlipPage : MonoBehaviour
             Page.CurrentPage1 += 2;
             Page.CurrentPage2 += 2;
             Page pge = Page.RandomPage;
+            img.gameObject.SetActive(false);
+            bodyText1_3.gameObject.SetActive(false);
+            level2Text_1.gameObject.SetActive(true);
+            level2Text_2.gameObject.SetActive(true);
+            level2Text_3.gameObject.SetActive(true);
+            level2Start.gameObject.SetActive(true);
+            imglevel2.gameObject.SetActive(true);
 
             //SetVisibleText();
 
@@ -245,6 +262,13 @@ public class FlipPage : MonoBehaviour
 
             Page.CurrentPage1 -= 2;
             Page.CurrentPage2 -= 2;
+            img.gameObject.SetActive(true);
+            bodyText1_3.gameObject.SetActive(true);
+            level2Text_1.gameObject.SetActive(false);
+            level2Text_2.gameObject.SetActive(false);
+            level2Text_3.gameObject.SetActive(false);
+            level2Start.gameObject.SetActive(false);
+            imglevel2.gameObject.SetActive(false);
 
             //SetVisibleText();
 
