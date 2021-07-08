@@ -15,6 +15,8 @@ public class Page
 
     public static int CurrentPage1 = 0;
     public static int CurrentPage2 = 1;
+    public static int CurrentPage3 = 2;
+    public static int CurrentPage4 = 3;
 
    
     public static Page GetRandomPage()

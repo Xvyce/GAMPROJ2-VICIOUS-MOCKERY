@@ -10,6 +10,7 @@ public class OpenBook : MonoBehaviour
 
     [SerializeField] GameObject openedBook;
     [SerializeField] GameObject insideBackCover;
+    [SerializeField] GameObject nextButton;
 
     private Vector3 rotationVector;
 
@@ -43,7 +44,7 @@ public class OpenBook : MonoBehaviour
                     gameObject.SetActive(false);
                     insideBackCover.SetActive(false);
                     openedBook.SetActive(true);
-
+                    nextButton.SetActive(true);
                     AppEvents.OpenBookFunction();
                 }
             }
@@ -72,6 +73,7 @@ public class OpenBook : MonoBehaviour
         gameObject.SetActive(true);
         openedBook.SetActive(false);
         insideBackCover.SetActive(true);
+        nextButton.SetActive(true);
 
         isCloseClicked = true;
         startTime = DateTime.Now;

@@ -78,6 +78,7 @@ public class FlipPage : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+       
         if (isClicked)
         {
             transform.Rotate(rotationVector * Time.deltaTime);
@@ -99,12 +100,14 @@ public class FlipPage : MonoBehaviour
         Page pge = Page.GetRandomPage();
         Page.CurrentPage1 = 0;
         Page.CurrentPage2 = 1;
+        Page.CurrentPage3 = 2;
+        Page.CurrentPage4 = 3;
 
         
         backBtn.gameObject.SetActive(false);
-        nextBtn.gameObject.SetActive(false);
+        nextBtn.gameObject.SetActive(true);
 
-       if (pge.Pages.Count > 2)
+       if (pge.Pages.Count > 4)
         {
             nextBtn.gameObject.SetActive(true);
             
@@ -198,7 +201,7 @@ public class FlipPage : MonoBehaviour
         string footer1 = "";
         string footer2 = "";
         string body1 = "";
-        //string body2 = "";
+       // string body2 = "";
         string header1 = "";
         string summary = "";
         //string header2 = "";
@@ -212,7 +215,7 @@ public class FlipPage : MonoBehaviour
         footerText2_1.text = footer2;
 
         bodyText1_1.text = body1;
-      //  bodyText1_2.text = body2;
+        //bodyText1_2.text = body2;
 
     }
 
@@ -228,18 +231,24 @@ public class FlipPage : MonoBehaviour
         {
             rotationVector = new Vector3(0, 180, 0);
 
-            SetFlipPageText(Page.CurrentPage2, Page.CurrentPage2 + 1);
+            //SetFlipPageText(Page.CurrentPage2, Page.CurrentPage2 + 1);
+            nextBtn.gameObject.SetActive(true);
 
-            Page.CurrentPage1 += 2;
-            Page.CurrentPage2 += 2;
+            Page.CurrentPage1 += 4;
+            Page.CurrentPage2 += 4;
+            Page.CurrentPage3 += 4;
+            Page.CurrentPage4 += 4;
             Page pge = Page.RandomPage;
+
             img.gameObject.SetActive(false);
             bodyText1_3.gameObject.SetActive(false);
+
             level2Text_1.gameObject.SetActive(true);
             level2Text_2.gameObject.SetActive(true);
             level2Text_3.gameObject.SetActive(true);
             level2Start.gameObject.SetActive(true);
             imglevel2.gameObject.SetActive(true);
+
             headerText1_2.gameObject.SetActive(false);
 
             nextBtn.gameObject.SetActive(true);
@@ -248,11 +257,13 @@ public class FlipPage : MonoBehaviour
 
             ClearVisibleText();
 
-            if ((Page.CurrentPage2 >= pge.Pages.Count || (Page.CurrentPage1 >= pge.Pages.Count)))
+           if ((Page.CurrentPage2 >= pge.Pages.Count || (Page.CurrentPage1 >= pge.Pages.Count)))
             {
                 nextBtn.gameObject.SetActive(false);
             }
 
+            
+           
         }
         else if (type == ButtonType.BackButton)
         {
@@ -261,24 +272,29 @@ public class FlipPage : MonoBehaviour
 
             rotationVector = new Vector3(0, -180, 0);
 
-            SetFlipPageText(Page.CurrentPage1 - 1, Page.CurrentPage1);
+           // SetFlipPageText(Page.CurrentPage1 - 1, Page.CurrentPage1);
 
-            Page.CurrentPage1 -= 2;
-            Page.CurrentPage2 -= 2;
+            Page.CurrentPage1 -= 4;
+            Page.CurrentPage2 -= 4;
+            Page.CurrentPage3 -= 4;
+            Page.CurrentPage4 -= 4;
+
             img.gameObject.SetActive(true);
             bodyText1_3.gameObject.SetActive(true);
+
             level2Text_1.gameObject.SetActive(false);
             level2Text_2.gameObject.SetActive(false);
             level2Text_3.gameObject.SetActive(false);
             level2Start.gameObject.SetActive(false);
             imglevel2.gameObject.SetActive(false);
+
             headerText1_2.gameObject.SetActive(true);
 
             //SetVisibleText();
 
-            ClearVisibleText();
+            //ClearVisibleText();
 
-            if ((Page.CurrentPage2 <= 0 || (Page.CurrentPage1 <= 0)))
+            if ((Page.CurrentPage4 <= 0 || (Page.CurrentPage1 <= 0)))
             {
                 backBtn.gameObject.SetActive(false);
             }

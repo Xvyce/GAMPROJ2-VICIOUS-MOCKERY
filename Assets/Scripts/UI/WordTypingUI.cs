@@ -7,6 +7,8 @@ public class WordTypingUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI word;
     [SerializeField] private OpenBook Flip;
+    [SerializeField] GameObject button;
+    
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
@@ -48,6 +50,8 @@ public class WordTypingUI : MonoBehaviour
 
             Debug.Log("Open Book");
             Flip.openBtn_Click();
+            button.SetActive(true);
+
             word.text = wordContainer;
         }
     }

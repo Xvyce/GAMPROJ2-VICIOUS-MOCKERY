@@ -46,6 +46,7 @@ public class TypingUINext : MonoBehaviour
             wordNext.text = wordContainer;
             Debug.Log("NEXT PAGE");
             pageFlip.turnOnePageBtn_Click(FlipPage.ButtonType.NextButton);
+            
         }
     }
 }
