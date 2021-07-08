@@ -3445,7 +3445,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LEVEL 2
+  m_Text: The Demon Lord has unleashed an Ultimate Skill, teleporting the Castle
+    of Dimitreus to a cold mountainous area and Wo-oh! Looks like there are more
+    types of enemies coming for the Castle. Will the Bard and his new party member
+    defend the castle, or will they get the cold feet?
 --- !u!222 &1408178024
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3470,7 +3473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -166}
+  m_AnchoredPosition: {x: 0, y: -38}
   m_SizeDelta: {x: 700, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1582304439
@@ -4913,7 +4916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d5a5238404f24046910d2a461d26d05, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85a9dc134a39fad43b461745041b5de5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

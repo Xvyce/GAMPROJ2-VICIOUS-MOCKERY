@@ -2,11 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Text;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused;
     public GameObject pauseMenuUI;
+    public Text wordfield;
+    public Text RestartText;
+    public Text MenuText;
+    public Text QuitText;
 
 
     private void Start()
@@ -17,6 +23,10 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        highlightalphabet('C');
+        highlightalphabet2('R');
+        highlightalphabet3('M');
+        highlightalphabet4('Q');
         if (Input.GetKeyDown(KeyCode.C))
         {
             if (GameIsPaused)
@@ -30,6 +40,7 @@ public class PauseMenu : MonoBehaviour
             if (!GameIsPaused)
             {
                 Pause();
+                
             }
         }
 
@@ -38,6 +49,7 @@ public class PauseMenu : MonoBehaviour
             if (GameIsPaused)
             {
                 Restart();
+                
             }
         }
 
@@ -46,6 +58,7 @@ public class PauseMenu : MonoBehaviour
             if (GameIsPaused)
             {
                 LoadMenu();
+                
             }
         }
 
@@ -54,6 +67,7 @@ public class PauseMenu : MonoBehaviour
             if (GameIsPaused)
             {
                 QuitGame();
+                
             }
         }
 
@@ -96,4 +110,33 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Quitting Game....");
         Application.Quit();
     }
+
+    public void highlightalphabet(char colalpha)
+    {
+        StringBuilder strBuilder = new StringBuilder(wordfield.text);
+        strBuilder.Replace(colalpha.ToString(), "<color=#FF0000>" + colalpha + "</color>");
+        wordfield.text = strBuilder.ToString();
+    }
+
+    public void highlightalphabet2(char colalpha2)
+    {
+        StringBuilder strBuilder = new StringBuilder(RestartText.text);
+        strBuilder.Replace(colalpha2.ToString(), "<color=#FF0000>" + colalpha2 + "</color>");
+        RestartText.text = strBuilder.ToString();
+    }
+
+    public void highlightalphabet3(char colalpha3)
+    {
+        StringBuilder strBuilder = new StringBuilder(MenuText.text);
+        strBuilder.Replace(colalpha3.ToString(), "<color=#FF0000>" + colalpha3 + "</color>");
+        MenuText.text = strBuilder.ToString();
+    }
+
+    public void highlightalphabet4(char colalpha4)
+    {
+        StringBuilder strBuilder = new StringBuilder(QuitText.text);
+        strBuilder.Replace(colalpha4.ToString(), "<color=#FF0000>" + colalpha4 + "</color>");
+        QuitText.text = strBuilder.ToString();
+    }
 }
+
