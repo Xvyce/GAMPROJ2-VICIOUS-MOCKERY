@@ -178,6 +178,7 @@ public class WaveSpawner : MonoBehaviour
                 case EnemyType.Boss:
                     Instantiate(_enemy, spawnPointsMid[0].position, Quaternion.Euler(30, 0, 0));
                     if (currentScene == "Level1")
+                    FindObjectOfType<AudioManager>().Stop("Level_1_BGM");
                     FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
                     break;
 
