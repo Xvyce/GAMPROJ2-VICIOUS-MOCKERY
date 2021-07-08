@@ -276,7 +276,6 @@ public class Enemy : MonoBehaviour
 
         if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support || other.gameObject.tag == "Player" && enemyData.Type != EnemyType.Support)
         {
-            player.StopSpeakingGibberish();
             lvlDataManager.playerCurrentHealth -= enemyData.AttackDamage;
             Debug.Log("Enemy has entered the castle");
 
