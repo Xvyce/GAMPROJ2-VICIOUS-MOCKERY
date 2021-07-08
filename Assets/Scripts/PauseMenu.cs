@@ -112,6 +112,11 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void NextLvl2()
+    {
+        SceneHistory.Instance.LoadScene("Level2");
+    }
+
     public void highlightalphabet(char colalpha)
     {
         StringBuilder strBuilder = new StringBuilder(wordfield.text);

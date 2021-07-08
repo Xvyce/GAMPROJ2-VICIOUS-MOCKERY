@@ -242,6 +242,7 @@ public class FlipPage : MonoBehaviour
             imglevel2.gameObject.SetActive(true);
             headerText1_2.gameObject.SetActive(false);
 
+            nextBtn.gameObject.SetActive(true);
 
             //SetVisibleText();
 
