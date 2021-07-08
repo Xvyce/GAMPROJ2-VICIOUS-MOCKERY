@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 0f134b8d545b2964caac28efed63cfa8
+guid: 33515a2196a41e5429e2ca51385bb155
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2232435121337181886
-    second: ArmorWalk_Mountain_GoblinSprite_0
+      213: -4803811511134698174
+    second: Walk_Mountain_GoblinSprite 1_0
   - first:
-      213: -4982764619126730664
-    second: ArmorWalk_Mountain_GoblinSprite_1
+      213: 8201670416524132088
+    second: Walk_Mountain_GoblinSprite 1_1
   - first:
-      213: -7280736323222825712
-    second: ArmorWalk_Mountain_GoblinSprite_2
+      213: -994487956186877855
+    second: Walk_Mountain_GoblinSprite 1_2
   - first:
-      213: -5079171269071012489
-    second: ArmorWalk_Mountain_GoblinSprite_3
+      213: 4917638071682789141
+    second: Walk_Mountain_GoblinSprite 1_3
   - first:
-      213: -762108065313820095
-    second: ArmorWalk_Mountain_GoblinSprite_4
+      213: 410530682139814802
+    second: Walk_Mountain_GoblinSprite 1_4
   - first:
-      213: -9152329335010246245
-    second: ArmorWalk_Mountain_GoblinSprite_5
+      213: 2693618256438173532
+    second: Walk_Mountain_GoblinSprite 1_5
   - first:
-      213: 5272704912783246857
-    second: ArmorWalk_Mountain_GoblinSprite_6
+      213: 8470779840693450782
+    second: Walk_Mountain_GoblinSprite 1_6
   - first:
-      213: -7657103040992611690
-    second: ArmorWalk_Mountain_GoblinSprite_7
+      213: -7426296530747128303
+    second: Walk_Mountain_GoblinSprite 1_7
   - first:
-      213: -643599814272195798
-    second: ArmorWalk_Mountain_GoblinSprite_8
+      213: -5825248689495592043
+    second: Walk_Mountain_GoblinSprite 1_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -154,190 +154,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_0
+      name: Walk_Mountain_GoblinSprite 1_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 15
-        width: 60
-        height: 65
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2495798c51cc401e0800000000000000
-      internalID: -2232435121337181886
+      spriteID: 24542eed1ee655db0800000000000000
+      internalID: -4803811511134698174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_1
+      name: Walk_Mountain_GoblinSprite 1_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 15
-        width: 52
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 850119d8af9a9dab0800000000000000
-      internalID: -4982764619126730664
+      spriteID: 8fe30cd1acf22d170800000000000000
+      internalID: 8201670416524132088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_2
+      name: Walk_Mountain_GoblinSprite 1_2
       rect:
         serializedVersion: 2
-        x: 289
-        y: 15
-        width: 43
-        height: 63
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015150793e0a5fa90800000000000000
-      internalID: -7280736323222825712
+      spriteID: 160b31e097ed232f0800000000000000
+      internalID: -994487956186877855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_3
+      name: Walk_Mountain_GoblinSprite 1_3
       rect:
         serializedVersion: 2
-        x: 421
-        y: 15
-        width: 50
-        height: 59
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77df6a134a82389b0800000000000000
-      internalID: -5079171269071012489
+      spriteID: 51fe69c75c5fe3440800000000000000
+      internalID: 4917638071682789141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_4
+      name: Walk_Mountain_GoblinSprite 1_4
       rect:
         serializedVersion: 2
-        x: 545
-        y: 15
-        width: 47
-        height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 142728e90c27c65f0800000000000000
-      internalID: -762108065313820095
+      spriteID: 29ba756fa7f72b500800000000000000
+      internalID: 410530682139814802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_5
+      name: Walk_Mountain_GoblinSprite 1_5
       rect:
         serializedVersion: 2
-        x: 667
-        y: 14
-        width: 53
-        height: 65
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b91c35ff5f46cf080800000000000000
-      internalID: -9152329335010246245
+      spriteID: c5f11876887a16520800000000000000
+      internalID: 2693618256438173532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_6
+      name: Walk_Mountain_GoblinSprite 1_6
       rect:
         serializedVersion: 2
-        x: 801
-        y: 15
-        width: 44
-        height: 63
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90607e3ae296c2940800000000000000
-      internalID: 5272704912783246857
+      spriteID: e18b21f82614e8570800000000000000
+      internalID: 8470779840693450782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_7
+      name: Walk_Mountain_GoblinSprite 1_7
       rect:
         serializedVersion: 2
-        x: 933
-        y: 15
-        width: 50
-        height: 59
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69272117a518cb590800000000000000
-      internalID: -7657103040992611690
+      spriteID: 1160a18c6ae70f890800000000000000
+      internalID: -7426296530747128303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorWalk_Mountain_GoblinSprite_8
+      name: Walk_Mountain_GoblinSprite 1_8
       rect:
         serializedVersion: 2
-        x: 1057
-        y: 15
-        width: 47
-        height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a236cccf0697117f0800000000000000
-      internalID: -643599814272195798
+      spriteID: 5933e4e2e2f882fa0800000000000000
+      internalID: -5825248689495592043
       vertices: []
       indices: 
       edges: []
@@ -345,7 +345,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f82ba81b7e210ba44b11b4511f55a60b
+    spriteID: 6c251a2d83246b846a2b975549ae725b
     internalID: 0
     vertices: []
     indices: 
