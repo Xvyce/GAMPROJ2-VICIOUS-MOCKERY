@@ -12644,14 +12644,14 @@ MonoBehaviour:
     waveContent:
     - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
       count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
+      count: 1
     - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
       count: 2
     - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-      count: 1
+      count: 2
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
+      count: 2
   - name: Boss Wave
     timeBetweenSpawn: 2
     waveContent:
