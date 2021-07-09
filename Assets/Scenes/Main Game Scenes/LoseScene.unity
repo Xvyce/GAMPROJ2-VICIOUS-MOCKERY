@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -407,7 +407,7 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: ebb782e5a10548c4ebb894a2caca703f, type: 3}
+      objectReference: {fileID: 8300000, guid: f244ad269f77a2b489681a719bf1f9b5, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[0].name
       value: Lose_BGM
@@ -427,6 +427,10 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[11].name
       value: Ogre_Noise_SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[11].pitch

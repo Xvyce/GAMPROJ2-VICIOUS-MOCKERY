@@ -26,11 +26,13 @@ public class Lose : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Y))
         {
+            FindObjectOfType<AudioManager>().Play("Typing_SFX");
             Continue();
         }
 
         if ((Input.GetKeyDown(KeyCode.N)))
         {
+            FindObjectOfType<AudioManager>().Play("Typing_SFX");
             LoadMenu();
         }
     }
