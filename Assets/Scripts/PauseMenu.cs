@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Text;
 using UnityEngine.UI;
+using TMPro;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PauseMenu : MonoBehaviour
     public Text RestartText;
     public Text MenuText;
     public Text QuitText;
+    public TextMeshProUGUI MenuWin;
+    public TextMeshProUGUI NxtLvl;
 
 
     private void Start()
@@ -21,7 +24,10 @@ public class PauseMenu : MonoBehaviour
         highlightalphabet2('R');
         highlightalphabet3('M');
         highlightalphabet4('Q');
+        highlightalphabet5('M');
+        highlightalphabet6('N');
         GameIsPaused = false;
+        
     }
 
     // Update is called once per frame
@@ -71,6 +77,23 @@ public class PauseMenu : MonoBehaviour
                 
             }
         }
+
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            if (UIManager.Instance.isWin == true)
+            {
+                LoadMenu();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            if (UIManager.Instance.isWin == true)
+            {
+                NextLvl2();
+            }
+        }
+
 
     }
 
@@ -143,6 +166,20 @@ public class PauseMenu : MonoBehaviour
         StringBuilder strBuilder = new StringBuilder(QuitText.text);
         strBuilder.Replace(colalpha4.ToString(), "<color=#FF0000>" + colalpha4 + "</color>");
         QuitText.text = strBuilder.ToString();
+    }
+
+    public void highlightalphabet5(char colalpha4)
+    {
+        StringBuilder strBuilder = new StringBuilder(MenuWin.text);
+        strBuilder.Replace(colalpha4.ToString(), "<color=#FF0000>" + colalpha4 + "</color>");
+        MenuWin.text = strBuilder.ToString();
+    }
+
+    public void highlightalphabet6(char colalpha4)
+    {
+        StringBuilder strBuilder = new StringBuilder(NxtLvl.text);
+        strBuilder.Replace(colalpha4.ToString(), "<color=#FF0000>" + colalpha4 + "</color>");
+        NxtLvl.text = strBuilder.ToString();
     }
 }
 
