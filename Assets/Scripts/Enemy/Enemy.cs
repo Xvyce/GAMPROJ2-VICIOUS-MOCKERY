@@ -463,6 +463,12 @@ public class Enemy : MonoBehaviour
                     wordToType = WordGenerator.GetNormalWordLevelOne();
                     break;
                 case EnemyType.Support_Boss:
+                    if (currentScene == "Level1")
+                    {
+                        FindObjectOfType<AudioManager>().Stop("Level_2_BGM");
+                        FindObjectOfType<AudioManager>().Play("Boss_Level_2_SFX");
+                    }
+
                     wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
 
