@@ -13490,7 +13490,7 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: bb1ec80d5eae47147b771f47a83cbcbd, type: 3}
+      objectReference: {fileID: 8300000, guid: 148c22745ce6d2f428249a9f74641062, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[2].name
       value: Mistake_SFX
@@ -67776,7 +67776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1563481471296621269, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1563481471338257835, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
       propertyPath: m_AnchorMax.y
@@ -67884,7 +67884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1563481472114020845, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}

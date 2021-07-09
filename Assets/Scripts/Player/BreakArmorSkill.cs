@@ -32,7 +32,8 @@ public class BreakArmorSkill : MonoBehaviour
     IEnumerator BreakEnemyArmor()
     {
         allyAnimator.SetBool("doingSkill", true);
-
+        FindObjectOfType<AudioManager>().Play("Barbarian_Roar_SFX");
+        
         foreach (Enemy enemy in enemyManager.enemyList)
         {
             if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
