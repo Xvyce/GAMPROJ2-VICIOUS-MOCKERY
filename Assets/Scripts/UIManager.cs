@@ -8,6 +8,7 @@ public class UIManager : Singleton<UIManager>
     public GameObject WinScreen;
 
     public bool isWin;
+    bool alreadyWin;
 
     // UIManager.Instance.WinScreen
     // Start is called before the first frame update
@@ -19,15 +20,31 @@ public class UIManager : Singleton<UIManager>
     // Update is called once per frame
     void Update()
     {
-        if (isWin == true)
+        if(!alreadyWin)
         {
-            WinScreen.SetActive(true);
-            LeanTween.moveY(WinScreen, 550, 1);
+            ActivateWinScreen();
         }
 
-        if (isWin == false)
+        DeactivateWinScreen();
+    }
+
+    void ActivateWinScreen()
+    {
+        if(isWin)
+        {
+            Debug.Log("Congrats, you've won!");
+            WinScreen.SetActive(true);
+            LeanTween.moveY(WinScreen, 550, 1);
+            alreadyWin = true;
+        }
+    }
+
+    void DeactivateWinScreen()
+    {
+        if (!isWin)
         {
             WinScreen.SetActive(false);
+            alreadyWin = false;
         }
     }
 }
