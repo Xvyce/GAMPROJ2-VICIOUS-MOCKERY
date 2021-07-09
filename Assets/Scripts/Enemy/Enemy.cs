@@ -101,6 +101,12 @@ public class Enemy : MonoBehaviour
             if (revivalCount < enemyData.ArmorCount) // Armored Enemies get a new word
             {
                 wordTyped = false;
+                EnemyManager.hasActiveEnemy = false;
+
+                if(player.speakingGib)
+                {
+                    player.StopSpeakingGibberish();
+                }
 
                 if (revivalCount == 0)
                 {
@@ -175,7 +181,7 @@ public class Enemy : MonoBehaviour
         _animator.SetBool("Is_Defeat", true);
     }
 
-    // Armor Break Animations
+    #region Stagger
     private IEnumerator StaggerOne()
     {
         switch (enemyData.Type)
@@ -278,6 +284,7 @@ public class Enemy : MonoBehaviour
                 break;
         }
     }
+    #endregion
 
     public void GetNewWord()
     {
@@ -293,7 +300,6 @@ public class Enemy : MonoBehaviour
 
         text.text = wordContainer;
     }
-
 
     public void StartCensor()
     {
@@ -312,7 +318,7 @@ public class Enemy : MonoBehaviour
         StartCoroutine(StaggerTwo());
     }
 
-
+    #region OnTriggerEnter
     // If enemy collides with the castle, decrease player health
     private void OnTriggerEnter(Collider other)
     {
@@ -364,6 +370,7 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    #endregion
 
     void TypeBox()
     {
