@@ -639,6 +639,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoseScene: {fileID: 399969732}
+  YesText: {fileID: 381195814}
+  NoText: {fileID: 566896384}
 --- !u!1 &519873143
 GameObject:
   m_ObjectHideFlags: 0
