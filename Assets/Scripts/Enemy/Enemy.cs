@@ -438,7 +438,7 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Boss:
-                    FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
+                    //FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
                     wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
 
@@ -480,7 +480,12 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Boss:
-                    FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
+                    /*if (currentScene == "Level1")
+                    {
+                        FindObjectOfType<AudioManager>().Stop("Level_1_BGM");
+                        FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
+                    }*/
+
                     wordToType = WordGenerator.GetBossWordLevelTwo();
                     break;
 
