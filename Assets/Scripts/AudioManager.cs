@@ -42,6 +42,15 @@ public class AudioManager : MonoBehaviour
     {
         if (currentScene == "MainMenu")
         {
+            if (currentScene == "Level1")
+            {
+                FindObjectOfType<AudioManager>().Stop("Boss_Level_1_SFX");
+            }
+            else if (currentScene == "Level2")
+            {
+                FindObjectOfType<AudioManager>().Stop("Boss_Level_2_SFX");
+            }
+            
             Play("Main_Menu_BGM");
             Play("Tavern_Ambience_SFX");
         }
