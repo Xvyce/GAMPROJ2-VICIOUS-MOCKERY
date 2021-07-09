@@ -36,6 +36,9 @@ public class UIManager : Singleton<UIManager>
             WinScreen.SetActive(true);
             LeanTween.moveY(WinScreen, 550, 1);
             alreadyWin = true;
+            FindObjectOfType<AudioManager>().Stop("Level_1_BGM");
+            FindObjectOfType<AudioManager>().Play("Victory_SFX");
+            FindObjectOfType<AudioManager>().Play("Victory_BGM");
         }
     }
 
