@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
     public Animator _animator;
     [SerializeField] private TextMeshProUGUI text;
     [SerializeField] private Image typeBox;
+    [SerializeField] private Image oneArmorTypeBox;
+    [SerializeField] private Image twoArmorTypeBox;
     private EnemyManager _enemyManager;
     private LevelDataManager lvlDataManager;
     private SpriteRenderer thisSprite;
@@ -38,6 +40,7 @@ public class Enemy : MonoBehaviour
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
         thisSprite = GetComponent<SpriteRenderer>();
 
+
     }
 
     void Start()
@@ -49,6 +52,7 @@ public class Enemy : MonoBehaviour
         isWalkingRight = false;
         speed = enemyData.Speed;
 
+        TypeBox();
         GenerateWord();
     }
 
@@ -176,8 +180,9 @@ public class Enemy : MonoBehaviour
     {
         switch (enemyData.Type)
         {
-            case EnemyType.Boss: //Armored Ogre
+            case EnemyType.Boss: //Armored Ogre Boss
                 isWalking = false;
+                twoArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
                 FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
 
@@ -192,6 +197,7 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyType.Armored_Goblin: //Armored Goblin
+                oneArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
                 //Play goblin armor break audio
                 generateWordStagger();
@@ -205,6 +211,7 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyType.Armored_Orc: //Armored Orc
+                oneArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
                 //Play orc armor break audio
                 generateWordStagger();
@@ -217,12 +224,13 @@ public class Enemy : MonoBehaviour
 
                 break;
 
-            case EnemyType.Support_Boss: //Armored Orc
+            case EnemyType.Support_Boss: //Support Boss
+                twoArmorTypeBox.enabled = false;
                 //_animator.SetBool("Stagger_One", true);
                 //Play Support Boss break audio
                 generateWordStagger();
 
-                yield return new WaitForSeconds(.92f);//wait for animation to end
+                //yield return new WaitForSeconds(.92f);//wait for animation to end
 
                 //_animator.SetBool("Stagger_One", false);
 
@@ -238,6 +246,7 @@ public class Enemy : MonoBehaviour
         {
             case EnemyType.Boss:
                 isWalking = false;
+                oneArmorTypeBox.enabled = false;
                 _animator.SetBool("Helmet_Walking", false);
                 _animator.SetBool("Stagger_Two", true);
                 FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
@@ -249,14 +258,15 @@ public class Enemy : MonoBehaviour
                 isWalking = true;
 
                 _animator.SetBool("Naked_Walking", true);
-                GetNewWord();
+                generateWordStagger();
                 break;
 
             case EnemyType.Support_Boss:
                 //isWalking = false;
+                oneArmorTypeBox.enabled = false;
                 //_animator.SetBool("Stagger_Two", true);
                 //Play Support Boss break audio
-                
+                generateWordStagger();
 
                 //yield return new WaitForSeconds(.92f);//wait for animation to end
 
@@ -265,7 +275,6 @@ public class Enemy : MonoBehaviour
                 //isWalking = true;
 
                 //_animator.SetBool("Naked_Walking", true);
-                GetNewWord();
                 break;
         }
     }
@@ -353,6 +362,25 @@ public class Enemy : MonoBehaviour
         if (other.gameObject.tag == "RightWall" && isDefeat)
         {
             Destroy(gameObject);
+        }
+    }
+
+    void TypeBox()
+    {
+        if (enemyData.ArmorCount == 2)
+        {
+            twoArmorTypeBox.enabled = true;
+            oneArmorTypeBox.enabled = true;
+        }
+        else if (enemyData.ArmorCount == 1)
+        {
+            twoArmorTypeBox.enabled = false;
+            oneArmorTypeBox.enabled = true;
+        }
+        else if (enemyData.ArmorCount == 0)
+        {
+            twoArmorTypeBox.enabled = false;
+            oneArmorTypeBox.enabled = false;
         }
     }
 
@@ -445,6 +473,7 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Boss:
+                    FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
                     wordToType = WordGenerator.GetBossWordLevelTwo();
                     break;
 
@@ -520,12 +549,16 @@ public class Enemy : MonoBehaviour
             switch (enemyData.Type)
             {
                 case EnemyType.Armored_Goblin: // added dis
-                    //FindObjectOfType<AudioManager>().Play("Goblin_Noise_SFX"); add stagger sound here
                     wordToType = WordGenerator.GetEasyWordLevelOne();
                     break;
                 case EnemyType.Armored_Orc: // added dis
-                    //FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX"); add stagger sound here
                     wordToType = WordGenerator.GetNormalWordLevelOne();
+                    break;
+                case EnemyType.Boss:
+                    wordToType = WordGenerator.GetBossWordLevelOne();
+                    break;
+                case EnemyType.Support_Boss:
+                    wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
             }
         }
@@ -540,6 +573,12 @@ public class Enemy : MonoBehaviour
                 case EnemyType.Armored_Orc: // added dis
                     wordToType = WordGenerator.GetNormalWordLevelTwo();
                     break;
+                case EnemyType.Boss:
+                    wordToType = WordGenerator.GetBossWordLevelTwo();
+                    break;
+                case EnemyType.Support_Boss:
+                    wordToType = WordGenerator.GetBossWordLevelTwo();
+                    break;
             }
         }
 
@@ -552,6 +591,12 @@ public class Enemy : MonoBehaviour
                     break;
                 case EnemyType.Armored_Orc: // added dis
                     wordToType = WordGenerator.GetNormalWordLevelThree();
+                    break;
+                case EnemyType.Boss:
+                    wordToType = WordGenerator.GetBossWordLevelThree();
+                    break;
+                case EnemyType.Support_Boss:
+                    wordToType = WordGenerator.GetBossWordLevelThree();
                     break;
             }
         }
