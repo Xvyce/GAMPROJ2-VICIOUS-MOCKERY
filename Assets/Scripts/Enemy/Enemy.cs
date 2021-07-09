@@ -95,6 +95,7 @@ public class Enemy : MonoBehaviour
 
     public bool WordTyped()
     {
+        string currentScene = SceneManager.GetActiveScene().name;
 
         if (typeIndex >= wordToType.Length)
         {
@@ -322,6 +323,7 @@ public class Enemy : MonoBehaviour
     // If enemy collides with the castle, decrease player health
     private void OnTriggerEnter(Collider other)
     {
+        string currentScene = SceneManager.GetActiveScene().name;
 
         if (other.gameObject.tag == "Castle" && enemyData.Type != EnemyType.Support && enemyData.Type != EnemyType.Support_Boss
             || other.gameObject.tag == "Player" && enemyData.Type != EnemyType.Support && enemyData.Type != EnemyType.Support_Boss)
@@ -332,8 +334,18 @@ public class Enemy : MonoBehaviour
             if (player.speakingGib)
                 player.StopSpeakingGibberish();
 
+            if (enemyData.Type == EnemyType.Boss && currentScene == "Level1")
+            {
+                FindObjectOfType<AudioManager>().Stop("Boss_Level_1_SFX");
+            }
+            else if (enemyData.Type == EnemyType.Boss && currentScene == "Level2")
+            {
+                FindObjectOfType<AudioManager>().Stop("Boss_Level_2_SFX");
+            }
+
             EnemyManager.hasActiveEnemy = false;
             _enemyManager.enemyList.Remove(this);
+
             Destroy(this.gameObject);
         }
 
@@ -438,7 +450,12 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Boss:
-                    //FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
+                    if (currentScene == "Level1")
+                    {
+                        FindObjectOfType<AudioManager>().Stop("Level_1_BGM");
+                        FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
+                    }
+
                     wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
 
@@ -480,12 +497,6 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Boss:
-                    /*if (currentScene == "Level1")
-                    {
-                        FindObjectOfType<AudioManager>().Stop("Level_1_BGM");
-                        FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
-                    }*/
-
                     wordToType = WordGenerator.GetBossWordLevelTwo();
                     break;
 
