@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject continueButton;
     [SerializeField] private string[] sentences;
     [SerializeField] private float typingSpeed = .02f;
-    [SerializeField] private WaveSpawner waveIndex;
+    [SerializeField] private TutorialWaveSpawner waveIndex;
     [SerializeField] private GameObject tutorialInterface;
     private int index;
 

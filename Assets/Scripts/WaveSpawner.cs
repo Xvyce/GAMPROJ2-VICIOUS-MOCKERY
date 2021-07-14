@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class WaveSpawner : MonoBehaviour
@@ -20,12 +19,11 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private Transform[] spawnPointsMid;
     [SerializeField] private Transform[] spawnPointsBot;
     [SerializeField] private Transform[] spawnPointsAir;
-    [SerializeField] private Transform tutorialSpawnPoint;
 
     [Header("Time Between Wave")]
     [SerializeField] private float timeBetweenWaves;
     private float waveCountdown;
-    public int nextWave = 0;
+    private int nextWave = 0;
 
     private float enemySearchCountdown = 1f;
 
@@ -141,57 +139,49 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnEnemy(GameObject _enemy)
     {
-        string currentScene = SceneManager.GetActiveScene().name;
         int randomSpawnPoint;
         EnemyData type;
 
         type = _enemy.GetComponent<Enemy>().enemyData;
 
-        if(currentScene == "Tutorial")
+        switch (type.Type)
         {
-            Instantiate(_enemy, tutorialSpawnPoint.position, Quaternion.Euler(30, 0, 0));
-        }
-        else
-        {
-            switch (type.Type)
-            {
-                case EnemyType.Goblin:
-                    randomSpawnPoint = Random.Range(0, spawnPointsMid.Length);
-                    Instantiate(_enemy, spawnPointsMid[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
-                    break;
+            case EnemyType.Goblin:
+                randomSpawnPoint = Random.Range(0, spawnPointsMid.Length);
+                Instantiate(_enemy, spawnPointsMid[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
 
-                case EnemyType.Orc:
-                    randomSpawnPoint = Random.Range(0, spawnPointsBot.Length);
-                    Instantiate(_enemy, spawnPointsBot[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
-                    break;
+            case EnemyType.Orc:
+                randomSpawnPoint = Random.Range(0, spawnPointsBot.Length);
+                Instantiate(_enemy, spawnPointsBot[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
 
-                case EnemyType.Armored_Goblin: //added dis
-                    randomSpawnPoint = Random.Range(0, spawnPointsMid.Length);
-                    Instantiate(_enemy, spawnPointsMid[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
-                    break;
+            case EnemyType.Armored_Goblin: //added dis
+                randomSpawnPoint = Random.Range(0, spawnPointsMid.Length);
+                Instantiate(_enemy, spawnPointsMid[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
 
-                case EnemyType.Armored_Orc: //added dis
-                    randomSpawnPoint = Random.Range(0, spawnPointsBot.Length);
-                    Instantiate(_enemy, spawnPointsBot[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
-                    break;
+            case EnemyType.Armored_Orc: //added dis
+                randomSpawnPoint = Random.Range(0, spawnPointsBot.Length);
+                Instantiate(_enemy, spawnPointsBot[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
 
-                case EnemyType.Boss:
-                    Instantiate(_enemy, spawnPointsMid[0].position, Quaternion.Euler(30, 0, 0));
-                    break;
+            case EnemyType.Boss:
+                Instantiate(_enemy, spawnPointsMid[0].position, Quaternion.Euler(30, 0, 0));
+                break;
 
-                case EnemyType.Caster:
-                    Instantiate(_enemy, spawnPointsMid[0].position, Quaternion.Euler(30, 0, 0));
-                    break;
+            case EnemyType.Caster:
+                Instantiate(_enemy, spawnPointsMid[0].position, Quaternion.Euler(30, 0, 0));
+                break;
 
-                case EnemyType.Support:
-                    randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
-                    Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
-                    break;
-                case EnemyType.Support_Boss:
-                    randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
-                    Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
-                    break;
-            }
+            case EnemyType.Support:
+                randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
+                Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
+            case EnemyType.Support_Boss:
+                randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
+                Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
         }
     }
 }
