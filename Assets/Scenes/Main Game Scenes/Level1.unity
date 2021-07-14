@@ -1316,7 +1316,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 59.987, y: -408.902, z: -529.749}
 --- !u!1 &51241826
 GameObject:
@@ -12632,39 +12632,6 @@ MonoBehaviour:
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
       count: 1
-  - name: Wave 13
-    timeBetweenSpawn: 2
-    waveContent:
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
-      count: 1
-  - name: Wave 14
-    timeBetweenSpawn: 2
-    waveContent:
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
-      count: 2
-  - name: Wave 15
-    timeBetweenSpawn: 2
-    waveContent:
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
-      count: 2
-    - enemyPrefab: {fileID: 9205211024943220426, guid: eceae9a99a7dd504b9fc6ce44155bbf8, type: 3}
-      count: 2
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
-      count: 2
   - name: Boss Wave
     timeBetweenSpawn: 2
     waveContent:
@@ -37784,7 +37751,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
 --- !u!1 &1356653166
 GameObject:
