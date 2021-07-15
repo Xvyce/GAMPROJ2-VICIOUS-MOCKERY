@@ -42,7 +42,12 @@ public class AudioManager : MonoBehaviour
 
     public void Start()
     {
-        if (currentScene == "Tutorial")
+        if (currentScene == "MainMenu")
+        {
+            FadeInTrack("Main_Menu_BGM", 0.1f);
+            FadeInTrack("Tavern_Ambience_SFX", 0.2f);
+        }
+        else if (currentScene == "Tutorial")
         {
             Play("Tutorial_BGM");
             Play("Tavern_Ambience_SFX");
