@@ -37,7 +37,7 @@ public class TypingUIQuit : MonoBehaviour
             typeIndex = 0;
 
             wordBack.text = wordContainer;
-            wordBack.color = Color.green;
+            wordBack.color = Color.yellow;
         }
 
         if (typeIndex >= wordToType.Length)

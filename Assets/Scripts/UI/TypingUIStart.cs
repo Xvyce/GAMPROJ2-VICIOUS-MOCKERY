@@ -15,6 +15,7 @@ public class TypingUIStart : MonoBehaviour
     private int typeIndex;
     public LevelChanger levelChanger;
     public TMP_Text TextComponent;
+    BlinkingTextCorutina text;
 
     bool hasActiveWord;
 
@@ -42,7 +43,7 @@ public class TypingUIStart : MonoBehaviour
             typeIndex = 0;
 
             word.text = wordContainer;
-            word.color = Color.green;
+            word.color = Color.yellow;
         }
 
         if (typeIndex >= wordToType.Length)

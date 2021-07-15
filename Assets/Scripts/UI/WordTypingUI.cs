@@ -13,7 +13,6 @@ public class WordTypingUI : MonoBehaviour
     private string wordContainer;
     private int typeIndex;
     public TMP_Text TextComponent;
-
     bool hasActiveWord;
 
     private void Start()
@@ -41,7 +40,7 @@ public class WordTypingUI : MonoBehaviour
             typeIndex = 0;
 
             word.text = wordContainer;
-            word.color = Color.green;
+            word.color = Color.yellow;
         }
 
         if (typeIndex >= wordToType.Length)

@@ -12,7 +12,7 @@ public class TutorialGuide : MonoBehaviour
     private string wordContainer;
     private int typeIndex;
     public TMP_Text TextComponent;
-
+    
     bool hasActiveWord;
 
     private void Start()
@@ -37,7 +37,7 @@ public class TutorialGuide : MonoBehaviour
             typeIndex = 0;
 
             wordBack.text = wordContainer;
-            wordBack.color = Color.green;
+            wordBack.color = Color.yellow;
         }
 
         if (typeIndex >= wordToType.Length)

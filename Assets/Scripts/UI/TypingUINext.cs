@@ -37,7 +37,7 @@ public class TypingUINext : MonoBehaviour
             typeIndex = 0;
 
             wordNext.text = wordContainer;
-            wordNext.color = Color.green;
+            wordNext.color = Color.yellow;
         }
 
         if (typeIndex >= wordToType.Length)
