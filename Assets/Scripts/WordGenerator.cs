@@ -10,6 +10,8 @@ public class WordGenerator : MonoBehaviour
 
     private static string[] tutorialNormal = {"one", "day", "you"  };
 
+    private static string[] tutorialBoss = { "hello", "choco", "clock" };
+
 
 
     // Level 1 Word Pool
@@ -54,6 +56,13 @@ public class WordGenerator : MonoBehaviour
     {
         int randomIndex = Random.Range(0, tutorialNormal.Length);
         string randomWord = tutorialNormal[randomIndex];
+        return randomWord;
+    }
+
+    public static string GetBossWordTutorial()
+    {
+        int randomIndex = Random.Range(0, tutorialBoss.Length);
+        string randomWord = tutorialBoss[randomIndex];
         return randomWord;
     }
 

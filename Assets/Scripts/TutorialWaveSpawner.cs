@@ -47,8 +47,18 @@ public class TutorialWaveSpawner : MonoBehaviour
             {
                 if (!EnemyIsAlive())
                 {
-                    // If all enemies from last wave is dead, start next wave
-                    StartNextWave();
+                    // If all enemies from last wave is dead, start dialogue then spawn next wave
+                    if (nextWave + 1 > tutorialWaves.Length - 1)
+                    {
+                        state = TutorialSpawnState.Complete;
+                        lvlDataManager.GameOverWin();
+
+                        Debug.Log("All waves complete");
+                    }
+                    else
+                    {
+                        DisplayTutorial();
+                    }
                 }
                 else
                 {
@@ -75,7 +85,7 @@ public class TutorialWaveSpawner : MonoBehaviour
         }
     }
 
-    void StartNextWave()
+    public void StartNextWave()
     {
         state = TutorialSpawnState.Counting;
         waveCountdown = timeBetweenWaves;
@@ -151,8 +161,6 @@ public class TutorialWaveSpawner : MonoBehaviour
 
     void DisplayTutorial()
     {
-        state = TutorialSpawnState.Dialogue;
-
         dialogueManager.DisplayUI();
     }
 }

@@ -422,6 +422,11 @@ public class Enemy : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
                     wordToType = WordGenerator.GetNormalWordTutorial();
                     break;
+
+                case EnemyType.Boss:
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetBossWordTutorial();
+                    break;
             }
         }
 

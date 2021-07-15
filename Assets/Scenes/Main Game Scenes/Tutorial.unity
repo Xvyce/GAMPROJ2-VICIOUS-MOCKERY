@@ -5149,7 +5149,7 @@ PrefabInstance:
       objectReference: {fileID: 1713737700}
     - target: {fileID: 1563481470809090533, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Restart
+      value: NextLvl
       objectReference: {fileID: 0}
     - target: {fileID: 1563481471163088592, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
       propertyPath: m_text
@@ -6261,11 +6261,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1119611967}
   continueButton: {fileID: 1047148253}
-  sentences:
+  firstDialogue:
   - Oh looks like you are in quite a predicament.
   - You see those letters above those orcs and goblins?
   - Just type those and it will shoo them.
   - Look out! They are coming for you.
+  secondDialogue:
+  - 'Who am I? '
+  - Just call me Drow and and I gotta say, you were pretty impressive with your words.
+  - Made me want to help you.
+  - Come on let's beat these drunkards.
+  - Tougher enemies are coming.
+  thirdDialogue:
+  - Oh by the way,  you can use my skills, it will assist you in shoo-ing them away.
+  - Just press "1" and you can use my skill.
+  - Here they come.
+  fourthDialogue:
+  - Hahahaha! Good job there.
+  - Ooof looks like the boss is coming.
+  - My skills don't work on this guy.
+  - You need to use tougher, longer words.
+  - Well, don't just stand there type!
   typingSpeed: 0.02
   tutorialInterface: {fileID: 1593033853}
   waveSpawner: {fileID: 1832436231}
@@ -7706,6 +7722,16 @@ MonoBehaviour:
     timeBetweenSpawn: 3
     waveContent:
     - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Wave 3
+    timeBetweenSpawn: 3
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 273abb4152bf6af4b92e7d1d1c41fc67, type: 3}
+      count: 1
+  - name: Boss Wave
+    timeBetweenSpawn: 3
+    waveContent:
+    - enemyPrefab: {fileID: 6587408742269680060, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
       count: 1
   lvlDataManager: {fileID: 101118317}
   dialogueManager: {fileID: 1442030477}
