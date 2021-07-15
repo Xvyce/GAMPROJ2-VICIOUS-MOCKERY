@@ -15,7 +15,7 @@ public class TypingUIStart : MonoBehaviour
     private int typeIndex;
     public LevelChanger levelChanger;
     public TMP_Text TextComponent;
-    //BlinkingTextCorutina text;
+    //BlinkingTextCorutina text; //commented out muna kasi may error. Wala siyang references yun commented out - Luis
 
     bool hasActiveWord;
 

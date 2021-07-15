@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class WaveSpawner : MonoBehaviour
@@ -62,6 +63,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if(state != SpawnState.Spawning)
             {
+                BossWaveCheck();
                 StartCoroutine(WaveIndicator(waveIndicatorTimer));
                 StartCoroutine(SpawnWave(waves[nextWave]));
             }
@@ -87,6 +89,18 @@ public class WaveSpawner : MonoBehaviour
         else
         {
             nextWave++;
+        }
+    }
+
+    void BossWaveCheck()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (waveIndicatorText.text == "Boss Wave" && currentScene == "Level1")
+        {
+            FindObjectOfType<AudioManager>().FadeOutTrack("Level_1_BGM");
+            FindObjectOfType<AudioManager>().Play("Boss_Level_1_BGM");
+            FindObjectOfType<AudioManager>().FadeInTrack("Boss_Level_1_BGM", 0.1f);
         }
     }
 
