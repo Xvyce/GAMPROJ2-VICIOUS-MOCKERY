@@ -94,12 +94,10 @@ public class WaveSpawner : MonoBehaviour
 
     void BossWaveCheck()
     {
-        Debug.Log("Putang ina");
         string currentScene = SceneManager.GetActiveScene().name;
 
         if (waveIndicatorText.text == "Boss Wave" && currentScene == "Level1")
         {
-            Debug.Log("GUMANA");
             FindObjectOfType<AudioManager>().FadeOutTrack("Level_1_BGM");
             FindObjectOfType<AudioManager>().Play("Boss_Level_1_BGM");
             FindObjectOfType<AudioManager>().FadeInTrack("Boss_Level_1_BGM", 0.1f);

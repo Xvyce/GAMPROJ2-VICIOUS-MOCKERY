@@ -47,15 +47,22 @@ public class AudioManager : MonoBehaviour
             Play("Tutorial_BGM");
             Play("Tavern_Ambience_SFX");
         }
-        if (currentScene == "Level1")
-            Play("Level_1_BGM");
+        else if (currentScene == "Level1")
+        {
             FadeInTrack("Level_1_BGM", 0.1f);
-        if (currentScene == "Level2")
-            Play("Level_2_BGM");
-        if (currentScene == "Level3")
+        }
+        else if (currentScene == "Level2")
+        {
+            FadeInTrack("Level_2_BGM", 0.1f);
+        }
+        else if (currentScene == "Level3")
+        {
             Play("");
-        if (currentScene == "LoseScene")
+        }
+        else if (currentScene == "LoseScene")
+        {
             Play("Lose_BGM");
+        }
     }
 
 
@@ -114,6 +121,7 @@ public class AudioManager : MonoBehaviour
     #region FadeIn/FadeOut
     public void FadeInTrack(string name, float maxVolume)
     {
+        Play(name);
         StartCoroutine(FadeIn(name, maxVolume));
     }
 
@@ -141,7 +149,7 @@ public class AudioManager : MonoBehaviour
 
     IEnumerator FadeOut(string name)
     {
-        float timeToFade = 2.7f;
+        float timeToFade = 2.1f;
         float timeElapsed = 0f;
 
         Sound s = Array.Find(sounds, sound => sound.name == name);
