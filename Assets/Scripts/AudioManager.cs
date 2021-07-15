@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour
         }
         else if (currentScene == "Level2")
         {
-            FadeInTrack("Level_2_BGM", 0.1f);
+            FadeInTrack("Level_2_BGM", 0.4f);
         }
         else if (currentScene == "Level3")
         {
@@ -149,7 +149,7 @@ public class AudioManager : MonoBehaviour
 
     IEnumerator FadeOut(string name)
     {
-        float timeToFade = 2.1f;
+        float timeToFade = 2.7f;
         float timeElapsed = 0f;
 
         Sound s = Array.Find(sounds, sound => sound.name == name);
