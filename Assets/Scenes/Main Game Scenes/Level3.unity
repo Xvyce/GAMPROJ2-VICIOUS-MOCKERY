@@ -1316,7 +1316,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 59.987, y: -408.902, z: -529.749}
 --- !u!1 &51241826
 GameObject:
@@ -2283,7 +2283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1424503493390091659, guid: aefb67d07f44c0b47acf69cf495bfec3, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1424503493390091659, guid: aefb67d07f44c0b47acf69cf495bfec3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13239,6 +13239,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431018171}
   m_Mesh: {fileID: -2130408538456323720, guid: 69afc7c1fc47fd843ab894e4c3f7c529, type: 3}
+--- !u!95 &433808723 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3537636925303237568, guid: 02c0b050a2dfb8148be45ed54e2739c9, type: 3}
+  m_PrefabInstance: {fileID: 1021086138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &441408817
 GameObject:
   m_ObjectHideFlags: 0
@@ -28688,7 +28693,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3537636925303237570, guid: 02c0b050a2dfb8148be45ed54e2739c9, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3537636925303237570, guid: 02c0b050a2dfb8148be45ed54e2739c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36059,7 +36064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7669836718752942495, guid: 1a8ab6b17e5347641969bd9b5c85c57b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7669836718752942495, guid: 1a8ab6b17e5347641969bd9b5c85c57b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37810,7 +37815,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
 --- !u!1 &1356653166
 GameObject:
@@ -49598,36 +49603,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787826390}
   m_Mesh: {fileID: -807243512585845895, guid: 69afc7c1fc47fd843ab894e4c3f7c529, type: 3}
---- !u!1 &1791529188
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1791529189}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1791529189
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791529188}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.124985, y: 58.124855, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1793435123
 GameObject:
   m_ObjectHideFlags: 0
@@ -52184,6 +52159,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArmorBreak_Button
       objectReference: {fileID: 0}
+    - target: {fileID: 407609511052717447, guid: 210406ac5ae0c284fa4d0ee0323baaec, type: 3}
+      propertyPath: allyAnimator
+      value: 
+      objectReference: {fileID: 433808723}
+    - target: {fileID: 407609511052717447, guid: 210406ac5ae0c284fa4d0ee0323baaec, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 1906374231}
+    - target: {fileID: 407609511052717447, guid: 210406ac5ae0c284fa4d0ee0323baaec, type: 3}
+      propertyPath: lvlDataManager
+      value: 
+      objectReference: {fileID: 1520156171}
     - target: {fileID: 407609511676399794, guid: 210406ac5ae0c284fa4d0ee0323baaec, type: 3}
       propertyPath: m_FillAmount
       value: 0
@@ -95436,6 +95423,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1265183020393137330, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3616231453882396976, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_Name
       value: AudioManager
