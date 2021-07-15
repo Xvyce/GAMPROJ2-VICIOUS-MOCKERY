@@ -1,13 +1,15 @@
 using System;
-using UnityEngine.Audio;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     string currentScene;
-    bool isPlayingBossMusic;
+    bool keepFadingIn, keepFadingOut;
 
 
     protected virtual void Awake()
@@ -40,20 +42,6 @@ public class AudioManager : MonoBehaviour
 
     public void Start()
     {
-        if (currentScene == "MainMenu")
-        {
-            if (currentScene == "Level1")
-            {
-                FindObjectOfType<AudioManager>().Stop("Boss_Level_1_SFX");
-            }
-            else if (currentScene == "Level2")
-            {
-                FindObjectOfType<AudioManager>().Stop("Boss_Level_2_SFX");
-            }
-            
-            Play("Main_Menu_BGM");
-            Play("Tavern_Ambience_SFX");
-        }
         if (currentScene == "Tutorial")
         {
             Play("Tutorial_BGM");
@@ -61,6 +49,7 @@ public class AudioManager : MonoBehaviour
         }
         if (currentScene == "Level1")
             Play("Level_1_BGM");
+            FadeInTrack("Level_1_BGM", 0.1f);
         if (currentScene == "Level2")
             Play("Level_2_BGM");
         if (currentScene == "Level3")
@@ -121,6 +110,53 @@ public class AudioManager : MonoBehaviour
 
         s.source.UnPause();
     }
+
+    #region FadeIn/FadeOut
+    public void FadeInTrack(string name, float maxVolume)
+    {
+        StartCoroutine(FadeIn(name, maxVolume));
+    }
+
+    public void FadeOutTrack(string name)
+    {
+        StartCoroutine(FadeOut(name));
+    }
+
+    IEnumerator FadeIn(string name, float maxVolume)
+    {
+        float timeToFade = 2.7f;
+        float timeElapsed = 0f;
+
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+
+        s.source.volume = 0;
+
+        while(timeElapsed < timeToFade)
+        {
+            s.source.volume = Mathf.Lerp(0, maxVolume, timeElapsed / timeToFade);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    IEnumerator FadeOut(string name)
+    {
+        float timeToFade = 2.7f;
+        float timeElapsed = 0f;
+
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+
+        float audioVolume = s.source.volume;
+
+        while(timeElapsed < timeToFade)
+        {   
+            s.source.volume = Mathf.Lerp(audioVolume, 0, timeElapsed / timeToFade);
+            timeElapsed += Time.deltaTime;
+            Debug.Log(s.source.volume);
+            yield return null;
+        }
+    }
+    #endregion
 }
 
 
@@ -130,7 +166,6 @@ public class Sound
     public string name;
 
     public AudioClip clip;
-    public AudioMixerGroup audioMixerGroup;
 
     [Range(0f, 1f)] public float volume;
     [Range(.1f, 3f)] public float pitch;
@@ -140,3 +175,4 @@ public class Sound
     [HideInInspector]
     public AudioSource source;
 }
+

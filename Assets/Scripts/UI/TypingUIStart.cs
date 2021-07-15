@@ -15,13 +15,13 @@ public class TypingUIStart : MonoBehaviour
     private int typeIndex;
     public LevelChanger levelChanger;
     public TMP_Text TextComponent;
-    BlinkingTextCorutina text;
+    //BlinkingTextCorutina text;
 
     bool hasActiveWord;
 
     private void Start()
     {
-        highlightalphabet('b');
+        HighlightAlphabet('b');
         TextComponent.fontStyle = FontStyles.Underline;
         wordToType = word.text.ToLower();
         wordContainer = wordToType;
@@ -60,7 +60,7 @@ public class TypingUIStart : MonoBehaviour
         }
     }
 
-    public void highlightalphabet(char colalpha)
+    public void HighlightAlphabet(char colalpha)
     {
         StringBuilder strBuilder = new StringBuilder(wordfield.text);
         strBuilder.Replace(colalpha.ToString(), "<color=#FFF000>" + colalpha + "</color>");
