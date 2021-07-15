@@ -90,7 +90,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (UIManager.Instance.isWin == true)
             {
-                NextLvl2();
+                NextLvl();
             }
         }
 
@@ -135,9 +135,22 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void NextLvl2()
+    public void NextLvl()
     {
-        SceneHistory.Instance.LoadScene("Level2");
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if(currentScene == "Tutorial")
+        {
+            SceneHistory.Instance.LoadScene("Level1");
+        }
+        else if(currentScene == "Level1")
+        {
+            SceneHistory.Instance.LoadScene("Level2");
+        }
+        else if(currentScene == "Level2")
+        {
+            SceneHistory.Instance.LoadScene("Level3");
+        }
     }
 
     public void highlightalphabet(char colalpha)

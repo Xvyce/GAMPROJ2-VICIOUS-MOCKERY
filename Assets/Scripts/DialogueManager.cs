@@ -9,11 +9,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject continueButton;
     [SerializeField] private string[] sentences;
     [SerializeField] private float typingSpeed = .02f;
-    [SerializeField] private TutorialWaveSpawner waveIndex;
     [SerializeField] private GameObject tutorialInterface;
     private int index;
 
-    bool isPaused = false;
+    [SerializeField] TutorialWaveSpawner waveSpawner;
 
     private void Start()
     {
@@ -22,23 +21,9 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if(waveIndex.nextWave == 1)
-        {
-            DisplayUI();
-        }
-
-        if(textDisplay.text == sentences[index])
+        if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
-        }
-
-        if(isPaused)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
         }
     }
 
@@ -63,14 +48,15 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            isPaused = false;
+            continueButton.SetActive(false);
             tutorialInterface.SetActive(false);
+
+            waveSpawner.state = TutorialSpawnState.Counting;
         }
     }
 
-    void DisplayUI()
+    public void DisplayUI()
     {
-        isPaused = true;
         tutorialInterface.SetActive(true);
         StartCoroutine(Type());
     }

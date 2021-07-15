@@ -9,6 +9,9 @@ public class TutorialWaveSpawner : MonoBehaviour
 
     [SerializeField] private LevelDataManager lvlDataManager;
 
+    [Header("Tutorial Dialogue")]
+    [SerializeField] DialogueManager dialogueManager;
+
     [Header("Wave Indicator")]
     [SerializeField] private GameObject waveIndicatorBanner;
     [SerializeField] private TextMeshProUGUI waveIndicatorText;
@@ -24,13 +27,16 @@ public class TutorialWaveSpawner : MonoBehaviour
 
     private float enemySearchCountdown = 1f;
 
-    private TutorialSpawnState state = TutorialSpawnState.Counting;
+    [HideInInspector]
+    public TutorialSpawnState state = TutorialSpawnState.Counting;
 
     private void Start()
     {
         waveCountdown = timeBetweenWaves;
         waveIndicatorText.enabled = false;
         waveIndicatorBanner.SetActive(false);
+
+        DisplayTutorial();
     }
 
     private void Update()
@@ -57,7 +63,7 @@ public class TutorialWaveSpawner : MonoBehaviour
 
         if (waveCountdown <= 0)
         {
-            if (state != TutorialSpawnState.Spawning)
+            if (state != TutorialSpawnState.Spawning && state != TutorialSpawnState.Complete && state != TutorialSpawnState.Dialogue)
             {
                 StartCoroutine(WaveIndicator(waveIndicatorTimer));
                 StartCoroutine(SpawnWave(tutorialWaves[nextWave]));
@@ -76,7 +82,7 @@ public class TutorialWaveSpawner : MonoBehaviour
 
         if (nextWave + 1 > tutorialWaves.Length - 1)
         {
-            state = TutorialSpawnState.Spawning;
+            state = TutorialSpawnState.Complete;
             lvlDataManager.GameOverWin();
 
             Debug.Log("All waves complete");
@@ -142,6 +148,13 @@ public class TutorialWaveSpawner : MonoBehaviour
 
         Instantiate(_enemy, tutorialSpawnPoint.position, Quaternion.Euler(30, 0, 0));
     }
+
+    void DisplayTutorial()
+    {
+        state = TutorialSpawnState.Dialogue;
+
+        dialogueManager.DisplayUI();
+    }
 }
 
 [System.Serializable]
@@ -163,5 +176,7 @@ public enum TutorialSpawnState
 {
     Spawning,
     Waiting,
-    Counting
+    Counting,
+    Dialogue,
+    Complete
 };
