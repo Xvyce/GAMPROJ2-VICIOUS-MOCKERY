@@ -336,11 +336,11 @@ public class Enemy : MonoBehaviour
 
             if (enemyData.Type == EnemyType.Boss && currentScene == "Level1")
             {
-                FindObjectOfType<AudioManager>().Stop("Boss_Level_1_SFX");
+                FindObjectOfType<AudioManager>().Stop("Boss_Level_1_BGM");
             }
             else if (enemyData.Type == EnemyType.Boss && currentScene == "Level2")
             {
-                FindObjectOfType<AudioManager>().Stop("Boss_Level_2_SFX");
+                FindObjectOfType<AudioManager>().Stop("Boss_Level_2_BGM");
             }
 
             EnemyManager.hasActiveEnemy = false;
@@ -455,12 +455,6 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Boss:
-                    if (currentScene == "Level1")
-                    {
-                        FindObjectOfType<AudioManager>().Stop("Level_1_BGM");
-                        FindObjectOfType<AudioManager>().Play("Boss_Level_1_SFX");
-                    }
-
                     wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
 
