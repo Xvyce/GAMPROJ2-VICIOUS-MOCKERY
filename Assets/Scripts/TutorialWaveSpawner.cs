@@ -10,7 +10,7 @@ public class TutorialWaveSpawner : MonoBehaviour
     [SerializeField] private LevelDataManager lvlDataManager;
 
     [Header("Tutorial Dialogue")]
-    [SerializeField] DialogueManager dialogueManager;
+    [SerializeField] TutorialDialogueManager dialogueManager;
 
     [Header("Wave Indicator")]
     [SerializeField] private GameObject waveIndicatorBanner;

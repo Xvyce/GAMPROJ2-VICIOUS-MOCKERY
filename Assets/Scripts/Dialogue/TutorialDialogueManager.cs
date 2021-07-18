@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DialogueManager : MonoBehaviour
+public class TutorialDialogueManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textDisplay;
     [SerializeField] private GameObject continueButton;
@@ -200,5 +200,6 @@ public class DialogueManager : MonoBehaviour
 
         tutorialInterface.SetActive(true);
         StartCoroutine(Type());
+        Debug.Log("Tutorial Dialogue Manager active");
     }
 }

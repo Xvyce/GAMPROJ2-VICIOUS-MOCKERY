@@ -9,6 +9,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private Wave[] waves;
 
     [SerializeField] private LevelDataManager lvlDataManager;
+    [SerializeField] DialogueManager dialogueManager;
 
     [Header("Wave Indicator")]
     [SerializeField] private GameObject waveIndicatorBanner;
@@ -28,13 +29,16 @@ public class WaveSpawner : MonoBehaviour
 
     private float enemySearchCountdown = 1f;
 
-    private SpawnState state = SpawnState.Counting;
+    [HideInInspector]
+    public SpawnState state = SpawnState.Counting;
 
     private void Start()
     {
         waveCountdown = timeBetweenWaves;
         waveIndicatorText.enabled = false;
         waveIndicatorBanner.SetActive(false);
+
+        DisplayDialogue();
     }
 
     private void Update()
@@ -61,7 +65,7 @@ public class WaveSpawner : MonoBehaviour
 
         if(waveCountdown <= 0)
         {
-            if(state != SpawnState.Spawning)
+            if(state != SpawnState.Spawning && state != SpawnState.Complete && state != SpawnState.Dialogue)
             {
                 StartCoroutine(WaveIndicator(waveIndicatorTimer));
                 StartCoroutine(SpawnWave(waves[nextWave]));
@@ -74,15 +78,18 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-    void StartNextWave()
+    public void StartNextWave()
     {
         state = SpawnState.Counting;
         waveCountdown = timeBetweenWaves;
 
         if(nextWave + 1 > waves.Length - 1)
         {
-            state = SpawnState.Spawning;
-            lvlDataManager.GameOverWin();
+            state = SpawnState.Complete;
+
+            DisplayDialogue();
+
+            //lvlDataManager.GameOverWin();
 
             Debug.Log("All waves complete");
         }
@@ -196,11 +203,17 @@ public class WaveSpawner : MonoBehaviour
                 randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
                 Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
+
             case EnemyType.Support_Boss:
                 randomSpawnPoint = Random.Range(0, spawnPointsAir.Length);
                 Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
         }
+    }
+
+    void DisplayDialogue()
+    {
+        dialogueManager.DisplayUI();
     }
 }
 
@@ -223,5 +236,7 @@ public enum SpawnState
 {
     Spawning,
     Waiting,
-    Counting
+    Counting,
+    Dialogue,
+    Complete
 };
