@@ -212,7 +212,6 @@ public class Enemy : MonoBehaviour
                 yield return new WaitForSeconds(0.9f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
-
                 _animator.SetBool("Naked_Walking", true);
 
                 break;
@@ -226,22 +225,20 @@ public class Enemy : MonoBehaviour
                 yield return new WaitForSeconds(.92f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
-
                 _animator.SetBool("Naked_Walking", true);
 
                 break;
 
             case EnemyType.Support_Boss: //Support Boss
                 twoArmorTypeBox.enabled = false;
-                //_animator.SetBool("Stagger_One", true);
-                //Play Support Boss break audio
+                _animator.SetBool("Stagger_One", true);
+                //Play Support Boss armor break audio
                 generateWordStagger();
 
-                //yield return new WaitForSeconds(.92f);//wait for animation to end
+                yield return new WaitForSeconds(.33f);//wait for animation to end
 
-                //_animator.SetBool("Stagger_One", false);
-
-                //_animator.SetBool("Naked_Walking", true);
+                _animator.SetBool("Stagger_One", false);
+                _animator.SetBool("Helmet_Walking", true);
 
                 break;
         }
@@ -269,19 +266,16 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyType.Support_Boss:
-                //isWalking = false;
                 oneArmorTypeBox.enabled = false;
-                //_animator.SetBool("Stagger_Two", true);
+                _animator.SetBool("Helmet_Walking", false);
+                _animator.SetBool("Stagger_Two", true);
                 //Play Support Boss break audio
                 generateWordStagger();
 
-                //yield return new WaitForSeconds(.92f);//wait for animation to end
+                yield return new WaitForSeconds(.33f);//wait for animation to end
 
-                //_animator.SetBool("Stagger_Two", false);
-                //speed = enemyData.Speed * 2.0f;
-                //isWalking = true;
-
-                //_animator.SetBool("Naked_Walking", true);
+                _animator.SetBool("Stagger_Two", false);
+                _animator.SetBool("Naked_Walking", true);
                 break;
         }
     }
