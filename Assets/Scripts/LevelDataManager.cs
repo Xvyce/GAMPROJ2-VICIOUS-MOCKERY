@@ -63,7 +63,7 @@ public class LevelDataManager : MonoBehaviour
 
         if(currentScene == "Tutorial")
         {
-            playerMaxHealth = 20;
+            playerMaxHealth = 50;
             skillPoints = 100;
         }
         else

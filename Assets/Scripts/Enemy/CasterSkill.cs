@@ -36,5 +36,12 @@ public class CasterSkill : MonoBehaviour
             //censor text of  current enemies that are spawned in the scene
             enemy.StartCensor();
         }
+
+        /*
+         * WaitForSeconds(seconds)
+         * check if word is typed
+         * If(typed = true) do nothing
+         * If(typed = false) start spawning projectiles
+         */
     }
 }
