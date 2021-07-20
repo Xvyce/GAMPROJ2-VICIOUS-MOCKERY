@@ -5,6 +5,8 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    [SerializeField] LevelDataManager levelDataManager;
+
     [SerializeField] private TextMeshProUGUI textDisplay;
     [SerializeField] private GameObject continueButton;
     [SerializeField] private string[] startDialogue;
@@ -109,6 +111,8 @@ public class DialogueManager : MonoBehaviour
 
                     index = 0;
                     waveSpawner.state = SpawnState.Complete;
+
+                    levelDataManager.GameOverWin();
                 }
 
                 break;

@@ -465,6 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba6b0392d2a6d641bfa4d840884902f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelDataManager: {fileID: 1520156171}
   textDisplay: {fileID: 1692384710}
   continueButton: {fileID: 1692384709}
   startDialogue:
