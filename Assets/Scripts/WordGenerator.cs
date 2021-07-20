@@ -8,40 +8,47 @@ public class WordGenerator : MonoBehaviour
     private static string[] tutorialEasy = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
                                             "t", "u", "v", "w", "x", "y", "z"   };
 
-    private static string[] tutorialNormal = {"one", "day", "you"  };
+    private static string[] tutorialNormal = {"One", "Day", "You"  };
 
-    private static string[] tutorialBoss = { "hello", "choco", "clock" };
+    private static string[] tutorialBoss = { "Hello", "Choco", "Clock" };//added this, change later
 
 
 
     // Level 1 Word Pool
-    private static string[] lvlOneEasy = { "life", "ring", "wolf", "fish", "king"  };
+    private static string[] lvlOneEasy = { "Life", "Ring", "Wolf", "Fish", "King"  };
 
-    private static string[] lvlOneNormal = { "world", "heart", "apple", "stone", "smart",  };
+    private static string[] lvlOneNormal = { "World", "Heart", "Apple", "Stone", "Smart"  };
 
-    private static string[] lvlOneBoss = { "intelligent", "professional", "friendship", "everything",
-                                            "exterminate" };
+    private static string[] lvlOneBoss = { "Intelligent", "Professional", "Friendship", "Everything",
+                                            "Exterminate" };
 
 
 
     // Level 2 Word Pool
-    private static string[] lvlTwoEasy = { "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace" };
+    private static string[] lvlTwoEasy = { "Life", "Ring", "Wolf", "Fish", "King", "Bean", "Evil", "Peace" };
 
-    private static string[] lvlTwoNormal = { "world", "heart", "apple", "stone", "smart","average", "twelve", "medieval"    };
+    private static string[] lvlTwoNormal = { "World", "Heart", "Apple", "Stone", "Smart", "Average", "Twelve", "Medieval"    };
 
-    private static string[] lvlTwoBoss = { "intelligent", "professional", "friendship", "everything", "basketball",
-                                            "exterminate", "responsible", "astronomical"   };
+    private static string[] lvlTwoBoss = { "Intelligent", "Professional", "Friendship", "Everything",
+                                            "Exterminate", "Responsible", "Astronomical"   };
 
 
 
     // Level 3 Word Pool
-    private static string[] lvlThreeEasy = { "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace", "heart",
-                                            "south", "stone", "thing"   };
+    private static string[] lvlThreeEasy = { "Life", "Ring", "Wolf", "Fish", "King", "Bean", "Evil", "Peace", "Heart",
+                                            "South", "Stone", "Thing"   };
 
-    private static string[] lvlThreeNormal = { "world", "heart", "apple", "stone", "smart", "average", "twelve", "medieval" ,"strength", "donate", "mountain", "treasure"};
+    private static string[] lvlThreeNormal = { "World", "Heart", "Apple", "Stone", "Smart", "Average", "Twelve", "Medieval", 
+                                            "Strength", "Donate", "Mountain", "Treasure"};
 
-    private static string[] lvlThreeBoss = { "intelligent", "professional", "friendship", "everything", "basketball",
-                                            "exterminate", "responsible", "astronomical","everything","characters","technology","handkerchief"   };
+    private static string[] lvlThreeBoss = { "Intelligent", "Professional", "Friendship", "Everything", "Basketball",
+                                            "Exterminate", "Responsible", "Astronomical", "Characters", "Technology", "Handkerchief"   };
+
+
+
+    // Projectile Word Pool
+    private static string[] projectileWords = { "Easy", "Medium", "Hard" };//added this, change later
+
 
 
     // Get Random Level One Word
@@ -132,6 +139,14 @@ public class WordGenerator : MonoBehaviour
     {
         int randomIndex = Random.Range(0, lvlThreeBoss.Length);
         string randomWord = lvlThreeBoss[randomIndex];
+        return randomWord;
+    }
+
+    // Get Projectile Word
+    public static string GetProjectileWord()
+    {
+        int randomIndex = Random.Range(0, projectileWords.Length);
+        string randomWord = projectileWords[randomIndex];
         return randomWord;
     }
 }

@@ -6,6 +6,7 @@ public class CasterSkill : MonoBehaviour
 {
     private EnemyManager _enemyManager;
     private Enemy _enemy;
+    [SerializeField] Transform[] spawnPoint;
 
     private void Awake()
     {

@@ -200,7 +200,7 @@ public class Enemy : MonoBehaviour
                 isWalking = true;
 
                 _animator.SetBool("Helmet_Walking", true);
-                GetNewWord();
+                generateWordStagger();
                 break;
 
             case EnemyType.Armored_Goblin: //Armored Goblin
@@ -286,11 +286,6 @@ public class Enemy : MonoBehaviour
         }
     }
     #endregion
-
-    public void GetNewWord()
-    {
-        GenerateWord();
-    }
 
     // Caster skill to censor word
     IEnumerator CensorWord(float timer)
@@ -457,23 +452,6 @@ public class Enemy : MonoBehaviour
                 case EnemyType.Boss:
                     wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
-
-                case EnemyType.Support:
-                    wordToType = WordGenerator.GetNormalWordLevelOne();
-                    break;
-                case EnemyType.Support_Boss:
-                    if (currentScene == "Level1")
-                    {
-                        FindObjectOfType<AudioManager>().Stop("Level_2_BGM");
-                        FindObjectOfType<AudioManager>().Play("Boss_Level_2_SFX");
-                    }
-
-                    wordToType = WordGenerator.GetBossWordLevelOne();
-                    break;
-
-                case EnemyType.Caster:
-                    wordToType = WordGenerator.GetBossWordLevelOne();
-                    break;
             }
         }
 
@@ -506,13 +484,13 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Support:
+                    FindObjectOfType<AudioManager>().Stop("Level_2_BGM");
+                    FindObjectOfType<AudioManager>().Play("Boss_Level_2_SFX");
+
                     wordToType = WordGenerator.GetNormalWordLevelTwo();
                     break;
-                case EnemyType.Support_Boss:
-                    wordToType = WordGenerator.GetBossWordLevelTwo();
-                    break;
 
-                case EnemyType.Caster:
+                case EnemyType.Support_Boss:
                     wordToType = WordGenerator.GetBossWordLevelTwo();
                     break;
             }
@@ -549,12 +527,17 @@ public class Enemy : MonoBehaviour
                 case EnemyType.Support:
                     wordToType = WordGenerator.GetNormalWordLevelThree();
                     break;
+
                 case EnemyType.Support_Boss:
                     wordToType = WordGenerator.GetBossWordLevelThree();
                     break;
 
                 case EnemyType.Caster:
                     wordToType = WordGenerator.GetBossWordLevelThree();
+                    break;
+
+                case EnemyType.CasterProjectile://added this
+                    wordToType = WordGenerator.GetProjectileWord();
                     break;
             }
         }
@@ -579,12 +562,15 @@ public class Enemy : MonoBehaviour
                 case EnemyType.Armored_Goblin: // added dis
                     wordToType = WordGenerator.GetEasyWordLevelOne();
                     break;
+
                 case EnemyType.Armored_Orc: // added dis
                     wordToType = WordGenerator.GetNormalWordLevelOne();
                     break;
+
                 case EnemyType.Boss:
                     wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
+
                 case EnemyType.Support_Boss:
                     wordToType = WordGenerator.GetBossWordLevelOne();
                     break;
@@ -598,12 +584,15 @@ public class Enemy : MonoBehaviour
                 case EnemyType.Armored_Goblin: // added dis
                     wordToType = WordGenerator.GetEasyWordLevelTwo();
                     break;
+
                 case EnemyType.Armored_Orc: // added dis
                     wordToType = WordGenerator.GetNormalWordLevelTwo();
                     break;
+
                 case EnemyType.Boss:
                     wordToType = WordGenerator.GetBossWordLevelTwo();
                     break;
+
                 case EnemyType.Support_Boss:
                     wordToType = WordGenerator.GetBossWordLevelTwo();
                     break;
@@ -617,13 +606,20 @@ public class Enemy : MonoBehaviour
                 case EnemyType.Armored_Goblin: // added dis
                     wordToType = WordGenerator.GetEasyWordLevelThree();
                     break;
+
                 case EnemyType.Armored_Orc: // added dis
                     wordToType = WordGenerator.GetNormalWordLevelThree();
                     break;
+
                 case EnemyType.Boss:
                     wordToType = WordGenerator.GetBossWordLevelThree();
                     break;
+
                 case EnemyType.Support_Boss:
+                    wordToType = WordGenerator.GetBossWordLevelThree();
+                    break;
+
+                case EnemyType.Caster:
                     wordToType = WordGenerator.GetBossWordLevelThree();
                     break;
             }

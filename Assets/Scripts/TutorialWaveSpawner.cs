@@ -103,6 +103,17 @@ public class TutorialWaveSpawner : MonoBehaviour
         }
     }
 
+    void BossWaveCheck()
+    {
+        if (waveIndicatorText.text == "Boss Wave")
+        {
+            //Replace with tutorial sfx/bgm
+
+            //FindObjectOfType<AudioManager>().FadeOutTrack("Level_1_BGM");
+            //FindObjectOfType<AudioManager>().FadeInTrack("Boss_Level_1_BGM", 0.1f);
+        }
+    }
+
     bool EnemyIsAlive()
     {
         enemySearchCountdown -= Time.deltaTime;
