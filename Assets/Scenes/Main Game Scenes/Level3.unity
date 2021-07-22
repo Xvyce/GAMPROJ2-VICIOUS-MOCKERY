@@ -214,7 +214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 59.987, y: -408.902, z: -529.749}
 --- !u!1 &52170764
 GameObject:
@@ -686,6 +686,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - name: Caster Test
+    timeBetweenSpawn: 1
+    waveContent:
+    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+      count: 1
   - name: Test Wave
     timeBetweenSpawn: 1
     waveContent:
@@ -1744,7 +1749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7594905654754648629, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7594905654754648629, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1952,7 +1957,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195335118
 GameObject:
@@ -2432,7 +2437,7 @@ Transform:
   - {fileID: 1826521364}
   - {fileID: 2086370198}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 25.229, z: 2.447}
 --- !u!114 &1638113254 stripped
 MonoBehaviour:
@@ -3981,7 +3986,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 2b6986b2b7cb9d54187530e302d483d7, type: 3}
     - target: {fileID: 725658405108499301, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 725658405108499301, guid: 05ffb33fd3d47e44eab62e0ad96c78ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6067,7 +6072,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1265183020393137330, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3616231453882396976, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_Name

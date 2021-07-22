@@ -541,6 +541,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 3270419475578956875}
+  slimePrefab: {fileID: 1695182075691988532, guid: 7b14b832fe0aace47bd2a1beabc5c129, type: 3}
+  slimesToSpawn: 5
+  timeBetweenSpawns: 1
 --- !u!95 &5985660737558293361
 Animator:
   serializedVersion: 3
