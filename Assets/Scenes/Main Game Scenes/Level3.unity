@@ -2244,6 +2244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Global VolumeHell
       objectReference: {fileID: 0}
+    - target: {fileID: 8431856922844197090, guid: c67cb6a42ff9d6c4dbdaaf3010b11418, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8431856922844197116, guid: c67cb6a42ff9d6c4dbdaaf3010b11418, type: 3}
       propertyPath: m_RootOrder
       value: 18
