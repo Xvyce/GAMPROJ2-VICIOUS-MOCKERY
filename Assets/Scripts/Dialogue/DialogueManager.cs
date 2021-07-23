@@ -18,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     private int dialogueIndex = 0;
     [SerializeField] WaveSpawner waveSpawner;
 
+    private bool isActive;
+
     //private void Start()
     //{
     //    dialogueInterface.SetActive(false);
@@ -43,6 +45,15 @@ public class DialogueManager : MonoBehaviour
 
                 break;
         }
+
+        if(isActive)
+        {
+            if(Input.GetButtonDown("Jump"))
+            {
+                Debug.Log("Next sentence");
+                NextSentence();
+            }
+        }    
     }
 
     IEnumerator Type()
@@ -84,6 +95,7 @@ public class DialogueManager : MonoBehaviour
                 }
                 else
                 {
+                    isActive = false;
                     dialogueIndex++;
                     textDisplay.text = "";
                     continueButton.SetActive(false);
@@ -104,6 +116,7 @@ public class DialogueManager : MonoBehaviour
                 }
                 else
                 {
+                    isActive = false;
                     dialogueIndex++;
                     textDisplay.text = "";
                     continueButton.SetActive(false);
@@ -122,7 +135,7 @@ public class DialogueManager : MonoBehaviour
     public void DisplayUI()
     {
         waveSpawner.state = SpawnState.Dialogue;
-
+        isActive = true;
         dialogueInterface.SetActive(true);
         StartCoroutine(Type());
 

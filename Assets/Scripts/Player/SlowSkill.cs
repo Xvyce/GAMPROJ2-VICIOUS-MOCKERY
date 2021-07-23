@@ -32,7 +32,7 @@ public class SlowSkill : MonoBehaviour
         allyAnimator.SetBool("doingSkill", true);
         foreach(Enemy enemy in enemyManager.enemyList)
         {
-            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
+            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster && enemy.enemyData.Type != EnemyType.Support_Boss)
             {
                 enemy.speed = enemy.speed / 2;
                 enemy._animator.speed = .5f;
@@ -44,7 +44,7 @@ public class SlowSkill : MonoBehaviour
         allyAnimator.SetBool("doingSkill", false);
         foreach (Enemy enemy in enemyManager.enemyList)
         {
-            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster)
+            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster && enemy.enemyData.Type != EnemyType.Support_Boss)
             {
                 enemy.speed = enemy.enemyData.Speed;
                 enemy._animator.speed = 1.0f;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e7bb9a524a283244ac5befeca3b8965, type: 3}
   m_Name: CasterProjectiles
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   attackDamage: 5
   type: 7
   armorCount: 0

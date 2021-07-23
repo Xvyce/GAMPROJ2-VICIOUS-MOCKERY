@@ -39,8 +39,6 @@ public class Enemy : MonoBehaviour
         lvlDataManager = GameObject.FindWithTag("LevelDataManager").GetComponent<LevelDataManager>();
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
         thisSprite = GetComponent<SpriteRenderer>();
-
-
     }
 
     void Start()
@@ -67,7 +65,6 @@ public class Enemy : MonoBehaviour
         {
             transform.Translate(speed * Time.deltaTime, 0f, 0f);
         }
-
     }
 
 
@@ -135,12 +132,13 @@ public class Enemy : MonoBehaviour
             AddScore();
 
             //Caster doesnt have run animation
-            if(enemyData.Type != EnemyType.Caster)
+            if(enemyData.Type != EnemyType.Caster && enemyData.Type != EnemyType.CasterProjectile)
             {
                 Defeat();
             }
             else
             {
+                player.StopSpeakingGibberish();
                 Destroy(gameObject);
             }
         }
@@ -241,6 +239,19 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Helmet_Walking", true);
 
                 break;
+
+            case EnemyType.Caster: //Caster Boss
+                twoArmorTypeBox.enabled = false;
+                //_animator.SetBool("Stagger_One", true);
+                //Play Caster Boss armor break audio
+                generateWordStagger();
+
+                //yield return new WaitForSeconds(.33f);//wait for animation to end
+
+                //_animator.SetBool("Stagger_One", false);
+                //_animator.SetBool("Helmet_Walking", true);
+
+                break;
         }
     }
 
@@ -276,6 +287,20 @@ public class Enemy : MonoBehaviour
 
                 _animator.SetBool("Stagger_Two", false);
                 _animator.SetBool("Naked_Walking", true);
+                break;
+
+            case EnemyType.Caster: //Caster Boss
+                oneArmorTypeBox.enabled = false;
+                //_animator.SetBool("Helmet_Walking", false);
+                //_animator.SetBool("Stagger_Two", true);
+                //Play Caster Boss break audio
+                generateWordStagger();
+
+                //yield return new WaitForSeconds(.33f);//wait for animation to end
+
+                //_animator.SetBool("Stagger_Two", false);
+                //_animator.SetBool("Naked_Walking", true);
+
                 break;
         }
     }
