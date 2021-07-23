@@ -18,6 +18,8 @@ public class TutorialDialogueManager : MonoBehaviour
     private int dialogueIndex=0;
     [SerializeField] TutorialWaveSpawner waveSpawner;
 
+    private bool isActive;
+
     private void Start()
     {
         tutorialInterface.SetActive(false);
@@ -58,6 +60,15 @@ public class TutorialDialogueManager : MonoBehaviour
                 }
 
                 break;
+        }
+
+        if(isActive)
+        {
+            if(Input.GetButtonDown("Jump"))
+            {
+                Debug.Log("Next sentence");
+                NextSentence();
+            }
         }
     }
 
@@ -118,6 +129,7 @@ public class TutorialDialogueManager : MonoBehaviour
                 }
                 else
                 {
+                    isActive = false;
                     dialogueIndex++;
                     textDisplay.text = "";
                     continueButton.SetActive(false);
@@ -138,6 +150,7 @@ public class TutorialDialogueManager : MonoBehaviour
                 }
                 else
                 {
+                    isActive = false;
                     dialogueIndex++;
                     textDisplay.text = "";
                     continueButton.SetActive(false);
@@ -159,6 +172,7 @@ public class TutorialDialogueManager : MonoBehaviour
                 }
                 else
                 {
+                    isActive = false;
                     dialogueIndex++;
                     textDisplay.text = "";
                     continueButton.SetActive(false);
@@ -180,6 +194,7 @@ public class TutorialDialogueManager : MonoBehaviour
                 }
                 else
                 {
+                    isActive = false;
                     dialogueIndex++;
                     textDisplay.text = "";
                     continueButton.SetActive(false);
@@ -196,6 +211,7 @@ public class TutorialDialogueManager : MonoBehaviour
 
     public void DisplayUI()
     {
+        isActive = true;
         waveSpawner.state = TutorialSpawnState.Dialogue;
 
         tutorialInterface.SetActive(true);
