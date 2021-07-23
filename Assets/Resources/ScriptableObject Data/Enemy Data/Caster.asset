@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Caster
   m_EditorClassIdentifier: 
   speed: 1
-  attackDamage: 10
+  attackDamage: 1
   type: 6
   armorCount: 2

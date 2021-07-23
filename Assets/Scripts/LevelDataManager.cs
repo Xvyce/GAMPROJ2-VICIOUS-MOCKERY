@@ -8,7 +8,7 @@ public class LevelDataManager : MonoBehaviour
 {
 
     [Header("Health Variables")]
-    [SerializeField] private float playerMaxHealth = 100;
+    public float playerMaxHealth = 3;
     public float playerCurrentHealth;
 
     [Header("Player Score Variables")]
@@ -63,7 +63,6 @@ public class LevelDataManager : MonoBehaviour
 
         if(currentScene == "Tutorial")
         {
-            playerMaxHealth = 50;
             skillPoints = 100;
         }
         else

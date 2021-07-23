@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Support Boss
   m_EditorClassIdentifier: 
   speed: 3
-  attackDamage: 10
+  attackDamage: 1
   type: 5
   armorCount: 2

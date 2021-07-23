@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Armored_Goblin
   m_EditorClassIdentifier: 
   speed: 2.5
-  attackDamage: 10
+  attackDamage: 1
   type: 2
   armorCount: 1
