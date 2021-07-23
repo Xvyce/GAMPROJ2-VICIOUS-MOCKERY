@@ -270,7 +270,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextBtn: {fileID: 1563481470023827640}
   backBtn: {fileID: 1563481472019353426}
+  nextBtn2: {fileID: 0}
+  backBtn2: {fileID: 0}
   closeBtn: {fileID: 1563481471010668016}
+  headerText1_1: {fileID: 0}
+  headerText1_2: {fileID: 0}
+  headerText2_1: {fileID: 0}
+  headerText2_2: {fileID: 0}
+  level2Text_1: {fileID: 0}
+  level2Text_2: {fileID: 0}
+  level2Text_3: {fileID: 0}
+  imglevel2: {fileID: 0}
+  level2Start: {fileID: 0}
+  bodyText1_1: {fileID: 0}
+  bodyText1_2: {fileID: 0}
+  bodyText1_3: {fileID: 0}
+  bodyText2_1: {fileID: 0}
+  bodyText2_2: {fileID: 0}
+  img: {fileID: 0}
+  footerText1_1: {fileID: 0}
+  footerText1_2: {fileID: 0}
+  footerText2_1: {fileID: 0}
+  footerText2_2: {fileID: 0}
 --- !u!1 &1563481470180787013
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordNext: {fileID: 1563481470301160265}
   pageFlip: {fileID: 1563481470146954582}
+  TextComponent: {fileID: 0}
 --- !u!114 &1563481470301160271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2871,6 +2893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordBack: {fileID: 1563481471514927519}
   pageFlip: {fileID: 1563481470146954582}
+  TextComponent: {fileID: 0}
 --- !u!1 &1563481471536338514
 GameObject:
   m_ObjectHideFlags: 0
