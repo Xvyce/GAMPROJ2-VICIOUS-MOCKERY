@@ -44,8 +44,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725658405108499303}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -128,7 +128,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a463c081380d89449aa1fc64758d872f, type: 3}
   - {fileID: 8300000, guid: a54f10d8557fa7144b505e7278fad395, type: 3}
   - {fileID: 8300000, guid: 2b6986b2b7cb9d54187530e302d483d7, type: 3}
-  keyPressedOnce: 0
+  speakingGib: 0
 --- !u!95 &725658405108499299
 Animator:
   serializedVersion: 3
