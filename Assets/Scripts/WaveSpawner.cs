@@ -6,7 +6,7 @@ using TMPro;
 
 public class WaveSpawner : MonoBehaviour
 {
-    [SerializeField] private Wave[] waves;
+    public Wave[] waves;
 
     [SerializeField] private LevelDataManager lvlDataManager;
     [SerializeField] DialogueManager dialogueManager;
@@ -26,6 +26,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private float timeBetweenWaves;
     private float waveCountdown;
     private int nextWave = 0;
+    public int currentWave;
 
     private float enemySearchCountdown = 1f;
 
@@ -34,6 +35,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
+        currentWave = nextWave +1;
         waveCountdown = timeBetweenWaves;
         waveIndicatorText.enabled = false;
         waveIndicatorBanner.SetActive(false);
@@ -43,7 +45,8 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-        if(state == SpawnState.Waiting)
+
+        if (state == SpawnState.Waiting)
         {
             if(!lvlDataManager.IsGameOver)
             {
@@ -63,7 +66,7 @@ public class WaveSpawner : MonoBehaviour
             }
         }
 
-        if(waveCountdown <= 0)
+        if (waveCountdown <= 0)
         {
             if(state != SpawnState.Spawning && state != SpawnState.Complete && state != SpawnState.Dialogue)
             {
@@ -76,6 +79,7 @@ public class WaveSpawner : MonoBehaviour
         {
             waveCountdown -= Time.deltaTime;
         }
+
     }
 
     public void StartNextWave()
@@ -96,6 +100,7 @@ public class WaveSpawner : MonoBehaviour
         else
         {
             nextWave++;
+            currentWave = nextWave + 1;
         }
     }
 
