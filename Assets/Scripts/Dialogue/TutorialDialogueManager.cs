@@ -11,6 +11,7 @@ public class TutorialDialogueManager : MonoBehaviour
     [SerializeField] private string[] secondDialogue;
     [SerializeField] private string[] thirdDialogue;
     [SerializeField] private string[] fourthDialogue;
+    [SerializeField] private string[] fifthDialogue;
     [SerializeField] private float typingSpeed = .02f;
     [SerializeField] private GameObject tutorialInterface;
     private int index;
