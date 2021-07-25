@@ -146,9 +146,9 @@ public class DialogueManager : MonoBehaviour
         waveSpawner.state = SpawnState.Dialogue;
         isActive = true;
         DisableUI();
+
         dialogueInterface.SetActive(true);
         StartCoroutine(Type());
-
         Debug.Log("Dialogue manager active");
     }
 

@@ -19,6 +19,12 @@ public class TutorialDialogueManager : MonoBehaviour
     [SerializeField] TutorialWaveSpawner waveSpawner;
 
     private bool isActive;
+    private bool canPressSpace;
+
+    [Header("UI to Hide")]
+    [SerializeField] GameObject slowButton;
+    [SerializeField] GameObject scoreCounter;
+    [SerializeField] GameObject waveProgressBar;
 
     private void Start()
     {
@@ -32,42 +38,57 @@ public class TutorialDialogueManager : MonoBehaviour
             case 0:
                 if (textDisplay.text == firstDialogue[index])
                 {
+                    canPressSpace = true;
                     continueButton.SetActive(true);
                 }
+                else
+                    canPressSpace = false;
 
                 break;
 
             case 1:
                 if (textDisplay.text == secondDialogue[index])
                 {
+                    canPressSpace = true;
                     continueButton.SetActive(true);
                 }
+                else
+                    canPressSpace = false;
 
                 break;
 
             case 2:
                 if (textDisplay.text == thirdDialogue[index])
                 {
+                    canPressSpace = true;
                     continueButton.SetActive(true);
                 }
+                else
+                    canPressSpace = false;
 
                 break;
 
             case 3:
                 if (textDisplay.text == fourthDialogue[index])
                 {
+                    canPressSpace = true;
                     continueButton.SetActive(true);
                 }
+                else
+                    canPressSpace = false;
 
                 break;
         }
 
         if(isActive)
         {
-            if(Input.GetButtonDown("Jump"))
+            if(canPressSpace)
             {
-                Debug.Log("Next sentence");
-                NextSentence();
+                if (Input.GetButtonDown("Jump"))
+                {
+                    Debug.Log("Next sentence");
+                    NextSentence();
+                }
             }
         }
     }
@@ -134,6 +155,7 @@ public class TutorialDialogueManager : MonoBehaviour
                     textDisplay.text = "";
                     continueButton.SetActive(false);
                     tutorialInterface.SetActive(false);
+                    EnableUI();
 
                     index = 0;
                     waveSpawner.state = TutorialSpawnState.Counting;
@@ -155,6 +177,7 @@ public class TutorialDialogueManager : MonoBehaviour
                     textDisplay.text = "";
                     continueButton.SetActive(false);
                     tutorialInterface.SetActive(false);
+                    EnableUI();
 
                     waveSpawner.StartNextWave();
                     index = 0;
@@ -177,6 +200,7 @@ public class TutorialDialogueManager : MonoBehaviour
                     textDisplay.text = "";
                     continueButton.SetActive(false);
                     tutorialInterface.SetActive(false);
+                    EnableUI();
 
                     waveSpawner.StartNextWave();
                     index = 0;
@@ -199,6 +223,7 @@ public class TutorialDialogueManager : MonoBehaviour
                     textDisplay.text = "";
                     continueButton.SetActive(false);
                     tutorialInterface.SetActive(false);
+                    EnableUI();
 
                     waveSpawner.StartNextWave();
                     index = 0;
@@ -211,11 +236,34 @@ public class TutorialDialogueManager : MonoBehaviour
 
     public void DisplayUI()
     {
-        isActive = true;
         waveSpawner.state = TutorialSpawnState.Dialogue;
+        isActive = true;
+        DisableUI();
 
         tutorialInterface.SetActive(true);
         StartCoroutine(Type());
         Debug.Log("Tutorial Dialogue Manager active");
+    }
+
+    void DisableUI()
+    {
+        if (slowButton != null)
+            slowButton.SetActive(false);
+
+        if (waveProgressBar != null)
+            waveProgressBar.SetActive(false);
+
+        scoreCounter.SetActive(false);
+    }
+
+    void EnableUI()
+    {
+        if (slowButton != null)
+            slowButton.SetActive(true);
+
+        if (waveProgressBar != null)
+            waveProgressBar.SetActive(true);
+
+        scoreCounter.SetActive(true);
     }
 }
