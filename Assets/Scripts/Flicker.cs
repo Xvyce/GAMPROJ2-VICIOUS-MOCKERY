@@ -8,7 +8,7 @@ public class Flicker : MonoBehaviour
     public int minIntensity;
     public int maxIntensity;
     public float timeDelay;
-    bool isFlickering;
+    
 
     private void Start()
     {
