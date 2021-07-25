@@ -11,6 +11,7 @@ public class CasterSkill : MonoBehaviour
     [SerializeField] private GameObject slimePrefab;
     [SerializeField] private int slimesToSpawn;
     [SerializeField] private float timeBetweenSpawns;
+    [SerializeField] Animator chairAnimator;
 
     private void Awake()
     {
@@ -25,7 +26,7 @@ public class CasterSkill : MonoBehaviour
 
     private IEnumerator Stop() // stops the movement of casters
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(6f);
         _enemy.isWalking = false;
         StartCoroutine(Cast());
     }
@@ -57,7 +58,11 @@ public class CasterSkill : MonoBehaviour
     {
         for (int i = 0; i < slimesToSpawn; i++)
         {
+            chairAnimator.SetBool("isShooting", true);
             Instantiate(slimePrefab, spawnPoint.position, Quaternion.Euler(30, 0, 0));
+            yield return new WaitForSeconds(.7f);
+            chairAnimator.SetBool("isShooting", false);
+
             yield return new WaitForSeconds(timeBetweenSpawns);
         }
 

@@ -136,10 +136,19 @@ public class Enemy : MonoBehaviour
             {
                 Defeat();
             }
-            else
+            else //caster boss and slime projectile
             {
                 player.StopSpeakingGibberish();
-                Destroy(gameObject);
+
+                if(enemyData.Type == EnemyType.Caster)
+                {
+                    typeBox.enabled = false;
+                    _animator.SetBool("Is_Defeat", true);
+                }
+                else if(enemyData.Type == EnemyType.CasterProjectile)
+                {
+                    Destroy(gameObject);
+                }
             }
         }
 
@@ -242,14 +251,14 @@ public class Enemy : MonoBehaviour
 
             case EnemyType.Caster: //Caster Boss
                 twoArmorTypeBox.enabled = false;
-                //_animator.SetBool("Stagger_One", true);
+                _animator.SetBool("Stagger_One", true);
                 //Play Caster Boss armor break audio
                 generateWordStagger();
 
-                //yield return new WaitForSeconds(.33f);//wait for animation to end
+                yield return new WaitForSeconds(1.6f);//wait for animation to end
 
-                //_animator.SetBool("Stagger_One", false);
-                //_animator.SetBool("Helmet_Walking", true);
+                _animator.SetBool("Stagger_One", false);
+                _animator.SetBool("NoHoodIdle", true);
 
                 break;
         }
@@ -291,15 +300,15 @@ public class Enemy : MonoBehaviour
 
             case EnemyType.Caster: //Caster Boss
                 oneArmorTypeBox.enabled = false;
-                //_animator.SetBool("Helmet_Walking", false);
-                //_animator.SetBool("Stagger_Two", true);
+                _animator.SetBool("NoHoodIdle", false);
+                _animator.SetBool("Stagger_Two", true);
                 //Play Caster Boss break audio
                 generateWordStagger();
 
-                //yield return new WaitForSeconds(.33f);//wait for animation to end
+                yield return new WaitForSeconds(1.2f);//wait for animation to end
 
-                //_animator.SetBool("Stagger_Two", false);
-                //_animator.SetBool("Naked_Walking", true);
+                _animator.SetBool("Stagger_Two", false);
+                _animator.SetBool("NakedIdle", true);
 
                 break;
         }
