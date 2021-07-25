@@ -25,6 +25,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] WaveSpawner waveSpawner;
 
     private bool isActive;
+    private bool canPressSpace;
 
     [Header("UI to disable")]
     [SerializeField] GameObject slowButton;
@@ -45,8 +46,11 @@ public class DialogueManager : MonoBehaviour
             case 0:
                 if (textDisplay.text == _startDialogue[index].startDialogue)
                 {
+                    canPressSpace = true;
                     continueButton.SetActive(true);
                 }
+                else
+                    canPressSpace = false;
 
                 break;
 
@@ -55,17 +59,22 @@ public class DialogueManager : MonoBehaviour
                 {
                     continueButton.SetActive(true);
                 }
+                else
+                    canPressSpace = false;
 
                 break;
         }
 
         if(isActive)
         {
-            if(Input.GetButtonDown("Jump"))
+            if(canPressSpace)
             {
-                Debug.Log("Next sentence");
-                NextSentence();
+                if (Input.GetButtonDown("Jump"))
+                {
+                    Debug.Log("Next sentence");
+                    NextSentence();
 
+                }
             }
         }    
     }
