@@ -5822,6 +5822,12 @@ MonoBehaviour:
   - Just press "1" and you can use my skill.
   - Here they come.
   fourthDialogue:
+  - By the way, you gotta pay attention to the CAPITAL LETTERS.
+  - Just press shift plus the letter to make it capital.
+  - It's all in the start of the word anyway.
+  - Speaking of capitals.
+  - THEY'RE COMMING!
+  fifthDialogue:
   - Hahahaha! Good job there.
   - Ooof looks like the boss is coming.
   - My skills don't work on this guy.
@@ -7239,20 +7245,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialWaves:
   - name: Wave 1
-    timeBetweenSpawn: 2
+    timeBetweenSpawn: 3
     waveContent:
     - enemyPrefab: {fileID: 9205211024943220426, guid: bee179190235c2f45be7643056766dd8, type: 3}
-      count: 1
+      count: 2
   - name: Wave 2
     timeBetweenSpawn: 3
     waveContent:
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 2c0df01743ff66947b68b105da6bc607, type: 3}
-      count: 1
+    - enemyPrefab: {fileID: 2761450339370431376, guid: f6226dfb41d0e2f4988e438fb16df9c7, type: 3}
+      count: 2
   - name: Wave 3
     timeBetweenSpawn: 3
     waveContent:
     - enemyPrefab: {fileID: 2761450339370431376, guid: 2c0df01743ff66947b68b105da6bc607, type: 3}
-      count: 1
+      count: 2
+  - name: Wave 4
+    timeBetweenSpawn: 3
+    waveContent:
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 2c0df01743ff66947b68b105da6bc607, type: 3}
+      count: 2
   - name: Boss Wave
     timeBetweenSpawn: 3
     waveContent:

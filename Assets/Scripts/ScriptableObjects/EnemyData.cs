@@ -20,6 +20,7 @@ public enum EnemyType
 {
     Goblin,
     Orc,
+    OrcCaps,
     Armored_Goblin, // added dis
     Armored_Orc,// added dis
     Support,

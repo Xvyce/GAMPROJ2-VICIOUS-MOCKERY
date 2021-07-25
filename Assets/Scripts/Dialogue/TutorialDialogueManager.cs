@@ -79,6 +79,16 @@ public class TutorialDialogueManager : MonoBehaviour
                     canPressSpace = false;
 
                 break;
+
+            case 4:
+                if (textDisplay.text == fifthDialogue[index])
+                {
+                    canPressSpace = true;
+                    continueButton.SetActive(true);
+                }
+                else
+                    canPressSpace = false;
+                break;
         }
 
         if(isActive)
@@ -127,6 +137,14 @@ public class TutorialDialogueManager : MonoBehaviour
 
             case 3:
                 foreach (char letter in fourthDialogue[index].ToCharArray())
+                {
+                    textDisplay.text += letter;
+                    yield return new WaitForSecondsRealtime(typingSpeed);
+                }
+
+                break;
+            case 4:
+                foreach (char letter in fifthDialogue[index].ToCharArray())
                 {
                     textDisplay.text += letter;
                     yield return new WaitForSecondsRealtime(typingSpeed);
@@ -212,6 +230,28 @@ public class TutorialDialogueManager : MonoBehaviour
 
             case 3:
                 if (index < fourthDialogue.Length - 1)
+                {
+                    index++;
+                    textDisplay.text = "";
+                    StartCoroutine(Type());
+                }
+                else
+                {
+                    isActive = false;
+                    dialogueIndex++;
+                    textDisplay.text = "";
+                    continueButton.SetActive(false);
+                    tutorialInterface.SetActive(false);
+                    EnableUI();
+
+                    waveSpawner.StartNextWave();
+                    index = 0;
+                    waveSpawner.state = TutorialSpawnState.Counting;
+                }
+
+                break;
+            case 4:
+                if (index < fifthDialogue.Length - 1)
                 {
                     index++;
                     textDisplay.text = "";

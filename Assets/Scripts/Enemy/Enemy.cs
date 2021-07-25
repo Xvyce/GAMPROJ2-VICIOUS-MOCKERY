@@ -437,6 +437,11 @@ public class Enemy : MonoBehaviour
                     wordToType = WordGenerator.GetNormalWordTutorial();
                     break;
 
+                case EnemyType.OrcCaps:
+                    FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
+                    wordToType = WordGenerator.GetNormalWordCapsTutorial();
+                    break;
+
                 case EnemyType.Boss:
                     FindObjectOfType<AudioManager>().Play("Orc_Noise_SFX");
                     wordToType = WordGenerator.GetBossWordTutorial();

@@ -77,6 +77,12 @@ public class WordGenerator : MonoBehaviour
         string randomWord = tutorialNormal[randomIndex];
         return randomWord;
     }
+    public static string GetNormalWordCapsTutorial()
+    {
+        int randomIndex = Random.Range(0, tutorialNormalCaps.Length);
+        string randomWord = tutorialNormalCaps[randomIndex];
+        return randomWord;
+    }
 
     public static string GetBossWordTutorial()
     {
