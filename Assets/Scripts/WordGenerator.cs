@@ -8,41 +8,53 @@ public class WordGenerator : MonoBehaviour
     private static string[] tutorialEasy = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
                                             "t", "u", "v", "w", "x", "y", "z"   };
 
-    private static string[] tutorialNormal = {"One", "Day", "You"  };
+    private static string[] tutorialNormal = {"one", "day", "you"  };
+
+    private static string[] tutorialNormalCaps = { "One", "Day", "You" };
 
     private static string[] tutorialBoss = { "Hello", "Choco", "Clock" };//added this, change later
 
 
 
     // Level 1 Word Pool
-    private static string[] lvlOneEasy = { "Life", "Ring", "Wolf", "Fish", "King"  };
+    private static string[] lvlOneEasy = { "Life", "Ring", "Wolf", "Fish", "King" , "life", "ring", "wolf", "fish", "king" };
 
-    private static string[] lvlOneNormal = { "World", "Heart", "Apple", "Stone", "Smart"  };
+    private static string[] lvlOneNormal = { "World", "Heart", "Apple", "Stone", "Smart", "world", "heart", "apple", "stone", "smart" };
 
     private static string[] lvlOneBoss = { "Intelligent", "Professional", "Friendship", "Everything",
-                                            "Exterminate" };
+                                            "Exterminate", "intelligent", "professional", "friendship", "everything",
+                                            "exterminate" };
 
 
 
     // Level 2 Word Pool
-    private static string[] lvlTwoEasy = { "Life", "Ring", "Wolf", "Fish", "King", "Bean", "Evil", "Peace" };
+    private static string[] lvlTwoEasy = { "Life", "Ring", "Wolf", "Fish", "King", "Bean", "Evil", "Peace", "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace" };
 
-    private static string[] lvlTwoNormal = { "World", "Heart", "Apple", "Stone", "Smart", "Average", "Twelve", "Medieval"    };
+    private static string[] lvlTwoNormal = { "World", "Heart", "Apple", "Stone", "Smart", "Average", "Twelve", "Medieval", 
+                                                "world", "heart", "apple", "stone", "smart", "average", "twelve", "medieval"};
 
     private static string[] lvlTwoBoss = { "Intelligent", "Professional", "Friendship", "Everything",
-                                            "Exterminate", "Responsible", "Astronomical"   };
+                                            "Exterminate", "Responsible", "Astronomical",
+                                                "intelligent", "professional", "friendship", "everything",
+                                                    "exterminate", "responsible", "astronomical"   };
 
 
 
     // Level 3 Word Pool
     private static string[] lvlThreeEasy = { "Life", "Ring", "Wolf", "Fish", "King", "Bean", "Evil", "Peace", "Heart",
-                                            "South", "Stone", "Thing"   };
+                                            "South", "Stone", "Thing",
+                                            "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace", "heart",
+                                            "south", "stone", "thing"  };
 
     private static string[] lvlThreeNormal = { "World", "Heart", "Apple", "Stone", "Smart", "Average", "Twelve", "Medieval", 
-                                            "Strength", "Donate", "Mountain", "Treasure"};
+                                            "Strength", "Donate", "Mountain", "Treasure",
+                                            "world", "heart", "apple", "stone", "smart", "average", "twelve", "medieval",
+                                            "strength", "donate", "mountain", "treasure"};
 
     private static string[] lvlThreeBoss = { "Intelligent", "Professional", "Friendship", "Everything", "Basketball",
-                                            "Exterminate", "Responsible", "Astronomical", "Characters", "Technology", "Handkerchief"   };
+                                            "Exterminate", "Responsible", "Astronomical", "Characters", "Technology", "Handkerchief",
+                                            "intelligent", "professional", "friendship", "everything", "basketball",
+                                            "exterminate", "responsible", "astronomical", "characters", "technology", "handkerchief",   };
 
 
 
