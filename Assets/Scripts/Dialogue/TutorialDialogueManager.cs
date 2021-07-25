@@ -27,6 +27,9 @@ public class TutorialDialogueManager : MonoBehaviour
     [SerializeField] GameObject scoreCounter;
     [SerializeField] GameObject waveProgressBar;
 
+    [Header("Gibberish")]
+    [SerializeField] Player player;
+
     private void Start()
     {
         tutorialInterface.SetActive(false);
@@ -109,47 +112,53 @@ public class TutorialDialogueManager : MonoBehaviour
         switch(dialogueIndex)
         {
             case 0:
+                player.StartSpeakingGibberish();
                 foreach (char letter in firstDialogue[index].ToCharArray())
                 {
                     textDisplay.text += letter;
                     yield return new WaitForSecondsRealtime(typingSpeed);
                 }
-
+                player.StopSpeakingGibberish();
                 break;
 
             case 1:
+                player.StartSpeakingGibberish();
                 foreach (char letter in secondDialogue[index].ToCharArray())
                 {
                     textDisplay.text += letter;
                     yield return new WaitForSecondsRealtime(typingSpeed);
                 }
-
+                player.StopSpeakingGibberish();
                 break;
 
             case 2:
+                player.StartSpeakingGibberish();
                 foreach (char letter in thirdDialogue[index].ToCharArray())
                 {
                     textDisplay.text += letter;
                     yield return new WaitForSecondsRealtime(typingSpeed);
                 }
-
+                player.StopSpeakingGibberish();
                 break;
 
             case 3:
+                player.StartSpeakingGibberish();
                 foreach (char letter in fourthDialogue[index].ToCharArray())
                 {
                     textDisplay.text += letter;
                     yield return new WaitForSecondsRealtime(typingSpeed);
                 }
-
+                player.StopSpeakingGibberish();
                 break;
+
             case 4:
+                player.StartSpeakingGibberish();
                 foreach (char letter in fifthDialogue[index].ToCharArray())
                 {
                     textDisplay.text += letter;
                     yield return new WaitForSecondsRealtime(typingSpeed);
                 }
-
+                player.StopSpeakingGibberish();
                 break;
         }
     }

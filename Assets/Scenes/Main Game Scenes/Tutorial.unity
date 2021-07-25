@@ -5839,6 +5839,7 @@ MonoBehaviour:
   slowButton: {fileID: 513664850}
   scoreCounter: {fileID: 1728664849}
   waveProgressBar: {fileID: 0}
+  player: {fileID: 1093790041}
 --- !u!1 &1481631653
 GameObject:
   m_ObjectHideFlags: 0

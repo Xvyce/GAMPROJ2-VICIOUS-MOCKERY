@@ -34,11 +34,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject scoreCounter;
     [SerializeField] GameObject waveProgressBar;
 
-    #region Gibberish Stuff
-    [SerializeField] private AudioClip[] gibberishClips;
-    private AudioSource audioSource;
+    [Header("Gibberish")]
     [SerializeField] private Player player;
-    #endregion
 
 
     //private void Start()
@@ -54,7 +51,6 @@ public class DialogueManager : MonoBehaviour
                 if (textDisplay.text == _startDialogue[index].startDialogue)
                 {
                     canPressSpace = true;
-                    player.StopSpeakingGibberish();
                     continueButton.SetActive(true);
                 }
                 else
@@ -66,7 +62,6 @@ public class DialogueManager : MonoBehaviour
                 if (textDisplay.text == _endDialogue[index].endDialogue)
                 {
                     canPressSpace = true;
-                    player.StopSpeakingGibberish();
                     continueButton.SetActive(true);
                 }
                 else
@@ -90,30 +85,26 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeStartDialogue()
     {
-        /*audioSource.clip = gibberishClips[Random.Range(0, gibberishClips.Length)];
-        audioSource.Play();*/
-
+        player.StartSpeakingGibberish();
         characterImage.sprite = _startDialogue[index].startCharacter;
         foreach(char letter in _startDialogue[index].startDialogue.ToCharArray())
         {
-            player.StartSpeakingGibberish();
             textDisplay.text += letter;
             yield return new WaitForSecondsRealtime(typingSpeed);
         }
+        player.StopSpeakingGibberish();
     }
 
     IEnumerator TypeEndDialogue()
     {
-        /*audioSource.clip = gibberishClips[Random.Range(0, gibberishClips.Length)];
-        audioSource.Play();*/
-
+        player.StartSpeakingGibberish();
         characterImage.sprite = _endDialogue[index].endCharacter;
         foreach (char letter in _endDialogue[index].endDialogue.ToCharArray())
         {
-            player.StartSpeakingGibberish();
             textDisplay.text += letter;
             yield return new WaitForSecondsRealtime(typingSpeed);
         }
+        player.StopSpeakingGibberish();
     }
 
     public void NextSentence()
