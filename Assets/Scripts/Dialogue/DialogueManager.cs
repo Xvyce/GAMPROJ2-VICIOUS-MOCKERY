@@ -34,6 +34,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject scoreCounter;
     [SerializeField] GameObject waveProgressBar;
 
+    #region Gibberish Stuff
+    [SerializeField] AudioClip[] gibberishClips;
+    private AudioSource audioSource;
+    #endregion
+
+
     //private void Start()
     //{
     //    dialogueInterface.SetActive(false);
@@ -69,18 +75,26 @@ public class DialogueManager : MonoBehaviour
         {
             if(canPressSpace)
             {
+<<<<<<< Updated upstream
                 if (Input.GetButtonDown("Jump"))
                 {
                     Debug.Log("Next sentence");
                     NextSentence();
 
                 }
+=======
+                Debug.Log("Next sentence");
+                NextSentence();
+>>>>>>> Stashed changes
             }
         }    
     }
 
     IEnumerator TypeStartDialogue()
     {
+        /*audioSource.clip = gibberishClips[Random.Range(0, gibberishClips.Length)];
+        audioSource.Play();*/
+
         characterImage.sprite = _startDialogue[index].startCharacter;
         foreach(char letter in _startDialogue[index].startDialogue.ToCharArray())
         {
@@ -91,6 +105,9 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeEndDialogue()
     {
+        /*audioSource.clip = gibberishClips[Random.Range(0, gibberishClips.Length)];
+        audioSource.Play();*/
+
         characterImage.sprite = _endDialogue[index].endCharacter;
         foreach (char letter in _endDialogue[index].endDialogue.ToCharArray())
         {
@@ -111,6 +128,7 @@ public class DialogueManager : MonoBehaviour
                     index++;
                     textDisplay.text = "";
                     StartCoroutine(TypeStartDialogue());
+
                 }
                 else
                 {
