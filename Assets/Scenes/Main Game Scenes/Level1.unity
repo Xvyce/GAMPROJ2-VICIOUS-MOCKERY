@@ -30120,6 +30120,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8255384668137732572, guid: 5571147dc15134046991fcffd0f8cf8d, type: 3}
   m_PrefabInstance: {fileID: 1093417258}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1093417263 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2728888057629761567, guid: 5571147dc15134046991fcffd0f8cf8d, type: 3}
+  m_PrefabInstance: {fileID: 1093417258}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1093591271
 GameObject:
   m_ObjectHideFlags: 0
@@ -44352,13 +44363,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelDataManager: {fileID: 1520156171}
   textDisplay: {fileID: 1093417261}
+  characterImage: {fileID: 1093417263}
   continueButton: {fileID: 1093417260}
-  startDialogue:
-  - Start Dialogue
-  - This is Start
-  endDialogue:
-  - End Dialogue
-  - This is End
+  _startDialogue:
+  - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    startDialogue: This is start
+  - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    startDialogue: Start Dialogue
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: Test
+  _endDialogue:
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: This is end
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: End Dialogue
   typingSpeed: 0.02
   dialogueInterface: {fileID: 1093417262}
   waveSpawner: {fileID: 411227907}

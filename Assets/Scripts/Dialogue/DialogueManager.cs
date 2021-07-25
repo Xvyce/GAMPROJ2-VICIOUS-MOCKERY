@@ -8,10 +8,15 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] LevelDataManager levelDataManager;
 
+    [Header("Dialogue UI")]
     [SerializeField] private TextMeshProUGUI textDisplay;
+    [SerializeField] private Image characterImage;
     [SerializeField] private GameObject continueButton;
-    [SerializeField] private string[] startDialogue;
-    [SerializeField] private string[] endDialogue;
+
+    [Header("Dialogue Content")]
+    [SerializeField] private StartDialogue[] _startDialogue;
+    [SerializeField] private EndDialogue[] _endDialogue;
+
     [SerializeField] private float typingSpeed = .02f;
     [SerializeField] private GameObject dialogueInterface;
     private int index;
@@ -38,7 +43,7 @@ public class DialogueManager : MonoBehaviour
         switch (dialogueIndex)
         {
             case 0:
-                if (textDisplay.text == startDialogue[index])
+                if (textDisplay.text == _startDialogue[index].startDialogue)
                 {
                     continueButton.SetActive(true);
                 }
@@ -46,7 +51,7 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case 1:
-                if (textDisplay.text == endDialogue[index])
+                if (textDisplay.text == _endDialogue[index].endDialogue)
                 {
                     continueButton.SetActive(true);
                 }
@@ -60,31 +65,28 @@ public class DialogueManager : MonoBehaviour
             {
                 Debug.Log("Next sentence");
                 NextSentence();
+
             }
         }    
     }
 
-    IEnumerator Type()
+    IEnumerator TypeStartDialogue()
     {
-        switch (dialogueIndex)
+        characterImage.sprite = _startDialogue[index].startCharacter;
+        foreach(char letter in _startDialogue[index].startDialogue.ToCharArray())
         {
-            case 0:
-                foreach (char letter in startDialogue[index].ToCharArray())
-                {
-                    textDisplay.text += letter;
-                    yield return new WaitForSecondsRealtime(typingSpeed);
-                }
+            textDisplay.text += letter;
+            yield return new WaitForSecondsRealtime(typingSpeed);
+        }
+    }
 
-                break;
-
-            case 1:
-                foreach (char letter in endDialogue[index].ToCharArray())
-                {
-                    textDisplay.text += letter;
-                    yield return new WaitForSecondsRealtime(typingSpeed);
-                }
-
-                break;
+    IEnumerator TypeEndDialogue()
+    {
+        characterImage.sprite = _endDialogue[index].endCharacter;
+        foreach (char letter in _endDialogue[index].endDialogue.ToCharArray())
+        {
+            textDisplay.text += letter;
+            yield return new WaitForSecondsRealtime(typingSpeed);
         }
     }
 
@@ -95,11 +97,11 @@ public class DialogueManager : MonoBehaviour
         switch (dialogueIndex)
         {
             case 0:
-                if (index < startDialogue.Length - 1)
+                if (index < _startDialogue.Length - 1)
                 {
                     index++;
                     textDisplay.text = "";
-                    StartCoroutine(Type());
+                    StartCoroutine(TypeStartDialogue());
                 }
                 else
                 {
@@ -117,11 +119,11 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case 1:
-                if (index < endDialogue.Length - 1)
+                if (index < _endDialogue.Length - 1)
                 {
                     index++;
                     textDisplay.text = "";
-                    StartCoroutine(Type());
+                    StartCoroutine(TypeEndDialogue());
                 }
                 else
                 {
@@ -142,15 +144,26 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void DisplayUI()
+    public void DisplayStartDialogue()
     {
         waveSpawner.state = SpawnState.Dialogue;
         isActive = true;
         DisableUI();
 
         dialogueInterface.SetActive(true);
-        StartCoroutine(Type());
-        Debug.Log("Dialogue manager active");
+        StartCoroutine(TypeStartDialogue());
+        Debug.Log("Start Dialogue Active");
+    }
+
+    public void DisplayEndDialogue()
+    {
+        waveSpawner.state = SpawnState.Dialogue;
+        isActive = true;
+        DisableUI();
+
+        dialogueInterface.SetActive(true);
+        StartCoroutine(TypeEndDialogue());
+        Debug.Log("End Dialogue Active");
     }
 
     #region ToggleUIFunctions
@@ -191,14 +204,14 @@ public class DialogueManager : MonoBehaviour
 [System.Serializable]
 public class StartDialogue
 {
-    Image character;
-    string dialogue;
+    public Sprite startCharacter;
+    public string startDialogue;
 }
 
 
 [System.Serializable]
 public class EndDialogue
 {
-    Image character;
-    string dialogue;
+    public Sprite endCharacter;
+    public string endDialogue;
 }

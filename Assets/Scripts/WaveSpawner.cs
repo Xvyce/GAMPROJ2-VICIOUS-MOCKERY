@@ -38,7 +38,7 @@ public class WaveSpawner : MonoBehaviour
         waveIndicatorText.enabled = false;
         waveIndicatorBanner.SetActive(false);
 
-        DisplayDialogue();
+        dialogueManager.DisplayStartDialogue();
     }
 
     private void Update()
@@ -89,7 +89,7 @@ public class WaveSpawner : MonoBehaviour
         {
             state = SpawnState.Complete;
 
-            DisplayDialogue();
+            dialogueManager.DisplayEndDialogue();
 
             //lvlDataManager.GameOverWin();
 
@@ -211,11 +211,6 @@ public class WaveSpawner : MonoBehaviour
                 Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
         }
-    }
-
-    void DisplayDialogue()
-    {
-        dialogueManager.DisplayUI();
     }
 }
 
