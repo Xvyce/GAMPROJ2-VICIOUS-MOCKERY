@@ -5,7 +5,7 @@ using TMPro;
 
 public class TutorialWaveSpawner : MonoBehaviour
 {
-    [SerializeField] private TutorialWave[] tutorialWaves;
+    public TutorialWave[] tutorialWaves;
 
     [SerializeField] private LevelDataManager lvlDataManager;
 
