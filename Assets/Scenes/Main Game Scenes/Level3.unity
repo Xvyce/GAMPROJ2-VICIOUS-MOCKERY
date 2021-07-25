@@ -695,22 +695,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - name: Caster Test
-    timeBetweenSpawn: 1
-    waveContent:
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
-      count: 1
-  - name: Test Wave
-    timeBetweenSpawn: 1
-    waveContent:
-    - enemyPrefab: {fileID: 9205211024943220426, guid: 869b019d1934b064c9b254fae17ff111, type: 3}
-      count: 2
-    - enemyPrefab: {fileID: 9205211024943220426, guid: 7497c8448c89fea44a6d3b859d5938bc, type: 3}
-      count: 2
-    - enemyPrefab: {fileID: 2761450339370431376, guid: c94b0d4bc45271c4a8c68c083db7a2af, type: 3}
-      count: 2
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 6712f78dd4921e54e8e992d4c81c3e81, type: 3}
-      count: 2
   - name: Wave 1
     timeBetweenSpawn: 1
     waveContent:
@@ -896,7 +880,7 @@ MonoBehaviour:
   - {fileID: 1826521364}
   spawnPointsAir:
   - {fileID: 2086370198}
-  timeBetweenWaves: 2
+  timeBetweenWaves: 1
   nextWave: 0
   state: 2
 --- !u!4 &411227908
