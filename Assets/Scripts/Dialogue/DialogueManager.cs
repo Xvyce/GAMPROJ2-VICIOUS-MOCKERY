@@ -35,8 +35,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject waveProgressBar;
 
     #region Gibberish Stuff
-    [SerializeField] AudioClip[] gibberishClips;
+    [SerializeField] private AudioClip[] gibberishClips;
     private AudioSource audioSource;
+    private Player player;
     #endregion
 
 
@@ -75,17 +76,15 @@ public class DialogueManager : MonoBehaviour
         {
             if(canPressSpace)
             {
-<<<<<<< Updated upstream
                 if (Input.GetButtonDown("Jump"))
                 {
                     Debug.Log("Next sentence");
                     NextSentence();
 
                 }
-=======
+
                 Debug.Log("Next sentence");
                 NextSentence();
->>>>>>> Stashed changes
             }
         }    
     }
@@ -98,6 +97,7 @@ public class DialogueManager : MonoBehaviour
         characterImage.sprite = _startDialogue[index].startCharacter;
         foreach(char letter in _startDialogue[index].startDialogue.ToCharArray())
         {
+            player.StartSpeakingGibberish();
             textDisplay.text += letter;
             yield return new WaitForSecondsRealtime(typingSpeed);
         }
@@ -111,6 +111,7 @@ public class DialogueManager : MonoBehaviour
         characterImage.sprite = _endDialogue[index].endCharacter;
         foreach (char letter in _endDialogue[index].endDialogue.ToCharArray())
         {
+            player.StartSpeakingGibberish();
             textDisplay.text += letter;
             yield return new WaitForSecondsRealtime(typingSpeed);
         }

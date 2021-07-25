@@ -17,7 +17,7 @@ public class Flicker : MonoBehaviour
         //{
         //    StartCoroutine(FlickeringLight());
         //}
-        candleLight.intensity = ;
+        //candleLight.intensity = ;
     }
 
     IEnumerator FlickeringLight()
