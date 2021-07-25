@@ -42,11 +42,11 @@ public class UIManager : Singleton<UIManager>
 
             if (currentScene == "Level1")
             {
-                FindObjectOfType<AudioManager>().Stop("Boss_Level_1_SFX");
+                FindObjectOfType<AudioManager>().Stop("Boss_Level_1_BGM");
             }
             else if (currentScene == "Level2")
             {
-                FindObjectOfType<AudioManager>().Stop("Boss_Level_2_SFX");
+                FindObjectOfType<AudioManager>().Stop("Boss_Level_2_BGM");
             }
 
             FindObjectOfType<AudioManager>().Play("Victory_SFX");

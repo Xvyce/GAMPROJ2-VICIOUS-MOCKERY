@@ -45,20 +45,7 @@ public class Player : MonoBehaviour
     }
 
     IEnumerator SpeakingGibberish()
-    {
-        /*yield return null;
-
-        for (int i = 0; i < gibClips.Length; i++)
-        {
-            audioSource.clip = gibClips[i];
-            audioSource.Play();
-
-            while (audioSource.isPlaying)
-            {
-                yield return null;
-            }
-        }*/
-        
+    {   
         audioSource.clip = gibClips[Random.Range(0, gibClips.Length)];
         audioSource.Play();
 

@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
-            //s.source.outputAudioMixerGroup = audioMixerGroup;
+            s.source.outputAudioMixerGroup = s.audioMixerGroup;
         }
     }
 
@@ -179,6 +179,7 @@ public class Sound
     public string name;
 
     public AudioClip clip;
+    public AudioMixerGroup audioMixerGroup;
 
     [Range(0f, 1f)] public float volume;
     [Range(.1f, 3f)] public float pitch;
