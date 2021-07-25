@@ -25,8 +25,7 @@ public class WaveSpawner : MonoBehaviour
     [Header("Time Between Wave")]
     [SerializeField] private float timeBetweenWaves;
     private float waveCountdown;
-    private int nextWave = 0;
-    public int currentWave;
+    public int nextWave = 0;
 
     private float enemySearchCountdown = 1f;
 
@@ -35,7 +34,6 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
-        currentWave = nextWave +1;
         waveCountdown = timeBetweenWaves;
         waveIndicatorText.enabled = false;
         waveIndicatorBanner.SetActive(false);
@@ -100,7 +98,6 @@ public class WaveSpawner : MonoBehaviour
         else
         {
             nextWave++;
-            currentWave = nextWave + 1;
         }
     }
 

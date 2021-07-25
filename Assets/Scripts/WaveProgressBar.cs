@@ -25,7 +25,7 @@ public class WaveProgressBar : MonoBehaviour
 
     void ProgressIndicator()
     {
-        currentWave = waveSpawner.currentWave;
+        currentWave = waveSpawner.nextWave +1;
 
         fillImage.fillAmount = currentWave / lastWave;
     }
