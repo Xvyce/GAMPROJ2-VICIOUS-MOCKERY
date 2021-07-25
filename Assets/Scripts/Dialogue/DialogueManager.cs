@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
     #region Gibberish Stuff
     [SerializeField] private AudioClip[] gibberishClips;
     private AudioSource audioSource;
-    private Player player;
+    [SerializeField] private Player player;
     #endregion
 
 
@@ -54,6 +54,7 @@ public class DialogueManager : MonoBehaviour
                 if (textDisplay.text == _startDialogue[index].startDialogue)
                 {
                     canPressSpace = true;
+                    player.StopSpeakingGibberish();
                     continueButton.SetActive(true);
                 }
                 else
@@ -64,6 +65,8 @@ public class DialogueManager : MonoBehaviour
             case 1:
                 if (textDisplay.text == _endDialogue[index].endDialogue)
                 {
+                    canPressSpace = true;
+                    player.StopSpeakingGibberish();
                     continueButton.SetActive(true);
                 }
                 else
@@ -80,11 +83,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     Debug.Log("Next sentence");
                     NextSentence();
-
                 }
-
-                Debug.Log("Next sentence");
-                NextSentence();
             }
         }    
     }

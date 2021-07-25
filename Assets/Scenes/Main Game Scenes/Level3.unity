@@ -487,6 +487,8 @@ MonoBehaviour:
   freezeButton: {fileID: 1022422501240769859}
   scoreCounter: {fileID: 5949072392209591262}
   waveProgressBar: {fileID: 629931600}
+  gibberishClips: []
+  player: {fileID: 612996372}
 --- !u!4 &112374035
 Transform:
   m_ObjectHideFlags: 0
