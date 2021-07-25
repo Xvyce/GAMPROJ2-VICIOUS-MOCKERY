@@ -62,7 +62,7 @@ public class AudioManager : MonoBehaviour
         }
         else if (currentScene == "Level3")
         {
-            Play("");
+            //Play("");
         }
         else if (currentScene == "LoseScene")
         {

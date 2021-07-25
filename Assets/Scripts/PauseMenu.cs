@@ -99,7 +99,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Continue()
     {
-        FindObjectOfType<AudioManager>().UnPause("Level_1_BGM");
+        UnPauseAudio();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -107,7 +107,7 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
-        FindObjectOfType<AudioManager>().Pause("Level_1_BGM");
+        PauseAudio();
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -193,6 +193,53 @@ public class PauseMenu : MonoBehaviour
         StringBuilder strBuilder = new StringBuilder(NxtLvl.text);
         strBuilder.Replace(colalpha4.ToString(), "<color=#FF0000>" + colalpha4 + "</color>");
         NxtLvl.text = strBuilder.ToString();
+    }
+
+
+    // Pauses BGM when game is paused
+    void PauseAudio()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (currentScene == "Tutorial")
+        {
+            FindObjectOfType<AudioManager>().Pause("Tutorial_BGM");
+        }
+        else if (currentScene == "Level1")
+        {
+            FindObjectOfType<AudioManager>().Pause("Level_1_BGM");
+        }
+        else if (currentScene == "Level2")
+        {
+            FindObjectOfType<AudioManager>().Pause("Level_2_BGM");
+        }
+        else if(currentScene == "Level3")
+        {
+
+        }
+    }
+
+    // Unpauses BGM when game is resumed
+    void UnPauseAudio()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (currentScene == "Tutorial")
+        {
+            FindObjectOfType<AudioManager>().UnPause("Tutorial_BGM");
+        }
+        else if (currentScene == "Level1")
+        {
+            FindObjectOfType<AudioManager>().UnPause("Level_1_BGM");
+        }
+        else if (currentScene == "Level2")
+        {
+            FindObjectOfType<AudioManager>().UnPause("Level_2_BGM");
+        }
+        else if (currentScene == "Level3")
+        {
+
+        }
     }
 }
 

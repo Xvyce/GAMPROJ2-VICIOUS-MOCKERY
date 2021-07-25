@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
@@ -152,6 +153,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Dialogue manager active");
     }
 
+    #region ToggleUIFunctions
     void DisableUI()
     {
         if (slowButton != null)
@@ -181,4 +183,22 @@ public class DialogueManager : MonoBehaviour
         scoreCounter.SetActive(true);
         waveProgressBar.SetActive(true);
     }
+    #endregion
+}
+
+
+
+[System.Serializable]
+public class StartDialogue
+{
+    Image character;
+    string dialogue;
+}
+
+
+[System.Serializable]
+public class EndDialogue
+{
+    Image character;
+    string dialogue;
 }
