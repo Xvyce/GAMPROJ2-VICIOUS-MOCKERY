@@ -12,7 +12,7 @@ public class Flicker : MonoBehaviour
 
     private void Start()
     {
-        isFlickering = false;
+        
         candleLight = GetComponent<Light>();
     }
 
