@@ -4742,19 +4742,91 @@ MonoBehaviour:
   characterImage: {fileID: 12833910}
   continueButton: {fileID: 12833907}
   _startDialogue:
-  - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    startDialogue: This is start
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
-    startDialogue: Start Dialogue
+    startDialogue: "\u201CWhat? Where are we?\u201D"
+  - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    startDialogue: " \u201CI don\u2019t really know but it\u2019s freezing cold here.\u201D"
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: Test
+    startDialogue: "\u201CWe are\u2026 in the mountains.\u201D"
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: "\u201CRemain vigilant.\u201D"
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: "\u201CThe enemies here have evolved to handle the sheer cold.\u201D"
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: "\u201CThey are tougher.\u201D"
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: "\u201CBat riders riddle this place and take advantage of the
+      low visibility.\u201D"
+  - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    startDialogue: "\u201CBat riders? \u201D"
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: "\u201CYes! They use bats to fly.\u201D"
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: "\u201CThey aren\u2019t really dangerous but due to their mobility
+      and height advantage, they throw poop to blind you.\u201D"
+  - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    startDialogue: " \u201CJust that?\u201D"
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: "\u201CIt stinks so much I tell you! The last time I got to the
+      receiving end, the smell lasted for weeks!\u201D"
+  - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    startDialogue: "\u201CGuys we need to stop talking about poop because enemies
+      are coming!\u201D"
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: "\u201CUse me, I can help you break the armors of the enemies!\u201D"
   _endDialogue:
-  - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    endDialogue: This is end
-  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: End Dialogue
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    endDialogue: Test
+    endDialogue: "\u201CAnother crystal\u2026\u201D"
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: "\u201CLet\u2019s sell it quickly before another man comes out.\u201D"
+  - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    endDialogue: "\u201CWhat are you talking about!\u201D"
+  - endCharacter: {fileID: 0}
+    endDialogue: Crystal shines and a human wizard comes out of it.
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: "\u201CAAAA not this again.\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: " \u201CFeast your eyes upon the most glorious, divine, and dazzling
+      wizard of the world!\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\"I am the wizard of the most beautiful beings but unfortunately
+      I was trapped.\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: '*stomach growl*'
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CI-I-I- Yes! I was cursed to be hungry!\u201D"
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: "\u201CHe just made that curse up didn\u2019t he?\u201D"
+  - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    endDialogue: "\u201CYes he did.\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CWould you mind giving me some food, pretty please. \u201D"
+  - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    endDialogue: "*sigh* \"Here I got some leftover meat.\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CMany thanks! Going back to my story, I was just minding my
+      own business when I smelled something.\u201D "
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CIt was THE LEGENDARY GOLDEN CHICKEN!\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CI couldn\u2019t resist myself and as I approached it\u2026
+      I was trapped.\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CI couldn\u2019t remember anything after that.\u201D"
+  - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    endDialogue: "\u201CThe same way as me\u2026\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CWell as much as I know how much you people want me. I must
+      be on my way.\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CIt would be such a waste for my beauty to be stuck in one
+      place.\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: (earthquake)
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: "\u201CIs your stomach rumbling again wizard.\u201D"
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: "\u201CThat\u2019s not me!\u201D"
   typingSpeed: 0.02
   dialogueInterface: {fileID: 12833909}
   waveSpawner: {fileID: 1894294026}
