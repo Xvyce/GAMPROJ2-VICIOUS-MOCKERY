@@ -44419,7 +44419,7 @@ MonoBehaviour:
     endDialogue: "\u201CIt could fetch for a hefty price I bet!\u201C"
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: "\u201CNo. Wait!\u201C"
-  - endCharacter: {fileID: 0}
+  - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
     endDialogue: Crystal Shines and a troll emerge from the crystal.
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "\u201CAAAAAAAAAAAAAA\u2026!\u201C"
@@ -44456,7 +44456,7 @@ MonoBehaviour:
       that crystal?\u201C"
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "\u201CAh yes, I was trapped by the demon lord. \u201C"
-  - endCharacter: {fileID: 0}
+  - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
     endDialogue: (flashback)
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "\u201CI was just minding my own business working out.\u201D"
@@ -44482,7 +44482,7 @@ MonoBehaviour:
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "\u201CYes, we have no time to waste. You must strengthen your defenses
       and-\u201D"
-  - endCharacter: {fileID: 0}
+  - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
     endDialogue: (earthquake)
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "\u201COh my, hold tight now. We\u2019re in for a bumpy ride!\u201D"
