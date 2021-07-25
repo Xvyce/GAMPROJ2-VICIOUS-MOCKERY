@@ -1,37 +1,22 @@
 fileFormatVersion: 2
-guid: 70aa18dfb22ce2e4c8411c21ae3c37a1
+guid: ba803a10fe84d194e9084143ba5041d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4144786088562668724
-    second: ArmorBreak_SupportBoss_0
+      213: -5326696579203970044
+    second: PlatformIdle_0
   - first:
-      213: 6747480209690460960
-    second: ArmorBreak_SupportBoss_1
+      213: 8919338476439381300
+    second: PlatformIdle_1
   - first:
-      213: 3307030347303956250
-    second: ArmorBreak_SupportBoss_2
+      213: 2140027240967882251
+    second: PlatformIdle_2
   - first:
-      213: -3196280334685675566
-    second: ArmorBreak_SupportBoss_3
+      213: -8263056783758646793
+    second: PlatformIdle_3
   - first:
-      213: 6409164377495834131
-    second: ArmorBreak_SupportBoss_4
-  - first:
-      213: -2685358937051605759
-    second: ArmorBreak_SupportBoss_5
-  - first:
-      213: 8467135909466424396
-    second: ArmorBreak_SupportBoss_6
-  - first:
-      213: -2955276592763887098
-    second: ArmorBreak_SupportBoss_7
-  - first:
-      213: 6850786078835232257
-    second: ArmorBreak_SupportBoss_8
-  - first:
-      213: -2746261202570409980
-    second: ArmorBreak_SupportBoss_9
+      213: -7241130295369829321
+    second: PlatformIdle_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_0
+      name: PlatformIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -171,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4bcd313303ca76c0800000000000000
-      internalID: -4144786088562668724
+      spriteID: 40c424aeea5c316b0800000000000000
+      internalID: -5326696579203970044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_1
+      name: PlatformIdle_1
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0230493408dd3ad50800000000000000
-      internalID: 6747480209690460960
+      spriteID: 435a4af661bd7cb70800000000000000
+      internalID: 8919338476439381300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_2
+      name: PlatformIdle_2
       rect:
         serializedVersion: 2
         x: 256
@@ -213,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f2d78549ee4ed20800000000000000
-      internalID: 3307030347303956250
+      spriteID: b06cc83ff67e2bd10800000000000000
+      internalID: 2140027240967882251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_3
+      name: PlatformIdle_3
       rect:
         serializedVersion: 2
         x: 384
@@ -234,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df5e7068f784a3d0800000000000000
-      internalID: -3196280334685675566
+      spriteID: 7f12f2d72a9b35d80800000000000000
+      internalID: -8263056783758646793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_4
+      name: PlatformIdle_4
       rect:
         serializedVersion: 2
         x: 512
@@ -255,113 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31e0abb4b0de1f850800000000000000
-      internalID: 6409164377495834131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1055e9e3640bbbad0800000000000000
-      internalID: -2685358937051605759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_6
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4443b4bf3f418570800000000000000
-      internalID: 8467135909466424396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_7
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 602284bb89fbcf6d0800000000000000
-      internalID: -2955276592763887098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_8
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10e4a2544a1e21f50800000000000000
-      internalID: 6850786078835232257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_9
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4088a509cf153e9d0800000000000000
-      internalID: -2746261202570409980
+      spriteID: 734792c8c56528b90800000000000000
+      internalID: -7241130295369829321
       vertices: []
       indices: 
       edges: []
@@ -369,7 +249,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3b2769a9b84c0dc44860cb72b9cab131
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

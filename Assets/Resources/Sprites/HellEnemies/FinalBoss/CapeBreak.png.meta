@@ -1,37 +1,133 @@
 fileFormatVersion: 2
-guid: 70aa18dfb22ce2e4c8411c21ae3c37a1
+guid: 931dad7b0b74b64488dfad016cb795b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4144786088562668724
-    second: ArmorBreak_SupportBoss_0
+      213: 6318996958765136615
+    second: CapeBreak_0
   - first:
-      213: 6747480209690460960
-    second: ArmorBreak_SupportBoss_1
+      213: -8648842695380672539
+    second: CapeBreak_1
   - first:
-      213: 3307030347303956250
-    second: ArmorBreak_SupportBoss_2
+      213: -3115298124237496792
+    second: CapeBreak_2
   - first:
-      213: -3196280334685675566
-    second: ArmorBreak_SupportBoss_3
+      213: -2291603919911316099
+    second: CapeBreak_3
   - first:
-      213: 6409164377495834131
-    second: ArmorBreak_SupportBoss_4
+      213: -10152035790903625
+    second: CapeBreak_4
   - first:
-      213: -2685358937051605759
-    second: ArmorBreak_SupportBoss_5
+      213: -1017679349575376365
+    second: CapeBreak_5
   - first:
-      213: 8467135909466424396
-    second: ArmorBreak_SupportBoss_6
+      213: -1727677677608689498
+    second: CapeBreak_6
   - first:
-      213: -2955276592763887098
-    second: ArmorBreak_SupportBoss_7
+      213: 8766318976263121715
+    second: CapeBreak_7
   - first:
-      213: 6850786078835232257
-    second: ArmorBreak_SupportBoss_8
+      213: 1456647690117128689
+    second: CapeBreak_8
   - first:
-      213: -2746261202570409980
-    second: ArmorBreak_SupportBoss_9
+      213: -8804086265969081
+    second: CapeBreak_9
+  - first:
+      213: -6554484014262536446
+    second: CapeBreak_10
+  - first:
+      213: 470137840290036722
+    second: CapeBreak_11
+  - first:
+      213: -8712468618231741877
+    second: CapeBreak_12
+  - first:
+      213: 2145631455934771359
+    second: CapeBreak_13
+  - first:
+      213: 8964621586495296423
+    second: CapeBreak_14
+  - first:
+      213: -404625030204616388
+    second: CapeBreak_15
+  - first:
+      213: -7964391140992059089
+    second: CapeBreak_16
+  - first:
+      213: -2547982368838373395
+    second: CapeBreak_17
+  - first:
+      213: 2049285871813961660
+    second: CapeBreak_18
+  - first:
+      213: -5724592255456313634
+    second: CapeBreak_19
+  - first:
+      213: 767077501638761080
+    second: CapeBreak_20
+  - first:
+      213: -7130154472867159163
+    second: CapeBreak_21
+  - first:
+      213: 5197361465257320783
+    second: CapeBreak_22
+  - first:
+      213: -8243569735733722081
+    second: CapeBreak_23
+  - first:
+      213: -1395271461695678383
+    second: CapeBreak_24
+  - first:
+      213: -970707438366831029
+    second: CapeBreak_25
+  - first:
+      213: -2285224474559639931
+    second: CapeBreak_26
+  - first:
+      213: 8692141534155019973
+    second: CapeBreak_27
+  - first:
+      213: -8380623682527317683
+    second: CapeBreak_28
+  - first:
+      213: 7423108909758170860
+    second: CapeBreak_29
+  - first:
+      213: 7910798775626586850
+    second: CapeBreak_30
+  - first:
+      213: 4636900039953781199
+    second: CapeBreak_31
+  - first:
+      213: -4811335240252029393
+    second: CapeBreak_32
+  - first:
+      213: -3358519654284033937
+    second: CapeBreak_33
+  - first:
+      213: 8682161999680961526
+    second: CapeBreak_34
+  - first:
+      213: 7154830849445660189
+    second: CapeBreak_35
+  - first:
+      213: 14067063020950230
+    second: CapeBreak_36
+  - first:
+      213: -4791579452428649415
+    second: CapeBreak_37
+  - first:
+      213: 1342595606781423522
+    second: CapeBreak_38
+  - first:
+      213: 6394170953243531755
+    second: CapeBreak_39
+  - first:
+      213: 3661171143147217748
+    second: CapeBreak_40
+  - first:
+      213: -5664612487302855961
+    second: CapeBreak_41
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +172,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,7 +253,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_0
+      name: CapeBreak_0
       rect:
         serializedVersion: 2
         x: 0
@@ -171,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4bcd313303ca76c0800000000000000
-      internalID: -4144786088562668724
+      spriteID: 7ea38f7214691b750800000000000000
+      internalID: 6318996958765136615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_1
+      name: CapeBreak_1
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0230493408dd3ad50800000000000000
-      internalID: 6747480209690460960
+      spriteID: 5ef5a9f546329f780800000000000000
+      internalID: -8648842695380672539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_2
+      name: CapeBreak_2
       rect:
         serializedVersion: 2
         x: 256
@@ -213,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f2d78549ee4ed20800000000000000
-      internalID: 3307030347303956250
+      spriteID: 82e126f8cdc34c4d0800000000000000
+      internalID: -3115298124237496792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_3
+      name: CapeBreak_3
       rect:
         serializedVersion: 2
         x: 384
@@ -234,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df5e7068f784a3d0800000000000000
-      internalID: -3196280334685675566
+      spriteID: d751bc350669230e0800000000000000
+      internalID: -2291603919911316099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_4
+      name: CapeBreak_4
       rect:
         serializedVersion: 2
         x: 512
@@ -255,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31e0abb4b0de1f850800000000000000
-      internalID: 6409164377495834131
+      spriteID: 7b6afe8f6ceebdff0800000000000000
+      internalID: -10152035790903625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_5
+      name: CapeBreak_5
       rect:
         serializedVersion: 2
         x: 640
@@ -276,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1055e9e3640bbbad0800000000000000
-      internalID: -2685358937051605759
+      spriteID: 3122f41060a70e1f0800000000000000
+      internalID: -1017679349575376365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_6
+      name: CapeBreak_6
       rect:
         serializedVersion: 2
         x: 768
@@ -297,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4443b4bf3f418570800000000000000
-      internalID: 8467135909466424396
+      spriteID: 6a023cb4e4e0608e0800000000000000
+      internalID: -1727677677608689498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_7
+      name: CapeBreak_7
       rect:
         serializedVersion: 2
         x: 896
@@ -318,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 602284bb89fbcf6d0800000000000000
-      internalID: -2955276592763887098
+      spriteID: 33bede7b9a838a970800000000000000
+      internalID: 8766318976263121715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_8
+      name: CapeBreak_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -339,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10e4a2544a1e21f50800000000000000
-      internalID: 6850786078835232257
+      spriteID: 1f123544b5d073410800000000000000
+      internalID: 1456647690117128689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmorBreak_SupportBoss_9
+      name: CapeBreak_9
       rect:
         serializedVersion: 2
         x: 1152
@@ -360,8 +456,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4088a509cf153e9d0800000000000000
-      internalID: -2746261202570409980
+      spriteID: 7468b8deab8b0eff0800000000000000
+      internalID: -8804086265969081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CapeBreak_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207b7e3248bc905a0800000000000000
+      internalID: -6554484014262536446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CapeBreak_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbf4f5ffd3468600800000000000000
+      internalID: 470137840290036722
       vertices: []
       indices: 
       edges: []
@@ -369,7 +507,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3b2769a9b84c0dc44860cb72b9cab131
+    spriteID: 7326fc67567de4c42835d3f241e54885
     internalID: 0
     vertices: []
     indices: 
