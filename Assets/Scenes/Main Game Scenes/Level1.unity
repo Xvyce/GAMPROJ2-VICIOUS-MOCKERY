@@ -44494,33 +44494,6 @@ MonoBehaviour:
   freezeButton: {fileID: 0}
   scoreCounter: {fileID: 5949072392209591262}
   waveProgressBar: {fileID: 5374926258834209729}
-  gibberishClips:
-  - {fileID: 8300000, guid: a1da133103e827d48adea41ed4b390cd, type: 3}
-  - {fileID: 8300000, guid: b45c3ceb377c207458d93a41b48b16c1, type: 3}
-  - {fileID: 8300000, guid: 2f5e6b3513c5b964cb907d90f6223f7d, type: 3}
-  - {fileID: 8300000, guid: d848b4e3e8435eb43b719cf116cc735d, type: 3}
-  - {fileID: 8300000, guid: 67cded6bd66ee2f479ab328861f64666, type: 3}
-  - {fileID: 8300000, guid: 8117f5f11ec8eb3488e84ad0fd269f10, type: 3}
-  - {fileID: 8300000, guid: 7d27d5cae25007148a220b7abbd70e9f, type: 3}
-  - {fileID: 8300000, guid: 0b4fafcf15a65d64b81e21528dcf2fe0, type: 3}
-  - {fileID: 8300000, guid: fd189c0960e25d0448c45569eed590c1, type: 3}
-  - {fileID: 8300000, guid: 61ed525782b1c274d93a697b9fb6daf7, type: 3}
-  - {fileID: 8300000, guid: 76ffb5b5bcec8e54897e615e341e1cf8, type: 3}
-  - {fileID: 8300000, guid: d8ec41806d0892c439f107ffe247aea2, type: 3}
-  - {fileID: 8300000, guid: 293b93fec7b5a7b48957783a5919b481, type: 3}
-  - {fileID: 8300000, guid: e8ee24ae07a90014c897e756bec4dd14, type: 3}
-  - {fileID: 8300000, guid: e22fb1a26f8fb054bb172694250c930b, type: 3}
-  - {fileID: 8300000, guid: 6aa14a5d54b5b5d4ebb9163882427275, type: 3}
-  - {fileID: 8300000, guid: 0b4641511635bfd4d9ccb7be1044981f, type: 3}
-  - {fileID: 8300000, guid: 6b5c905ecbddd7e429d54afd00957f7a, type: 3}
-  - {fileID: 8300000, guid: 97b1c966007ce474c8b3167834ee1398, type: 3}
-  - {fileID: 8300000, guid: 565b0c6adf6e06246bc9039c490e818f, type: 3}
-  - {fileID: 8300000, guid: ca42461c804e1b748a6e6afd4aa200ce, type: 3}
-  - {fileID: 8300000, guid: 118de7895691c0f45baaffa27ed902c0, type: 3}
-  - {fileID: 8300000, guid: 9ae395e839e36a245bf3c3197db11f1d, type: 3}
-  - {fileID: 8300000, guid: a463c081380d89449aa1fc64758d872f, type: 3}
-  - {fileID: 8300000, guid: a54f10d8557fa7144b505e7278fad395, type: 3}
-  - {fileID: 8300000, guid: 2b6986b2b7cb9d54187530e302d483d7, type: 3}
   player: {fileID: 612996372}
 --- !u!4 &1612189340
 Transform:
@@ -95006,6 +94979,58 @@ PrefabInstance:
       propertyPath: sounds.Array.data[12].volume
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[0].audioMixerGroup
+      value: 
+      objectReference: {fileID: -1639977059501659208, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[1].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[2].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[3].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[4].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[5].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[6].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[7].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[8].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[9].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[10].audioMixerGroup
+      value: 
+      objectReference: {fileID: -1639977059501659208, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[11].audioMixerGroup
+      value: 
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[12].audioMixerGroup
+      value: 
+      objectReference: {fileID: -1639977059501659208, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
     - target: {fileID: 8552913609421491194, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_RootOrder
       value: 4
