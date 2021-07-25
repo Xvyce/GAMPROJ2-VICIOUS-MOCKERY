@@ -233,7 +233,7 @@ public class Enemy : MonoBehaviour
                 //Play Support Boss armor break audio
                 generateWordStagger();
 
-                yield return new WaitForSeconds(.33f);//wait for animation to end
+                yield return new WaitForSeconds(1.0f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
                 _animator.SetBool("Helmet_Walking", true);
@@ -283,7 +283,7 @@ public class Enemy : MonoBehaviour
                 //Play Support Boss break audio
                 generateWordStagger();
 
-                yield return new WaitForSeconds(.33f);//wait for animation to end
+                yield return new WaitForSeconds(1.0f);//wait for animation to end
 
                 _animator.SetBool("Stagger_Two", false);
                 _animator.SetBool("Naked_Walking", true);
