@@ -20,6 +20,13 @@ public class DialogueManager : MonoBehaviour
 
     private bool isActive;
 
+    [Header("UI to disable")]
+    [SerializeField] GameObject slowButton;
+    [SerializeField] GameObject armorBreakButton;
+    [SerializeField] GameObject freezeButton;
+    [SerializeField] GameObject scoreCounter;
+    [SerializeField] GameObject waveProgressBar;
+
     //private void Start()
     //{
     //    dialogueInterface.SetActive(false);
@@ -100,6 +107,7 @@ public class DialogueManager : MonoBehaviour
                     textDisplay.text = "";
                     continueButton.SetActive(false);
                     dialogueInterface.SetActive(false);
+                    EnableUI();
 
                     index = 0;
                     waveSpawner.state = SpawnState.Counting;
@@ -121,6 +129,7 @@ public class DialogueManager : MonoBehaviour
                     textDisplay.text = "";
                     continueButton.SetActive(false);
                     dialogueInterface.SetActive(false);
+                    EnableUI();
 
                     index = 0;
                     waveSpawner.state = SpawnState.Complete;
@@ -136,9 +145,40 @@ public class DialogueManager : MonoBehaviour
     {
         waveSpawner.state = SpawnState.Dialogue;
         isActive = true;
+        DisableUI();
         dialogueInterface.SetActive(true);
         StartCoroutine(Type());
 
         Debug.Log("Dialogue manager active");
+    }
+
+    void DisableUI()
+    {
+        if (slowButton != null)
+            slowButton.SetActive(false);
+
+        if (armorBreakButton != null)
+            armorBreakButton.SetActive(false);
+
+        if (freezeButton != null)
+            freezeButton.SetActive(false);
+
+        scoreCounter.SetActive(false);
+        waveProgressBar.SetActive(false);
+    }
+
+    void EnableUI()
+    {
+        if (slowButton != null)
+            slowButton.SetActive(true);
+
+        if (armorBreakButton != null)
+            armorBreakButton.SetActive(true);
+
+        if (freezeButton != null)
+            freezeButton.SetActive(true);
+
+        scoreCounter.SetActive(true);
+        waveProgressBar.SetActive(true);
     }
 }
