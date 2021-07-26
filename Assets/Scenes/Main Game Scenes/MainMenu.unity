@@ -1233,7 +1233,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (Include the capital letters)
+  m_Text: 'p.s. It''s case-
+
+    sensitive'
 --- !u!222 &338272254
 CanvasRenderer:
   m_ObjectHideFlags: 0
