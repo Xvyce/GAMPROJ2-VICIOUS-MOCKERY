@@ -56,6 +56,7 @@ public class CasterSkill : MonoBehaviour
 
         _enemy.typeIndex = 0;
         _enemy.text.text = _enemy.wordContainer;
+        _enemy.text.color = _enemy.originalColor;
 
         for (int i = 0; i < slimesToSpawn; i++)
         {

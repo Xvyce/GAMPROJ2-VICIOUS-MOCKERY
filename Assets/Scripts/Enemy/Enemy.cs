@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     private bool isDefeat;
 
     // Related to enemy word
+    [HideInInspector] public Color originalColor;
     private string wordToType;
     [HideInInspector] public string wordContainer;
     [HideInInspector] public int typeIndex;
@@ -50,6 +51,7 @@ public class Enemy : MonoBehaviour
         _enemyManager.enemyList.Add(this);
         revivalCount = 0;
         typoCounter = 0;
+        originalColor = text.color;
         isWalking = true;
         isWalkingRight = false;
         speed = enemyData.Speed;
@@ -84,6 +86,7 @@ public class Enemy : MonoBehaviour
 
         typeIndex = 0;
         text.text = wordContainer;
+        text.color = originalColor;
     }
 
     public void TypeLetter()
@@ -133,7 +136,7 @@ public class Enemy : MonoBehaviour
             AddScore();
 
             //Caster doesnt have run animation
-            if(enemyData.Type != EnemyType.Caster_Boss && enemyData.Type != EnemyType.CasterProjectile)
+            if(enemyData.Type != EnemyType.CasterProjectile)
             {
                 Defeat();
             }
@@ -143,12 +146,7 @@ public class Enemy : MonoBehaviour
                 player.StopSpeakingGibberish();
                 text.enabled = false;
 
-                if (enemyData.Type == EnemyType.Caster)
-                {
-                    typeBox.enabled = false;
-                    _animator.SetBool("Is_Defeat", true);
-                }
-                else if(enemyData.Type == EnemyType.CasterProjectile)
+                if(enemyData.Type == EnemyType.CasterProjectile)
                 {
                     if(casterBoss!= null)
                     {
@@ -259,18 +257,15 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyType.Caster_Boss: //Caster Boss
-                EnemyManager.hasActiveEnemy = false;
-
                 twoArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
                 //Play Caster Boss armor break audio
-
+                generateWordStagger();
                 yield return new WaitForSeconds(1.6f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
                 _animator.SetBool("NoHoodIdle", true);
 
-                generateWordStagger();
                 casterBoss.CasterBossSkill();
                 break;
         }
@@ -316,13 +311,12 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("NoHoodIdle", false);
                 _animator.SetBool("Stagger_Two", true);
                 //Play Caster Boss break audio
-
+                generateWordStagger();
                 yield return new WaitForSeconds(1.2f);//wait for animation to end
 
                 _animator.SetBool("Stagger_Two", false);
                 _animator.SetBool("NakedIdle", true);
 
-                generateWordStagger();
                 casterBoss.CasterBossSkill();
                 break;
         }
