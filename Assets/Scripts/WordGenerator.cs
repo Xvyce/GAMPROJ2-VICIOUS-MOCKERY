@@ -59,7 +59,8 @@ public class WordGenerator : MonoBehaviour
 
 
     // Projectile Word Pool
-    private static string[] projectileWords = { "Easy", "Medium", "Hard" };//added this, change later
+    private static string[] projectileWords = { "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace", "heart",
+                                            "south", "stone", "thing" };//added this, change later
 
 
 
