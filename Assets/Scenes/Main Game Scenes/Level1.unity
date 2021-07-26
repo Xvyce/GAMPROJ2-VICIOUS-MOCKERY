@@ -15310,6 +15310,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507702469}
   m_Mesh: {fileID: 4692538257887545355, guid: 69afc7c1fc47fd843ab894e4c3f7c529, type: 3}
+--- !u!1 &513972607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 513972608}
+  - component: {fileID: 513972610}
+  - component: {fileID: 513972609}
+  m_Layer: 5
+  m_Name: BossFace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &513972608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513972607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.5049403, y: 3.5049403, z: 3.5049403}
+  m_Children: []
+  m_Father: {fileID: 1733374971}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -170.6, y: -23}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &513972609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513972607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 54b52719e0e08f1469c3c4e6a8d4d9be, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &513972610
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513972607}
+  m_CullTransparentMesh: 1
 --- !u!1 &516216416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1563481470180787013, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
@@ -85373,6 +85448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58062922}
     m_Modifications:
+    - target: {fileID: 5374926257066834503, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f44f2a22ad9ad824aa82674d248fee16, type: 3}
     - target: {fileID: 5374926257109223482, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
       propertyPath: m_Name
       value: WaveProgressBar
@@ -85461,10 +85540,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5374926257324631519, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5374926257324631521, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
       propertyPath: waveSpawner
       value: 
       objectReference: {fileID: 411227907}
+    - target: {fileID: 5374926257533956631, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 087e68ce0f8c11e44b9c4dd03b225d94, type: 3}
+    - target: {fileID: 5374926257533956631, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374926257533956631, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374926257533956631, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
 --- !u!1 &5374926258834209729 stripped
