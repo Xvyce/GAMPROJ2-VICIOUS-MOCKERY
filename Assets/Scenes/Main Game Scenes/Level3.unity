@@ -2138,7 +2138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3430458720379411419, guid: 8699d836bf099214cacf3f4f4cd57836, type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 1000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 3430458720379411419, guid: 8699d836bf099214cacf3f4f4cd57836, type: 3}
       propertyPath: TrailModule.minVertexDistance
@@ -8780,39 +8780,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b47c8ef0cabb0a247a9fedeb8e42e8a7, type: 3}
---- !u!1 &5616796017531509753 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5616796017927849801, guid: b47c8ef0cabb0a247a9fedeb8e42e8a7, type: 3}
-  m_PrefabInstance: {fileID: 5616796017531509752}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5616796017531509754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5616796017531509753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a361628777cd64fbdcaa2a0da0604d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: eeabf1557799e1c48a796a8b69a0751f, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7439059124664773609}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Wizard_Spell_SFX
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &5717528753220946457
 Transform:
   m_ObjectHideFlags: 0
@@ -9243,7 +9210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.size
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[0].clip
@@ -9320,7 +9287,7 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[8].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 8e8214b94a7c02e42921e16bbf13bfe9, type: 3}
+      objectReference: {fileID: 8300000, guid: 11a6d68190bc05c46a66320be554484a, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[8].name
       value: Freeze_Skill_SFX
@@ -9400,7 +9367,7 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[16].clip
       value: 
-      objectReference: {fileID: 8300000, guid: d75b22f2bf1b14c45a8de457186abf0a, type: 3}
+      objectReference: {fileID: 8300000, guid: 11a6d68190bc05c46a66320be554484a, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[16].name
       value: Wizard_Spell_SFX

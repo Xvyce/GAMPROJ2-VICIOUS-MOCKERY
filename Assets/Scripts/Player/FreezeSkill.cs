@@ -64,6 +64,7 @@ public class FreezeSkill : MonoBehaviour
     {
         if (lvlDataManager.skillPoints >= 100)
         {
+            FindObjectOfType<AudioManager>().Play("Freeze_Skill_SFX");
             particle.SetActive(true);
             StartCoroutine(FreezeEnemy());
             lvlDataManager.skillPoints -= 100;
