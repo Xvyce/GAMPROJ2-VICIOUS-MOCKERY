@@ -18,7 +18,7 @@ public class WordTypingUI : MonoBehaviour
     private void Start()
     {
         TextComponent.fontStyle = FontStyles.Underline;
-        wordToType = word.text.ToLower();
+        wordToType = word.text;
        // word.text = wordToType.Remove(0, typeIndex);
        // word.text = wordToType.Insert(0, "_");
         wordContainer = wordToType;

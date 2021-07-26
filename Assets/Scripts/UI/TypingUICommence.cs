@@ -18,7 +18,7 @@ public class TypingUICommence: MonoBehaviour
     private void Start()
     {
         TextComponent.fontStyle = FontStyles.Underline;
-        wordToType = word.text.ToLower();
+        wordToType = word.text;
         wordContainer = wordToType;
         typeIndex = 0;
     }
@@ -48,7 +48,7 @@ public class TypingUICommence: MonoBehaviour
             Debug.Log("Open Book");
             word.text = wordContainer;
             //SceneManager.LoadScene("Game");
-            SceneHistory.Instance.LoadScene("Level2");
+            SceneHistory.Instance.LoadScene("Level1");
 
             //levelChanger.FadeToLevel(2);
             levelChanger.FadeToNextLevel();

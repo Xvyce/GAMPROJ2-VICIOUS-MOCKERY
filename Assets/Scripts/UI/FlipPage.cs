@@ -11,6 +11,8 @@ public class FlipPage : MonoBehaviour
     {
         NextButton,
         BackButton,
+        FollowingButton,
+        RearButton,
     }
 
     [SerializeField] Button nextBtn;
@@ -18,6 +20,8 @@ public class FlipPage : MonoBehaviour
     [SerializeField] Button nextBtn2;
     [SerializeField] Button backBtn2;
     [SerializeField] Button closeBtn;
+    [SerializeField] Button followingButton;
+    [SerializeField] Button rearButton;
 
 
     [SerializeField] Text headerText1_1;
@@ -30,6 +34,13 @@ public class FlipPage : MonoBehaviour
     [SerializeField] Text level2Text_3;
     [SerializeField] Image imglevel2;
     [SerializeField] TextMeshProUGUI level2Start;
+
+
+    [SerializeField] Text level3Text_1;
+    [SerializeField] Text level3Text_2;
+    [SerializeField] Text level3Text_3;
+    [SerializeField] Image imglevel3;
+    [SerializeField] TextMeshProUGUI level3Start;
 
     [SerializeField] Text bodyText1_1;
     [SerializeField] Text bodyText1_2;
@@ -65,6 +76,12 @@ public class FlipPage : MonoBehaviour
 
         if (backBtn != null)
             backBtn.onClick.AddListener(() => turnOnePageBtn_Click(ButtonType.BackButton));
+
+        if (followingButton != null)
+            followingButton.onClick.AddListener(() => turnTwoPageBtn_Click(ButtonType.FollowingButton));
+
+        if (rearButton != null)
+            rearButton.onClick.AddListener(() => turnTwoPageBtn_Click(ButtonType.FollowingButton));
 
         if (closeBtn != null)
             closeBtn.onClick.AddListener(() => closeBookBtn_Click());
@@ -112,7 +129,7 @@ public class FlipPage : MonoBehaviour
        if (pge.Pages.Count > 4)
         {
             nextBtn.gameObject.SetActive(true);
-            
+          
         }
 
         SetVisibleText();
@@ -244,7 +261,7 @@ public class FlipPage : MonoBehaviour
 
             img.gameObject.SetActive(false);
             bodyText1_3.gameObject.SetActive(false);
-
+            
             level2Text_1.gameObject.SetActive(true);
             level2Text_2.gameObject.SetActive(true);
             level2Text_3.gameObject.SetActive(true);
@@ -262,16 +279,16 @@ public class FlipPage : MonoBehaviour
           // if ((Page.CurrentPage2 >= pge.Pages.Count || (Page.CurrentPage1 >= pge.Pages.Count)))
            // {
                 nextBtn.gameObject.SetActive(false);
-          //  }
+            //  }
 
-            
+            followingButton.gameObject.SetActive(true);
            
         }
         else if (type == ButtonType.BackButton)
         {
             Vector3 newRotation = new Vector3(startRotation.x, 180, startRotation.z);
             transform.rotation = Quaternion.Euler(newRotation);
-
+            followingButton.gameObject.SetActive(false);
             rotationVector = new Vector3(0, -180, 0);
 
            // SetFlipPageText(Page.CurrentPage1 - 1, Page.CurrentPage1);
@@ -283,15 +300,14 @@ public class FlipPage : MonoBehaviour
 
             img.gameObject.SetActive(true);
             bodyText1_3.gameObject.SetActive(true);
-
+            bodyText1_1.gameObject.SetActive(true);
             level2Text_1.gameObject.SetActive(false);
             level2Text_2.gameObject.SetActive(false);
             level2Text_3.gameObject.SetActive(false);
             level2Start.gameObject.SetActive(false);
             imglevel2.gameObject.SetActive(false);
-
             headerText1_2.gameObject.SetActive(true);
-
+            
             //SetVisibleText();
 
             //ClearVisibleText();
@@ -305,91 +321,105 @@ public class FlipPage : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
     }
 
-    //public void turnTwoPageBtn_Click(ButtonType type)
-    //{
-    //    isClicked = true;
-    //    startTime = DateTime.Now;
-    //    nextBtn2.gameObject.SetActive(false);
-    //    backBtn2.gameObject.SetActive(false);
+
+    public void turnTwoPageBtn_Click (ButtonType type)
+    {
+        isClicked = true;
+        startTime = DateTime.Now;
+        followingButton.gameObject.SetActive(true);
+        rearButton.gameObject.SetActive(true);
+
+        if (type == ButtonType.FollowingButton)
+        {
+            rotationVector = new Vector3(0, 180, 0);
+
+            //SetFlipPageText(Page.CurrentPage2, Page.CurrentPage2 + 1);
+            followingButton.gameObject.SetActive(false);
+            rearButton.gameObject.SetActive(true);
+            backBtn.gameObject.SetActive(false);
+
+            Page.CurrentPage1 += 4;
+            Page.CurrentPage2 += 4;
+            Page.CurrentPage3 += 4;
+            Page.CurrentPage4 += 4;
+            Page pge = Page.RandomPage;
+
+            img.gameObject.SetActive(false);
+            bodyText1_3.gameObject.SetActive(false);
+
+            level2Text_1.gameObject.SetActive(false);
+            level2Text_2.gameObject.SetActive(false);
+            level2Text_3.gameObject.SetActive(false);
+            level2Start.gameObject.SetActive(false);
+            imglevel2.gameObject.SetActive(false);
+
+            level3Text_1.gameObject.SetActive(true);
+            level3Text_2.gameObject.SetActive(true);
+            level3Text_3.gameObject.SetActive(true);
+            level3Start.gameObject.SetActive(true);
+            imglevel3.gameObject.SetActive(true);
+                
+            headerText1_2.gameObject.SetActive(true);
+
+            followingButton.gameObject.SetActive(false);
+
+            //SetVisibleText();
+
+            ClearVisibleText();
+
+            // if ((Page.CurrentPage2 >= pge.Pages.Count || (Page.CurrentPage1 >= pge.Pages.Count)))
+            // {
+            followingButton.gameObject.SetActive(false);
+            //  }
+
+            followingButton.gameObject.SetActive(false);
+
+        }
+        else if (type == ButtonType.RearButton)
+        {
+            Vector3 newRotation = new Vector3(startRotation.x, 180, startRotation.z);
+            transform.rotation = Quaternion.Euler(newRotation);
+            followingButton.gameObject.SetActive(false);
+            rotationVector = new Vector3(0, -180, 0);
+
+            // SetFlipPageText(Page.CurrentPage1 - 1, Page.CurrentPage1);
+
+            Page.CurrentPage1 -= 4;
+            Page.CurrentPage2 -= 4;
+            Page.CurrentPage3 -= 4;
+            Page.CurrentPage4 -= 4;
+
+            img.gameObject.SetActive(false);
+            bodyText1_3.gameObject.SetActive(false);
+            bodyText1_1.gameObject.SetActive(false);
+            level2Text_1.gameObject.SetActive(true);
+            level2Text_2.gameObject.SetActive(true);
+            level2Text_3.gameObject.SetActive(true);
+            level2Start.gameObject.SetActive(true);
+            imglevel2.gameObject.SetActive(true);
+            headerText1_2.gameObject.SetActive(true);
 
 
-    //    if (type == ButtonType.NextButton2)
-    //    {
-    //        rotationVector = new Vector3(0, 180, 0);
+            level3Text_1.gameObject.SetActive(false);
+            level3Text_2.gameObject.SetActive(false);
+            level3Text_3.gameObject.SetActive(false);
+            level3Start.gameObject.SetActive(false);
+            imglevel3.gameObject.SetActive(false);
 
-    //        //SetFlipPageText(Page.CurrentPage2, Page.CurrentPage2 + 1);
-    //        nextBtn.gameObject.SetActive(false);
-    //        nextBtn2.gameObject.SetActive(true);
-
-    //        Page.CurrentPage1 += 4;
-    //        Page.CurrentPage2 += 4;
-    //        Page.CurrentPage3 += 4;
-    //        Page.CurrentPage4 += 4;
-    //        Page pge = Page.RandomPage;
-
-    //        img.gameObject.SetActive(false);
-    //        bodyText1_3.gameObject.SetActive(false);
-
-    //        level2Text_1.gameObject.SetActive(false);
-    //        level2Text_2.gameObject.SetActive(false);
-    //        level2Text_3.gameObject.SetActive(false);
-    //        level2Start.gameObject.SetActive(false);
-    //        imglevel2.gameObject.SetActive(false);
-
-    //        headerText1_2.gameObject.SetActive(false);
-
-    //        nextBtn2.gameObject.SetActive(true);
-
-    //        //SetVisibleText();
-
-    //        ClearVisibleText();
-
-    //        // if ((Page.CurrentPage2 >= pge.Pages.Count || (Page.CurrentPage1 >= pge.Pages.Count)))
-    //        // {
-    //        nextBtn2.gameObject.SetActive(false);
-    //        //  }
+            backBtn.gameObject.SetActive(true);
+            //SetVisibleText();
+            followingButton.gameObject.SetActive(true);
+            //ClearVisibleText();
 
 
+            rearButton.gameObject.SetActive(false);
 
-    //    }
-    //    else if (type == ButtonType.BackButton2)
-    //    {
-    //        Vector3 newRotation = new Vector3(startRotation.x, 180, startRotation.z);
-    //        transform.rotation = Quaternion.Euler(newRotation);
+        }
 
-    //        //backBtn.gameObject.SetActive(false);
-    //        rotationVector = new Vector3(0, -180, 0);
+        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
+    }
 
-    //        // SetFlipPageText(Page.CurrentPage1 - 1, Page.CurrentPage1);
 
-    //        Page.CurrentPage1 -= 4;
-    //        Page.CurrentPage2 -= 4;
-    //        Page.CurrentPage3 -= 4;
-    //        Page.CurrentPage4 -= 4;
-
-    //        img.gameObject.SetActive(true);
-    //        bodyText1_3.gameObject.SetActive(true);
-
-    //        level2Text_1.gameObject.SetActive(true);
-    //        level2Text_2.gameObject.SetActive(true);
-    //        level2Text_3.gameObject.SetActive(true);
-    //        level2Start.gameObject.SetActive(true);
-    //        imglevel2.gameObject.SetActive(true);
-
-    //        headerText1_2.gameObject.SetActive(false);
-
-    //        //SetVisibleText();
-
-    //        //ClearVisibleText();
-
-    //        if ((Page.CurrentPage4 <= 0 || (Page.CurrentPage1 <= 0)))
-    //        {
-    //            backBtn2.gameObject.SetActive(false);
-    //        }
-    //    }
-
-    //    FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
-    //}
 
     public void closeBookBtn_Click()
     {

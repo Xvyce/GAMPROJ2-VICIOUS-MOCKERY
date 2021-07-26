@@ -18,7 +18,7 @@ public class TutorialGuide : MonoBehaviour
     private void Start()
     {
         TextComponent.fontStyle = FontStyles.Underline;
-        wordToType = wordBack.text.ToLower();
+        wordToType = wordBack.text;
         wordContainer = wordToType;
         typeIndex = 0;
     }

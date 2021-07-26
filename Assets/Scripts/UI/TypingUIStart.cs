@@ -23,7 +23,7 @@ public class TypingUIStart : MonoBehaviour
     {
         HighlightAlphabet('b');
         TextComponent.fontStyle = FontStyles.Underline;
-        wordToType = word.text.ToLower();
+        wordToType = word.text;
         wordContainer = wordToType;
         typeIndex = 0;
     }
@@ -53,7 +53,7 @@ public class TypingUIStart : MonoBehaviour
             Debug.Log("Open Book");
             word.text = wordContainer;
             //SceneManager.LoadScene("Game");
-            SceneHistory.Instance.LoadScene("Level1");
+            SceneHistory.Instance.LoadScene("Tutorial");
 
             //levelChanger.FadeToLevel(2);
             levelChanger.FadeToNextLevel();

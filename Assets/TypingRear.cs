@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TypingUIQuit : MonoBehaviour
+public class TypingRear : MonoBehaviour
 {
 
-    [SerializeField] private TextMeshProUGUI wordBack;
-    
+    [SerializeField] private TextMeshProUGUI wordNext;
+    [SerializeField] private FlipPage pageFlip;
     private string wordToType;
     private string wordContainer;
     private int typeIndex;
@@ -18,7 +18,7 @@ public class TypingUIQuit : MonoBehaviour
     private void Start()
     {
         TextComponent.fontStyle = FontStyles.Underline;
-        wordToType = wordBack.text;
+        wordToType = wordNext.text.ToLower();
         wordContainer = wordToType;
         typeIndex = 0;
     }
@@ -29,23 +29,24 @@ public class TypingUIQuit : MonoBehaviour
         {
             typeIndex++;
 
-            wordBack.text = wordBack.text.Remove(0, 1);
-            wordBack.color = Color.red;
+            wordNext.text = wordNext.text.Remove(0, 1);
+            wordNext.color = Color.red;
         }
         else
         {
             typeIndex = 0;
 
-            wordBack.text = wordContainer;
-            wordBack.color = Color.yellow;
+            wordNext.text = wordContainer;
+            wordNext.color = Color.yellow;
         }
 
         if (typeIndex >= wordToType.Length)
         {
             typeIndex = 0;
-            wordBack.text = wordContainer;
-            Application.Quit();
-            Debug.Log("Quit Game");
+            wordNext.text = wordContainer;
+            Debug.Log("NEXT PAGE");
+            pageFlip.turnTwoPageBtn_Click(FlipPage.ButtonType.RearButton);
+
         }
     }
 }

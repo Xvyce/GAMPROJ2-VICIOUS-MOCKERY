@@ -60,14 +60,18 @@ public class Page
 
                 _pageList.Add(new Page
                 { // 1
-                    Title = "I",
+                    Title = "TUTORIAL",
                     Summary = "Level Story Summary",
-                    Text = "The Bard has been put to jail after his drunken rage. To make it up for the Kingdom, " +
-                    "the king personally asked his help to defend his kingdom in exchange for his chasti- " +
-                    "*ehem I mean, FREEDOM. Will the bard accept this offer or will he still stay useless" + " to the society?",
-                    
+                    Text = "The bard has been drinking his sorrows away in a bar as he was kicked out of his party. " +
+                    "Now he’s too drunk and hallucinating other humans as goblins and orcs. " +
+                    "As a bard, his only way of defence is to shoo these monsters away with his terrible words. " +
+                    "Now he’s hurting the people and causing a ruckus inside the bar. " +
+                    "Will the bard snap out of it or would he continue his drunken ordeal. "
 
-                });
+
+
+
+                }) ;
 
                 _pageList.Add(new Page
                 { // 2
