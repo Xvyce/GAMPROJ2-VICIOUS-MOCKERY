@@ -5379,6 +5379,17 @@ Transform:
   m_Father: {fileID: 162825185}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787086313 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+  m_PrefabInstance: {fileID: 549350597}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aae7dbeeda80fc4e9456b4f5ae4ce3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1794306802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3336338d3bd674c4191f552b524a99f1, type: 3}
@@ -6740,6 +6751,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 292441596, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1787086313}
     - target: {fileID: 7594905654754648586, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
       propertyPath: m_Name
       value: Drow
