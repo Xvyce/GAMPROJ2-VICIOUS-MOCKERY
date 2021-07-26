@@ -24,6 +24,7 @@ public class SupportSkill : MonoBehaviour
         yield return new WaitForSeconds(timebtSplatter); // after this
                                              // either instantiate poop or upgrade allies
         Destroy(Instantiate(screenSplatter), 5);
+        FindObjectOfType<AudioManager>().Play("Support_Splatter_Skill_SFX");
     }
 
     void StartScreenSplatter()

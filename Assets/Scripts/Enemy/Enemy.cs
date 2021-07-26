@@ -152,7 +152,8 @@ public class Enemy : MonoBehaviour
                     {
                         casterBoss.projectilesAlive -= 1;
                     }
-
+                    
+                    FindObjectOfType<AudioManager>().Play("Slime_Burst_SFX");
                     Destroy(gameObject);
                 }
             }
