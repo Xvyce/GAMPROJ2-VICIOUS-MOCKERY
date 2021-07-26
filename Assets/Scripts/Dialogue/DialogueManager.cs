@@ -84,9 +84,12 @@ public class DialogueManager : MonoBehaviour
         }    
         if(_startDialogue[index].shakeCam == true)
         {
-            CameraShaker.Instance.ShakeOnce(_startDialogue[index].magnitude, _startDialogue[index].roughness, .1f, 1f);
-            //CameraShaker.Instance.Shake(CameraShakePresets.Earthquake);
+            CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
             
+        }
+        if (_endDialogue[index].shakeCam == true)
+        {
+            CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
         }
     }
 
@@ -232,8 +235,7 @@ public class StartDialogue
     public Sprite startCharacter;
     public string startDialogue;
     public bool shakeCam;
-    public float magnitude;
-    public float roughness;
+
 }
 
 
@@ -242,4 +244,5 @@ public class EndDialogue
 {
     public Sprite endCharacter;
     public string endDialogue;
+    public bool shakeCam;
 }
