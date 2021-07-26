@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f44f2a22ad9ad824aa82674d248fee16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -203,8 +203,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpawner: {fileID: 0}
   fillImage: {fileID: 5374926257324631519}
-  EdgeMargin: 20
-  HideWhenNotFilled: 1
 --- !u!1 &5374926257533956629
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: 1f495dac55857314a97afbcb9997b536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 087e68ce0f8c11e44b9c4dd03b225d94, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
