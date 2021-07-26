@@ -504,6 +504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (4)
@@ -762,6 +766,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 9.487
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (15)
@@ -865,6 +873,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 14.523
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9c687cfe5e5ca1e4ea94441eb66e4c65, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 85550286f3c0a68408b51b981610c882, type: 2}
     - target: {fileID: 919132149155446097, guid: 9c687cfe5e5ca1e4ea94441eb66e4c65, type: 3}
       propertyPath: m_Name
       value: Spire2
@@ -927,6 +939,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (1)
@@ -1001,6 +1017,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -31.693
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (13)
@@ -1532,6 +1552,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 4.221
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (21)
@@ -1606,6 +1630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.749
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b08be5783d5756e498c8ced61e37928b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce866d72d633eb74580eafbe938161fd, type: 2}
     - target: {fileID: 919132149155446097, guid: b08be5783d5756e498c8ced61e37928b, type: 3}
       propertyPath: m_Name
       value: Tower
@@ -1693,7 +1721,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: abd03362c5b61f64cacfbf1fba8425ca, type: 2}
+  - {fileID: 2100000, guid: 8963e0629abd3134cb326fb552f7cddb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2037,6 +2065,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.351
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 16508a2cee5d4d14bba5bf445fb6cbcd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8785c08ee81e18489c546997f07a099, type: 2}
     - target: {fileID: 919132149155446097, guid: 16508a2cee5d4d14bba5bf445fb6cbcd, type: 3}
       propertyPath: m_Name
       value: Spire1 (1)
@@ -2106,6 +2138,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (5)
@@ -2317,6 +2353,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (9)
@@ -2496,7 +2536,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: abd03362c5b61f64cacfbf1fba8425ca, type: 2}
+  - {fileID: 2100000, guid: 8963e0629abd3134cb326fb552f7cddb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2614,6 +2654,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (3)
@@ -2688,6 +2732,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 4.221
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (20)
@@ -2787,6 +2835,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 14.523
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9c687cfe5e5ca1e4ea94441eb66e4c65, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 85550286f3c0a68408b51b981610c882, type: 2}
     - target: {fileID: 919132149155446097, guid: 9c687cfe5e5ca1e4ea94441eb66e4c65, type: 3}
       propertyPath: m_Name
       value: Spire2 (1)
@@ -2877,6 +2929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -19.057
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b08be5783d5756e498c8ced61e37928b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c6743a71244b434c8a0c19b932ad032, type: 2}
     - target: {fileID: 919132149155446097, guid: b08be5783d5756e498c8ced61e37928b, type: 3}
       propertyPath: m_Name
       value: Tower (1)
@@ -2954,7 +3010,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 56eba8bc3437f3e4e9b1ba9dbecc7a74, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3047,6 +3103,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.351
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 16508a2cee5d4d14bba5bf445fb6cbcd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8785c08ee81e18489c546997f07a099, type: 2}
     - target: {fileID: 919132149155446097, guid: 16508a2cee5d4d14bba5bf445fb6cbcd, type: 3}
       propertyPath: m_Name
       value: Spire1 (2)
@@ -3187,6 +3247,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (8)
@@ -3572,6 +3636,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (7)
@@ -4118,6 +4186,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 16508a2cee5d4d14bba5bf445fb6cbcd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8785c08ee81e18489c546997f07a099, type: 2}
     - target: {fileID: 919132149155446097, guid: 16508a2cee5d4d14bba5bf445fb6cbcd, type: 3}
       propertyPath: m_Name
       value: Spire1
@@ -4192,6 +4264,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 12.881
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (12)
@@ -4266,6 +4342,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.139
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (10)
@@ -4614,6 +4694,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 10.083
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (17)
@@ -4768,6 +4852,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.66
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (16)
@@ -5071,6 +5159,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 7.896
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (18)
@@ -5140,6 +5232,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (6)
@@ -5233,7 +5329,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: abd03362c5b61f64cacfbf1fba8425ca, type: 2}
+  - {fileID: 2100000, guid: 8963e0629abd3134cb326fb552f7cddb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5430,6 +5526,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.147
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (19)
@@ -5698,6 +5798,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (2)
@@ -5813,6 +5917,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3
@@ -6072,6 +6180,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -25.364
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (14)
@@ -6141,6 +6253,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.223
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82311f581f833bd41bad38bcf3c1ec7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7fcd7c0d90ec81f41a7f223b3f23e6b7, type: 3}
       propertyPath: m_Name
       value: Spire3 (11)
