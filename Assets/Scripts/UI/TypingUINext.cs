@@ -27,6 +27,7 @@ public class TypingUINext : MonoBehaviour
     {
         if (wordToType[typeIndex] == letter)
         {
+            FindObjectOfType<AudioManager>().Play("Typing_SFX");
             typeIndex++;
 
             wordNext.text = wordNext.text.Remove(0, 1);

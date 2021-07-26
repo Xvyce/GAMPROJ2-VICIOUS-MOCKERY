@@ -25,7 +25,12 @@ public class OpenBook : MonoBehaviour
         if (openBtn != null)
             openBtn.onClick.AddListener(() => openBtn_Click());
 
-        AppEvents.CloseBook += new EventHandler(closeBook_Click);
+
+      
+            AppEvents.CloseBook += new EventHandler(closeBook_Click);
+        
+
+        
     }
 
     // Update is called once per frame
@@ -48,14 +53,18 @@ public class OpenBook : MonoBehaviour
                     AppEvents.OpenBookFunction();
                 }
             }
-            if (isCloseClicked)
+            if (isCloseClicked || Input.GetKeyDown(KeyCode.Escape))
             {
                 if ((endTime - startTime).TotalSeconds >= 1)
                 {
                     isCloseClicked = false;
+                    
                 }
             }
         }
+
+      
+
     }
 
     public void openBtn_Click()
