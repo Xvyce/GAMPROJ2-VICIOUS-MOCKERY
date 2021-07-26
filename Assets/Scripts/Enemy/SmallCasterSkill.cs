@@ -30,21 +30,21 @@ public class SmallCasterSkill : MonoBehaviour
 
     private IEnumerator Cast()
     {
-        animator.SetBool("isCasting", true);
-        yield return new WaitForSeconds(castSkillTimer);
-
-        // After finished casting, censors words then resumes walking
-        foreach (Enemy enemy in enemyManager.enemyList)
+        while(enemy.isAlive)
         {
-            if (enemy.enemyData.Type != EnemyType.Boss || enemy.enemyData.Type != EnemyType.Caster_Boss || enemy.enemyData.Type != EnemyType.Support_Boss)
+            animator.SetBool("isCasting", true);
+            yield return new WaitForSeconds(castSkillTimer);
+
+            // After finished casting, censors words then resumes walking
+            foreach (Enemy enemy in enemyManager.enemyList)
             {
-                enemy.StartCensor();
+                if (enemy.enemyData.Type != EnemyType.Boss || enemy.enemyData.Type != EnemyType.Caster_Boss || enemy.enemyData.Type != EnemyType.Support_Boss)
+                {
+                    enemy.StartCensor();
+                }
             }
+
+            animator.SetBool("isCasting", false);
         }
-
-        animator.SetBool("isCasting", false);
-
-        if (!enemy.isWalkingRight)
-            enemy.isWalking = true;
     }
 }

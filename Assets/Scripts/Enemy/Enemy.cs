@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
     private int typeIndex;
     private bool wordTyped;
     private int typoCounter;
-
+    public bool isAlive;
 
     private void Awake()
     {
@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        isAlive = true;
         _enemyManager.enemyList.Add(this);
         revivalCount = 0;
         typoCounter = 0;
@@ -138,9 +139,11 @@ public class Enemy : MonoBehaviour
             }
             else //caster boss and slime projectile
             {
+                isAlive = false;
                 player.StopSpeakingGibberish();
+                text.enabled = false;
 
-                if(enemyData.Type == EnemyType.Caster)
+                if (enemyData.Type == EnemyType.Caster)
                 {
                     typeBox.enabled = false;
                     _animator.SetBool("Is_Defeat", true);
@@ -179,9 +182,11 @@ public class Enemy : MonoBehaviour
     //Defeat Animation
     private void Defeat()
     {
+        isAlive = false;
         player.StopSpeakingGibberish();
         isDefeat = true;
         isWalking = false;
+        text.enabled = false;
         typeBox.enabled = false;
         speed = speed * 2;
 
