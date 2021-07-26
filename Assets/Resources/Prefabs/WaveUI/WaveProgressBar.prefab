@@ -203,6 +203,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpawner: {fileID: 0}
   fillImage: {fileID: 5374926257324631519}
+  EdgeMargin: 20
+  HideWhenNotFilled: 1
 --- !u!1 &5374926257533956629
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +271,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 7482667652216324306, guid: 1f495dac55857314a97afbcb9997b536, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
