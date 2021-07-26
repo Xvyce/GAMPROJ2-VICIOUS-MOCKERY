@@ -13,6 +13,8 @@ public class CasterSkill : MonoBehaviour
     [SerializeField] private float timeBetweenSpawns;
     [SerializeField] Animator chairAnimator;
 
+    public int projectilesAlive;
+
     private void Awake()
     {
         _enemy = GetComponent<Enemy>();
@@ -25,14 +27,13 @@ public class CasterSkill : MonoBehaviour
 
     private IEnumerator Stop() // stops the movement of casters
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(4f);
         _enemy.isWalking = false;
         StartCoroutine(Cast());
     }
 
     private IEnumerator Cast()
     {
-        
         //enable casting animation
         yield return new WaitForSeconds(5f);
         //disable casting animation
@@ -49,16 +50,31 @@ public class CasterSkill : MonoBehaviour
 
     IEnumerator SpawnSlime()
     {
+        // If slimes have been spawned player is forced to stop typing
+        // the caster boss so he can type the projectiles
+        EnemyManager.hasActiveEnemy = false;
+
+        _enemy.typeIndex = 0;
+        _enemy.text.text = _enemy.wordContainer;
+
         for (int i = 0; i < slimesToSpawn; i++)
         {
             chairAnimator.SetBool("isShooting", true);
             Instantiate(slimePrefab, spawnPoint.position, Quaternion.Euler(30, 0, 0));
+            projectilesAlive++;
+
             yield return new WaitForSeconds(.7f);
+
             chairAnimator.SetBool("isShooting", false);
 
             yield return new WaitForSeconds(timeBetweenSpawns);
         }
 
         yield break;
+    }
+
+    public void CasterBossSkill()
+    {
+        StartCoroutine(SpawnSlime());
     }
 }

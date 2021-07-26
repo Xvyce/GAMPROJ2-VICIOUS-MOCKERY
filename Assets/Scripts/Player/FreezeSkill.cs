@@ -62,9 +62,9 @@ public class FreezeSkill : MonoBehaviour
 
     public void ActivateFreeze()
     {
-        particle.SetActive(true);
         if (lvlDataManager.skillPoints >= 100)
         {
+            particle.SetActive(true);
             StartCoroutine(FreezeEnemy());
             lvlDataManager.skillPoints -= 100;
         }

@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 3621142844156940087}
   - component: {fileID: -564799832804825888}
   m_Layer: 0
-  m_Name: Chair
+  m_Name: Caster_Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,7 +205,10 @@ MonoBehaviour:
   revivalCount: 0
   isWalking: 0
   isWalkingRight: 0
+  wordContainer: 
+  typeIndex: 0
   isAlive: 0
+  casterBoss: {fileID: 7995896031674048958}
 --- !u!114 &7995896031674048958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +226,7 @@ MonoBehaviour:
   slimesToSpawn: 5
   timeBetweenSpawns: 1
   chairAnimator: {fileID: 3741583813814022214}
+  projectilesAlive: 0
 --- !u!136 &5176077070631416717
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -396,7 +400,7 @@ RectTransform:
   m_GameObject: {fileID: 4152323220462503027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.30713004, y: 0.33206475, z: 0.33206475}
+  m_LocalScale: {x: 0.2321473, y: 0.25099444, z: 0.25099444}
   m_Children:
   - {fileID: 2374615081081223116}
   - {fileID: 669926340883490061}
@@ -407,7 +411,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.131, y: 1.229}
+  m_AnchoredPosition: {x: -0.057, y: 1.229}
   m_SizeDelta: {x: 2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &199081808815766540

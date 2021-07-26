@@ -64,9 +64,9 @@ public class SlowSkill : MonoBehaviour
     {
         string currentScene = SceneManager.GetActiveScene().name;
 
-        particle.SetActive(true);
         if (lvlDataManager.skillPoints >= 100)
         {
+            particle.SetActive(true);
             FindObjectOfType<AudioManager>().Play("Slow_Skill_SFX");
             StartCoroutine(SlowEnemy());
 
