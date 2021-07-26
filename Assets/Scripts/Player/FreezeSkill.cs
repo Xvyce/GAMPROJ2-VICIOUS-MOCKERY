@@ -10,7 +10,12 @@ public class FreezeSkill : MonoBehaviour
     [SerializeField] private Animator allyAnimator;
     [SerializeField] private Image fillImage;
     [SerializeField] private float freezeDuration = 3.0f;
+    [SerializeField] private GameObject particle;
 
+    private void Start()
+    {
+        particle.SetActive(false);
+    }
 
     void Update()
     {
@@ -51,12 +56,13 @@ public class FreezeSkill : MonoBehaviour
                 enemy._animator.speed = 1.0f;
             }
         }
-
         // After Freeze Duration enemy will move again
+        particle.SetActive(false);
     }
 
     public void ActivateFreeze()
     {
+        particle.SetActive(true);
         if (lvlDataManager.skillPoints >= 100)
         {
             StartCoroutine(FreezeEnemy());
