@@ -9,12 +9,19 @@ public class videoScript : MonoBehaviour
 
     public VideoPlayer VideoPlayer; // Drag & Drop the GameObject holding the VideoPlayer component
     public string SceneName;
+    public GameObject transition;
     void Start()
     {
         VideoPlayer.loopPointReached += LoadScene;
     }
     void LoadScene(VideoPlayer vp)
     {
-        SceneManager.LoadScene(SceneName);
+        StartCoroutine(LoadLevel1());
+    }
+    IEnumerator LoadLevel1()
+    {
+        transition.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Level1");
     }
 }
