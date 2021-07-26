@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 3162045273596584876}
   - component: {fileID: 7144448019685755121}
   - component: {fileID: 5985660737558293361}
+  - component: {fileID: 6018336140554054153}
   m_Layer: 0
   m_Name: ArmoredOgre_Enemy
   m_TagString: Enemy
@@ -423,6 +424,7 @@ MonoBehaviour:
   revivalCount: 0
   isWalking: 0
   isWalkingRight: 0
+  isAlive: 0
 --- !u!95 &5985660737558293361
 Animator:
   serializedVersion: 3
@@ -442,6 +444,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6018336140554054153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587408742269680060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a361628777cd64fbdcaa2a0da0604d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 301ffcf81ab5fe64b96ac99e70ca907a, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6890309664900293772
 GameObject:
   m_ObjectHideFlags: 0
