@@ -13,6 +13,8 @@ public class FlipPage : MonoBehaviour
         BackButton,
         FollowingButton,
         RearButton,
+        UpcomingButton,
+        PreviousButton,
     }
 
     [SerializeField] Button nextBtn;
@@ -22,6 +24,8 @@ public class FlipPage : MonoBehaviour
     [SerializeField] Button closeBtn;
     [SerializeField] Button followingButton;
     [SerializeField] Button rearButton;
+    [SerializeField] Button upcomingBtn;
+    [SerializeField] Button previousBtn;
 
 
     [SerializeField] Text headerText1_1;
@@ -41,6 +45,12 @@ public class FlipPage : MonoBehaviour
     [SerializeField] Text level3Text_3;
     [SerializeField] Image imglevel3;
     [SerializeField] TextMeshProUGUI level3Start;
+
+    [SerializeField] Text level4Text_1;
+    [SerializeField] Text level4Text_2;
+    [SerializeField] Text level4Text_3;
+    [SerializeField] Image imglevel4;
+    [SerializeField] TextMeshProUGUI level4Start;
 
     [SerializeField] Text bodyText1_1;
     [SerializeField] Text bodyText1_2;
@@ -82,6 +92,12 @@ public class FlipPage : MonoBehaviour
 
         if (rearButton != null)
             rearButton.onClick.AddListener(() => turnTwoPageBtn_Click(ButtonType.FollowingButton));
+
+        if (upcomingBtn != null)
+            upcomingBtn.onClick.AddListener(() => turnThreePageBtn_Click(ButtonType.UpcomingButton));
+
+        if (previousBtn != null)
+            previousBtn.onClick.AddListener(() => turnThreePageBtn_Click(ButtonType.UpcomingButton));
 
         if (closeBtn != null)
             closeBtn.onClick.AddListener(() => closeBookBtn_Click());
@@ -307,9 +323,9 @@ public class FlipPage : MonoBehaviour
             level2Start.gameObject.SetActive(false);
             imglevel2.gameObject.SetActive(false);
             headerText1_2.gameObject.SetActive(true);
-            
-            //SetVisibleText();
 
+            //SetVisibleText();
+            upcomingBtn.gameObject.SetActive(false);
             //ClearVisibleText();
 
             if ((Page.CurrentPage4 <= 0 || (Page.CurrentPage1 <= 0)))
@@ -374,6 +390,8 @@ public class FlipPage : MonoBehaviour
 
             followingButton.gameObject.SetActive(false);
 
+            upcomingBtn.gameObject.SetActive(true);
+
         }
         else if (type == ButtonType.RearButton)
         {
@@ -405,7 +423,7 @@ public class FlipPage : MonoBehaviour
             level3Text_3.gameObject.SetActive(false);
             level3Start.gameObject.SetActive(false);
             imglevel3.gameObject.SetActive(false);
-
+            upcomingBtn.gameObject.SetActive(false);
             backBtn.gameObject.SetActive(true);
             //SetVisibleText();
             followingButton.gameObject.SetActive(true);
@@ -419,7 +437,117 @@ public class FlipPage : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
     }
 
+    public void turnThreePageBtn_Click(ButtonType type)
+    {
+        isClicked = true;
+        startTime = DateTime.Now;
+        upcomingBtn.gameObject.SetActive(true);
+        previousBtn.gameObject.SetActive(true);
 
+        if (type == ButtonType.UpcomingButton)
+        {
+            rotationVector = new Vector3(0, 180, 0);
+
+            //SetFlipPageText(Page.CurrentPage2, Page.CurrentPage2 + 1);
+            followingButton.gameObject.SetActive(false);
+            rearButton.gameObject.SetActive(false);
+            backBtn.gameObject.SetActive(false);
+            
+
+            Page.CurrentPage1 += 4;
+            Page.CurrentPage2 += 4;
+            Page.CurrentPage3 += 4;
+            Page.CurrentPage4 += 4;
+            Page pge = Page.RandomPage;
+
+            img.gameObject.SetActive(false);
+            bodyText1_3.gameObject.SetActive(false);
+
+            level2Text_1.gameObject.SetActive(false);
+            level2Text_2.gameObject.SetActive(false);
+            level2Text_3.gameObject.SetActive(false);
+            level2Start.gameObject.SetActive(false);
+            imglevel2.gameObject.SetActive(false);
+
+            level3Text_1.gameObject.SetActive(false);
+            level3Text_2.gameObject.SetActive(false);
+            level3Text_3.gameObject.SetActive(false);
+            level3Start.gameObject.SetActive(false);
+            imglevel3.gameObject.SetActive(false);
+
+            level4Text_1.gameObject.SetActive(true);
+            level4Text_2.gameObject.SetActive(true);
+            level4Text_3.gameObject.SetActive(true);
+            level4Start.gameObject.SetActive(true);
+            imglevel4.gameObject.SetActive(true);
+
+
+            headerText1_2.gameObject.SetActive(true);
+
+            upcomingBtn.gameObject.SetActive(false);
+
+            //SetVisibleText();
+
+            ClearVisibleText();
+
+            // if ((Page.CurrentPage2 >= pge.Pages.Count || (Page.CurrentPage1 >= pge.Pages.Count)))
+            // {
+            upcomingBtn.gameObject.SetActive(false);
+            //  }
+
+            upcomingBtn.gameObject.SetActive(false);
+
+        }
+        else if (type == ButtonType.PreviousButton)
+        {
+            Vector3 newRotation = new Vector3(startRotation.x, 180, startRotation.z);
+            transform.rotation = Quaternion.Euler(newRotation);
+            followingButton.gameObject.SetActive(false);
+            upcomingBtn.gameObject.SetActive(false);
+            rotationVector = new Vector3(0, -180, 0);
+
+            // SetFlipPageText(Page.CurrentPage1 - 1, Page.CurrentPage1);
+
+            Page.CurrentPage1 -= 4;
+            Page.CurrentPage2 -= 4;
+            Page.CurrentPage3 -= 4;
+            Page.CurrentPage4 -= 4;
+
+            img.gameObject.SetActive(false);
+            bodyText1_3.gameObject.SetActive(false);
+            bodyText1_1.gameObject.SetActive(false);
+            level2Text_1.gameObject.SetActive(false);
+            level2Text_2.gameObject.SetActive(false);
+            level2Text_3.gameObject.SetActive(false);
+            level2Start.gameObject.SetActive(false);
+            imglevel2.gameObject.SetActive(false);
+            headerText1_2.gameObject.SetActive(true);
+
+
+            level3Text_1.gameObject.SetActive(true);
+            level3Text_2.gameObject.SetActive(true);
+            level3Text_3.gameObject.SetActive(true);
+            level3Start.gameObject.SetActive(true);
+            imglevel3.gameObject.SetActive(true);
+
+            level4Text_1.gameObject.SetActive(false);
+            level4Text_2.gameObject.SetActive(false);
+            level4Text_3.gameObject.SetActive(false);
+            level4Start.gameObject.SetActive(false);
+            imglevel4.gameObject.SetActive(false);
+
+            backBtn.gameObject.SetActive(false);
+            //SetVisibleText();
+            upcomingBtn.gameObject.SetActive(true);
+            //ClearVisibleText();
+
+            previousBtn.gameObject.SetActive(false);
+            rearButton.gameObject.SetActive(true);
+
+        }
+
+        FindObjectOfType<AudioManager>().Play("PageFlip_SFX");
+    }
 
     public void closeBookBtn_Click()
     {
