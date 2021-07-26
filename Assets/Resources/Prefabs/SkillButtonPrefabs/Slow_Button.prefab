@@ -302,3 +302,4 @@ MonoBehaviour:
   allyAnimator: {fileID: 0}
   fillImage: {fileID: 8397903447587490527}
   slowDuration: 3
+  particle: {fileID: 0}

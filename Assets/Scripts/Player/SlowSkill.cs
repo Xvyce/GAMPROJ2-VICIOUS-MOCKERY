@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SlowSkill : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class SlowSkill : MonoBehaviour
     [SerializeField] private Animator allyAnimator;
     [SerializeField] private Image fillImage;
     [SerializeField] private float slowDuration = 3.0f;
+    [SerializeField] private GameObject particle;
 
+    private void Start()
+    {
+        particle.SetActive(false);
+    }
 
     void Update()
     {
@@ -50,17 +56,26 @@ public class SlowSkill : MonoBehaviour
                 enemy._animator.speed = 1.0f;
             }
         }
-
         // After Slow Duration enemy returns to its original speed
+        particle.SetActive(false);
     }
 
     public void ActivateSlow()
     {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        particle.SetActive(true);
         if (lvlDataManager.skillPoints >= 100)
         {
             FindObjectOfType<AudioManager>().Play("Slow_Skill_SFX");
             StartCoroutine(SlowEnemy());
-            lvlDataManager.skillPoints -= 100;
+
+            if(currentScene == "Tutorial")
+            {
+                Debug.Log("Tutorial scene, no reduction in skill points");
+            }
+            else
+                lvlDataManager.skillPoints -= 100;
         }
 
         lvlDataManager.skillUseCount += 1;
