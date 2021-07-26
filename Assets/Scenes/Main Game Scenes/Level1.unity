@@ -12545,7 +12545,7 @@ MonoBehaviour:
   - name: Wave 1
     timeBetweenSpawn: 1
     waveContent:
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
+    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
       count: 1
   - name: Wave 2
     timeBetweenSpawn: 1
