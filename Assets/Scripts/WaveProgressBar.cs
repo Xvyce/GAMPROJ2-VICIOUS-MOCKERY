@@ -7,10 +7,8 @@ public class WaveProgressBar : MonoBehaviour
 {
     [SerializeField] WaveSpawner waveSpawner;
     [SerializeField] Image fillImage;
-    private RectTransform _imgRect;
-    private RectTransform _edgeRect;
 
-    public float EdgeMargin = 20;
+
 
 
 
@@ -21,16 +19,13 @@ public class WaveProgressBar : MonoBehaviour
     void Start()
     {
         lastWave = waveSpawner.waves.Length;
-        _imgRect = GetComponent<RectTransform>();
-        _edgeRect = transform.GetChild(0).GetComponent<RectTransform>();
     }
 
     // Update is called once per frame
     void Update()
     {
         ProgressIndicator();
-        _edgeRect.localPosition = new Vector2(fillImage.fillAmount * _imgRect.rect.width - EdgeMargin,
-             _edgeRect.localPosition.y);
+
     }
 
     void ProgressIndicator()
