@@ -62,7 +62,7 @@ public class AudioManager : MonoBehaviour
         }
         else if (currentScene == "Level3")
         {
-            //Play("");
+            FadeInTrack("Level_3_BGM", 0.1f);
         }
         else if (currentScene == "LoseScene")
         {
