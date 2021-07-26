@@ -28495,6 +28495,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019851058}
   m_Mesh: {fileID: -336520244429124228, guid: 69afc7c1fc47fd843ab894e4c3f7c529, type: 3}
+--- !u!1 &1023904953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1023904954}
+  m_Layer: 0
+  m_Name: CameraParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1023904954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023904953}
+  m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
+  m_LocalPosition: {x: 0, y: 8, z: -8.98}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1356526791}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
 --- !u!1 &1024326506
 GameObject:
   m_ObjectHideFlags: 0
@@ -37530,6 +37561,7 @@ GameObject:
   - component: {fileID: 1356526790}
   - component: {fileID: 1356526789}
   - component: {fileID: 1356526788}
+  - component: {fileID: 1356526792}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -37627,13 +37659,29 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356526787}
-  m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
-  m_LocalPosition: {x: 0, y: 8, z: -8.98}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1023904954}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356526792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356526787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab8353b5ebd32545867da143199a814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultPosInfluence: {x: 0, y: 8, z: -8.98}
+  DefaultRotInfluence: {x: 35, y: 0, z: 0}
+  RestPositionOffset: {x: 0, y: 0, z: 0}
+  RestRotationOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1356653166
 GameObject:
   m_ObjectHideFlags: 0
@@ -44386,40 +44434,88 @@ MonoBehaviour:
   _startDialogue:
   - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
     startDialogue: '"And Here we are!"'
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "\u201CWhoa, it\u2019s the first time I got at the top of a castle.\u201D"
+    shakeCam: 1
+    magnitude: 0.15
+    roughness: 0.2
   - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
     startDialogue: "\u201CSooo enemies will be coming waaaay over there to the right.\u201C "
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
     startDialogue: "\u201CAnd your task is to prevent anyone, and I mean ANYONE,
       from entering the castle.\u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
     startDialogue: "\u201CUse your words like how you did in the bar yesterday.\u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "\u201CUgh how did I get dragged into this?\u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "\u201CI don\u2019t even remember what happened yesterday.\u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
     startDialogue: "\"I\u2019m sure you two will manage just fine! So with that,
       I bid you adue.\u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
     startDialogue: "\u201CGuards! <size=60>come on!<size=45> Get me my carriage!
       <size=40>The slots for this vacation are very limited<size=30> we need to go
       now!\u201D</size>"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "\u201C\u2026\u201D"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "\u201CHAAAAA? \u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "\u201CAnd he left just like that?\u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "\u201CSome king he is.\u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "\u201CAnyways, now that the king is gone\u2026 \u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "\u201CLet\u2019s go sneak into the castle\u2019s treasury! \u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "\u201CNo, wait! We don\u2019t have time. The enemies are approaching.\u201C"
+    shakeCam: 0
+    magnitude: 0
+    roughness: 0
   _endDialogue:
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: "\u201COho? What\u2019s this?\u201C"

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using EZCameraShake;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -81,6 +82,12 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }    
+        if(_startDialogue[index].shakeCam == true)
+        {
+            CameraShaker.Instance.ShakeOnce(_startDialogue[index].magnitude, _startDialogue[index].roughness, .1f, 1f);
+            //CameraShaker.Instance.Shake(CameraShakePresets.Earthquake);
+            
+        }
     }
 
     IEnumerator TypeStartDialogue()
@@ -224,6 +231,9 @@ public class StartDialogue
 {
     public Sprite startCharacter;
     public string startDialogue;
+    public bool shakeCam;
+    public float magnitude;
+    public float roughness;
 }
 
 
