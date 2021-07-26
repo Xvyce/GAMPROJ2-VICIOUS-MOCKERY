@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Game Scenes/Level3.unity
     guid: 7b69acbaebe469e4c95039603dd690e6
   - enabled: 1
-    path: Assets/Scenes/Main Game Scenes/cutscene1.unity
-    guid: 8900047ab0758a14babfca4e61bfcc6b
+    path: Assets/Scenes/Main Game Scenes/cutscene.unity
+    guid: e1fc6ac2f04a0b94793324d9d832f661
   m_configObjects: {}
