@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 7995896031674048958}
   - component: {fileID: 5176077070631416717}
   - component: {fileID: 3621142844156940087}
+  - component: {fileID: -564799832804825888}
   m_Layer: 0
   m_Name: Chair
   m_TagString: Enemy
@@ -204,6 +205,7 @@ MonoBehaviour:
   revivalCount: 0
   isWalking: 0
   isWalkingRight: 0
+  isAlive: 0
 --- !u!114 &7995896031674048958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +253,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 0
+--- !u!114 &-564799832804825888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3741583813814022213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeed591e4af032843a4d976883355a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
 --- !u!1 &3741583814552610872
 GameObject:
   m_ObjectHideFlags: 0

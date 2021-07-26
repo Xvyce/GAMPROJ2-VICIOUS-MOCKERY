@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 3162045273596584876}
   - component: {fileID: 7144448019685755121}
   - component: {fileID: 5985660737558293361}
-  - component: {fileID: 6018336140554054153}
+  - component: {fileID: -6025932043425508111}
   m_Layer: 0
   m_Name: ArmoredOgre_Enemy
   m_TagString: Enemy
@@ -444,7 +444,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6018336140554054153
+--- !u!114 &-6025932043425508111
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -453,13 +453,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6587408742269680060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a361628777cd64fbdcaa2a0da0604d, type: 3}
+  m_Script: {fileID: 11500000, guid: aeed591e4af032843a4d976883355a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 301ffcf81ab5fe64b96ac99e70ca907a, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls: []
+  audioManager: {fileID: 0}
+  trackName: Ogre_Noise_SFX
 --- !u!1 &6890309664900293772
 GameObject:
   m_ObjectHideFlags: 0

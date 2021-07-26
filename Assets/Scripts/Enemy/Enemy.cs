@@ -203,7 +203,6 @@ public class Enemy : MonoBehaviour
                 isWalking = false;
                 twoArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
-                FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
 
                 yield return new WaitForSeconds(2.1f);//wait for animation to end
 
@@ -277,7 +276,6 @@ public class Enemy : MonoBehaviour
                 oneArmorTypeBox.enabled = false;
                 _animator.SetBool("Helmet_Walking", false);
                 _animator.SetBool("Stagger_Two", true);
-                FindObjectOfType<AudioManager>().Play("Ogre_Noise_SFX");
 
                 yield return new WaitForSeconds(2.1f);//wait for animation to end
 
@@ -520,9 +518,6 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Support:
-                    FindObjectOfType<AudioManager>().Stop("Level_2_BGM");
-                    FindObjectOfType<AudioManager>().Play("Boss_Level_2_SFX");
-
                     wordToType = WordGenerator.GetNormalWordLevelTwo();
                     break;
 

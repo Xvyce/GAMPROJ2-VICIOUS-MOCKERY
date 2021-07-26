@@ -46,78 +46,99 @@ MonoBehaviour:
   sounds:
   - name: Level_1_BGM
     clip: {fileID: 8300000, guid: f8747e56929e1394b90cd85d6c16a133, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.15
+    audioMixerGroup: {fileID: -1639977059501659208, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Boss_Level_1_BGM
+    clip: {fileID: 8300000, guid: 2fdc66890d93a824881ee3736cafe089, type: 3}
+    audioMixerGroup: {fileID: -1639977059501659208, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Victory_BGM
+    clip: {fileID: 8300000, guid: a7bd2b1bc7b5c1f4aae38b25195f6a1d, type: 3}
+    audioMixerGroup: {fileID: -1639977059501659208, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: PageFlip_SFX
     clip: {fileID: 8300000, guid: b7c9c3f200c73504fa2782089fcd3726, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Typing_SFX
     clip: {fileID: 8300000, guid: 9fc4866626c97664f9ddba5cb932bb5d, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Mistake_SFX
     clip: {fileID: 8300000, guid: bb1ec80d5eae47147b771f47a83cbcbd, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.5
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Wave_Indicator_SFX
     clip: {fileID: 8300000, guid: bef0a78534f876e4da7b34580f0bb1bb, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Slow_Skill_SFX
     clip: {fileID: 8300000, guid: 61190f217f66ce84790ef096ff54531c, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Freeze_Skill_SFX
-    clip: {fileID: 8300000, guid: 8e8214b94a7c02e42921e16bbf13bfe9, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Break_Armor_SFX
     clip: {fileID: 8300000, guid: 842c78b7de1d15b46bb5c0ad5ecf2018, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Goblin_Noise_SFX
     clip: {fileID: 8300000, guid: d1c91fb1177691f4a879bbf46d8d9a51, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Orc_Noise_SFX
     clip: {fileID: 8300000, guid: 8be0500069bc63e4fbed4845a02d0449, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Ogre_Noise_SFX
-    clip: {fileID: 8300000, guid: 3153d3574edd6394bbc959fb290b520f, type: 3}
-    audioMixerGroup: {fileID: 0}
-    volume: 0.45
+    clip: {fileID: 8300000, guid: 04738ce4feb047a4498a43edf72eaa9d, type: 3}
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Victory_SFX
+    clip: {fileID: 8300000, guid: bf0e239946d2a924ba093b22c97e8276, type: 3}
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Caltrops_Tossed_SFX
+    clip: {fileID: 8300000, guid: fa74638b97bc8dc48b1d3a12225ef470, type: 3}
+    audioMixerGroup: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
