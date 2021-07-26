@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 5824831032751831654}
   - component: {fileID: 6653115385135422219}
   - component: {fileID: 4007885886757511281}
+  - component: {fileID: 7977515522637972660}
   m_Layer: 0
   m_Name: ArmoredGoblin_EnemyTwo
   m_TagString: Enemy
@@ -526,6 +527,11 @@ MonoBehaviour:
   revivalCount: 0
   isWalking: 0
   isWalkingRight: 0
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  wordContainer: 
+  typeIndex: 0
+  isAlive: 0
+  casterBoss: {fileID: 0}
 --- !u!95 &4007885886757511281
 Animator:
   serializedVersion: 3
@@ -545,6 +551,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7977515522637972660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205211024943220426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeed591e4af032843a4d976883355a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
 --- !u!1 &9211780506631172572
 GameObject:
   m_ObjectHideFlags: 0
