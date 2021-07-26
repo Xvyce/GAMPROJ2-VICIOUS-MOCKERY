@@ -607,7 +607,7 @@ MonoBehaviour:
     endDialogue: "I wonder how much a demon lord would sell at the merchant\u2019s
       guild? "
     shakeCam: 0
-  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+  - endCharacter: {fileID: 21300000, guid: 9b34299f1f29d2548a7139379d71b846, type: 3}
     endDialogue: 'Wait! '
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
@@ -616,7 +616,7 @@ MonoBehaviour:
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: Roger!
     shakeCam: 0
-  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+  - endCharacter: {fileID: 21300000, guid: 9b34299f1f29d2548a7139379d71b846, type: 3}
     endDialogue: 'Please listen to me, I only wanted to start a friendship with the
       kingdom! '
     shakeCam: 0
@@ -627,23 +627,23 @@ MonoBehaviour:
     endDialogue: Ha! No use trying to save yourself, no friend would send murderous
       hordes of goblins and orcs to raid the kingdom.
     shakeCam: 0
-  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+  - endCharacter: {fileID: 21300000, guid: 9b34299f1f29d2548a7139379d71b846, type: 3}
     endDialogue: 'Those were my diplomats! '
     shakeCam: 0
-  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+  - endCharacter: {fileID: 21300000, guid: 9b34299f1f29d2548a7139379d71b846, type: 3}
     endDialogue: 'I admit, they do look threatening, but they mean well! '
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: Then what about the castle teleportation magic??
     shakeCam: 0
-  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+  - endCharacter: {fileID: 21300000, guid: 9b34299f1f29d2548a7139379d71b846, type: 3}
     endDialogue: "It\u2019s all so that I can speak and make ties directly "
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: 'This is all rubbish. How can we be so sure that all you say is
       true? '
     shakeCam: 0
-  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+  - endCharacter: {fileID: 21300000, guid: 9b34299f1f29d2548a7139379d71b846, type: 3}
     endDialogue: 'I knew you would say that, which is why I shall return the castle
       to its rightful place! '
     shakeCam: 0
@@ -666,7 +666,7 @@ MonoBehaviour:
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: 'Ugh fine, but you better keep your word. '
     shakeCam: 0
-  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+  - endCharacter: {fileID: 21300000, guid: 9b34299f1f29d2548a7139379d71b846, type: 3}
     endDialogue: "I won\u2019t disappoint! "
     shakeCam: 1
   typingSpeed: 0.02
