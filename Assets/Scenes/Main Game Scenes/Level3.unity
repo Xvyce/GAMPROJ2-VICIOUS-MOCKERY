@@ -554,14 +554,121 @@ MonoBehaviour:
   continueButton: {fileID: 1692384709}
   _startDialogue:
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
-    startDialogue: This is start
+    startDialogue: 'Not this again '
+    shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    startDialogue: Start Dialogue
+    startDialogue: 'Whew, is it hot in here? Or is it just me? '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: 'Oh no. '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: Oh no no no no no no
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    startDialogue: "What\u2019s wrong? "
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: "We are in\u2026 the demon realm. "
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: 'The monsters here are the toughest, answering directly to the
+      demon lord himself! '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: 'They also have an affinity for magic, although only small. '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: 'Their magic disorients you, leaving you vulnerable to their attacks. '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    startDialogue: 'We are aware, now can you please get off of me? '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: 'Right away! '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: ' Look sharp, demons headed our way! '
+    shakeCam: 0
   _endDialogue:
-  - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    endDialogue: This is end
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: 'We won? '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: 'HA HA HA WE WON! '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    endDialogue: 'Take that, Demon lord! '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    endDialogue: "The demon lord is\u2026 a slime? "
+    shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    endDialogue: End Dialogue
+    endDialogue: "I wonder how much a demon lord would sell at the merchant\u2019s
+      guild? "
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+    endDialogue: 'Wait! '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: "Alright let\u2019s bag him. Troll! Get the materials ready! "
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    endDialogue: Roger!
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+    endDialogue: 'Please listen to me, I only wanted to start a friendship with the
+      kingdom! '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    endDialogue: 'Friendship? '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: Ha! No use trying to save yourself, no friend would send murderous
+      hordes of goblins and orcs to raid the kingdom.
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+    endDialogue: 'Those were my diplomats! '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+    endDialogue: 'I admit, they do look threatening, but they mean well! '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    endDialogue: Then what about the castle teleportation magic??
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+    endDialogue: "It\u2019s all so that I can speak and make ties directly "
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: 'This is all rubbish. How can we be so sure that all you say is
+      true? '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+    endDialogue: 'I knew you would say that, which is why I shall return the castle
+      to its rightful place! '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: ...
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    endDialogue: Hmmm... we still need to return the castle to the kindom.
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
+    endDialogue: 'And I mean look at it, it looks cute. '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: ...
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    endDialogue: "What? Don\u2019t look at me, aren\u2019t you the leader of this
+      party?"
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
+    endDialogue: 'Ugh fine, but you better keep your word. '
+    shakeCam: 0
+  - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
+    endDialogue: "I won\u2019t disappoint! "
+    shakeCam: 0
   typingSpeed: 0.02
   dialogueInterface: {fileID: 1692384711}
   waveSpawner: {fileID: 411227907}
