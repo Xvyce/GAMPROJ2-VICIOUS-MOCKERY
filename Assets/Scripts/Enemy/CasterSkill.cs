@@ -5,6 +5,7 @@ using UnityEngine;
 public class CasterSkill : MonoBehaviour
 {
     private Enemy _enemy;
+    private AudioManager audioManager;
     [SerializeField] Transform spawnPoint;
 
     [SerializeField] private GameObject slimePrefab;
@@ -31,6 +32,7 @@ public class CasterSkill : MonoBehaviour
 
     private IEnumerator Cast()
     {
+        
         //enable casting animation
         yield return new WaitForSeconds(5f);
         //disable casting animation
