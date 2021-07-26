@@ -32,7 +32,6 @@ public class BreakArmorSkill : MonoBehaviour
     IEnumerator BreakEnemyArmor()
     {
         allyAnimator.SetBool("doingSkill", true);
-        FindObjectOfType<AudioManager>().Play("Barbarian_Roar_SFX");
         
         foreach (Enemy enemy in enemyManager.enemyList)
         {
@@ -68,7 +67,6 @@ public class BreakArmorSkill : MonoBehaviour
     {
         if (lvlDataManager.skillPoints >= 100)
         {
-            FindObjectOfType<AudioManager>().Play("Break_Armor_SFX");
             StartCoroutine(BreakEnemyArmor());
             lvlDataManager.skillPoints -= 100;
         }

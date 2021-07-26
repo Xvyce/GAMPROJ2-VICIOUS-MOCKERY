@@ -1508,8 +1508,8 @@ MonoBehaviour:
   - name: Test Wave
     timeBetweenSpawn: 1
     waveContent:
-    - enemyPrefab: {fileID: 2761450339370431376, guid: c94b0d4bc45271c4a8c68c083db7a2af, type: 3}
-      count: 3
+    - enemyPrefab: {fileID: 3741583813814022213, guid: 1d5b7fb0450c4054b8051ec63c73ba40, type: 3}
+      count: 1
     - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 2
   - name: Wave 1
@@ -3757,6 +3757,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 292441596, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7439059124664773609}
+    - target: {fileID: 292441596, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
     - target: {fileID: 7594905654754648586, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
       propertyPath: m_Name
       value: Drow
@@ -9225,7 +9233,7 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[12].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 3153d3574edd6394bbc959fb290b520f, type: 3}
+      objectReference: {fileID: 8300000, guid: 04738ce4feb047a4498a43edf72eaa9d, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[12].loop
       value: 0
@@ -9249,14 +9257,14 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[14].clip
       value: 
-      objectReference: {fileID: 8300000, guid: a7bd2b1bc7b5c1f4aae38b25195f6a1d, type: 3}
+      objectReference: {fileID: 8300000, guid: a6c41216233c54146801c0cb456d8a4b, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[14].loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[14].name
-      value: Victory_BGM
+      value: Slime_Shooting_SFX
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[0].volume
@@ -9393,7 +9401,7 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[14].audioMixerGroup
       value: 
-      objectReference: {fileID: -1639977059501659208, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
+      objectReference: {fileID: 1629979051258351309, guid: 2c67a434c8e06bb47859f1a6e6064942, type: 2}
     - target: {fileID: 8552913609421491194, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -9440,6 +9448,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+--- !u!114 &7439059124664773609 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+  m_PrefabInstance: {fileID: 7439059124664773608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aae7dbeeda80fc4e9456b4f5ae4ce3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &7668040131841085740
 MeshRenderer:
   m_ObjectHideFlags: 0

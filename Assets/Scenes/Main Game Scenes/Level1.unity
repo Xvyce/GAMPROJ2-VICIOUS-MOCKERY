@@ -29155,14 +29155,6 @@ PrefabInstance:
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7439059124664773609}
-    - target: {fileID: 292441596, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
-      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 292441596, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
-      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Caltrops_Tossed_SFX
-      objectReference: {fileID: 0}
     - target: {fileID: 7594905654754648586, guid: a9841fd02154f474c9169035d967f1ba, type: 3}
       propertyPath: m_Name
       value: Drow
