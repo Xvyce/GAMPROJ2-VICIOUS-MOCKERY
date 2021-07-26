@@ -8530,6 +8530,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: b16be5103b7a3864fba13227a9edfc29, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[11].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[11].name
       value: Boss_Level_2_BGM
       objectReference: {fileID: 0}
@@ -8545,6 +8549,10 @@ PrefabInstance:
       propertyPath: sounds.Array.data[13].clip
       value: 
       objectReference: {fileID: 8300000, guid: a7bd2b1bc7b5c1f4aae38b25195f6a1d, type: 3}
+    - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
+      propertyPath: sounds.Array.data[13].loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[13].name
       value: Victory_BGM
