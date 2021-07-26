@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
 {
     public EnemyData enemyData;
     public Animator _animator;
-    [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] public TextMeshProUGUI text;
     [SerializeField] private Image typeBox;
     [SerializeField] private Image oneArmorTypeBox;
     [SerializeField] private Image twoArmorTypeBox;
@@ -27,11 +27,14 @@ public class Enemy : MonoBehaviour
 
     // Related to enemy word
     private string wordToType;
-    private string wordContainer;
-    private int typeIndex;
+    [HideInInspector] public string wordContainer;
+    [HideInInspector] public int typeIndex;
     private bool wordTyped;
     private int typoCounter;
     public bool isAlive;
+
+    // For caster boss
+    [SerializeField] CasterSkill casterBoss;
 
     private void Awake()
     {
@@ -81,7 +84,6 @@ public class Enemy : MonoBehaviour
 
         typeIndex = 0;
         text.text = wordContainer;
-        text.color = Color.green;
     }
 
     public void TypeLetter()
@@ -93,8 +95,6 @@ public class Enemy : MonoBehaviour
 
     public bool WordTyped()
     {
-        string currentScene = SceneManager.GetActiveScene().name;
-
         if (typeIndex >= wordToType.Length)
         {
             if (revivalCount < enemyData.ArmorCount) // Armored Enemies get a new word
@@ -133,7 +133,7 @@ public class Enemy : MonoBehaviour
             AddScore();
 
             //Caster doesnt have run animation
-            if(enemyData.Type != EnemyType.Caster && enemyData.Type != EnemyType.CasterProjectile)
+            if(enemyData.Type != EnemyType.Caster_Boss && enemyData.Type != EnemyType.CasterProjectile)
             {
                 Defeat();
             }
@@ -150,6 +150,11 @@ public class Enemy : MonoBehaviour
                 }
                 else if(enemyData.Type == EnemyType.CasterProjectile)
                 {
+                    if(casterBoss!= null)
+                    {
+                        casterBoss.projectilesAlive -= 1;
+                    }
+
                     Destroy(gameObject);
                 }
             }
@@ -254,6 +259,8 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyType.Caster_Boss: //Caster Boss
+                EnemyManager.hasActiveEnemy = false;
+
                 twoArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
                 //Play Caster Boss armor break audio
@@ -262,7 +269,9 @@ public class Enemy : MonoBehaviour
 
                 _animator.SetBool("Stagger_One", false);
                 _animator.SetBool("NoHoodIdle", true);
+
                 generateWordStagger();
+                casterBoss.CasterBossSkill();
                 break;
         }
     }
@@ -298,6 +307,8 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Stagger_Two", false);
                 _animator.SetBool("Naked_Walking", true);
                 generateWordStagger();
+
+
                 break;
 
             case EnemyType.Caster_Boss: //Caster Boss
@@ -310,7 +321,9 @@ public class Enemy : MonoBehaviour
 
                 _animator.SetBool("Stagger_Two", false);
                 _animator.SetBool("NakedIdle", true);
+
                 generateWordStagger();
+                casterBoss.CasterBossSkill();
                 break;
         }
     }
