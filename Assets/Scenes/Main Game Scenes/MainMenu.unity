@@ -123,6 +123,79 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &6071304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.9398692
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.4329443
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.460638
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.03
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.65
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.11856146
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0940685
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7743548
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.614385
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 111.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 305.945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 127.966
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b9a9cf0126219c47b206f1548ee152c, type: 2}
+    - target: {fileID: 919132149155446097, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
+      propertyPath: m_Name
+      value: paperNote
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d42fd7e776d786c46baa2ceb4dcbc6d8, type: 3}
 --- !u!1 &67694584
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,8 +804,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -882,7 +955,7 @@ MonoBehaviour:
   m_Text: The Demon Lord has unleashed an Ultimate Skill, teleporting the Castle
     of Dimitreus to a cold mountainous area and Wo-oh! Looks like there are more
     types of enemies coming for the Castle. Will the Bard and his new party member
-    defend the castle, or will they get the cold feet?
+    defend the castle, or will they end up with cold feet?
 --- !u!222 &221595987
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1568,7 +1641,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495901110
 GameObject:
@@ -2046,7 +2119,7 @@ Transform:
   - {fileID: 1920055638}
   - {fileID: 1028763616}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0.636, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -2139,7 +2212,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 23.664, y: -50.404, z: -42.528}
 --- !u!1 &706713264
 GameObject:
@@ -2165,14 +2238,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706713264}
   m_LocalRotation: {x: 0.111435495, y: -0, z: -0, w: 0.9937717}
-  m_LocalPosition: {x: 4.48, y: 2.36, z: -0.65}
+  m_LocalPosition: {x: 4.48, y: 2.36, z: -1.02}
   m_LocalScale: {x: 1.9515487, y: 1.9515487, z: 1.9515487}
   m_Children:
   - {fileID: 2028553531}
   - {fileID: 1006340703}
   - {fileID: 1061912698}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 12.796, y: 0, z: 0}
 --- !u!1 &724523762
 GameObject:
@@ -2801,7 +2874,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -3928,8 +4001,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.88
-  m_fontSizeBase: 30.88
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4404,7 +4477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1179454965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4936,8 +5009,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5004,7 +5077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1376296196
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5485,7 +5558,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1265183020393137330, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1265183020393137330, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5903,7 +5976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -362}
+  m_AnchoredPosition: {x: 0, y: -280}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1698265537
@@ -6050,7 +6123,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 749d8d528db950a4f95f40e049b845b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b828cbf128264d4b9bd0430726f2062, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6223,8 +6296,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6591,8 +6664,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6783,8 +6856,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.88
-  m_fontSizeBase: 35.88
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7283,7 +7356,7 @@ MonoBehaviour:
     out of his party. Now he\u2019s too drunk and hallucinating other humans as goblins
     and orcs. As a bard, his only way of defence is to shoo these monsters away with
     his terrible words. Now he\u2019s hurting the people and causing a ruckus inside
-    the bar. Will the bard snap out of it or would he continue his drunken ordeal."
+    the bar. Will the bard snap out of it or will he suffer from his drunken ordeal?"
 --- !u!222 &1884628206
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7481,16 +7554,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913491542}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.04}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.1564345, w: 0.98768836}
+  m_LocalPosition: {x: 0, y: 0, z: 0.32}
+  m_LocalScale: {x: 0.76, y: 0.76, z: 0.76}
   m_Children: []
   m_Father: {fileID: 291263828}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -885, y: 251}
+  m_AnchoredPosition: {x: -885, y: 122}
   m_SizeDelta: {x: 721.96, y: 466.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913491544
@@ -7500,7 +7573,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913491542}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df9f530bcbb62454aab922cc14546979, type: 3}
   m_Name: 
@@ -7519,7 +7592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8431373, g: 0.77647066, b: 0.5882353, a: 1}
+  m_Color: {r: 0.3584906, g: 0.30763072, b: 0.16402636, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7528,7 +7601,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2240e4c81ddd074458cb8a13e4706a3d, type: 3}
-    m_FontSize: 79
+    m_FontSize: 68
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -8281,7 +8354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8431856922844197116, guid: d54af6fc1020b7c44b10c7bbf6cdfab9, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8431856922844197116, guid: d54af6fc1020b7c44b10c7bbf6cdfab9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8616,7 +8689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7669836718752942495, guid: 1a8ab6b17e5347641969bd9b5c85c57b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7669836718752942495, guid: 1a8ab6b17e5347641969bd9b5c85c57b, type: 3}
       propertyPath: m_LocalPosition.x
