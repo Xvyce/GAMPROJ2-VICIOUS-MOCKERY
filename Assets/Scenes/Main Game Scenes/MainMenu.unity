@@ -6038,7 +6038,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d5a5238404f24046910d2a461d26d05, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 749d8d528db950a4f95f40e049b845b0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8014,10 +8014,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2014306807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dc768783b0a6f64eb5df480d48a3539, type: 3}
+  m_Script: {fileID: 11500000, guid: fcd6501795e10964789d9f16c60247c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordNext: {fileID: 2014306811}
+  word: {fileID: 2014306811}
   levelChanger: {fileID: 1229430249}
   TextComponent: {fileID: 2014306811}
 --- !u!114 &2014306810
@@ -8029,10 +8029,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2014306807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303dddffc2eb4c44dbac52c8f24bfb3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 51b83da65e46ab145ab6ab9209a60593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typingUIKickOff: {fileID: 2014306809}
+  typingUIEstablish: {fileID: 2014306809}
 --- !u!114 &2014306811
 MonoBehaviour:
   m_ObjectHideFlags: 0
