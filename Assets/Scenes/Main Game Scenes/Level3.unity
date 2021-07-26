@@ -668,7 +668,7 @@ MonoBehaviour:
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 6ab8d13e87d9bf4428a058e93cf61d66, type: 3}
     endDialogue: "I won\u2019t disappoint! "
-    shakeCam: 0
+    shakeCam: 1
   typingSpeed: 0.02
   dialogueInterface: {fileID: 1692384711}
   waveSpawner: {fileID: 411227907}
@@ -1393,7 +1393,7 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 2761450339370431376, guid: c94b0d4bc45271c4a8c68c083db7a2af, type: 3}
       count: 3
     - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
-      count: 1
+      count: 2
   - name: Wave 1
     timeBetweenSpawn: 1
     waveContent:
@@ -1478,7 +1478,7 @@ MonoBehaviour:
       count: 1
     - enemyPrefab: {fileID: 9205211024943220426, guid: 869b019d1934b064c9b254fae17ff111, type: 3}
       count: 1
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: c94b0d4bc45271c4a8c68c083db7a2af, type: 3}
       count: 1
@@ -1495,7 +1495,7 @@ MonoBehaviour:
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: 6712f78dd4921e54e8e992d4c81c3e81, type: 3}
       count: 1
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: c94b0d4bc45271c4a8c68c083db7a2af, type: 3}
       count: 1
@@ -1506,13 +1506,13 @@ MonoBehaviour:
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: c94b0d4bc45271c4a8c68c083db7a2af, type: 3}
       count: 1
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 1
     - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: 6712f78dd4921e54e8e992d4c81c3e81, type: 3}
       count: 2
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 1
     - enemyPrefab: {fileID: 9205211024943220426, guid: 7497c8448c89fea44a6d3b859d5938bc, type: 3}
       count: 2
@@ -1527,7 +1527,7 @@ MonoBehaviour:
       count: 1
     - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
       count: 1
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: 6712f78dd4921e54e8e992d4c81c3e81, type: 3}
       count: 1
@@ -1535,9 +1535,9 @@ MonoBehaviour:
       count: 1
     - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
       count: 1
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 1
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 048c121e5ece9f44ca68d9b70dab4ff5, type: 3}
+    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 1
     - enemyPrefab: {fileID: 2761450339370431376, guid: 6712f78dd4921e54e8e992d4c81c3e81, type: 3}
       count: 1
@@ -1546,19 +1546,7 @@ MonoBehaviour:
   - name: Boss Wave
     timeBetweenSpawn: 2
     waveContent:
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 95a794021e8b0d648bfcf014bb7ec541, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 9205211024943220426, guid: 0019bb72918f3034bb992ebeb6810ff2, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 2761450339370431376, guid: 5a6ec6b6cd5e79343b81dfcac79c0417, type: 3}
-      count: 1
-    - enemyPrefab: {fileID: 9181859555850826855, guid: 5b49861f850e7a041b75e6dbb7d8a87e, type: 3}
+    - enemyPrefab: {fileID: 3741583813814022213, guid: 1d5b7fb0450c4054b8051ec63c73ba40, type: 3}
       count: 1
   lvlDataManager: {fileID: 1520156171}
   dialogueManager: {fileID: 112374034}
