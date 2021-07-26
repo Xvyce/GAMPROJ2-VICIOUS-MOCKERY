@@ -58,7 +58,7 @@ public class OpenBook : MonoBehaviour
                 if ((endTime - startTime).TotalSeconds >= 1)
                 {
                     isCloseClicked = false;
-                    
+                   
                 }
             }
         }
