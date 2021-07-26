@@ -215,7 +215,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if(currentScene == "Level3")
         {
-
+            FindObjectOfType<AudioManager>().Pause("Level_3_BGM");
         }
     }
 
@@ -238,7 +238,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (currentScene == "Level3")
         {
-
+            FindObjectOfType<AudioManager>().UnPause("Level_3_BGM");
         }
     }
 }
