@@ -118,7 +118,7 @@ public class WaveSpawner : MonoBehaviour
         else if (waveIndicatorText.text == "Boss Wave" && currentScene == "Level3")
         {
             FindObjectOfType<AudioManager>().FadeOutTrack("Level_3_BGM");
-            FindObjectOfType<AudioManager>().FadeInTrack("Boss_Level_3_BGM", 0.2f);
+            FindObjectOfType<AudioManager>().FadeInTrack("Boss_Level_3_BGM", 0.1f);
         }
     }
 
