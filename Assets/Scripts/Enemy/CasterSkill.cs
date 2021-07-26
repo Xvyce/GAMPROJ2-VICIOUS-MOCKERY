@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CasterSkill : MonoBehaviour
 {
-    private EnemyManager _enemyManager;
     private Enemy _enemy;
     [SerializeField] Transform spawnPoint;
 
@@ -15,7 +14,6 @@ public class CasterSkill : MonoBehaviour
 
     private void Awake()
     {
-        _enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
         _enemy = GetComponent<Enemy>();
     }
 
@@ -36,13 +34,6 @@ public class CasterSkill : MonoBehaviour
         //enable casting animation
         yield return new WaitForSeconds(5f);
         //disable casting animation
-
-        // After finished casting, censors words then resumes walking
-        //foreach(Enemy enemy in _enemyManager.enemyList)
-        //{
-        //    //censor text of  current enemies that are spawned in the scene
-        //    enemy.StartCensor();
-        //}
 
         StartCoroutine(SpawnSlime());
 

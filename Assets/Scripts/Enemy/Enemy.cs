@@ -240,26 +240,25 @@ public class Enemy : MonoBehaviour
                 twoArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
                 //Play Support Boss armor break audio
-                generateWordStagger();
 
                 yield return new WaitForSeconds(1.0f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
                 _animator.SetBool("Helmet_Walking", true);
+                generateWordStagger();
 
                 break;
 
-            case EnemyType.Caster: //Caster Boss
+            case EnemyType.Caster_Boss: //Caster Boss
                 twoArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
                 //Play Caster Boss armor break audio
-                generateWordStagger();
 
                 yield return new WaitForSeconds(1.6f);//wait for animation to end
 
                 _animator.SetBool("Stagger_One", false);
                 _animator.SetBool("NoHoodIdle", true);
-
+                generateWordStagger();
                 break;
         }
     }
@@ -290,26 +289,25 @@ public class Enemy : MonoBehaviour
                 _animator.SetBool("Helmet_Walking", false);
                 _animator.SetBool("Stagger_Two", true);
                 //Play Support Boss break audio
-                generateWordStagger();
 
                 yield return new WaitForSeconds(1.0f);//wait for animation to end
 
                 _animator.SetBool("Stagger_Two", false);
                 _animator.SetBool("Naked_Walking", true);
+                generateWordStagger();
                 break;
 
-            case EnemyType.Caster: //Caster Boss
+            case EnemyType.Caster_Boss: //Caster Boss
                 oneArmorTypeBox.enabled = false;
                 _animator.SetBool("NoHoodIdle", false);
                 _animator.SetBool("Stagger_Two", true);
                 //Play Caster Boss break audio
-                generateWordStagger();
 
                 yield return new WaitForSeconds(1.2f);//wait for animation to end
 
                 _animator.SetBool("Stagger_Two", false);
                 _animator.SetBool("NakedIdle", true);
-
+                generateWordStagger();
                 break;
         }
     }
@@ -327,7 +325,7 @@ public class Enemy : MonoBehaviour
 
     public void StartCensor()
     {
-        StartCoroutine(CensorWord(3.0f));
+        StartCoroutine(CensorWord(1.5f));
     }
 
 
@@ -565,8 +563,12 @@ public class Enemy : MonoBehaviour
                     wordToType = WordGenerator.GetBossWordLevelThree();
                     break;
 
-                case EnemyType.Caster:
+                case EnemyType.Caster_Boss:
                     wordToType = WordGenerator.GetBossWordLevelThree();
+                    break;
+
+                case EnemyType.Caster:
+                    wordToType = WordGenerator.GetNormalWordLevelThree();
                     break;
 
                 case EnemyType.CasterProjectile://added this
@@ -652,7 +654,7 @@ public class Enemy : MonoBehaviour
                     wordToType = WordGenerator.GetBossWordLevelThree();
                     break;
 
-                case EnemyType.Caster:
+                case EnemyType.Caster_Boss:
                     wordToType = WordGenerator.GetBossWordLevelThree();
                     break;
             }

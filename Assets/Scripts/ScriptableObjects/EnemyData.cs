@@ -26,6 +26,7 @@ public enum EnemyType
     Support,
     Support_Boss,//added dis
     Caster,
+    Caster_Boss,
     CasterProjectile, //slime
     Boss
 }

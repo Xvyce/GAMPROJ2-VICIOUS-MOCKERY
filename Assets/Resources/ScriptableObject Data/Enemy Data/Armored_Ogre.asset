@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   attackDamage: 1
-  type: 9
+  type: 10
   armorCount: 2

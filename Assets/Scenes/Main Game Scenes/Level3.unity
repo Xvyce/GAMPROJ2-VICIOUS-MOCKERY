@@ -1263,7 +1263,9 @@ MonoBehaviour:
   - name: Test Wave
     timeBetweenSpawn: 1
     waveContent:
-    - enemyPrefab: {fileID: 3741583813814022213, guid: 1d5b7fb0450c4054b8051ec63c73ba40, type: 3}
+    - enemyPrefab: {fileID: 2761450339370431376, guid: c94b0d4bc45271c4a8c68c083db7a2af, type: 3}
+      count: 3
+    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
       count: 1
   - name: Wave 1
     timeBetweenSpawn: 1

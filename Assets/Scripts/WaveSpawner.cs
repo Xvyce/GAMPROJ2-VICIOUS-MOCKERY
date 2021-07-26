@@ -198,6 +198,11 @@ public class WaveSpawner : MonoBehaviour
                 break;
 
             case EnemyType.Caster:
+                randomSpawnPoint = Random.Range(0, spawnPointsMid.Length);
+                Instantiate(_enemy, spawnPointsMid[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
+                break;
+
+            case EnemyType.Caster_Boss:
                 Instantiate(_enemy, spawnPointsMid[0].position, Quaternion.Euler(30, 0, 0));
                 break;
 
