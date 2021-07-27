@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17777205, g: 0.22257242, b: 0.3047309, a: 1}
+  m_IndirectSpecularColor: {r: 0.17777196, g: 0.22257113, b: 0.3047315, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -688,7 +688,6 @@ Transform:
   - {fileID: 775878354}
   - {fileID: 2079744965}
   - {fileID: 909715192}
-  - {fileID: 8702779936552275863}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2749,6 +2748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988464256}
   - component: {fileID: 988464255}
+  - component: {fileID: 988464257}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -2767,8 +2767,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.8392157, g: 0.98680925, b: 1, a: 1}
+  m_Intensity: 0.99
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2777,9 +2777,9 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.59
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Strength: 0.53
+    m_Bias: 0
+    m_NormalBias: 0
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -2825,13 +2825,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988464254}
-  m_LocalRotation: {x: 0.5006024, y: -0.37606886, z: 0.11678284, w: 0.7709288}
+  m_LocalRotation: {x: 0.040979564, y: 0.81831217, z: -0.51240754, w: 0.25714654}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 59.282, y: -64.992, z: -22.619}
+  m_LocalEulerAnglesHint: {x: 59.282, y: 132.126, z: -22.619}
+--- !u!114 &988464257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988464254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UsePipelineSettings: 0
 --- !u!1001 &991460975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7006,7 +7019,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 162825185}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4996781182380607908, guid: 1a5e0e6589f6b1a4488a47266635f06f, type: 3}
       propertyPath: m_Name
@@ -7014,19 +7027,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4996781182380607930, guid: 1a5e0e6589f6b1a4488a47266635f06f, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4996781182380607930, guid: 1a5e0e6589f6b1a4488a47266635f06f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5.016746
       objectReference: {fileID: 0}
     - target: {fileID: 4996781182380607930, guid: 1a5e0e6589f6b1a4488a47266635f06f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.3324995
       objectReference: {fileID: 0}
     - target: {fileID: 4996781182380607930, guid: 1a5e0e6589f6b1a4488a47266635f06f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.2544985
       objectReference: {fileID: 0}
     - target: {fileID: 4996781182380607930, guid: 1a5e0e6589f6b1a4488a47266635f06f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7058,8 +7071,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a5e0e6589f6b1a4488a47266635f06f, type: 3}
---- !u!4 &8702779936552275863 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4996781182380607930, guid: 1a5e0e6589f6b1a4488a47266635f06f, type: 3}
-  m_PrefabInstance: {fileID: 8702779936552275862}
-  m_PrefabAsset: {fileID: 0}
