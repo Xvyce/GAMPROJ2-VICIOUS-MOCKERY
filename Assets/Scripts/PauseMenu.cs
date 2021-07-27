@@ -141,7 +141,7 @@ public class PauseMenu : MonoBehaviour
 
         if(currentScene == "Tutorial")
         {
-            SceneHistory.Instance.LoadScene("Level1");
+            SceneHistory.Instance.LoadScene("cutscene1");
         }
         else if(currentScene == "Level1")
         {

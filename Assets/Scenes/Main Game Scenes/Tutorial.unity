@@ -5180,6 +5180,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1563481472114020845, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f3b27d3366d9348937d1f93e1c1c60, type: 3}
 --- !u!4 &1251277174 stripped
@@ -7904,11 +7908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialWaves:
-  - name: Boss Wave
-    timeBetweenSpawn: 3
-    waveContent:
-    - enemyPrefab: {fileID: 6587408742269680060, guid: 33a30ee5eaaa3aa45ad6b0f91e6e939a, type: 3}
-      count: 1
   - name: Wave 1
     timeBetweenSpawn: 3
     waveContent:
