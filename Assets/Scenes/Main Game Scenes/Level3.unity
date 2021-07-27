@@ -568,7 +568,7 @@ MonoBehaviour:
   continueButton: {fileID: 1692384709}
   _startDialogue:
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
-    startDialogue: 'Not this again '
+    startDialogue: 'Not this again. '
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: 'Whew, is it hot in here? Or is it just me? '
@@ -605,7 +605,14 @@ MonoBehaviour:
     startDialogue: 'Look sharp, demons headed our way! '
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    startDialogue: I have a skill that freezes enemies, use it as deem fit.
+    startDialogue: Wait! I can help.
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: My magic can freeze them in their place.
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: It's as beautiful as it's weilder! Just press "3" to call upon
+      me.
     shakeCam: 0
   _endDialogue:
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}

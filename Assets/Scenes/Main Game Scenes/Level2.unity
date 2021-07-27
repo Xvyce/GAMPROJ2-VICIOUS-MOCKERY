@@ -5124,7 +5124,7 @@ MonoBehaviour:
       the entire castle!
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    startDialogue: but you need an extraordinary amount of magic to---
+    startDialogue: But you need an extraordinary amount of magic to---
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     startDialogue: Wait.
@@ -5163,11 +5163,14 @@ MonoBehaviour:
     startDialogue: Guys we need to stop talking about poop because enemies are coming!
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: Use me, I can help you break the armors of the enemies!
+    startDialogue: 'Use me, I can help you break the armor of the enemies! '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
+    startDialogue: Just press "2" if you need my skill!
     shakeCam: 0
   _endDialogue:
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    endDialogue: 'Huh, another crystal '
+    endDialogue: 'Huh, another crystal. '
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: "Quick! let\u2019s sell it before another weirdo comes out! "
@@ -5176,7 +5179,7 @@ MonoBehaviour:
     endDialogue: What are you talking about!
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
-    endDialogue: '*shine*'
+    endDialogue: The crystal shines a blue light, and cracks form along its surface.
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: My Crystal!!!
@@ -5273,10 +5276,11 @@ MonoBehaviour:
     endDialogue: "Well enough with all that, I\u2019ve told my piece, "
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: ' and sadly I do not have time to loiter around with peasants'
+    endDialogue: ' And sadly I do not have time to loiter around with peasants'
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
-    endDialogue: '*earthquake*'
+    endDialogue: A shake is felt beneath their feet, and our heroes brace themselves
+      for what is to come.
     shakeCam: 1
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: Is your stomach rumbling again wizard?
@@ -6691,6 +6695,10 @@ PrefabInstance:
     - target: {fileID: 2775686199831668721, guid: 4cf34c9fede28454f82716b3488210bf, type: 3}
       propertyPath: m_Name
       value: CastleCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775686199831668721, guid: 4cf34c9fede28454f82716b3488210bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2775686199831668722, guid: 4cf34c9fede28454f82716b3488210bf, type: 3}
       propertyPath: m_Pivot.x

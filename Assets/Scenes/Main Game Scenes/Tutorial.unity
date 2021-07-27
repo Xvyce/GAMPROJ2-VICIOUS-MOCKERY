@@ -6469,13 +6469,13 @@ MonoBehaviour:
   textDisplay: {fileID: 1119611967}
   continueButton: {fileID: 1047148253}
   firstDialogue:
-  - Oh looks like you are in quite a predicament.
+  - Oh? Looks like you are in quite a predicament.
   - You see those letters above those orcs and goblins?
-  - Just type those and it will shoo them.
+  - Just type those and it will shoo them away.
   - Look out! They are coming for you.
   secondDialogue:
   - 'Who am I? '
-  - Just call me Drow and and I gotta say, you were pretty impressive with your words.
+  - Just call me Drow and I gotta say, you were pretty impressive with your words.
   - Made me want to help you.
   - Come on let's beat these drunkards.
   - Tougher enemies are coming.
@@ -6487,14 +6487,14 @@ MonoBehaviour:
   - By the way, you gotta pay attention to the CAPITAL LETTERS.
   - Just press shift plus the letter to make it capital.
   - It's all in the start of the word anyway.
-  - Speaking of capitals.
-  - THEY'RE COMING!
+  - Now get ready,
+  - Cause here come their friends.
   fifthDialogue:
-  - Hahahaha! Good job there.
-  - Ooof looks like the boss is coming.
+  - HA HA HA! Good job there.
+  - Uh oh, looks like the boss is coming.
   - My skills don't work on this guy.
   - You need to use tougher, longer words.
-  - Well, don't just stand there type!
+  - Well, don't just stand there! TYPE!
   typingSpeed: 0.02
   tutorialInterface: {fileID: 1593033853}
   waveSpawner: {fileID: 1832436231}

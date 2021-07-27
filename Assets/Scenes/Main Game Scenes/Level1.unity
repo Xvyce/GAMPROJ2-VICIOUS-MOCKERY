@@ -44457,7 +44457,7 @@ MonoBehaviour:
     endDialogue: No. Wait!
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
-    endDialogue: Crystal Shines and a troll emerge from the crystal.
+    endDialogue: The crystal shakes violently, and out emerges a hulking Troll!
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "AAAAAAAAAAAAAA\u2026!"
@@ -44545,7 +44545,7 @@ MonoBehaviour:
       and-
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
-    endDialogue: (earthquake)
+    endDialogue: The earth trembles, a sign of imminent danger.
     shakeCam: 1
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "Oh my, hold tight now. We\u2019re in for a bumpy ride!"
