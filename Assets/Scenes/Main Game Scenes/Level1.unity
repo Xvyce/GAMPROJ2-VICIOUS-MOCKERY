@@ -44354,20 +44354,20 @@ MonoBehaviour:
   characterImage: {fileID: 1093417263}
   continueButton: {fileID: 1093417260}
   _startDialogue:
-  - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
+  - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: And Here we are!
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "Whoa, it\u2019s the first time I got at the top of a castle."
     shakeCam: 0
-  - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
+  - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: "Sooo enemies will be coming waaaay over there to the right.\u201C"
     shakeCam: 0
-  - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
+  - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: And your task is to prevent anyone, and I mean ANYONE, from entering
       the castle.
     shakeCam: 0
-  - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
+  - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: Use your words like how you did in the bar yesterday.
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
@@ -44376,11 +44376,11 @@ MonoBehaviour:
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "I don\u2019t even remember what happened yesterday."
     shakeCam: 0
-  - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
+  - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: "I\u2019m sure you two will manage just fine! So with that, I
       bid you adue."
     shakeCam: 0
-  - startCharacter: {fileID: 21300000, guid: 03b63dbe13096634e9c97e61100d8b20, type: 3}
+  - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: Guards! <size=60>come on! Get me my carriage! The slots for this
       vacation are very limited we need to go now!
     shakeCam: 0
