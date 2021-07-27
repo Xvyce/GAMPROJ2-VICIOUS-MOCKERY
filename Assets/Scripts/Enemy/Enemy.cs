@@ -260,7 +260,7 @@ public class Enemy : MonoBehaviour
             case EnemyType.Caster_Boss: //Caster Boss
                 twoArmorTypeBox.enabled = false;
                 _animator.SetBool("Stagger_One", true);
-                //Play Caster Boss armor break audio
+                FindObjectOfType<AudioManager>().Play("Armor_Break_SFX");
                 generateWordStagger();
                 yield return new WaitForSeconds(1.6f);//wait for animation to end
 
@@ -311,7 +311,7 @@ public class Enemy : MonoBehaviour
                 oneArmorTypeBox.enabled = false;
                 _animator.SetBool("NoHoodIdle", false);
                 _animator.SetBool("Stagger_Two", true);
-                //Play Caster Boss break audio
+                FindObjectOfType<AudioManager>().Play("Armor_Break_SFX");
                 generateWordStagger();
                 yield return new WaitForSeconds(1.2f);//wait for animation to end
 

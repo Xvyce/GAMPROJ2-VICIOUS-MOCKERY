@@ -54,15 +54,15 @@ public class AudioManager : MonoBehaviour
         }
         else if (currentScene == "Level1")
         {
-            FadeInTrack("Level_1_BGM", 0.2f);
+            FadeInTrack("Level_1_BGM", 0.15f);
         }
         else if (currentScene == "Level2")
         {
-            FadeInTrack("Level_2_BGM", 0.5f);
+            FadeInTrack("Level_2_BGM", 0.45f);
         }
         else if (currentScene == "Level3")
         {
-            FadeInTrack("Level_3_BGM", 0.2f);
+            FadeInTrack("Level_3_BGM", 0.15f);
         }
         else if (currentScene == "LoseScene")
         {

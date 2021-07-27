@@ -1261,6 +1261,7 @@ MonoBehaviour:
   isPersist: 0
   WinScreen: {fileID: 516216416}
   isWin: 0
+  audioManager: {fileID: 0}
 --- !u!4 &295655589
 Transform:
   m_ObjectHideFlags: 0
@@ -10814,7 +10815,7 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[15].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 7bbfeb27d65bffd4fbfe56fa0b7eb6b7, type: 3}
+      objectReference: {fileID: 8300000, guid: 6889200390b758e4ea91ee8b33bf0b2b, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[15].name
       value: Slime_Burst_SFX
