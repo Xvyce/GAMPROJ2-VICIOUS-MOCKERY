@@ -44387,7 +44387,7 @@ MonoBehaviour:
   continueButton: {fileID: 1093417260}
   _startDialogue:
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
-    startDialogue: And Here we are!
+    startDialogue: And here we are!
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "Whoa, it\u2019s the first time I got at the top of a castle."
