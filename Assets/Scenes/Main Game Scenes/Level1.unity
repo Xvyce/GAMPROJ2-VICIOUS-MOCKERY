@@ -1235,6 +1235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48060128}
   - component: {fileID: 48060127}
+  - component: {fileID: 48060129}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1253,7 +1254,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 0.8797745, b: 0.5518868, a: 1}
   m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
@@ -1264,8 +1265,8 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.8
-    m_Bias: 0.02
-    m_NormalBias: 0.1
+    m_Bias: 0
+    m_NormalBias: 0
     m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
@@ -1311,13 +1312,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48060126}
-  m_LocalRotation: {x: 0.39770854, y: 0.42122293, z: -0.76676756, w: 0.27652627}
+  m_LocalRotation: {x: 0.093536966, y: 0.7101907, z: -0.35720658, w: 0.59940267}
   m_LocalPosition: {x: 6.72, y: 13.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 59.987, y: -408.902, z: -529.749}
+  m_LocalEulerAnglesHint: {x: 38.28, y: -268.08398, z: -382.102}
+--- !u!114 &48060129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48060126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UsePipelineSettings: 0
 --- !u!1 &51241826
 GameObject:
   m_ObjectHideFlags: 0
@@ -100175,6 +100189,10 @@ PrefabInstance:
     - target: {fileID: 8431856922844197116, guid: 55b9ae3716810e5459be27f2d8a3bd4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431856922844197117, guid: 55b9ae3716810e5459be27f2d8a3bd4a, type: 3}
+      propertyPath: weight
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55b9ae3716810e5459be27f2d8a3bd4a, type: 3}
