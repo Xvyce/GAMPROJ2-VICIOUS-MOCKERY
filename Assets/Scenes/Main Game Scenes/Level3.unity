@@ -1144,6 +1144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CastleCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2775686199831668721, guid: 4cf34c9fede28454f82716b3488210bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2775686199831668722, guid: 4cf34c9fede28454f82716b3488210bf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
