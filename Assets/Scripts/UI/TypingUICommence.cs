@@ -48,7 +48,7 @@ public class TypingUICommence: MonoBehaviour
             Debug.Log("Open Book");
             word.text = wordContainer;
             //SceneManager.LoadScene("Game");
-            SceneHistory.Instance.LoadScene("cutscene");
+            SceneHistory.Instance.LoadScene("cutscene1");
 
             //levelChanger.FadeToLevel(2);
             levelChanger.FadeToNextLevel();
