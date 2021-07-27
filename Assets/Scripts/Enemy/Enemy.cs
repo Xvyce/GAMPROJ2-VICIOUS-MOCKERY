@@ -104,6 +104,7 @@ public class Enemy : MonoBehaviour
             {
                 wordTyped = false;
                 EnemyManager.hasActiveEnemy = false;
+                text.color = originalColor;
 
                 if(player.speakingGib)
                 {
