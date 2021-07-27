@@ -1427,26 +1427,26 @@ PrefabInstance:
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[14].clip
       value: 
-      objectReference: {fileID: 8300000, guid: bf0e239946d2a924ba093b22c97e8276, type: 3}
+      objectReference: {fileID: 8300000, guid: a1193a7f96b9b20478b87af2f9c8448d, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[14].loop
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[14].name
-      value: Victory_SFX
+      value: Support_Splatter_Skill_SFX
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[15].clip
       value: 
-      objectReference: {fileID: 8300000, guid: a1193a7f96b9b20478b87af2f9c8448d, type: 3}
+      objectReference: {fileID: 8300000, guid: bf0e239946d2a924ba093b22c97e8276, type: 3}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[15].loop
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[15].name
-      value: Support_Splatter_Skill_SFX
+      value: Victory_SFX
       objectReference: {fileID: 0}
     - target: {fileID: 3640223398643646130, guid: 3c24008c5ab07714580ef7a34b824555, type: 3}
       propertyPath: sounds.Array.data[0].volume
