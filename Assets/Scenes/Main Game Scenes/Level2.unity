@@ -931,15 +931,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5374926257324631519, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.06666667
       objectReference: {fileID: 0}
     - target: {fileID: 5374926257324631519, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.12156863
       objectReference: {fileID: 0}
     - target: {fileID: 5374926257324631519, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.22745098
       objectReference: {fileID: 0}
     - target: {fileID: 5374926257324631521, guid: 10ba20085a662354d9d8b738ef7c35f1, type: 3}
       propertyPath: waveSpawner
@@ -5166,14 +5166,14 @@ MonoBehaviour:
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     startDialogue: "Yes! They aren\u2019t really dangerous, but their mobility and
-      height advantage makes them difficult to deal with"
+      height advantage makes them difficult to deal with."
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     startDialogue: These bat riders toss poop to the unlucky ones as a blinding force,
       making for an efficient distraction.
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    startDialogue: "That doesn\u2019t sound too bad "
+    startDialogue: "That doesn\u2019t sound too bad."
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     startDialogue: It stinks so much I tell you! The last time I got to the receiving
@@ -5205,8 +5205,8 @@ MonoBehaviour:
     endDialogue: My Crystal!!!
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: "Feast your eyes upon the most glorious, divine, and dazzling wizard
-      of the world!\u201D"
+    endDialogue: Feast your eyes upon the most glorious, divine, and dazzling wizard
+      of the world!
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: ??
@@ -5215,8 +5215,8 @@ MonoBehaviour:
     endDialogue: ??
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: 'The most glorious and dazzling wizard in the world graces you with
-      his presence '
+    endDialogue: The most glorious and dazzling wizard in the world graces you with
+      his presence.
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
     endDialogue: "I must thank thee for saving me, but I\u2019m sure I could've gone
@@ -5230,10 +5230,11 @@ MonoBehaviour:
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
     endDialogue: "Ahem! As I was saying, I do appreciate your assistance but I\u2019m
-      afraid I must take my leave"
+      afraid I must take my leave."
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: '*stomach growl*'
+    endDialogue: A low growl rumbles from the wizard's stomach and echoes in the
+      wind.
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
     endDialogue: 'Ehem Y-you sees I was cursed!  '
@@ -5258,7 +5259,7 @@ MonoBehaviour:
     endDialogue: ... Please?
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
-    endDialogue: "haaa\u2026 Here, I have leftover meat you can have"
+    endDialogue: "Haaa\u2026 Here, I have some leftover meat you can eat."
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
     endDialogue: Many thanks, my keen-eyed fellow!
@@ -5270,14 +5271,14 @@ MonoBehaviour:
     endDialogue: Let me tell you of a tale more epic than any other!
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: So there I was, going about my daily business,
+    endDialogue: So there I was, going about my daily business.
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
     endDialogue: When I caught a whiff of the most heavenly scent I have ever inhaled.
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
     endDialogue: I followed the aroma and what lays before me was nothing short of
-      spectacular
+      spectacular.
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
     endDialogue: A whole roast chicken, which shone with the color of gold!
@@ -5296,7 +5297,7 @@ MonoBehaviour:
     endDialogue: "Well enough with all that, I\u2019ve told my piece, "
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: ' And sadly I do not have time to loiter around with peasants'
+    endDialogue: ' And sadly I do not have time to loiter around with peasants.'
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
     endDialogue: A shake is felt beneath their feet, and our heroes brace themselves
