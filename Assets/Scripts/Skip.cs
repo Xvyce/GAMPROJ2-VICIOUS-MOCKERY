@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 public class Skip : MonoBehaviour
 {
     public GameObject transition;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            skipCutscene1();
+        }
+    }
     public void skipCutscene1()
     {
         StartCoroutine(LoadLevel1());
