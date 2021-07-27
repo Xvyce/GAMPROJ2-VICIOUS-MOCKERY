@@ -38,7 +38,7 @@ public class TypingUICommence: MonoBehaviour
             typeIndex = 0;
 
             word.text = wordContainer;
-            word.color = Color.green;
+            word.color = Color.yellow;
         }
 
         if (typeIndex >= wordToType.Length)
