@@ -2034,7 +2034,7 @@ MonoBehaviour:
       count: 1
     - enemyPrefab: {fileID: 9205211024943220426, guid: 7497c8448c89fea44a6d3b859d5938bc, type: 3}
       count: 2
-    - enemyPrefab: {fileID: 9205211024943220426, guid: fa3207ccf17e72d4f9b63dc04206a25b, type: 3}
+    - enemyPrefab: {fileID: 9205211024943220426, guid: 869b019d1934b064c9b254fae17ff111, type: 3}
       count: 1
   - name: Wave 11
     timeBetweenSpawn: 2
