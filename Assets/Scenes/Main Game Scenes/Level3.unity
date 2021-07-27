@@ -602,7 +602,10 @@ MonoBehaviour:
     startDialogue: 'Right away! '
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: ' Look sharp, demons headed our way! '
+    startDialogue: 'Look sharp, demons headed our way! '
+    shakeCam: 0
+  - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
+    startDialogue: I have a skill that freezes enemies, use it as deem fit.
     shakeCam: 0
   _endDialogue:
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}

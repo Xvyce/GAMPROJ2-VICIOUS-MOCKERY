@@ -1928,6 +1928,7 @@ MonoBehaviour:
   isPersist: 0
   WinScreen: {fileID: 1811603586}
   isWin: 0
+  audioManager: {fileID: 0}
 --- !u!4 &645279876
 Transform:
   m_ObjectHideFlags: 0
@@ -5075,42 +5076,40 @@ MonoBehaviour:
     startDialogue: Wait.
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: "\u201CRemain vigilant.\u201D"
+    startDialogue: Remain vigilant.
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: "\u201CThe enemies here have evolved to handle the sheer cold.\u201D"
+    startDialogue: The enemies here have evolved to handle the sheer cold.
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: "\u201CThey are tougher.\u201D"
+    startDialogue: They are tougher.
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: "\u201CBat riders riddle this place and take advantage of the
-      low visibility.\u201D"
+    startDialogue: Bat riders riddle this place and take advantage of the low visibility.
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    startDialogue: "\u201CBat riders? \u201D"
+    startDialogue: Bat riders?
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     startDialogue: "Yes! They aren\u2019t really dangerous, but their mobility and
       height advantage makes them difficult to deal with"
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: 'These bat riders toss poop to the unlucky ones as a blinding
-      force, making for an efficient distraction. '
+    startDialogue: These bat riders toss poop to the unlucky ones as a blinding force,
+      making for an efficient distraction.
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "That doesn\u2019t sound too bad "
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: "\u201CIt stinks so much I tell you! The last time I got to the
-      receiving end, the smell lasted for weeks!\u201D"
+    startDialogue: It stinks so much I tell you! The last time I got to the receiving
+      end, the smell lasted for weeks!
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
-    startDialogue: "\u201CGuys we need to stop talking about poop because enemies
-      are coming!\u201D"
+    startDialogue: Guys we need to stop talking about poop because enemies are coming!
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: "\u201CUse me, I can help you break the armors of the enemies!\u201D"
+    startDialogue: Use me, I can help you break the armors of the enemies!
     shakeCam: 0
   _endDialogue:
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
@@ -5129,8 +5128,8 @@ MonoBehaviour:
     endDialogue: My Crystal!!!
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: " \u201CFeast your eyes upon the most glorious, divine, and dazzling
-      wizard of the world!\u201D"
+    endDialogue: "Feast your eyes upon the most glorious, divine, and dazzling wizard
+      of the world!\u201D"
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: ??
@@ -5143,8 +5142,8 @@ MonoBehaviour:
       his presence '
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    endDialogue: " I must thank thee for saving me, but I\u2019m sure I could've
-      gone out any time I wanted!"
+    endDialogue: "I must thank thee for saving me, but I\u2019m sure I could've gone
+      out any time I wanted!"
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: "He was definitely trapped, wasn\u2019t he?"
