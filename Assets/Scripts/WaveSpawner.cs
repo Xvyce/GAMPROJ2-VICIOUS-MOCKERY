@@ -32,6 +32,11 @@ public class WaveSpawner : MonoBehaviour
     [HideInInspector]
     public SpawnState state = SpawnState.Counting;
 
+    [Header("Crystal Settings")]
+    [SerializeField] private Transform crystalSpawn;
+    [SerializeField] private GameObject crystalPrefab;
+
+
     private void Start()
     {
         waveCountdown = timeBetweenWaves;
@@ -89,6 +94,7 @@ public class WaveSpawner : MonoBehaviour
         {
             state = SpawnState.Complete;
 
+            SpawnCrystal();
             dialogueManager.DisplayEndDialogue();
 
             //lvlDataManager.GameOverWin();
@@ -221,6 +227,11 @@ public class WaveSpawner : MonoBehaviour
                 Instantiate(_enemy, spawnPointsAir[randomSpawnPoint].position, Quaternion.Euler(30, 0, 0));
                 break;
         }
+    }
+
+    void SpawnCrystal()
+    {
+        Instantiate(crystalPrefab, crystalSpawn.position, Quaternion.Euler(0, 0, 0));
     }
 }
 
