@@ -7890,6 +7890,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialWaves:
+  - name: Boss Wave
+    timeBetweenSpawn: 3
+    waveContent:
+    - enemyPrefab: {fileID: 6587408742269680060, guid: 33a30ee5eaaa3aa45ad6b0f91e6e939a, type: 3}
+      count: 1
   - name: Wave 1
     timeBetweenSpawn: 3
     waveContent:

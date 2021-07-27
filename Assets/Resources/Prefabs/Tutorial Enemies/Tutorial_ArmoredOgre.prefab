@@ -315,7 +315,7 @@ Transform:
   m_GameObject: {fileID: 6587408742269680060}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 3.0022285, y: 0, z: -3.411374}
-  m_LocalScale: {x: 5.199695, y: 5.199695, z: 5.199695}
+  m_LocalScale: {x: 3.945396, y: 3.945396, z: 3.945396}
   m_Children:
   - {fileID: 7506694234277094706}
   m_Father: {fileID: 0}
@@ -424,6 +424,7 @@ MonoBehaviour:
   revivalCount: 0
   isWalking: 0
   isWalkingRight: 0
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
   wordContainer: 
   typeIndex: 0
   isAlive: 0
