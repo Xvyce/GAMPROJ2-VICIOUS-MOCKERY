@@ -5,8 +5,8 @@ using UnityEngine;
 public class Flicker : MonoBehaviour
 {
     Light candleLight;
-    public int minIntensity;
-    public int maxIntensity;
+    public float minIntensity;
+    public float maxIntensity;
     public float timeDelay;
     
 
