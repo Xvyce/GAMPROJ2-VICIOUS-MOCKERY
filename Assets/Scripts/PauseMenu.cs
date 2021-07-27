@@ -151,6 +151,10 @@ public class PauseMenu : MonoBehaviour
         {
             SceneHistory.Instance.LoadScene("Level3");
         }
+        else if (currentScene == "Level3")
+        {
+            SceneHistory.Instance.LoadScene("cutscene2");
+        }
     }
 
     public void highlightalphabet(char colalpha)

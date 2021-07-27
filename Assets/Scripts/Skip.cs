@@ -21,7 +21,7 @@ public class Skip : MonoBehaviour
 
     public void skipCutScene2()
     {
-        SceneManager.LoadScene("MainMenu");
+        StartCoroutine(MainMenu());
     }
 
     IEnumerator LoadLevel1()
@@ -29,5 +29,11 @@ public class Skip : MonoBehaviour
         transition.SetActive(true);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("Level1");
+    }
+    IEnumerator MainMenu()
+    {
+        transition.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -8,7 +8,6 @@ public class videoScript : MonoBehaviour
 {
 
     public VideoPlayer VideoPlayer; // Drag & Drop the GameObject holding the VideoPlayer component
-    public string SceneName;
     public GameObject transition;
     void Start()
     {
@@ -20,8 +19,19 @@ public class videoScript : MonoBehaviour
     }
     IEnumerator LoadLevel1()
     {
-        transition.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Level1");
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "cutscene1")
+        {
+            transition.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene("Level1");
+        }
+        if (currentScene == "cutscene2")
+        {
+            transition.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene("MainMenu");
+        }
+
     }
 }
