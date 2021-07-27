@@ -10,11 +10,13 @@ public class UIManager : Singleton<UIManager>
 
     public bool isWin;
     bool alreadyWin;
+    [SerializeField] AudioManager audioManager;
 
     // UIManager.Instance.WinScreen
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
         isWin = false;
     }
 
@@ -42,11 +44,19 @@ public class UIManager : Singleton<UIManager>
 
             if (currentScene == "Level1")
             {
-                FindObjectOfType<AudioManager>().Stop("Boss_Level_1_BGM");
+                audioManager.Stop("Boss_Level_1_BGM");
             }
             else if (currentScene == "Level2")
             {
-                FindObjectOfType<AudioManager>().Stop("Boss_Level_2_BGM");
+                audioManager.Stop("Boss_Level_2_BGM");
+            }
+            else if (currentScene == "Level3")
+            {
+                audioManager.Stop("Boss_Level_3_BGM");
+            }
+            else if (currentScene == "Tutorial")
+            {
+                audioManager.Stop("Tutorial_BGM");
             }
 
             FindObjectOfType<AudioManager>().Play("Victory_SFX");
