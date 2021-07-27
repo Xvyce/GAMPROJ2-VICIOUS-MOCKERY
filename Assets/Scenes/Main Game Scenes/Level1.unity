@@ -44381,8 +44381,8 @@ MonoBehaviour:
       bid you adue."
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
-    startDialogue: Guards! <size=60>come on! Get me my carriage! The slots for this
-      vacation are very limited we need to go now!
+    startDialogue: Guards! Come come! Get me my carriage! The slots for this vacation
+      are very limited and we need to go now!
     shakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "\u2026"
