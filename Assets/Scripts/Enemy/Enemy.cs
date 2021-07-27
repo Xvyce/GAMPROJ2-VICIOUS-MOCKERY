@@ -576,6 +576,7 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case EnemyType.Caster:
+                    FindObjectOfType<AudioManager>().Play("Caster_Teleport_In_SFX");
                     wordToType = WordGenerator.GetNormalWordLevelThree();
                     break;
 
