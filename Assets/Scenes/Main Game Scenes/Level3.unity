@@ -1912,11 +1912,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - name: Test Wave
-    timeBetweenSpawn: 1
-    waveContent:
-    - enemyPrefab: {fileID: 4272858008651979296, guid: 348705c997132294e886e44f6d3ee7bb, type: 3}
-      count: 1
   - name: Wave 1
     timeBetweenSpawn: 1
     waveContent:
