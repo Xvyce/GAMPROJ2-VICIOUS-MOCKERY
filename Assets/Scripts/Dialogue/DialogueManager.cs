@@ -38,7 +38,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Gibberish")]
     [SerializeField] private Player player;
 
-
+    bool endDialogue;
     //private void Start()
     //{
     //    dialogueInterface.SetActive(false);
@@ -71,9 +71,9 @@ public class DialogueManager : MonoBehaviour
                 break;
         }
 
-        if(isActive)
+        if (isActive)
         {
-            if(canPressSpace)
+            if (canPressSpace)
             {
                 if (Input.GetButtonDown("Jump"))
                 {
@@ -81,16 +81,18 @@ public class DialogueManager : MonoBehaviour
                     NextSentence();
                 }
             }
-        }    
-        if(_startDialogue[index].shakeCam == true)
+        }
+        if (_startDialogue[index].shakeCam == true)
         {
             CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
-            
+
         }
+        if (endDialogue == true) { 
         if (_endDialogue[index].shakeCam == true)
         {
             CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
         }
+    }
     }
 
     IEnumerator TypeStartDialogue()
@@ -185,6 +187,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayEndDialogue()
     {
+        endDialogue = true;
         waveSpawner.state = SpawnState.Dialogue;
         isActive = true;
         DisableUI();
