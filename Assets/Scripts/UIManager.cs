@@ -42,7 +42,12 @@ public class UIManager : Singleton<UIManager>
             LeanTween.moveY(WinScreen, 550, 1);
             alreadyWin = true;
 
-            if (currentScene == "Level1")
+
+            if (currentScene == "Tutorial")
+            {
+                audioManager.Stop("Tutorial_BGM");
+            }
+            else if (currentScene == "Level1")
             {
                 audioManager.Stop("Boss_Level_1_BGM");
             }
@@ -53,10 +58,6 @@ public class UIManager : Singleton<UIManager>
             else if (currentScene == "Level3")
             {
                 audioManager.Stop("Boss_Level_3_BGM");
-            }
-            else if (currentScene == "Tutorial")
-            {
-                audioManager.Stop("Tutorial_BGM");
             }
 
             FindObjectOfType<AudioManager>().Play("Victory_SFX");
