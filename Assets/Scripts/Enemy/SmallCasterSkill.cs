@@ -32,6 +32,7 @@ public class SmallCasterSkill : MonoBehaviour
     {
         while(enemy.isAlive)
         {
+            FindObjectOfType<AudioManager>().Play("Caster_Skill_SFX");
             animator.SetBool("isCasting", true);
             yield return new WaitForSeconds(castSkillTimer);
 
