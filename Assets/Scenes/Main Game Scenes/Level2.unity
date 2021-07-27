@@ -5243,7 +5243,7 @@ MonoBehaviour:
     endDialogue: "He was definitely trapped, wasn\u2019t he?"
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
-    endDialogue: Yep, he definately was trapped.
+    endDialogue: Yep, he definitely was trapped.
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
     endDialogue: "Ahem! As I was saying, I do appreciate your assistance but I\u2019m

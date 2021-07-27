@@ -44507,7 +44507,7 @@ MonoBehaviour:
       crystal?
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    endDialogue: Ah yes, I was trapped by the demon lord.
+    endDialogue: Ah yes, I was trapped by someone... or something....
     shakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: I was just minding my own business working out.
