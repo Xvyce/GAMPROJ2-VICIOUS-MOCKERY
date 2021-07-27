@@ -288,6 +288,11 @@ MonoBehaviour:
   revivalCount: 0
   isWalking: 0
   isWalkingRight: 0
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  wordContainer: 
+  typeIndex: 0
+  isAlive: 0
+  casterBoss: {fileID: 0}
 --- !u!136 &7019590325812302660
 CapsuleCollider:
   m_ObjectHideFlags: 0
