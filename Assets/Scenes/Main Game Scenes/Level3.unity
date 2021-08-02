@@ -611,7 +611,7 @@ MonoBehaviour:
     startDialogue: My magic can FREEZE them in their place.
     startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: b90ac7da0034446489dbc6812c99de20, type: 3}
-    startDialogue: It's as beautiful as it's wielder! Just press "3" to call upon
+    startDialogue: It's as beautiful as it's wielder! Just PRESS "3" to call upon
       me.
     startShakeCam: 0
   _endDialogue:

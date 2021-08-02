@@ -6500,8 +6500,9 @@ MonoBehaviour:
   - Come on, let's beat these drunkards!
   - Tougher enemies are coming.
   thirdDialogue:
-  - Oh by the way,  you can use my skills, it will assist you in shoo-ing them away.
-  - Just press "1" and you can use my skill.
+  - Oh! By the way,  you can use my skills! It should SLOW them down.
+  - Easy pickings for you!
+  - Just PRESS "1" and you can use my skill.
   - Here they come.
   fourthDialogue:
   - By the way, you gotta pay attention to the CAPITAL LETTERS.

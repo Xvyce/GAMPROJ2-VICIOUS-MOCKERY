@@ -5203,7 +5203,7 @@ MonoBehaviour:
     startDialogue: 'Use me, I can help you BREAK THE ARMOR of the enemies! '
     startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: Just press "2" if you need my skill!
+    startDialogue: Just PRESS "2" if you need my skill!
     startShakeCam: 0
   _endDialogue:
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
