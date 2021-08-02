@@ -28,6 +28,9 @@ public class DialogueManager : MonoBehaviour
     private bool isActive;
     private bool canPressSpace;
 
+    private bool isStartDialogue;
+    private bool isEndDialogue;
+
     [Header("UI to disable")]
     [SerializeField] GameObject slowButton;
     [SerializeField] GameObject armorBreakButton;
@@ -38,7 +41,6 @@ public class DialogueManager : MonoBehaviour
     [Header("Gibberish")]
     [SerializeField] private Player player;
 
-    bool endDialogue;
     //private void Start()
     //{
     //    dialogueInterface.SetActive(false);
@@ -83,15 +85,17 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        if (_startDialogue[index].shakeCam == true)
+        if(isStartDialogue)
         {
-            CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
-
+            if (_startDialogue[index].startShakeCam == true)
+            {
+                CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
+            }
         }
 
-        if (endDialogue == true)
+        if (isEndDialogue)
         {
-            if (_endDialogue[index].shakeCam == true)
+            if (_endDialogue[index].endShakeCam == true)
             {
                 CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
             }
@@ -139,13 +143,14 @@ public class DialogueManager : MonoBehaviour
                 else
                 {
                     isActive = false;
+                    isStartDialogue = false;
                     dialogueIndex++;
                     textDisplay.text = "";
                     continueButton.SetActive(false);
                     dialogueInterface.SetActive(false);
                     EnableUI();
 
-                    //index = 0;
+                    index = 0;
                     waveSpawner.state = SpawnState.Counting;
                 }
 
@@ -161,6 +166,7 @@ public class DialogueManager : MonoBehaviour
                 else
                 {
                     isActive = false;
+                    isEndDialogue = false;
                     dialogueIndex++;
                     textDisplay.text = "";
                     continueButton.SetActive(false);
@@ -179,6 +185,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayStartDialogue()
     {
+        isStartDialogue = true;
         waveSpawner.state = SpawnState.Dialogue;
         isActive = true;
         DisableUI();
@@ -190,8 +197,8 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayEndDialogue()
     {
-        index = 0;
-        endDialogue = true;
+        //index = 0;
+        isEndDialogue = true;
         waveSpawner.state = SpawnState.Dialogue;
         isActive = true;
         DisableUI();
@@ -241,7 +248,7 @@ public class StartDialogue
 {
     public Sprite startCharacter;
     public string startDialogue;
-    public bool shakeCam;
+    public bool startShakeCam;
 
 }
 
@@ -251,5 +258,5 @@ public class EndDialogue
 {
     public Sprite endCharacter;
     public string endDialogue;
-    public bool shakeCam;
+    public bool endShakeCam;
 }
