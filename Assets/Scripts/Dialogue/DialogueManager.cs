@@ -82,17 +82,20 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
+
         if (_startDialogue[index].shakeCam == true)
         {
             CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
 
         }
-        if (endDialogue == true) { 
-        if (_endDialogue[index].shakeCam == true)
+
+        if (endDialogue == true)
         {
-            CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
+            if (_endDialogue[index].shakeCam == true)
+            {
+                CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
+            }
         }
-    }
     }
 
     IEnumerator TypeStartDialogue()
@@ -142,7 +145,7 @@ public class DialogueManager : MonoBehaviour
                     dialogueInterface.SetActive(false);
                     EnableUI();
 
-                    index = 0;
+                    //index = 0;
                     waveSpawner.state = SpawnState.Counting;
                 }
 
@@ -187,6 +190,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayEndDialogue()
     {
+        index = 0;
         endDialogue = true;
         waveSpawner.state = SpawnState.Dialogue;
         isActive = true;
