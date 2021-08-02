@@ -5200,7 +5200,7 @@ MonoBehaviour:
     startDialogue: Guys we need to stop talking about poop because enemies are coming!
     startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
-    startDialogue: 'Use me, I can help you break the armor of the enemies! '
+    startDialogue: 'Use me, I can help you BREAK THE ARMOR of the enemies! '
     startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     startDialogue: Just press "2" if you need my skill!
@@ -5217,7 +5217,7 @@ MonoBehaviour:
     endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
     endDialogue: The crystal shines a blue light, and cracks form along its surface.
-    endShakeCam: 0
+    endShakeCam: 1
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: My Crystal!!!
     endShakeCam: 0

@@ -44388,168 +44388,169 @@ MonoBehaviour:
   _startDialogue:
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: And here we are!
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "Whoa, it\u2019s the first time I got at the top of a castle."
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
-    startDialogue: "Sooo enemies will be coming waaaay over there to the right.\u201C"
-    shakeCam: 0
+    startDialogue: Sooo enemies will be coming waaaay over there to the right.
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: And your task is to prevent anyone, and I mean ANYONE, from entering
       the castle.
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
-    startDialogue: 'You have only THREE chances in protecting this kingdom of mine. '
-    shakeCam: 0
+    startDialogue: You have only THREE chances in protecting this kingdom of mine.
+      THREE
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: Do. It. Right.
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: Use your words like how you did in the bar yesterday.
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: Ugh how did I get dragged into this?
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "I don\u2019t even remember what happened yesterday."
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: "I\u2019m sure you two will manage just fine! So with that, I
       bid you adue."
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 4a20005d69ec1be41821283cb9a8dd7a, type: 3}
     startDialogue: Guards! Come come! Get me my carriage! The slots for this vacation
       are very limited and we need to go now!
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "\u2026"
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: 'HAAAAA? '
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: And he left just like that?
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: Some king he is.
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "Anyways, now that the king is gone\u2026 "
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     startDialogue: "Let\u2019s go sneak into the castle\u2019s treasury! "
-    shakeCam: 0
+    startShakeCam: 0
   - startCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     startDialogue: "No, wait! We don\u2019t have time. The enemies are approaching."
-    shakeCam: 0
+    startShakeCam: 0
   _endDialogue:
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: "Oho? What\u2019s this?"
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: "Obviously it\u2019s a crystal"
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: It could fetch for a hefty price I bet!
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: No. Wait!
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
     endDialogue: The crystal shakes violently, and out emerges a hulking Troll!
-    shakeCam: 0
+    endShakeCam: 1
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "AAAAAAAAAAAAAA\u2026!"
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: Eeek!
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: Eeek!
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: ...AAAAAAhh finally!
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: ??
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: ??
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "What\u2019s wrong with you two? It looks like you\u2019ve seen
       a ghost, I dare say. HA HA HA!"
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: "\u2026"
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: "\u2026"
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: A-are you not going to eat us?
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: Me? Oh! Do you think of me as one of those savages? Ha, how quaint.
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: Actually for saving me, I am indebted to you.
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: Please, allow me to assist you on your journey.
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
     endDialogue: For a troll, you know a lot of big words!
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 3d5dff30f18d6ef4388e65626ca419b1, type: 3}
-    endDialogue: er I mean, Who are you anyway? And what were you doing inside that
+    endDialogue: Er, I mean, Who are you anyway? And what were you doing inside that
       crystal?
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: Ah yes, I was trapped by someone... or something....
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: I was just minding my own business working out.
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "Then I saw it\u2026."
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "The ALMIGHTY LEGENDARY BARBELL\u2026"
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "\u2026right before my very eyes."
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "I couldn\u2019t resist it and tried to get it but then."
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: I was trapped.
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "I couldn\u2019t really remember anything after that but I heard
       a voice."
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "A laughing voice, it sounded like\u2026 the demon lord."
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: Wha?
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 52dea753e1afb00469eff4bebfec37f6, type: 3}
     endDialogue: "You mean the most powerful being\u2026"
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: Yes, we have no time to waste. You must strengthen your defenses
       and-
-    shakeCam: 0
+    endShakeCam: 0
   - endCharacter: {fileID: 21300000, guid: 53dcaa99a6036354ba48a49e034e1f04, type: 3}
     endDialogue: The earth trembles, a sign of imminent danger.
-    shakeCam: 1
+    endShakeCam: 1
   - endCharacter: {fileID: 21300000, guid: 2eb61b30dc3d49c4b8472ac5427c419d, type: 3}
     endDialogue: "Oh my, hold tight now. We\u2019re in for a bumpy ride!"
-    shakeCam: 1
+    endShakeCam: 1
   typingSpeed: 0.02
   dialogueInterface: {fileID: 1093417262}
   waveSpawner: {fileID: 411227907}
