@@ -8,18 +8,18 @@ public class WordGenerator : MonoBehaviour
     private static string[] tutorialEasy = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
                                             "t", "u", "v", "w", "x", "y", "z"   };
 
-    private static string[] tutorialNormal = {"one", "day", "you"  };
+    private static string[] tutorialNormal = {"the", "and", "for"  };
 
-    private static string[] tutorialNormalCaps = { "One", "Day", "You" };
+    private static string[] tutorialNormalCaps = { "The", "End", "For" };
 
     private static string[] tutorialBoss = { "Hello", "Choco", "Clock" };//added this, change later
 
 
 
     // Level 1 Word Pool
-    private static string[] lvlOneEasy = { "Life", "Ring", "Wolf", "Fish", "King" , "life", "ring", "wolf", "fish", "king" };
+    private static string[] lvlOneEasy = { "able", "Body", "care", "Duck", "else" };
 
-    private static string[] lvlOneNormal = { "World", "Heart", "Apple", "Stone", "Smart", "world", "heart", "apple", "stone", "smart" };
+    private static string[] lvlOneNormal = { "glory", "Heart", "items", "Juice", "knock" };
 
     private static string[] lvlOneBoss = { "Intelligent", "Professional", "Friendship", "Everything",
                                             "Exterminate", "intelligent", "professional", "friendship", "everything",
@@ -28,35 +28,32 @@ public class WordGenerator : MonoBehaviour
 
 
     // Level 2 Word Pool
-    private static string[] lvlTwoEasy = { "Life", "Ring", "Wolf", "Fish", "King", "Bean", "Evil", "Peace", "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace" };
+    private static string[] lvlTwoEasy = { "able", "Arrow", "Body", "bean", "care", "Crazy", "else"};
 
-    private static string[] lvlTwoNormal = { "World", "Heart", "Apple", "Stone", "Smart", "Average", "Twelve", "Medieval", 
-                                                "world", "heart", "apple", "stone", "smart", "average", "twelve", "medieval"};
+    private static string[] lvlTwoNormal = { "glory", "Ground", "Heart", "heaven", "items", "Juice", "knock"};
 
-    private static string[] lvlTwoBoss = { "Intelligent", "Professional", "Friendship", "Everything",
-                                            "Exterminate", "Responsible", "Astronomical",
-                                                "intelligent", "professional", "friendship", "everything",
-                                                    "exterminate", "responsible", "astronomical"   };
+    private static string[] lvlTwoBoss = { "Basketball", "Responsible", "Astronomical", "Everything","Characters",
+                                            "basketball", "responsible", "astronomical", "everything","characters"};
+
+    private static string[] lvlTwoSupport = { "money", "Music", "Night", "noble", "other", "Ocean", "Peace", "queen"};
 
 
 
     // Level 3 Word Pool
-    private static string[] lvlThreeEasy = { "Life", "Ring", "Wolf", "Fish", "King", "Bean", "Evil", "Peace", "Heart",
-                                            "South", "Stone", "Thing",
-                                            "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace", "heart",
-                                            "south", "stone", "thing"  };
+    private static string[] lvlThreeEasy = { "able", "Body", "bean", "care", "Crazy", "Duck", "dream", "else", "Earth",
+                                            "Fish", "flute"};
 
-    private static string[] lvlThreeNormal = { "World", "Heart", "Apple", "Stone", "Smart", "Average", "Twelve", "Medieval", 
-                                            "Strength", "Donate", "Mountain", "Treasure",
-                                            "world", "heart", "apple", "stone", "smart", "average", "twelve", "medieval",
-                                            "strength", "donate", "mountain", "treasure"};
+    private static string[] lvlThreeNormal = { "glory", "Ground", "Heart", "heaven", "items", "Insect", "Juice", "joyful",
+                                            "knock", "Keyboard", "Legend", "learning" };
 
-    private static string[] lvlThreeBoss = { "Intelligent", "Professional", "Friendship", "Everything", "Basketball",
-                                            "Exterminate", "Responsible", "Astronomical", "Characters", "Technology", "Handkerchief",
-                                            "intelligent", "professional", "friendship", "everything", "basketball",
-                                            "exterminate", "responsible", "astronomical", "characters", "technology", "handkerchief",   };
+    private static string[] lvlThreeBoss = { "Vaccination", "Worshipping", "Wrongheaded", "Xenogeneic", "Yellowstone","Zygomycetes",
+                                            "vaccination", "worshipping", "wrongheaded", "xenogeneic", "yellowstone","zygomycetes"};
 
+    private static string[] lvlThreeSupport = { "money", "Music", "Night", "noble", "other", "Ocean", "Peace", "potato",
+                                            "queen", "Quotes", "Reason", "river" };
 
+    private static string[] lvlThreeCaster = { "Strawberry", "silhouette", "Technology", "television", "Understand", "university", "Vegetables", "victorious",
+                                            "Wilderness", "wonderland", "Xylophone", "xenogamy" };
 
     // Projectile Word Pool
     private static string[] projectileWords = { "life", "ring", "wolf", "fish", "king", "bean", "evil", "peace", "heart",
