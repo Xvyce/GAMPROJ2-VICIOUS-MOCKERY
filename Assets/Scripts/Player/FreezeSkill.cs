@@ -41,7 +41,7 @@ public class FreezeSkill : MonoBehaviour
         // Stops the enemies from walking
         foreach (Enemy enemy in enemyManager.enemyList)
         {
-            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster && enemy.enemyData.Type != EnemyType.Support_Boss)
+            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster_Boss && enemy.enemyData.Type != EnemyType.Support_Boss)
             {
                 enemy.isWalking = false;
                 enemy._animator.speed = 0;
@@ -54,7 +54,7 @@ public class FreezeSkill : MonoBehaviour
         allyAnimator.SetBool("doingSkill", false);
         foreach (Enemy enemy in enemyManager.enemyList)
         {
-            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster && enemy.enemyData.Type != EnemyType.Support_Boss)
+            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster_Boss && enemy.enemyData.Type != EnemyType.Support_Boss)
             {
                 enemy.isWalking = true;
                 enemy._animator.speed = 1.0f;

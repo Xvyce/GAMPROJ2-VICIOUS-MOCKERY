@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e7bb9a524a283244ac5befeca3b8965, type: 3}
   m_Name: Armored_Goblin
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 2
   attackDamage: 1
   type: 3
   armorCount: 1

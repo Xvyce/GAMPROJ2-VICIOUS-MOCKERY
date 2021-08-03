@@ -35,7 +35,7 @@ public class BreakArmorSkill : MonoBehaviour
         
         foreach (Enemy enemy in enemyManager.enemyList)
         {
-            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster && enemy.enemyData.Type != EnemyType.Support_Boss)
+            if (enemy.enemyData.Type != EnemyType.Boss && enemy.enemyData.Type != EnemyType.Caster_Boss && enemy.enemyData.Type != EnemyType.Support_Boss)
             {
                 if (enemy.revivalCount >= enemy.enemyData.ArmorCount)
                 {
