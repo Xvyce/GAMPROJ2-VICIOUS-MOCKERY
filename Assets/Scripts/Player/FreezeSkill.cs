@@ -12,6 +12,8 @@ public class FreezeSkill : MonoBehaviour
     [SerializeField] private float freezeDuration = 3.0f;
     [SerializeField] private GameObject particle;
 
+    public bool doingSkill;
+
     private void Start()
     {
         particle.SetActive(false);
@@ -34,6 +36,7 @@ public class FreezeSkill : MonoBehaviour
 
     private IEnumerator FreezeEnemy()
     {
+        doingSkill = true;
         allyAnimator.SetBool("doingSkill", true);
         // Stops the enemies from walking
         foreach (Enemy enemy in enemyManager.enemyList)
@@ -47,6 +50,7 @@ public class FreezeSkill : MonoBehaviour
 
         yield return new WaitForSeconds(freezeDuration);
 
+        doingSkill = false;
         allyAnimator.SetBool("doingSkill", false);
         foreach (Enemy enemy in enemyManager.enemyList)
         {
@@ -73,4 +77,10 @@ public class FreezeSkill : MonoBehaviour
         lvlDataManager.skillUseCount += 1;
     }
 
+    public void StopFreeze()
+    {
+        allyAnimator.SetBool("doingSkill", false);
+        StopCoroutine(FreezeEnemy());
+        particle.SetActive(false);
+    }
 }

@@ -26,6 +26,7 @@ public class TutorialDialogueManager : MonoBehaviour
     [SerializeField] GameObject slowButton;
     [SerializeField] GameObject scoreCounter;
     [SerializeField] GameObject waveProgressBar;
+    [SerializeField] SlowSkill slowSkill;
 
     [Header("Gibberish")]
     [SerializeField] Player player;
@@ -286,6 +287,11 @@ public class TutorialDialogueManager : MonoBehaviour
 
     public void DisplayUI()
     {
+        if(slowSkill.doingSkill)
+        {
+            slowSkill.StopSlow();
+        }
+
         waveSpawner.state = TutorialSpawnState.Dialogue;
         isActive = true;
         DisableUI();
@@ -298,10 +304,14 @@ public class TutorialDialogueManager : MonoBehaviour
     void DisableUI()
     {
         if (slowButton != null)
+        {
             slowButton.SetActive(false);
+        }
 
         if (waveProgressBar != null)
+        {
             waveProgressBar.SetActive(false);
+        }
 
         scoreCounter.SetActive(false);
     }
@@ -309,10 +319,14 @@ public class TutorialDialogueManager : MonoBehaviour
     void EnableUI()
     {
         if (slowButton != null)
+        {
             slowButton.SetActive(true);
+        }
 
         if (waveProgressBar != null)
+        {
             waveProgressBar.SetActive(true);
+        }
 
         scoreCounter.SetActive(true);
     }

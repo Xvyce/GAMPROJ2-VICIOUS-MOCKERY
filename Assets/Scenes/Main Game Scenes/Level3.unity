@@ -701,6 +701,8 @@ MonoBehaviour:
   freezeButton: {fileID: 1022422501240769859}
   scoreCounter: {fileID: 5949072392209591262}
   waveProgressBar: {fileID: 629931600}
+  slowSkill: {fileID: 8397903448680260771}
+  freezeSkill: {fileID: 1022422501240769860}
   player: {fileID: 612996372}
 --- !u!4 &112374035
 Transform:
@@ -8827,6 +8829,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 21858422849807503, guid: 084f6f7a05cd9d24ea550aed184d527e, type: 3}
   m_PrefabInstance: {fileID: 1022422501240769857}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1022422501240769860 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3794561911581610139, guid: 084f6f7a05cd9d24ea550aed184d527e, type: 3}
+  m_PrefabInstance: {fileID: 1022422501240769857}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022422501240769859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057cda5e961da194eb33b6d43dbdbe26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &1374225217174021537
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11565,6 +11578,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8397903448630814617, guid: b21c18c414d841a46971676c212396c8, type: 3}
   m_PrefabInstance: {fileID: 8397903448680260769}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8397903448680260771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8397903448630814620, guid: b21c18c414d841a46971676c212396c8, type: 3}
+  m_PrefabInstance: {fileID: 8397903448680260769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397903448680260770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af5a220461f36d4e8c97728b3945dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8455068049096305432
 GameObject:
   m_ObjectHideFlags: 0

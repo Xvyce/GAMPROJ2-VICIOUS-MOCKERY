@@ -44559,6 +44559,8 @@ MonoBehaviour:
   freezeButton: {fileID: 0}
   scoreCounter: {fileID: 5949072392209591262}
   waveProgressBar: {fileID: 5374926258834209729}
+  slowSkill: {fileID: 8397903448680260771}
+  freezeSkill: {fileID: 0}
   player: {fileID: 612996372}
 --- !u!4 &1612189340
 Transform:
@@ -99226,6 +99228,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8397903448630814617, guid: b21c18c414d841a46971676c212396c8, type: 3}
   m_PrefabInstance: {fileID: 8397903448680260769}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8397903448680260771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8397903448630814620, guid: b21c18c414d841a46971676c212396c8, type: 3}
+  m_PrefabInstance: {fileID: 8397903448680260769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397903448680260770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af5a220461f36d4e8c97728b3945dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &8398520384716592095
 MeshRenderer:
   m_ObjectHideFlags: 0

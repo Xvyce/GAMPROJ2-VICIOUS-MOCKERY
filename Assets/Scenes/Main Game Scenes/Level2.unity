@@ -3191,6 +3191,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8397903448630814617, guid: b21c18c414d841a46971676c212396c8, type: 3}
   m_PrefabInstance: {fileID: 1101124410}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1101124413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8397903448630814620, guid: b21c18c414d841a46971676c212396c8, type: 3}
+  m_PrefabInstance: {fileID: 1101124410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101124412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af5a220461f36d4e8c97728b3945dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1113905583
 GameObject:
   m_ObjectHideFlags: 0
@@ -5334,6 +5345,8 @@ MonoBehaviour:
   freezeButton: {fileID: 0}
   scoreCounter: {fileID: 2118307497}
   waveProgressBar: {fileID: 440918267}
+  slowSkill: {fileID: 1101124413}
+  freezeSkill: {fileID: 0}
   player: {fileID: 430611345}
 --- !u!4 &1608606986
 Transform:

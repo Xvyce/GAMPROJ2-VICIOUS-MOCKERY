@@ -38,6 +38,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject scoreCounter;
     [SerializeField] GameObject waveProgressBar;
 
+    [Header("Skill Script")]
+    [SerializeField] SlowSkill slowSkill;
+    [SerializeField] FreezeSkill freezeSkill;
+
     [Header("Gibberish")]
     [SerializeField] private Player player;
 
@@ -197,7 +201,22 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayEndDialogue()
     {
-        //index = 0;
+        if(slowSkill != null)
+        {
+            if(slowSkill.doingSkill)
+            {
+                slowSkill.StopSlow();
+            }
+        }
+
+        if(freezeSkill != null)
+        {
+            if(freezeSkill.doingSkill)
+            {
+                freezeSkill.StopFreeze();
+            }
+        }
+
         isEndDialogue = true;
         waveSpawner.state = SpawnState.Dialogue;
         isActive = true;
@@ -212,13 +231,19 @@ public class DialogueManager : MonoBehaviour
     void DisableUI()
     {
         if (slowButton != null)
+        {
             slowButton.SetActive(false);
+        }
 
         if (armorBreakButton != null)
+        {
             armorBreakButton.SetActive(false);
+        }
 
         if (freezeButton != null)
+        {
             freezeButton.SetActive(false);
+        }
 
         scoreCounter.SetActive(false);
         waveProgressBar.SetActive(false);
@@ -227,13 +252,19 @@ public class DialogueManager : MonoBehaviour
     void EnableUI()
     {
         if (slowButton != null)
+        {
             slowButton.SetActive(true);
+        }
 
         if (armorBreakButton != null)
+        {
             armorBreakButton.SetActive(true);
+        }
 
         if (freezeButton != null)
+        {
             freezeButton.SetActive(true);
+        }
 
         scoreCounter.SetActive(true);
         waveProgressBar.SetActive(true);

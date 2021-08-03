@@ -1655,6 +1655,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8397903448630814617, guid: b21c18c414d841a46971676c212396c8, type: 3}
   m_PrefabInstance: {fileID: 513664848}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &513664851 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8397903448630814620, guid: b21c18c414d841a46971676c212396c8, type: 3}
+  m_PrefabInstance: {fileID: 513664848}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513664850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af5a220461f36d4e8c97728b3945dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &546550074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 10055909e5f683047a6c45e032c2c171, type: 3}
@@ -5497,7 +5508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282799985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.55, y: 4.5904093, z: 3.05}
+  m_LocalPosition: {x: 6.56, y: 4.5904093, z: 3.05}
   m_LocalScale: {x: 1, y: 1, z: 1.7112882}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6522,6 +6533,7 @@ MonoBehaviour:
   slowButton: {fileID: 513664850}
   scoreCounter: {fileID: 1728664849}
   waveProgressBar: {fileID: 763515067}
+  slowSkill: {fileID: 513664851}
   player: {fileID: 1093790041}
 --- !u!1 &1481631653
 GameObject:

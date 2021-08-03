@@ -13,6 +13,8 @@ public class SlowSkill : MonoBehaviour
     [SerializeField] private float slowDuration = 3.0f;
     [SerializeField] private GameObject particle;
 
+    public bool doingSkill;
+
     private void Start()
     {
         particle.SetActive(false);
@@ -35,6 +37,7 @@ public class SlowSkill : MonoBehaviour
 
     private IEnumerator SlowEnemy()
     {
+        doingSkill = true;
         allyAnimator.SetBool("doingSkill", true);
         foreach(Enemy enemy in enemyManager.enemyList)
         {
@@ -47,6 +50,7 @@ public class SlowSkill : MonoBehaviour
 
         yield return new WaitForSeconds(slowDuration);
 
+        doingSkill = false;
         allyAnimator.SetBool("doingSkill", false);
         foreach (Enemy enemy in enemyManager.enemyList)
         {
@@ -79,5 +83,12 @@ public class SlowSkill : MonoBehaviour
         }
 
         lvlDataManager.skillUseCount += 1;
+    }
+
+    public void StopSlow()
+    {
+        allyAnimator.SetBool("doingSkill", false);
+        StopCoroutine(SlowEnemy());
+        particle.SetActive(false);
     }
 }
