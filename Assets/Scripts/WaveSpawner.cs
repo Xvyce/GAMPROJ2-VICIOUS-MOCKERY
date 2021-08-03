@@ -231,7 +231,10 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnCrystal()
     {
-        Instantiate(crystalPrefab, crystalSpawn.position, Quaternion.Euler(0, 0, 0));
+        if(crystalPrefab != null)
+        {
+            Instantiate(crystalPrefab, crystalSpawn.position, Quaternion.Euler(0, 0, 0));
+        }
     }
 }
 

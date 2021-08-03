@@ -2089,7 +2089,7 @@ MonoBehaviour:
   nextWave: 0
   state: 2
   crystalSpawn: {fileID: 2065274844}
-  crystalPrefab: {fileID: 9001617347796705362, guid: c565effcf6ef3f64bb0b310b84381d5d, type: 3}
+  crystalPrefab: {fileID: 0}
 --- !u!4 &411227908
 Transform:
   m_ObjectHideFlags: 0
