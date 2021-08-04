@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Image typeBox;
     [SerializeField] private Image oneArmorTypeBox;
     [SerializeField] private Image twoArmorTypeBox;
+    [SerializeField] private Image targetImage;
     private EnemyManager _enemyManager;
     private LevelDataManager lvlDataManager;
     private SpriteRenderer thisSprite;
@@ -55,6 +56,7 @@ public class Enemy : MonoBehaviour
         isWalking = true;
         isWalkingRight = false;
         speed = enemyData.Speed;
+        targetImage.enabled = false;
 
         TypeBox();
         GenerateWord();
