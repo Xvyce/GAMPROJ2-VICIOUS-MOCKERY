@@ -88,7 +88,7 @@ public class SlowSkill : MonoBehaviour
     public void StopSlow()
     {
         allyAnimator.SetBool("doingSkill", false);
-        StopCoroutine(SlowEnemy());
+        //StopCoroutine(SlowEnemy());
         particle.SetActive(false);
     }
 }

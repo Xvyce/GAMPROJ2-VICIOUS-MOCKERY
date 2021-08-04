@@ -93,6 +93,7 @@ public class Enemy : MonoBehaviour
 
     public void TypeLetter()
     {
+        targetImage.enabled = true;
         typeIndex++;
         text.text = text.text.Remove(0, 1);
         text.color = Color.red;
@@ -105,6 +106,7 @@ public class Enemy : MonoBehaviour
             if (revivalCount < enemyData.ArmorCount) // Armored Enemies get a new word
             {
                 wordTyped = false;
+                targetImage.enabled = false;
                 EnemyManager.hasActiveEnemy = false;
                 text.color = originalColor;
 
@@ -145,6 +147,7 @@ public class Enemy : MonoBehaviour
             }
             else //caster boss and slime projectile
             {
+                targetImage.enabled = false;
                 isAlive = false;
                 player.StopSpeakingGibberish();
                 text.enabled = false;
@@ -189,6 +192,7 @@ public class Enemy : MonoBehaviour
     //Defeat Animation
     private void Defeat()
     {
+        targetImage.enabled = false;
         isAlive = false;
         player.StopSpeakingGibberish();
         isDefeat = true;

@@ -80,7 +80,7 @@ public class FreezeSkill : MonoBehaviour
     public void StopFreeze()
     {
         allyAnimator.SetBool("doingSkill", false);
-        StopCoroutine(FreezeEnemy());
+        //StopCoroutine(FreezeEnemy());
         particle.SetActive(false);
     }
 }
