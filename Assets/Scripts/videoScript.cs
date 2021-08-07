@@ -11,6 +11,11 @@ public class videoScript : MonoBehaviour
     public GameObject transition;
     void Start()
     {
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "cutscene1")
+        { VideoPlayer.url = Application.streamingAssetsPath + "/" + "VMCutScene1.mp4"; }
+        if (currentScene == "cutscene2")
+        { VideoPlayer.url = Application.streamingAssetsPath + "/" + "VMCutScene2v2.mp4"; }
         VideoPlayer.loopPointReached += LoadScene;
     }
     void LoadScene(VideoPlayer vp)
