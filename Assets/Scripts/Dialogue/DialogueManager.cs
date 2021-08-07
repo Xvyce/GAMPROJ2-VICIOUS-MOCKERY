@@ -93,7 +93,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (_startDialogue[index].startShakeCam == true)
             {
-                CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
+                CameraShaker.Instance.ShakeOnce(1f, 0.5f, .1f, 1f);
             }
         }
 
@@ -101,7 +101,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (_endDialogue[index].endShakeCam == true)
             {
-                CameraShaker.Instance.ShakeOnce(0.15f, 0.3f, .1f, 1f);
+                CameraShaker.Instance.ShakeOnce(1f, 0.5f, .1f, 1f);
             }
         }
     }
